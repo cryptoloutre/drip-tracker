@@ -25,7 +25,7 @@ export const Drop12: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "12";
-  const nbTotalNFTsInDrop = 1;
+  const nbTotalNFTsInDrop = 2;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -58,8 +58,7 @@ export const Drop12: FC = ({}) => {
       ).value;
       if (drop == dropNumber) {
         _dropNFT.push({
-          name: nft.name,
-          
+          uri: nft.uri, // here we use the uri and not the name because the NFT and its misprint have the same name
         });
       }
     });
@@ -145,9 +144,9 @@ export const Drop12: FC = ({}) => {
             </div>
           )}
           <div className="md:hero-content flex justify-center mt-4">
-            <div className="bg-[#000000]">
+          <div className="bg-[#000000] w-[150px] sm:w-[300px]">
               <img
-                className="h-[300px] w-[300px]"
+                className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Ode%20to%20those%20still%20here.jpg"
               ></img>
               <h1 className="font-bold mt-2">Ode to those still here</h1>
@@ -155,7 +154,41 @@ export const Drop12: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.name == "Ode to those still here"
+                    (nft) => nft.uri == "https://nftstorage.link/ipfs/bafkreici36utvlcdollileegzfecz42wmv4fyuqthzusxmctwplxghr7vq"
+                  ) != undefined ? (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                    >
+                      Owned
+                    </a>
+                  ) : (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                      href={
+                        "https://magiceden.io/marketplace/F8FdDYD3PWndYoae9TrBcucXDWFwDvm6bZU2LQT1PwyB?search=Ode%2520to%2520those%2520still%2520here"
+                      }
+                    >
+                      Buy on Magic Eden
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+          <div className="bg-[#000000] w-[150px] sm:w-[300px]">
+              <img
+                className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
+                src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Ode%20to%20those%20still%20here%20Making%20Of_1.jpg"
+              ></img>
+              <h1 className="font-bold mt-2">Ode to those still here (misprint)</h1>
+              {isFetched && wallet.publicKey && (
+                <div className="flex justify-center">
+                  {isFetched &&
+                  userDripNFT.find(
+                    (nft) => nft.uri == "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq"
                   ) != undefined ? (
                     <a
                       target="_blank"

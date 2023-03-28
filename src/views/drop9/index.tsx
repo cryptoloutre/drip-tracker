@@ -134,7 +134,7 @@ export const Drop9: FC = ({}) => {
                 href={"https://twitter.com/dato_art"}
               >
                 @dato_art
-              </a>{" "}
+              </a>
               , and many more.
             </div>
           </div>

@@ -21,7 +21,7 @@ export const HomeView: FC = ({}) => {
   const metaplex = new Metaplex(connection);
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 83;
+  const nbTotalNFTsInDrop = 84;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -53,8 +53,8 @@ export const HomeView: FC = ({}) => {
 
     console.log("Got their DRiP NFTs!", DRiPCollectionNFTs);
 
-    spacesCollectionNFTs.map((nft) => _dropNFTs.push(nft.name));
-    DRiPCollectionNFTs.map((nft) => _dropNFTs.push(nft.name));
+    spacesCollectionNFTs.map((nft) => _dropNFTs.push(nft.uri));
+    DRiPCollectionNFTs.map((nft) => _dropNFTs.push(nft.uri));
 
     const dropNFTs = _dropNFTs.filter((x, i) => _dropNFTs.indexOf(x) === i);
     setNbUserNFTs(dropNFTs.length);
