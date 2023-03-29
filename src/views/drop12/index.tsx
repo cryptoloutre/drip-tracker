@@ -12,6 +12,7 @@ import {
   spacesCollection,
 } from "../../../lib/collectionAddresses";
 import { Connection } from "@solana/web3.js";
+import { RarityLegend } from "components/RarityLegend";
 
 export const Drop12: FC = ({}) => {
   const wallet = useWallet();
@@ -124,6 +125,9 @@ export const Drop12: FC = ({}) => {
               of Dreams&quot;, &quot;The Dreamers&quot;, and &quot;The
               Tenants&quot;, three unique 1/1 series that emphasize being in
               touch with your inner being and achieving your youthful dreams.
+              <br/>
+              <br/>
+              <span className="font-bold underline">Note:</span> A misprint was sent by mistake. It is not part of the collection.
             </div>
           </div>
           {wallet.publicKey && isFetched && (
@@ -143,8 +147,9 @@ export const Drop12: FC = ({}) => {
               Please, connect your wallet to see your progression!
             </div>
           )}
+          <RarityLegend/>
           <div className="md:hero-content flex justify-center mt-4">
-          <div className="bg-[#000000] w-[150px] sm:w-[300px]">
+          <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#a5a5a5]">
               <img
                 className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Ode%20to%20those%20still%20here.jpg"
@@ -183,7 +188,7 @@ export const Drop12: FC = ({}) => {
                 className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Ode%20to%20those%20still%20here%20Making%20Of_1.jpg"
               ></img>
-              <h1 className="font-bold mt-2">Ode to those still here (misprint)</h1>
+              <h1 className="font-bold mt-2">Ode to those still here <span className="text-sm">(misprint)</span></h1>
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&

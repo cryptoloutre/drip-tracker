@@ -12,6 +12,7 @@ import {
   spacesCollection,
 } from "../../../lib/collectionAddresses";
 import { Connection } from "@solana/web3.js";
+import { RarityLegend } from "components/RarityLegend";
 
 export const Drop22: FC = ({}) => {
   const wallet = useWallet();
@@ -229,9 +230,10 @@ export const Drop22: FC = ({}) => {
               Please, connect your wallet to see your progression!
             </div>
           )}
+          <RarityLegend/>
           <div className="flex justify-center">
           <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
-            <div className="bg-[#000000]">
+            <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
               <img
                 className=""
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/1.%20Static%20Banner%20-%20Common.png"
@@ -264,7 +266,7 @@ export const Drop22: FC = ({}) => {
                 </div>
               )}
             </div>
-            <div className="bg-[#000000]">
+            <div className="bg-[#000000] border border-4 border-[#E6C15A]">
               <img
                 className=""
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/1.%20Static%20Banner%20-%20Common.png"
@@ -298,7 +300,7 @@ export const Drop22: FC = ({}) => {
                 </div>
               )}
             </div>
-            <div className="bg-[#000000]">
+            <div className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]">
               <img
                 className=""
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/3.%20PFP%20-%20Rare.jpeg"

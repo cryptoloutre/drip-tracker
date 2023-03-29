@@ -12,6 +12,7 @@ import {
   spacesCollection,
 } from "../../../lib/collectionAddresses";
 import { Connection } from "@solana/web3.js";
+import { RarityLegend } from "components/RarityLegend";
 
 export const Drop6: FC = ({}) => {
   const wallet = useWallet();
@@ -119,8 +120,9 @@ export const Drop6: FC = ({}) => {
               </span>{" "} NFT(s) of this drop!</div>
             </div>}
             {!wallet.publicKey && <div className="text-center font-bold text-xl mt-6">Please, connect your wallet to see your progression!</div>}
+            <RarityLegend />
             <div className="md:hero-content flex justify-center mt-4">
-              <div className="bg-[#000000]">
+              <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
                 <img
                   className="h-[300px] w-[300px]"
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Edith%20Drip.png"

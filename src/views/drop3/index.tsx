@@ -12,6 +12,7 @@ import {
   spacesCollection,
 } from "../../../lib/collectionAddresses";
 import { Connection } from "@solana/web3.js";
+import { RarityLegend } from "components/RarityLegend";
 
 export const Drop3: FC = ({}) => {
   const wallet = useWallet();
@@ -120,8 +121,9 @@ export const Drop3: FC = ({}) => {
               </span>{" "} NFT(s) of this drop!</div>
             </div>}
             {!wallet.publicKey && <div className="text-center font-bold text-xl mt-6">Please, connect your wallet to see your progression!</div>}
+            <RarityLegend />
             <div className="md:hero-content flex justify-center gap-2 mt-4">
-              <div className="bg-[#000000] w-[150px] sm:w-[300px]">
+              <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#a5a5a5]">
                 <img
                   className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/TO_THE_UNKNOWN.jpg"
@@ -154,7 +156,7 @@ export const Drop3: FC = ({}) => {
                 }
               </div>
 
-              <div className="bg-[#000000] w-[150px] sm:w-[300px]">
+              <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#E6C15A]">
                 <img
                   className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/UP_AND_UP.jpg"

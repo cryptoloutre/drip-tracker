@@ -96,7 +96,7 @@ export const HomeView: FC = ({}) => {
           {wallet.publicKey && !isFetched && <Loader />}
           <div className="flex justify-center">
             <div className="w-[70%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 flex items-center">
-              <Link
+              {/* <Link
                 href="/drop0"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -108,7 +108,7 @@ export const HomeView: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 0</div>
-              </Link>
+              </Link> */}
               <Link
                 href="/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"

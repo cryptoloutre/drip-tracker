@@ -12,6 +12,7 @@ import {
   spacesCollection,
 } from "../../../lib/collectionAddresses";
 import { Connection } from "@solana/web3.js";
+import { RarityLegend } from "components/RarityLegend";
 
 export const Drop1: FC = ({}) => {
   const wallet = useWallet();
@@ -131,8 +132,9 @@ export const Drop1: FC = ({}) => {
               Please, connect your wallet to see your progression!
             </div>
           )}
+          <RarityLegend />
           <div className="md:hero-content flex justify-center gap-2 mt-4">
-            <div className="bg-[#000000] w-[150px] sm:w-[300px]">
+            <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#a5a5a5]">
               <img
                 className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                 src="https://arweave.net/zvY7qNPUKOXmn8HPDA2zn5UKZXJLqcgSLf_lNVJ40pY"
@@ -166,7 +168,7 @@ export const Drop1: FC = ({}) => {
               )}
             </div>
 
-            <div className="bg-[#000000] w-[150px] sm:w-[300px]">
+            <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#E6C15A]">
               <img
                 className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                 src="https://arweave.net/JQa7FdS1KlU-AVEiSuQFNxuEaZgphrUmay9UnkyRDXI"

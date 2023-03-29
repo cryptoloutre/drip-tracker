@@ -11,6 +11,7 @@ import {
   spacesCollection,
 } from "../../../lib/collectionAddresses";
 import { Connection } from "@solana/web3.js";
+import { RarityLegend } from "components/RarityLegend";
 
 export const Drop0: FC = ({}) => {
   const wallet = useWallet();
@@ -118,6 +119,9 @@ export const Drop0: FC = ({}) => {
                 @solana{" "}
               </a>
               with editions.
+              <br/>
+              <br/>
+              <span className="font-bold underline">Note:</span> This NFT is not part of the DRiP collection.
             </div>
           </div>
           {wallet.publicKey && isFetched && (
@@ -139,8 +143,9 @@ export const Drop0: FC = ({}) => {
               Please, connect your wallet to see your progression!
             </div>
           )}
+          <RarityLegend />
           <div className="md:hero-content flex justify-center mt-4">
-          <div className="bg-[#000000]">
+          <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
               <img
                 className="h-[300px] w-[300px]"
                 src="https://jusqlq2kbt7vvlfrbxo6uwfer63fhd4wkxicicix5a2ibnauhwwa.arweave.net/TSUFw0oM_1qssQ3d6likj7ZTj5ZV0CQJF-g0gLQUPaw"
