@@ -21,7 +21,7 @@ export const HomeView: FC = ({}) => {
   const metaplex = new Metaplex(connection);
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 84;
+  const nbTotalNFTsInDrop = 83;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
