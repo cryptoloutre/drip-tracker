@@ -302,7 +302,7 @@ export const HomeView: FC = ({}) => {
                   >
                     {" "}
                     announcement
-                  </a>
+                  </a>.
                   
                   <div className="mt-2">You are missing:</div>
                   <div className="flex justify-center mt-2">
