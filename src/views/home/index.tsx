@@ -3,9 +3,9 @@ import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 // Wallet
-import { useWallet} from "@solana/wallet-adapter-react";
+import { useWallet } from "@solana/wallet-adapter-react";
 
-import { Metaplex } from "@metaplex-foundation/js";
+import { Metadata, Metaplex } from "@metaplex-foundation/js";
 import {
   DRiPCollection,
   spacesCollection,
@@ -19,16 +19,30 @@ export const HomeView: FC = ({}) => {
     "https://try-rpc.mainnet.solana.blockdaemon.tech"
   );
   const metaplex = new Metaplex(connection);
+  const nfts = metaplex.nfts();
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
+  const [dropsMissing, setDropsMissing] = useState([]);
+  const [rareEligibility, setRareEligibility] = useState<boolean>(false);
+  const [legendaryEligibility, setLegendaryEligibility] =
+    useState<boolean>(false);
   const nbTotalNFTsInDrop = 83;
+  const nbTotalNFTsInCollection = 82;
+  const nbDrop = 23;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
       return;
     }
     const publickey = wallet.publicKey;
+    // dropNFTs will store all the NFTs of the user (DRiP collection and misprint but not the "lights x solana spaces")
     const _dropNFTs = [];
+    // userDrop will store the drops the user has (we don't count the misprint)
+    const _userDrop = [];
+    // dripCollectionUserNFTs store all the DRiP collection NFTs of the user (we don't count the misprint)
+    const dripCollectionUserNFTs = [];
+    // store the drop the user hasn't
+    const dropMissing = [];
     setIsFetched(false);
 
     const userNFTs = await metaplex
@@ -39,8 +53,20 @@ export const HomeView: FC = ({}) => {
       (metadata) =>
         metadata.collection !== null &&
         metadata.collection.verified &&
-        metadata.collection.address.toBase58() === spacesCollection.toBase58()
+        metadata.collection.address.toBase58() ===
+          spacesCollection.toBase58() &&
+        metadata.uri !==
+          "https://arweave.net/7jFIXO9oT2M0LFmtvf7l8dgC6RSHrjtOvQSN6cM13rI"
     );
+
+    spacesCollectionNFTs.map((nft) => _dropNFTs.push(nft));
+
+    // // Load the JSON for each NFT
+    // const loadedSpacesNfts = await Promise.all(
+    //   spacesCollectionNFTs.map((metadata) => {
+    //     return nfts.load({ metadata: metadata as Metadata });
+    //       })
+    //     );
 
     console.log("Got their Spaces NFTs!", spacesCollectionNFTs);
 
@@ -51,13 +77,129 @@ export const HomeView: FC = ({}) => {
         metadata.collection.address.toBase58() === DRiPCollection.toBase58()
     );
 
+    DRiPCollectionNFTs.map((nft) => _dropNFTs.push(nft));
+
     console.log("Got their DRiP NFTs!", DRiPCollectionNFTs);
 
-    spacesCollectionNFTs.map((nft) => _dropNFTs.push(nft.uri));
-    DRiPCollectionNFTs.map((nft) => _dropNFTs.push(nft.uri));
-
     const dropNFTs = _dropNFTs.filter((x, i) => _dropNFTs.indexOf(x) === i);
+
+    console.log("Got their DRiP collection NFTs!", dropNFTs);
+
     setNbUserNFTs(dropNFTs.length);
+
+    // Load the JSON for each NFT
+    const loadedNfts = await Promise.all(
+      dropNFTs.map((metadata) => {
+        return nfts.load({ metadata: metadata as Metadata });
+      })
+    );
+
+    loadedNfts.map((nft) => {
+      const drop = nft.json.attributes.find(
+        (nft) => nft.trait_type == "drop"
+      ).value;
+      if (
+        nft.uri !=
+        "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq"
+      ) {
+        dripCollectionUserNFTs.push(nft.uri);
+        if (drop == "18") {
+          _userDrop.push(nft.name);
+        } else {
+          _userDrop.push(drop);
+        }
+      }
+    });
+
+    const userDrop = _userDrop.filter((x, i) => _userDrop.indexOf(x) === i);
+
+    console.log("User collection", dripCollectionUserNFTs);
+    console.log("User drop", userDrop);
+
+    if (userDrop.length == nbDrop) {
+      setRareEligibility(true);
+    } else {
+      setRareEligibility(false);
+    }
+
+    if (dripCollectionUserNFTs.length == nbTotalNFTsInCollection) {
+      setLegendaryEligibility(true);
+    } else {
+      setLegendaryEligibility(false);
+    }
+
+    if (!userDrop.includes("1")) {
+      dropMissing.push("Drop 1");
+    }
+    if (!userDrop.includes("2")) {
+      dropMissing.push("Drop 2");
+    }
+    if (!userDrop.includes("3")) {
+      dropMissing.push("Drop 3");
+    }
+    if (!userDrop.includes("4")) {
+      dropMissing.push("Drop 4");
+    }
+    if (!userDrop.includes("5")) {
+      dropMissing.push("Drop 5");
+    }
+    if (!userDrop.includes("6")) {
+      dropMissing.push("Drop 6");
+    }
+    if (!userDrop.includes("7")) {
+      dropMissing.push("Drop 7");
+    }
+    if (!userDrop.includes("8")) {
+      dropMissing.push("Drop 8");
+    }
+    if (!userDrop.includes("9")) {
+      dropMissing.push("Drop 9");
+    }
+    if (!userDrop.includes("10")) {
+      dropMissing.push("Drop 10");
+    }
+    if (!userDrop.includes("11")) {
+      dropMissing.push("Drop 11");
+    }
+    if (!userDrop.includes("12")) {
+      dropMissing.push("Drop 12");
+    }
+    if (!userDrop.includes("13")) {
+      dropMissing.push("Drop 13");
+    }
+    if (!userDrop.includes("14")) {
+      dropMissing.push("Drop 14");
+    }
+    if (!userDrop.includes("15")) {
+      dropMissing.push("Drop 15");
+    }
+    if (!userDrop.includes("16")) {
+      dropMissing.push("Drop 16");
+    }
+    if (!userDrop.includes("17")) {
+      dropMissing.push("Drop 17");
+    }
+    if (!userDrop.includes("Ascension of Toonies")) {
+      dropMissing.push("Drop 18");
+    }
+    if (!userDrop.includes("iSolmetric")) {
+      dropMissing.push("Drop 19");
+    }
+    if (!userDrop.includes("20")) {
+      dropMissing.push("Drop 20");
+    }
+    if (!userDrop.includes("21")) {
+      dropMissing.push("Drop 21");
+    }
+    if (!userDrop.includes("22")) {
+      dropMissing.push("Drop 22");
+    }
+    if (!userDrop.includes("23")) {
+      dropMissing.push("Drop 23");
+    }
+    setDropsMissing(dropMissing);
+    console.log("You are missing", dropMissing);
+
     setIsFetched(true);
   }
 
@@ -91,6 +233,87 @@ export const HomeView: FC = ({}) => {
               NFTs!
               <br />
               Choose a drop to see which NFTs you miss.
+              {legendaryEligibility && rareEligibility && (
+                <div className="mt-2">
+                  You{" "}
+                  <span className="font-extrabold underline text-[#00FF00]">
+                    are eligible
+                  </span>{" "}
+                  for the{" "}
+                  <span className="font-black underline">
+                    Season 1 Legendary Reward
+                  </span>
+                  . See
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#9945FF] font-extrabold"
+                    href={
+                      "https://twitter.com/drip_haus/status/1640794895295320064"
+                    }
+                  >
+                    {" "}
+                    announcement
+                  </a>
+                  .
+                </div>
+              )}
+              {!legendaryEligibility && rareEligibility && (
+                <div className="mt-2">
+                  You{" "}
+                  <span className="font-extrabold underline text-[#00FF00]">
+                    are eligible
+                  </span>{" "}
+                  for the{" "}
+                  <span className="font-black underline">
+                    Season 1 Rare Reward
+                  </span>
+                  . See
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#9945FF] font-extrabold"
+                    href={
+                      "https://twitter.com/drip_haus/status/1640794895295320064"
+                    }
+                  >
+                    {" "}
+                    announcement
+                  </a>
+                  .
+                </div>
+              )}
+              {!legendaryEligibility && !rareEligibility && (
+                <div className="mt-2">
+                  You{" "}
+                  <span className="font-extrabold underline text-[#FF0000]">
+                    are not eligible
+                  </span>{" "}
+                  for the{" "}
+                  <span className="font-black underline">Season 1 Reward</span>.
+                  See
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#9945FF] font-extrabold"
+                    href={
+                      "https://twitter.com/drip_haus/status/1640794895295320064"
+                    }
+                  >
+                    {" "}
+                    announcement
+                  </a>
+                  
+                  <div className="mt-2">You are missing:</div>
+                  <div className="flex justify-center mt-2">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 w-[70%]">
+                    {dropsMissing.map((drop) => (
+                      <div key={drop} className="">{drop}</div>
+                    ))}
+                  </div>
+                  </div>
+                </div>
+              )}
             </div>
           )}
           {wallet.publicKey && !isFetched && <Loader />}
