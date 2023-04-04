@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Drop15 } from "../views";
+import { Drop15 } from "../../views";
 
 const Home: NextPage = (props) => {
   return (

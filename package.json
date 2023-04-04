@@ -13,7 +13,9 @@
   "dependencies": {
     "@heroicons/react": "^1.0.5",
     "@metaplex-foundation/js": "^0.18.3",
+    "@metaplex-foundation/mpl-bubblegum": "^0.6.2",
     "@noble/ed25519": "^1.7.1",
+    "@solana/spl-account-compression": "^0.1.7",
     "@solana/wallet-adapter-base": "^0.9.20",
     "@solana/wallet-adapter-react": "^0.15.28",
     "@solana/wallet-adapter-react-ui": "^0.9.27",

@@ -35,6 +35,16 @@ export const AppBar: React.FC = () => {
               href="/"
               navigationStarts={() => setIsNavOpen(false)}
             />
+            <NavElement
+              label="Season1"
+              href="/season1/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Season2"
+              href="/season2/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
             <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6" />
           </div>
           <label
