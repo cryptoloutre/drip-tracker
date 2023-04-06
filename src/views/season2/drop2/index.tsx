@@ -125,7 +125,7 @@ export const Drop2S2: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] font-bold"
-                href={"https://twitter.com/solana"}
+                href={"https://twitter.com/LemonScented"}
               >
                 @LemonScented
               </a>
