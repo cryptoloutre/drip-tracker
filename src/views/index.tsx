@@ -26,3 +26,4 @@ export { Drop23 } from "./drop23";
 export { Season1Home } from "./season1Home";
 export { Season2Home } from "./season2Home";
 export { Drop1S2 } from "./season2/drop1";
+export { Drop2S2 } from "./season2/drop2";
