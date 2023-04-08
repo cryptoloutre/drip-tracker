@@ -35,6 +35,7 @@ export const Season1Home: FC = ({}) => {
       return;
     }
     const publickey = wallet.publicKey;
+
     // dropNFTs will store all the NFTs of the user (DRiP collection and misprint but not the "lights x solana spaces")
     const _dropNFTs = [];
     // userDrop will store the drops the user has (we don't count the misprint)
@@ -43,6 +44,8 @@ export const Season1Home: FC = ({}) => {
     const dripCollectionUserNFTs = [];
     // store the drop the user hasn't
     const dropMissing = [];
+    // store the uri of the user NFTs (allow to filter the duplicates)
+    const uris = [];
     setIsFetched(false);
 
     const userNFTs = await metaplex
@@ -59,7 +62,12 @@ export const Season1Home: FC = ({}) => {
           "https://arweave.net/7jFIXO9oT2M0LFmtvf7l8dgC6RSHrjtOvQSN6cM13rI"
     );
 
-    spacesCollectionNFTs.map((nft) => _dropNFTs.push(nft));
+    spacesCollectionNFTs.map((nft) => {
+      if (!uris.includes(nft.uri)) {
+        _dropNFTs.push(nft);
+        uris.push(nft.uri);
+      }
+    });
 
     // // Load the JSON for each NFT
     // const loadedSpacesNfts = await Promise.all(
@@ -77,14 +85,18 @@ export const Season1Home: FC = ({}) => {
         metadata.collection.address.toBase58() === DRiPCollection.toBase58()
     );
 
-    DRiPCollectionNFTs.map((nft) => _dropNFTs.push(nft));
+    DRiPCollectionNFTs.map((nft) => {
+      if (!uris.includes(nft.uri)) {
+        _dropNFTs.push(nft);
+        uris.push(nft.uri);
+      }
+    });
 
     console.log("Got their DRiP NFTs!", DRiPCollectionNFTs);
 
     const dropNFTs = _dropNFTs.filter((x, i) => _dropNFTs.indexOf(x) === i);
 
     console.log("Got their DRiP collection NFTs!", dropNFTs);
-
     setNbUserNFTs(dropNFTs.length);
 
     // Load the JSON for each NFT
@@ -302,15 +314,16 @@ export const Season1Home: FC = ({}) => {
                   >
                     {" "}
                     announcement
-                  </a>.
-                  
-                  <div className="mt-2">You are missing:</div>
+                  </a>
+                  .<div className="mt-2">You are missing:</div>
                   <div className="flex justify-center mt-2">
-                  <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 w-[70%]">
-                    {dropsMissing.map((drop) => (
-                      <div key={drop} className="">{drop}</div>
-                    ))}
-                  </div>
+                    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 w-[70%]">
+                      {dropsMissing.map((drop) => (
+                        <div key={drop} className="">
+                          {drop}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
