@@ -3,8 +3,7 @@ import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 // Wallet
-import { useWallet} from "@solana/wallet-adapter-react";
-
+import { useWallet } from "@solana/wallet-adapter-react";
 
 import { Metadata, Metaplex } from "@metaplex-foundation/js";
 import {
@@ -26,7 +25,7 @@ export const Drop11: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "11";
-  const nbTotalNFTsInDrop = 1;
+  const nbTotalNFTsInDrop = 3;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -36,8 +35,10 @@ export const Drop11: FC = ({}) => {
     const publickey = wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
-    
-    const userNFTs = await metaplex.nfts().findAllByOwner({ owner: publickey }, {commitment:"processed"});
+
+    const userNFTs = await metaplex
+      .nfts()
+      .findAllByOwner({ owner: publickey }, { commitment: "processed" });
 
     const dripCollectionNFTs = userNFTs.filter(
       (metadata) =>
@@ -60,7 +61,6 @@ export const Drop11: FC = ({}) => {
       if (drop == dropNumber) {
         _dropNFT.push({
           name: nft.name,
-          
         });
       }
     });
@@ -158,17 +158,49 @@ export const Drop11: FC = ({}) => {
               however I can. I do this through pixel art, digital illustration,
               and even animation. I try to use bold shapes and lines to deliver
               a punchline quickly.&quot;
+              <br />
+              <br />
+              Two Legendaries were airdropped to{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] font-bold"
+                href={"https://twitter.com/THELILYNFT"}
+              >
+                @THELILYNFT
+              </a>{" "}
+              or{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] font-bold"
+                href={"https://twitter.com/lotusgangnft"}
+              >
+                @lotusgangnft
+              </a>{" "}
+              holders. See{" "}
+              <a
+                href="https://twitter.com/drip_haus/status/1643046316443041793"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] font-bold"
+              >
+                announcement
+              </a>
+              .
             </div>
           </div>
           {wallet.publicKey && isFetched && (
             <div className="mt-4 w-[70%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
-                You have               <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
-              out of{" "}
-              <span className="font-black text-[#14F195]">
-                {nbTotalNFTsInDrop}
-              </span>{" "} NFT(s) of this drop!
+                You have{" "}
+                <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
+                out of{" "}
+                <span className="font-black text-[#14F195]">
+                  {nbTotalNFTsInDrop}
+                </span>{" "}
+                NFT(s) of this drop!
               </div>
             </div>
           )}
@@ -177,40 +209,110 @@ export const Drop11: FC = ({}) => {
               Please, connect your wallet to see your progression!
             </div>
           )}
-          <RarityLegend/>
-          <div className="md:hero-content flex justify-center mt-4">
-            <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
-              <img
-                className="h-[300px] w-[300px]"
-                src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/SolanaSpaceman.png"
-              ></img>
-              <h1 className="font-bold mt-2">Solana Spaceman</h1>
-              {isFetched && wallet.publicKey && (
-                <div className="flex justify-center">
-                  {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "Solana Spaceman") !=
-                    undefined ? (
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
-                    >
-                      Owned
-                    </a>
-                  ) : (
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
-                      href={
-                        "https://magiceden.io/marketplace/F8FdDYD3PWndYoae9TrBcucXDWFwDvm6bZU2LQT1PwyB?search=Solana%2520Spaceman"
-                      }
-                    >
-                      Buy on Magic Eden
-                    </a>
-                  )}
-                </div>
-              )}
+          <RarityLegend />
+          <div className="flex justify-center">
+            <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
+              <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
+                <img
+                  className=""
+                  src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/SolanaSpaceman.png"
+                ></img>
+                <h1 className="font-bold mt-2">Solana Spaceman</h1>
+                {isFetched && wallet.publicKey && (
+                  <div className="flex justify-center">
+                    {isFetched &&
+                    userDripNFT.find((nft) => nft.name == "Solana Spaceman") !=
+                      undefined ? (
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                      >
+                        Owned
+                      </a>
+                    ) : (
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                        href={
+                          "https://magiceden.io/marketplace/F8FdDYD3PWndYoae9TrBcucXDWFwDvm6bZU2LQT1PwyB?search=Solana%2520Spaceman"
+                        }
+                      >
+                        Buy on Magic Eden
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+              <div className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]">
+                <img
+                  className=""
+                  src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/SolanaSpaceman2.png"
+                ></img>
+                <h1 className="font-bold mt-2">Solana Space Knight</h1>
+                {isFetched && wallet.publicKey && (
+                  <div className="flex justify-center">
+                    {isFetched &&
+                    userDripNFT.find(
+                      (nft) => nft.name == "Solana Space Knight"
+                    ) != undefined ? (
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                      >
+                        Owned
+                      </a>
+                    ) : (
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                        href={
+                          "https://magiceden.io/marketplace/drip_season_1?search=Solana%2520Space%2520Knight"
+                        }
+                      >
+                        Buy on Magic Eden
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+              <div className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]">
+                <img
+                  className=""
+                  src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/SolanaSpaceman4.png"
+                ></img>
+                <h1 className="font-bold mt-2">Legendary Solana Spaceman</h1>
+                {isFetched && wallet.publicKey && (
+                  <div className="flex justify-center">
+                    {isFetched &&
+                    userDripNFT.find(
+                      (nft) => nft.name == "Legendary Solana Spaceman"
+                    ) != undefined ? (
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                      >
+                        Owned
+                      </a>
+                    ) : (
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                        href={
+                          "https://magiceden.io/marketplace/drip_season_1?search=Legendary%2520Solana%2520Spaceman"
+                        }
+                      >
+                        Buy on Magic Eden
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ export const Season1Home: FC = ({}) => {
   const [rareEligibility, setRareEligibility] = useState<boolean>(false);
   const [legendaryEligibility, setLegendaryEligibility] =
     useState<boolean>(false);
-  const nbTotalNFTsInDrop = 83;
+  const nbTotalNFTsInDrop = 85;
   const nbTotalNFTsInCollection = 82;
   const nbDrop = 23;
 
