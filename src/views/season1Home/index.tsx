@@ -5,7 +5,7 @@ import Link from "next/link";
 // Wallet
 import { useWallet } from "@solana/wallet-adapter-react";
 
-import { Metadata, Metaplex } from "@metaplex-foundation/js";
+import { Metadata, Metaplex, PublicKey } from "@metaplex-foundation/js";
 import {
   DRiPCollection,
   spacesCollection,
@@ -27,7 +27,7 @@ export const Season1Home: FC = ({}) => {
   const [legendaryEligibility, setLegendaryEligibility] =
     useState<boolean>(false);
   const nbTotalNFTsInDrop = 85;
-  const nbTotalNFTsInCollection = 82;
+  const nbTotalNFTsInCollection = 82; // 82 because drop 11 upgrades don't count
   const nbDrop = 23;
 
   async function getUserNFT() {
@@ -112,7 +112,10 @@ export const Season1Home: FC = ({}) => {
       ).value;
       if (
         nft.uri !=
-        "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq"
+          "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq" &&
+        nft.uri !=
+          "https://nftstorage.link/ipfs/bafkreiel2ovzjkljfaeyuj63ed2lydii6pffqgra5eji4tzkevm4ryl4du" && // Solana Space Knight is not part of the collection
+          nft.uri != "https://nftstorage.link/ipfs/bafkreihksqwi5hkqqiywf6rpebwzgoupbjaabpu4s2lpyjndpm7q2spama" // Legendary Solana Spaceman is not part of the collection
       ) {
         dripCollectionUserNFTs.push(nft.uri);
         if (drop == "18") {
