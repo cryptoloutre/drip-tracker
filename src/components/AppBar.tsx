@@ -20,7 +20,7 @@ export const AppBar: React.FC = () => {
         <div className="navbar-start align-items-center">
           <div className="hidden sm:inline w-22 h-22 md:p-2 ml-10">
             <Link href="/" className="text-white">
-              <div className="text-3xl font-black">DRiP TRACKER</div>
+              <div className="lg:text-3xl text-xl font-black">DRiP TRACKER</div>
             </Link>
           </div>
           <WalletMultiButtonDynamic className="btn-ghost btn-sm relative flex md:hidden text-lg " />
@@ -29,7 +29,7 @@ export const AppBar: React.FC = () => {
         {/* Nav Links */}
         {/* Wallet & Settings */}
         <div className="navbar-end">
-          <div className="hidden md:inline-flex align-items-center justify-items gap-6">
+          <div className="hidden md:inline-flex align-items-center justify-items gap-2 lg:gap-6">
             <NavElement
               label="Home"
               href="/"
@@ -43,6 +43,11 @@ export const AppBar: React.FC = () => {
             <NavElement
               label="Season2"
               href="/season2/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Degen Poet"
+              href="/degenpoet/home"
               navigationStarts={() => setIsNavOpen(false)}
             />
             <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6" />
