@@ -17,7 +17,7 @@ export const DegenHome: FC = ({}) => {
   );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 1;
+  const nbTotalNFTsInDrop = 4;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -108,19 +108,32 @@ export const DegenHome: FC = ({}) => {
           )}
           {wallet.publicKey && !isFetched && <Loader />}
           <div className="flex justify-center">
-            <div className="md:hero-content flex justify-center gap-2 mt-4">
+          <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-2 gap-4 mt-4">
               <Link
                 href="/degenpoet/drop1"
-                className="bg-[#000000] w-[230px] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
                   <img
-                    className="h-[200px]"
+                    className=""
                     src="https://arweave.net/LHLqrmVwy3XocG3QpYGk1Vkg4XvB_Tape2UGx5eYqoM?ext=jpg"
                     alt="drop 1 preview"
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 1</div>
+              </Link>
+              <Link
+                href="/degenpoet/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/HUwnz831lJeTAub2N9XHfz7NyTOG7o2-P99hZzArpj0?ext=png"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 2</div>
               </Link>
             </div>
           </div>
