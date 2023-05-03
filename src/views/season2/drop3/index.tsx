@@ -45,16 +45,27 @@ export const Drop3S2: FC = ({}) => {
 
     console.log(season2NFT);
 
-    season2NFT.map((asset) => {
-      const drop = asset.content.metadata.attributes.find(
-        (nft) => nft.trait_type == "Drop"
-      ).value;
-      if (drop == dropNumber) {
-        _dropNFT.push({
-          name: asset.content.metadata.name,
-        });
-      }
-    });
+    await Promise.all(
+      season2NFT.map(async (asset) => {
+        let attributes: any;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const uri = asset.content.json_uri;
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const drop = attributes.find(
+          (nft) => nft.trait_type == "Drop"
+        ).value;
+        if (drop == dropNumber) {
+          _dropNFT.push({
+            name: asset.content.metadata.name,
+          });
+        }
+      })
+    );
 
     const dropNFTs = _dropNFT.filter((x, i) => _dropNFT.indexOf(x) === i);
     setNbUserNFTs(dropNFTs.length);
