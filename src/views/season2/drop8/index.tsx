@@ -137,7 +137,7 @@ export const Drop8S2: FC = ({}) => {
                   target="_blank"
                   rel="noreferrer"
                   className="text-[#9945FF] underline font-bold"
-                  href={"https://en.wikipedia.org/wiki/Nat_Jonesbringing"}
+                  href={"https://en.wikipedia.org/wiki/Nat_Jones"}
                 >
                   Wikipedia
                 </a>
