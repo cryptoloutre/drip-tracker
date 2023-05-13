@@ -26,7 +26,7 @@ export const Drop2: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "2";
-  const nbTotalNFTsInDrop = 2;
+  const nbTotalNFTsInDrop = 4;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -143,12 +143,15 @@ export const Drop2: FC = ({}) => {
             </div>
           )}
           <RarityLegend />
-          <div className="md:hero-content flex justify-center gap-2 mt-4">
-            <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#a5a5a5]">
+          <div className="flex justify-center">
+          <div className="w-[70%] flex items-center grid grid-cols-2 lg:grid-cols-3 gap-2 mt-4">
+            <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
+            <div className="flex justify-center">
               <img
-                className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
+                className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px]"
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/MonsterBags.gif"
               ></img>
+              </div>
               <h1 className="font-bold mt-2">Monster Bags</h1>
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
@@ -177,12 +180,49 @@ export const Drop2: FC = ({}) => {
                 </div>
               )}
             </div>
-
-            <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#E6C15A]">
+            <div className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]">
+              <div className="flex justify-center">
               <img
-                className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
+                className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px]"
+                src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Untitled_Artwork%20137.gif"
+              ></img>
+              </div>
+              <h1 className="font-bold mt-2">Monster Bags 2</h1>
+              {isFetched && wallet.publicKey && (
+                <div className="flex justify-center">
+                  {isFetched &&
+                  userDripNFT.find((nft) => nft.name == "Monster Bags 2") !=
+                    undefined ? (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                    >
+                      Owned
+                    </a>
+                  ) : (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                      href={
+                        "https://magiceden.io/marketplace/drip_season_1?search=Monster%2520Bags%25202"
+                      }
+                    >
+                      Buy on Magic Eden
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+
+            <div className="bg-[#000000] border border-4 border-[#E6C15A]">
+            <div className="flex justify-center">
+              <img
+                className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px]"
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/GMBags.gif"
               ></img>
+              </div>
               <h1 className="font-bold mt-2">GM Bags</h1>
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
@@ -209,6 +249,43 @@ export const Drop2: FC = ({}) => {
                   )}
                 </div>
               )}
+            </div>
+
+            <div className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]">
+            <div className="flex justify-center">
+              <img
+                className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px]"
+                src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Untitled_Artwork%20138.gif"
+              ></img>
+              </div>
+              <h1 className="font-bold mt-2">GN Bags</h1>
+              {isFetched && wallet.publicKey && (
+                <div className="flex justify-center">
+                  {isFetched &&
+                  userDripNFT.find((nft) => nft.name == "GN Bags") !=
+                    undefined ? (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                    >
+                      Owned
+                    </a>
+                  ) : (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                      href={
+                        "https://magiceden.io/marketplace/drip_season_1?search=GN%2520Bags"
+                      }
+                    >
+                      Buy on Magic Eden
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ export const Season1Home: FC = ({}) => {
   const [rareEligibility, setRareEligibility] = useState<boolean>(false);
   const [legendaryEligibility, setLegendaryEligibility] =
     useState<boolean>(false);
-  const nbTotalNFTsInDrop = 85;
+  const nbTotalNFTsInDrop = 92;
   const nbTotalNFTsInCollection = 82; // 82 because drop 11 upgrades don't count
   const nbDrop = 23;
 
@@ -248,7 +248,7 @@ export const Season1Home: FC = ({}) => {
               NFTs!
               <br />
               Choose a drop to see which NFTs you miss.
-              {legendaryEligibility && rareEligibility && (
+              {/* {legendaryEligibility && rareEligibility && (
                 <div className="mt-2">
                   You{" "}
                   <span className="font-extrabold underline text-[#00FF00]">
@@ -272,8 +272,8 @@ export const Season1Home: FC = ({}) => {
                   </a>
                   .
                 </div>
-              )}
-              {!legendaryEligibility && rareEligibility && (
+              )} */}
+              {/* {!legendaryEligibility && rareEligibility && (
                 <div className="mt-2">
                   You{" "}
                   <span className="font-extrabold underline text-[#00FF00]">
@@ -297,10 +297,10 @@ export const Season1Home: FC = ({}) => {
                   </a>
                   .
                 </div>
-              )}
+              )} */}
               {!legendaryEligibility && !rareEligibility && (
                 <div className="mt-2">
-                  You{" "}
+                  {/* You{" "}
                   <span className="font-extrabold underline text-[#FF0000]">
                     are not eligible
                   </span>{" "}
@@ -317,8 +317,8 @@ export const Season1Home: FC = ({}) => {
                   >
                     {" "}
                     announcement
-                  </a>
-                  .<div className="mt-2">You are missing:</div>
+                  </a>. */}
+                  <div className="mt-2">You are missing:</div>
                   <div className="flex justify-center mt-2">
                     <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 w-[70%]">
                       {dropsMissing.map((drop) => (

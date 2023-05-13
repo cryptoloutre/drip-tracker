@@ -383,4 +383,20 @@ export const NFTsinDrop = [
     magicEdenLink:
       "https://magiceden.io/marketplace/F8FdDYD3PWndYoae9TrBcucXDWFwDvm6bZU2LQT1PwyB?attributes=%7B%22clothing%22%3A%5B%5D%2C%22head%22%3A%5B%5D%2C%22gender%22%3A%5B%5D%7D&search=Rivals%2520%252348",
   },
+  {
+    name: "Rivals #49",
+    type: "alien",
+    image:
+      "https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/legendary-female.png",
+    magicEdenLink:
+      "https://magiceden.io/marketplace/drip_season_1?search=Rivals%2520%252349",
+  },
+  {
+    name: "Rivals #50",
+    type: "alien",
+    image:
+      "https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/legendary-male.png",
+    magicEdenLink:
+      "https://magiceden.io/marketplace/drip_season_1?search=Rivals%2520%252350",
+  },
 ];

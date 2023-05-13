@@ -26,7 +26,7 @@ export const Drop1: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "1";
-  const nbTotalNFTsInDrop = 2;
+  const nbTotalNFTsInDrop = 3;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -60,6 +60,32 @@ export const Drop1: FC = ({}) => {
       if (drop == dropNumber) {
         _dropNFT.push({
           name: nft.name,
+        });
+      }
+    });
+
+    const dripCollectionNFTs = userNFTs.filter(
+      (metadata) =>
+        metadata.collection !== null &&
+        metadata.collection.verified &&
+        metadata.collection.address.toBase58() === DRiPCollection.toBase58()
+    );
+
+    // Load the JSON for each NFT
+    const loadedDripNfts = await Promise.all(
+      dripCollectionNFTs.map((metadata) => {
+        return nfts.load({ metadata: metadata as Metadata });
+      })
+    );
+
+    loadedDripNfts.map((nft) => {
+      const drop = nft.json.attributes.find(
+        (nft) => nft.trait_type == "drop"
+      ).value;
+      if (drop == dropNumber) {
+        _dropNFT.push({
+          name: nft.name,
+          
         });
       }
     });
@@ -133,10 +159,11 @@ export const Drop1: FC = ({}) => {
             </div>
           )}
           <RarityLegend />
-          <div className="md:hero-content flex justify-center gap-2 mt-4">
-            <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#a5a5a5]">
+          <div className="flex justify-center">
+          <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
+            <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
               <img
-                className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
+                className=""
                 src="https://arweave.net/zvY7qNPUKOXmn8HPDA2zn5UKZXJLqcgSLf_lNVJ40pY"
               ></img>
               <h1 className="font-bold mt-2">AGILITY</h1>
@@ -168,9 +195,9 @@ export const Drop1: FC = ({}) => {
               )}
             </div>
 
-            <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#E6C15A]">
+            <div className="bg-[#000000] border border-4 border-[#E6C15A]">
               <img
-                className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
+                className=""
                 src="https://arweave.net/JQa7FdS1KlU-AVEiSuQFNxuEaZgphrUmay9UnkyRDXI"
               ></img>
               <h1 className="font-bold mt-2">ULTRASOUND</h1>
@@ -199,6 +226,40 @@ export const Drop1: FC = ({}) => {
                   )}
                 </div>
               )}
+            </div>
+
+            <div className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]">
+              <img
+                className=""
+                src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/DATAT_TRANSFER.PNG"
+              ></img>
+              <h1 className="font-bold mt-2">DATA TRANSFER</h1>
+              {isFetched && wallet.publicKey && (
+                <div className="flex justify-center">
+                  {userDripNFT.find((nft) => nft.name == "DATA TRANSFER") !=
+                  undefined ? (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                    >
+                      Owned
+                    </a>
+                  ) : (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                      href={
+                        "https://magiceden.io/marketplace/drip_season_1?search=DATA%2520TRANSFER"
+                      }
+                    >
+                      Buy on Magic Eden
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
             </div>
           </div>
         </div>
