@@ -17,7 +17,7 @@ export const DegenHome: FC = ({}) => {
   );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 10;
+  const nbTotalNFTsInDrop = 13;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -160,6 +160,19 @@ export const DegenHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 4</div>
+              </Link>
+              <Link
+                href="/degenpoet/drop5"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://cdn.helius.services/cdn-cgi/image//https://arweave.net/IN8v-gRKL8o2keJA_hZ3_sgYITdiZjddH6wNHjipku0?ext=jpg"
+                    alt="drop 5 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 5</div>
               </Link>
             </div>
           </div>
