@@ -40,3 +40,4 @@ export {Drop2Degen} from "./degenpoet/drop2";
 export {Drop3Degen} from "./degenpoet/drop3";
 export {Drop4Degen} from "./degenpoet/drop4";
 export {Drop5Degen} from "./degenpoet/drop5";
+export {Drop6Degen} from "./degenpoet/drop6";
