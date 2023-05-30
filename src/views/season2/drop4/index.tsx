@@ -60,9 +60,7 @@ export const Drop4S2: FC = ({}) => {
           (nft) => nft.trait_type == "Drop"
         ).value;
         if (drop == dropNumber) {
-          _dropNFT.push({
-            name: asset.content.metadata.name,
-          });
+          _dropNFT.push(asset.content.metadata.name);
         }
       })
     );
@@ -228,7 +226,7 @@ export const Drop4S2: FC = ({}) => {
                         <div className="flex justify-center">
                           {isFetched &&
                           userDripNFT.find(
-                            (nft) => nft.name == currentNft.name
+                            (nft) => nft== currentNft.name
                           ) != undefined ? (
                             <a
                               target="_blank"
@@ -259,7 +257,7 @@ export const Drop4S2: FC = ({}) => {
                         <div className="flex justify-center">
                           {isFetched &&
                           userDripNFT.find(
-                            (nft) => nft.name == currentNft.name
+                            (nft) => nft== currentNft.name
                           ) != undefined ? (
                             <a
                               target="_blank"
@@ -290,7 +288,7 @@ export const Drop4S2: FC = ({}) => {
                         <div className="flex justify-center">
                           {isFetched &&
                           userDripNFT.find(
-                            (nft) => nft.name == currentNft.name
+                            (nft) => nft== currentNft.name
                           ) != undefined ? (
                             <a
                               target="_blank"

@@ -44,7 +44,8 @@ export const Season2Home: FC = ({}) => {
     );
 
     
-    const userNFTs = _userNFTs.filter((x, i) => _userNFTs.indexOf(x) === i);
+    const _userNFTsURI = _userNFTs.map((NFT) => NFT.content.json_uri)
+    const userNFTs = _userNFTsURI.filter((x, i) => _userNFTsURI.indexOf(x) === i);
 
     console.log("Got their DRiP season 2 NFTs!", userNFTs);
 
