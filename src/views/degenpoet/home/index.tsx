@@ -17,7 +17,7 @@ export const DegenHome: FC = ({}) => {
   );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 16;
+  const nbTotalNFTsInDrop = 19;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -78,15 +78,47 @@ export const DegenHome: FC = ({}) => {
             techniques, including watercolor, pen, permanent marker, collage,
             and animation.
             <div className="mt-4 flex text-xl">
-              <a target="_blank"
-              rel="noreferrer"
-              className="text-[#9945FF] underline font-bold mr-4"
-              href={"https://www.instagram.com/squarespace/"}>Instagram</a>
-              <a target="_blank"
-              rel="noreferrer"
-              className="text-[#9945FF] underline font-bold"
-              href={"https://twitter.com/degenpoet"}>Twitter</a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] underline font-bold mr-4"
+                href={"https://www.instagram.com/squarespace/"}
+              >
+                Instagram
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] underline font-bold"
+                href={"https://twitter.com/degenpoet"}
+              >
+                Twitter
+              </a>
             </div>
+            <div className="flex justify-center">
+            <a href="https://drip.haus/degenpoet" target="_blank" rel="noreferrer" className="my-2 w-[200px] rounded bg-gradient-to-r from-[#00ff85] from-5% via-[#9945ff] via-50% to-[#00ff85] to-95% shadow-lg font-bold text-lg pt-3 pb-2.5 px-4 hover:cursor-pointer">
+              <span className="drop-shadow-md flex justify-center items-center">
+                <span>
+                  <svg
+                    className="w-[20px] h-[20px] mr-3"
+                    width="512pt"
+                    height="512pt"
+                    version="1.1"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m81.289 349.94c46.676-12.98 85.223-13.242 153.14 31.469l90.73-19.797c13.898-3.0156 21.895 1.0508 26.879 7.4727 3.1484 4.1953 4.3281 9.0469 3.1484 14.16-1.1797 5.1133-4.1953 9.0469-8.9141 11.406l-97.547 49.43c-8.7852 5.6367-2.7539 15.078 4.3281 11.801l111.71-55.984c4.5898-2.3594 7.9961-5.7695 10.227-10.488 2.4922-5.2461 6.1641-9.4414 11.145-12.98l90.469-63.328c22.945-16.129 40.906 6.293 33.695 14.422l-110.53 111.97-117.87 60.707c-15.602 7.9961-31.074 10.883-48.512 8.7852l-150.26-16.914c-5.7695-0.65625-10.098-5.5078-10.098-11.277v-119.84c0-5.2461 3.2773-9.5703 8.2617-11.012zm201-283.6c0.26172 0.52344 0.91797 0.91797 1.5742 0.91797s1.1797-0.39453 1.5742-0.91797c25.438-44.84 64.375-79.453 117.74-61.492 41.039 13.766 70.801 54.281 70.801 102.14 0 67.918-69.883 123.12-114.73 166.91l-63.195 58.215c-6.9492 6.293-17.57 6.293-24.52 0l-63.066-58.215c-44.84-43.793-114.73-98.992-114.73-166.91 0-49.168 31.336-90.469 74.078-103.19 52.184-15.473 89.812 19.145 114.46 62.543zm-270.88 284.52h36.32c6.293 0 11.406 5.1133 11.406 11.277v127.18c0 12.457-10.227 22.684-22.684 22.684h-25.043c-6.293 0-11.406-5.1133-11.406-11.406v-138.46c0-6.1641 5.1133-11.277 11.406-11.277z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                Say Thanks
+              </span>
+            </a>
+            </div>
+
           </div>
           {!wallet.publicKey && (
             <div className="text-center font-bold text-xl my-6">
@@ -108,7 +140,7 @@ export const DegenHome: FC = ({}) => {
           )}
           {wallet.publicKey && !isFetched && <Loader />}
           <div className="flex justify-center">
-          <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
+            <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               <Link
                 href="/degenpoet/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
@@ -186,6 +218,19 @@ export const DegenHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 6</div>
+              </Link>
+              <Link
+                href="/degenpoet/drop7"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/ElEngGVx2cn40XKk5ZMUkyX2rI3Po33iWj3Oyd48NV8?ext=gif"
+                    alt="drop 7 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 7</div>
               </Link>
             </div>
           </div>
