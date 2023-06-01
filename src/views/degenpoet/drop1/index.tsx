@@ -103,26 +103,6 @@ export const Drop1Degen: FC = ({}) => {
               A hand drawn animation using a typewriter & pastels, based on
               dance moves from &quot;Singing in the Rain&quot;, 1952. The first
               DRiP by Degen Poet.
-              <br />
-              Sign up{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-[#9945FF] font-bold"
-                href={"https://drip.haus/degenpoet"}
-              >
-                here
-              </a>{" "}
-              to never miss a{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-[#9945FF] font-bold"
-                href={"https://twitter.com/degenpoet"}
-              >
-                @degenpoet
-              </a>{" "}
-              DRiP drop.
             </div>
           </div>
           {wallet.publicKey && isFetched && (
