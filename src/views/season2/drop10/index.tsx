@@ -132,7 +132,7 @@ export const Drop10S2: FC = ({}) => {
               .
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span>{" "}
-              <span className="italic">Old Mirror)</span>{" "}
+              <span className="italic">Old Mirror</span>{" "}
               <span className="text-[#14F195] font-bold">(supply: 2992)</span>.
             </div>
           </div>
