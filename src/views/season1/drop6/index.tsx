@@ -58,10 +58,7 @@ export const Drop6: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -131,7 +128,7 @@ export const Drop6: FC = ({}) => {
                 <h1 className="font-bold mt-2">Edith DRiP</h1>
                 {isFetched && wallet.publicKey &&
                 <div className="flex justify-center">
-                  {isFetched && userDripNFT.find((nft) => nft.name == "Edith DRiP") !=
+                  {isFetched && userDripNFT.find((nft) => nft == "Edith DRiP") !=
                   undefined ? (
                     <a
                       target="_blank"
@@ -164,7 +161,7 @@ export const Drop6: FC = ({}) => {
                 <h1 className="font-bold mt-2">Edith DRiP v2</h1>
                 {isFetched && wallet.publicKey &&
                 <div className="flex justify-center">
-                  {isFetched && userDripNFT.find((nft) => nft.name == "Edith DRiP v2") !=
+                  {isFetched && userDripNFT.find((nft) => nft == "Edith DRiP v2") !=
                   undefined ? (
                     <a
                       target="_blank"
@@ -197,7 +194,7 @@ export const Drop6: FC = ({}) => {
                 <h1 className="font-bold mt-2">Edith DRiP v3</h1>
                 {isFetched && wallet.publicKey &&
                 <div className="flex justify-center">
-                  {isFetched && userDripNFT.find((nft) => nft.name == "Edith DRiP v3") !=
+                  {isFetched && userDripNFT.find((nft) => nft == "Edith DRiP v3") !=
                   undefined ? (
                     <a
                       target="_blank"

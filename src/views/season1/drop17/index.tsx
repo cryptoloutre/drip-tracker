@@ -59,10 +59,7 @@ export const Drop17: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -184,7 +181,7 @@ export const Drop17: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "Shibuya After Dark") !=
+                  userDripNFT.find((nft) => nft == "Shibuya After Dark") !=
                     undefined ? (
                     <a
                       target="_blank"
@@ -218,7 +215,7 @@ export const Drop17: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.name == "Shinjuku After Dark"
+                    (nft) => nft == "Shinjuku After Dark"
                   ) != undefined ? (
                     <a
                       target="_blank"
@@ -252,7 +249,7 @@ export const Drop17: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.name == "Kabukicho After Dark"
+                    (nft) => nft == "Kabukicho After Dark"
                   ) != undefined ? (
                     <a
                       target="_blank"

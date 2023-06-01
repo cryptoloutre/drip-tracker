@@ -57,9 +57,7 @@ export const Drop0: FC = ({}) => {
     loadedSpacesNfts.map((nft) => {
       const name = nft.name;
       if (name == dropName) {
-        _dropNFT.push({
-          name: nft.name,
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -154,7 +152,7 @@ export const Drop0: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "Lights x Solana Spaces") !=
+                  userDripNFT.find((nft) => nft == "Lights x Solana Spaces") !=
                     undefined ? (
                     <a
                       target="_blank"

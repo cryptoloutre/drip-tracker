@@ -58,10 +58,7 @@ export const Drop14: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -167,7 +164,7 @@ export const Drop14: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "The UP Only Cet") !=
+                  userDripNFT.find((nft) => nft == "The UP Only Cet") !=
                     undefined ? (
                     <a
                       target="_blank"

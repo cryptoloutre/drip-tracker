@@ -58,10 +58,7 @@ export const Drop20: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -168,7 +165,7 @@ export const Drop20: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "TELEPORT2") !=
+                  userDripNFT.find((nft) => nft == "TELEPORT2") !=
                     undefined ? (
                     <a
                       target="_blank"

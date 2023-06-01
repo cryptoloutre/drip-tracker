@@ -58,10 +58,7 @@ export const Drop22: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -242,7 +239,7 @@ export const Drop22: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "The Nova") !=
+                  userDripNFT.find((nft) => nft == "The Nova") !=
                     undefined ? (
                     <a
                       target="_blank"
@@ -276,7 +273,7 @@ export const Drop22: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.name == "The Nova - Special Edition"
+                    (nft) => nft == "The Nova - Special Edition"
                   ) != undefined ? (
                     <a
                       target="_blank"
@@ -309,7 +306,7 @@ export const Drop22: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "O") != undefined ? (
+                  userDripNFT.find((nft) => nft == "O") != undefined ? (
                     <a
                       target="_blank"
                       rel="noreferrer"

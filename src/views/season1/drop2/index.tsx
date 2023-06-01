@@ -58,10 +58,7 @@ export const Drop2: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -156,7 +153,7 @@ export const Drop2: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "Monster Bags") !=
+                  userDripNFT.find((nft) => nft == "Monster Bags") !=
                     undefined ? (
                     <a
                       target="_blank"
@@ -191,7 +188,7 @@ export const Drop2: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "Monster Bags 2") !=
+                  userDripNFT.find((nft) => nft == "Monster Bags 2") !=
                     undefined ? (
                     <a
                       target="_blank"
@@ -226,7 +223,7 @@ export const Drop2: FC = ({}) => {
               <h1 className="font-bold mt-2">GM Bags</h1>
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
-                  {userDripNFT.find((nft) => nft.name == "GM Bags") !=
+                  {userDripNFT.find((nft) => nft == "GM Bags") !=
                   undefined ? (
                     <a
                       target="_blank"
@@ -262,7 +259,7 @@ export const Drop2: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "GN Bags") !=
+                  userDripNFT.find((nft) => nft == "GN Bags") !=
                     undefined ? (
                     <a
                       target="_blank"

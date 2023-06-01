@@ -58,9 +58,7 @@ export const Drop1: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -83,10 +81,7 @@ export const Drop1: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -170,7 +165,7 @@ export const Drop1: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "AGILITY") !=
+                  userDripNFT.find((nft) => nft == "AGILITY") !=
                     undefined ? (
                     <a
                       target="_blank"
@@ -236,7 +231,7 @@ export const Drop1: FC = ({}) => {
               <h1 className="font-bold mt-2">DATA TRANSFER</h1>
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
-                  {userDripNFT.find((nft) => nft.name == "DATA TRANSFER") !=
+                  {userDripNFT.find((nft) => nft == "DATA TRANSFER") !=
                   undefined ? (
                     <a
                       target="_blank"

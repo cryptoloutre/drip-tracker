@@ -58,10 +58,7 @@ export const Drop23: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -173,7 +170,7 @@ export const Drop23: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "The Tarsier Viking") !=
+                  userDripNFT.find((nft) => nft == "The Tarsier Viking") !=
                     undefined ? (
                     <a
                       target="_blank"
@@ -207,7 +204,7 @@ export const Drop23: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.name == "The Solana Sorcerer"
+                    (nft) => nft == "The Solana Sorcerer"
                   ) != undefined ? (
                     <a
                       target="_blank"

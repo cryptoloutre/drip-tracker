@@ -58,15 +58,12 @@ export const Drop19: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
     const dropNFTs = _dropNFT.filter((x, i) => _dropNFT.indexOf(x) === i);
-    if (dropNFTs.find((nft) => nft.name == "iSolmetric") != undefined) {
+    if (dropNFTs.find((nft) => nft == "iSolmetric") != undefined) {
       setNbUserNFTs(1);
     } else {
       setNbUserNFTs(0);
@@ -206,7 +203,7 @@ export const Drop19: FC = ({}) => {
               {isFetched && wallet.publicKey && (
                 <div className="flex justify-center">
                   {isFetched &&
-                  userDripNFT.find((nft) => nft.name == "iSolmetric") !=
+                  userDripNFT.find((nft) => nft == "iSolmetric") !=
                     undefined ? (
                     <a
                       target="_blank"

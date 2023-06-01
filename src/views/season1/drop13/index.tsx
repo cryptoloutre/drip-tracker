@@ -58,10 +58,7 @@ export const Drop13: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -203,7 +200,7 @@ export const Drop13: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.name == "The Commander of the Loom"
+                    (nft) => nft == "The Commander of the Loom"
                   ) != undefined ? (
                     <a
                       target="_blank"

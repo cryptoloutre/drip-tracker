@@ -58,9 +58,7 @@ export const Drop12: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          uri: nft.uri, // here we use the uri and not the name because the NFT and its misprint have the same name
-        });
+        _dropNFT.push(nft.uri);
       }
     });
 
@@ -159,7 +157,7 @@ export const Drop12: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.uri == "https://nftstorage.link/ipfs/bafkreici36utvlcdollileegzfecz42wmv4fyuqthzusxmctwplxghr7vq"
+                    (nft) => nft == "https://nftstorage.link/ipfs/bafkreici36utvlcdollileegzfecz42wmv4fyuqthzusxmctwplxghr7vq"
                   ) != undefined ? (
                     <a
                       target="_blank"
@@ -193,7 +191,7 @@ export const Drop12: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.uri == "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq"
+                    (nft) => nft == "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq"
                   ) != undefined ? (
                     <a
                       target="_blank"

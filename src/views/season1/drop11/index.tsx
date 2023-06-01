@@ -59,9 +59,7 @@ export const Drop11: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -221,7 +219,7 @@ export const Drop11: FC = ({}) => {
                 {isFetched && wallet.publicKey && (
                   <div className="flex justify-center">
                     {isFetched &&
-                    userDripNFT.find((nft) => nft.name == "Solana Spaceman") !=
+                    userDripNFT.find((nft) => nft == "Solana Spaceman") !=
                       undefined ? (
                       <a
                         target="_blank"
@@ -255,7 +253,7 @@ export const Drop11: FC = ({}) => {
                   <div className="flex justify-center">
                     {isFetched &&
                     userDripNFT.find(
-                      (nft) => nft.name == "Solana Space Knight"
+                      (nft) => nft == "Solana Space Knight"
                     ) != undefined ? (
                       <a
                         target="_blank"
@@ -289,7 +287,7 @@ export const Drop11: FC = ({}) => {
                   <div className="flex justify-center">
                     {isFetched &&
                     userDripNFT.find(
-                      (nft) => nft.name == "Legendary Solana Spaceman"
+                      (nft) => nft == "Legendary Solana Spaceman"
                     ) != undefined ? (
                       <a
                         target="_blank"

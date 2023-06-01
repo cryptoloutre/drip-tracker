@@ -59,15 +59,12 @@ export const Drop18: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
     const dropNFTs = _dropNFT.filter((x, i) => _dropNFT.indexOf(x) === i);
-    if (dropNFTs.find((nft) => nft.name == "Ascension of Toonies"
+    if (dropNFTs.find((nft) => nft == "Ascension of Toonies"
     ) != undefined) {
       setNbUserNFTs(1);
     }
@@ -280,7 +277,7 @@ export const Drop18: FC = ({}) => {
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft.name == "Ascension of Toonies"
+                    (nft) => nft == "Ascension of Toonies"
                   ) != undefined ? (
                     <a
                       target="_blank"

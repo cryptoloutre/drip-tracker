@@ -60,10 +60,7 @@ export const Drop21: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -189,7 +186,7 @@ export const Drop21: FC = ({}) => {
                 {isFetched && wallet.publicKey && (
                   <div className="flex justify-center">
                     {isFetched &&
-                    userDripNFT.find((nft) => nft.name == "Chimera") !=
+                    userDripNFT.find((nft) => nft == "Chimera") !=
                       undefined ? (
                       <a
                         target="_blank"
@@ -223,7 +220,7 @@ export const Drop21: FC = ({}) => {
                   <div className="flex justify-center">
                     {isFetched &&
                     userDripNFT.find(
-                      (nft) => nft.name == "Non-fungible Portrait"
+                      (nft) => nft == "Non-fungible Portrait"
                     ) != undefined ? (
                       <a
                         target="_blank"
@@ -256,7 +253,7 @@ export const Drop21: FC = ({}) => {
                 {isFetched && wallet.publicKey && (
                   <div className="flex justify-center">
                     {isFetched &&
-                    userDripNFT.find((nft) => nft.name == "Corrupted Mask") !=
+                    userDripNFT.find((nft) => nft == "Corrupted Mask") !=
                       undefined ? (
                       <a
                         target="_blank"

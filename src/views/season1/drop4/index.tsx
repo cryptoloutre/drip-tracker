@@ -58,10 +58,7 @@ export const Drop4: FC = ({}) => {
         (nft) => nft.trait_type == "drop"
       ).value;
       if (drop == dropNumber) {
-        _dropNFT.push({
-          name: nft.name,
-          
-        });
+        _dropNFT.push(nft.name);
       }
     });
 
@@ -124,7 +121,7 @@ export const Drop4: FC = ({}) => {
                 <h1 className="font-bold mt-2">hanaknight gacha #1</h1>
                 {isFetched && wallet.publicKey &&
                 <div className="flex justify-center">
-                  {isFetched && userDripNFT.find((nft) => nft.name == "hanaknight gacha #1") !=
+                  {isFetched && userDripNFT.find((nft) => nft == "hanaknight gacha #1") !=
                   undefined ? (
                     <a
                       target="_blank"
@@ -157,7 +154,7 @@ export const Drop4: FC = ({}) => {
                 <h1 className="font-bold mt-2">photographs of the gacha #1</h1>
                 {isFetched && wallet.publicKey &&
                 <div className="flex justify-center">
-                  {userDripNFT.find((nft) => nft.name == "photographs of the gacha #1") !=
+                  {userDripNFT.find((nft) => nft == "photographs of the gacha #1") !=
                   undefined ? (
                     <a
                       target="_blank"
