@@ -21,7 +21,7 @@ export const Season2Home: FC = ({}) => {
   );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 63;
+  const nbTotalNFTsInDrop = 66;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -219,6 +219,19 @@ export const Season2Home: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 10</div>
+              </Link>
+              <Link
+                href="/season2/drop11"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/kwAeNjguXCkohWI8B8WGvNxSUTU0UqArvuCIGvWel_o?ext=JPG"
+                    alt="drop 11 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 11</div>
               </Link>
             </div>
           </div>
