@@ -77,7 +77,25 @@ export const DegenHome: FC = ({}) => {
             typewriter and then scanning them. <br />
             To enhance the typewriter work, Degen Poet uses a variety of
             techniques, including watercolor, pen, permanent marker, collage,
-            and animation.
+            and animation. Sign up{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] font-bold"
+                href={"https://drip.haus/degenpoet"}
+              >
+                here
+              </a>{" "}
+              to never miss a{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] font-bold"
+                href={"https://twitter.com/degenpoet"}
+              >
+                @degenpoet
+              </a>{" "}
+              DRiP drop.
             <div className="mt-4 flex text-xl">
               <a
                 target="_blank"

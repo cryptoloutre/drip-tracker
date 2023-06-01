@@ -29,6 +29,7 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
             <NavElement label="Season 1" href="/season1/home" />
             <NavElement label="Season 2" href="/season2/home" />
             <NavElement label="Degen Poet" href="/degenpoet/home" />
+            <NavElement label="DAA" href="/daa/home" />
           </li>
         </ul>
       </div>
