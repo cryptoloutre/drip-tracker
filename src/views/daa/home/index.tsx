@@ -17,7 +17,7 @@ export const DAAHome: FC = ({}) => {
   );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 2;
+  const nbTotalNFTsInDrop = 3;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -177,6 +177,19 @@ export const DAAHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 2</div>
+              </Link>
+              <Link
+                href="/daa/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/x4MjngfMVswNjOZpDDRWuJxsDSalRlTM_Str4cFrvvk?ext=jpeg"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 3</div>
               </Link>
             </div>
           </div>
