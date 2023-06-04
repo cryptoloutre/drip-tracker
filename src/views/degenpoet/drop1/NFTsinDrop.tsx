@@ -4,6 +4,6 @@ export const NFTsinDrop = [
     rarity: "common",
     image:
       "https://arweave.net/yNfO9tuk465X0CbVmSIwCw0YDdWXCfJ45Jx_jn3cy5k?ext=jpg",
-    magicEdenLink: "",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_degen_poet",
   }
 ];
