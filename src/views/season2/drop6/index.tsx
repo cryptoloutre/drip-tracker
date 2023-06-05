@@ -206,7 +206,7 @@ export const Drop6S2: FC = ({}) => {
                               className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
                               href={currentNft.magicEdenLink}
                             >
-                              Not owned
+                              Buy on Tensor
                             </a>
                           )}
                         </div>
@@ -237,7 +237,7 @@ export const Drop6S2: FC = ({}) => {
                               className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
                               href={currentNft.magicEdenLink}
                             >
-                              Not owned
+                              Buy on Tensor
                             </a>
                           )}
                         </div>
@@ -268,7 +268,7 @@ export const Drop6S2: FC = ({}) => {
                               className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
                               href={currentNft.magicEdenLink}
                             >
-                              Not owned
+                              Buy on Tensor
                             </a>
                           )}
                         </div>
