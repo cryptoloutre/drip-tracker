@@ -105,7 +105,7 @@ export const Drop6S2: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] font-bold"
-                href={"https://twitter.com/http://drip.haus"}
+                href={"http://drip.haus"}
               >
                 DRiP Vault
               </a>
