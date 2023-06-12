@@ -19,7 +19,7 @@ export const Drop7Degen: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "7";
-  const nbTotalNFTsInDrop = 3;
+  const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
   async function getUserNFT() {

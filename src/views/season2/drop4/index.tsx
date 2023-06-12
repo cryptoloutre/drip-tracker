@@ -19,7 +19,7 @@ export const Drop4S2: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "4";
-  const nbTotalNFTsInDrop = 4;
+  const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
   async function getUserNFT() {

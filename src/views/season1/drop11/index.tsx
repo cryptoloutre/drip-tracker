@@ -12,6 +12,7 @@ import {
 } from "../../../../lib/collectionAddresses";
 import { Connection } from "@solana/web3.js";
 import { RarityLegend } from "components/RarityLegend";
+import { DropInfo } from "../home/DropInfo";
 
 export const Drop11: FC = ({}) => {
   const wallet = useWallet();
@@ -25,7 +26,7 @@ export const Drop11: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "11";
-  const nbTotalNFTsInDrop = 3;
+  const nbTotalNFTsInDrop = DropInfo.find((drop) => drop.dropNb.toString() == dropNumber).nbNFT;
 
   async function getUserNFT() {
     if (!wallet.publicKey) {

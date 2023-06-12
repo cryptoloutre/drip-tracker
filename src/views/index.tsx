@@ -49,3 +49,4 @@ export {DAAHome} from "./daa/home";
 export {Drop1DAA} from "./daa/drop1";
 export {Drop2DAA} from "./daa/drop2";
 export {Drop3DAA} from "./daa/drop3";
+export {Drop4DAA} from "./daa/drop4";

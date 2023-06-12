@@ -13,6 +13,7 @@ import {
 import { Connection } from "@solana/web3.js";
 import { Loader } from "components/Loader";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
+import { DropInfo } from "./DropInfo";
 
 export const Season2Home: FC = ({}) => {
   const wallet = useWallet();
@@ -21,7 +22,15 @@ export const Season2Home: FC = ({}) => {
   );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
-  const nbTotalNFTsInDrop = 66;
+  const [nbDropComplete, setNbDropComplete] = useState<number>();
+  const [dropMissing, setDropMissing] = useState([]);
+  const [dropIncomplete, setDropIncomplete] = useState([]);
+  let nbTotalNFTsInDrop = 0;
+  const nbTotalDrop = DropInfo.length;
+
+  DropInfo.map((drop) => {
+    nbTotalNFTsInDrop += drop.nbNFT;
+  });
 
   async function getUserNFT() {
     if (!wallet.publicKey) {
@@ -44,13 +53,83 @@ export const Season2Home: FC = ({}) => {
     );
 
     
-    const _userNFTsURI = _userNFTs.map((NFT) => NFT.content.json_uri)
-    const userNFTs = _userNFTsURI.filter((x, i) => _userNFTsURI.indexOf(x) === i);
+    const _userNFTsURI = await Promise.all(
+      _userNFTs.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
 
-    console.log("Got their DRiP season 2 NFTs!", userNFTs);
+    // we filter to eliminate the doublons
+    const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
+      const _value = JSON.stringify(value);
+      return (
+        index ===
+        _userNFTsURI.findIndex((obj: any) => {
+          return JSON.stringify(obj) === _value;
+        })
+      );
+    });
+
+    console.log("Got their DRiP season2 NFTs!", userNFTs);
 
     setNbUserNFTs(userNFTs.length);
 
+    // store the drops and the number of NFTs of this drop owned by the user
+    const userDropsAndCount = [];
+
+    for (let drop of userNFTs) {
+      const index = userDropsAndCount.find(
+        (_drop: any) => _drop.dropNb == drop.drop
+      );
+      if (index) {
+        index.nbNFT += 1;
+      } else {
+        userDropsAndCount.push({
+          dropNb: drop.drop,
+          nbNFT: 1,
+        });
+      }
+    }
+
+    console.log(userDropsAndCount);
+
+    const dropsMissing = [];
+    const dropsIncomplete = [];
+
+    DropInfo.map((drop) => {
+      const index = userDropsAndCount.find(
+        (_drop: any) => _drop.dropNb == drop.dropNb
+      );
+      if (index) {
+        if (index.nbNFT !== drop.nbNFT) {
+          dropsIncomplete.push(drop.dropNb);
+        }
+      } else {
+        dropsMissing.push(drop.dropNb);
+      }
+    });
+
+    console.log("Drop missing", dropsMissing);
+    setDropMissing(dropsMissing);
+    console.log("Drop incomplete", dropsIncomplete);
+    setDropIncomplete(dropsIncomplete);
+
+    const nbDropComplete =
+      nbTotalDrop - dropsIncomplete.length - dropsMissing.length;
+    setNbDropComplete(nbDropComplete);
 
     setIsFetched(true);
   }
@@ -75,16 +154,62 @@ export const Season2Home: FC = ({}) => {
             </div>
           )}
           {wallet.publicKey && isFetched && (
-            <div className="text-center font-bold text-xl my-6">
-              You have{" "}
-              <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
-              out of{" "}
-              <span className="font-black text-[#14F195]">
-                {nbTotalNFTsInDrop}
-              </span>{" "}
-              NFTs!
+            <div className="text-center w-[70%] mx-auto font-bold text-xl my-6">
+              <div className="text-left">
+                You have:
+                <div className="">
+                  <div>
+                    • completed{" "}
+                    <span className="font-black text-[#14F195]">
+                      {nbDropComplete}
+                    </span>
+                    /
+                    <span className="font-black text-[#14F195]">
+                      {nbTotalDrop}
+                    </span>{" "}
+                    drops!
+                  </div>
+                  <div>
+                    •{" "}
+                    <span className="font-black text-[#14F195]">
+                      {nbUserNFTs}
+                    </span>
+                    /
+                    <span className="font-black text-[#14F195]">
+                      {nbTotalNFTsInDrop}
+                    </span>{" "}
+                    NFTs!
+                  </div>
+                  {dropIncomplete.length != 0 && (
+                    <div>
+                      Drops incomplete:
+                      <div className="flex ml-4">
+                        →
+                        {dropIncomplete.map((drop) => (
+                          <div key={drop} className="mx-1 text-[#ff0000]">
+                            {drop}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {dropMissing.length != 0 && (
+                    <div>
+                      Drop missed:
+                      <div className="flex ml-4">
+                        →
+                        {dropMissing.map((drop) => (
+                          <div key={drop} className="mx-1 text-[#ff0000] ">
+                            {drop}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
               <br />
-              Choose a drop to see which NFTs you miss.
+              <div>Choose a drop to see which NFTs you miss.</div>
             </div>
           )}
           {wallet.publicKey && !isFetched && <Loader />}

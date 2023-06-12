@@ -9,7 +9,7 @@ import { RarityLegend } from "components/RarityLegend";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 
-export const Drop2DAA: FC = ({}) => {
+export const Drop4DAA: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://rpc.helius.xyz/?api-key=e2ff09e4-d800-4b10-bb34-40f6044c1191"
@@ -18,7 +18,7 @@ export const Drop2DAA: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "2";
+  const dropNumber = "4";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -85,7 +85,7 @@ export const Drop2DAA: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop2: <span className="italic">Opening Crates for Dummies</span> by{" "}
+            Drop4: <span className="italic">I&apos;m Not Going To Lick It</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -95,27 +95,14 @@ export const Drop2DAA: FC = ({}) => {
               Degenerate Ape Academy
             </a>
           </h1>
-          <div className="mt-12 w-[70%] mx-auto">
+          <div className="mt-12 w-[100%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              How do we open these damn things?
-              <br />
-              <br />
-              Learn more about &quot;Elder&quot; crates {""}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-[#9945FF] font-bold"
-                href={
-                  "https://twitter.com/DegenApeAcademy/status/1661816892254765057"
-                }
-              >
-                here
-              </a>
+            It does look tasty though...
             </div>
           </div>
           {wallet.publicKey && isFetched && (
-            <div className="mt-4 w-[70%] mx-auto">
+            <div className="mt-4 w-[100%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
                 You have{" "}
