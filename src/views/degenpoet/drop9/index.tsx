@@ -9,7 +9,7 @@ import { RarityLegend } from "components/RarityLegend";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 
-export const Drop8Degen: FC = ({}) => {
+export const Drop9Degen: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://rpc.helius.xyz/?api-key=e2ff09e4-d800-4b10-bb34-40f6044c1191"
@@ -18,7 +18,7 @@ export const Drop8Degen: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "8";
+  const dropNumber = "9";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -85,7 +85,7 @@ export const Drop8Degen: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop8: <span className="italic">Van Gogh & Skull</span> by{" "}
+            Drop9: <span className="italic">Pollock, &quot;Repulsion&quot; & Gecko</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -101,37 +101,28 @@ export const Drop8Degen: FC = ({}) => {
               This drop features 3 rarities:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
-              <span className="italic">Van Gogh Blue</span>. A type portrait of
-              Van Gogh. Created with a printed digital painting, typed on with a
-              Royal Classic Typewriter, scanned and Photoshopped. Based on
-              “Self-Portrait” by Van Gogh, 1887.{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 191114)</span>
-              .<br/>
+              <span className="italic">Jackson Pollock Hearts</span>. An
+              abstract painting created using oil pastels & layering type from
+              an Underwood Quiet Tab Typewriter. Inspired by Jackson
+              Pollock&apos;s Convergence, 1952.{" "}
+              <span className="text-[#a5a5a5] font-bold">(supply: 243257)</span>
+              .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
               </span>{" "}
-              drop is <span className="italic">Van Gogh Skull</span>. A
-              typewriter version of Van Gogh&apos;s “Skull with Burning
-              Cigarette,” from 1885. Created with a printed digital painting,
-              typed on with a Royal Classic Typewriter, scanned and
-              Photoshopped.{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 10176)</span>
-              .<br/>
+              drop is <span className="italic">Drip Search</span>. An animated
+              GIF of a woman&apos;s eyes searching the field in front of her.
+              Created with oil pastels and an Underwood Quiet Tab typewriter and
+              scanned. Based on a scene from the movie &quot;Repulsion&quot;
+              1965.{" "}
+              <span className="text-[#E6C15A] font-bold">(supply: 12939)</span>
+              .<br />
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span> drop
-              is <span className="italic">Mad Type Skull</span>. Animated GIF of
-              Mad Skull. Created with watercolor pencil & Royal Classic
-              Typewriter. A tribute to{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-[#9945FF] font-bold"
-                href={"https://twitter.com/thehasheddud"}
-              >
-                @thehasheddud
-              </a>{" "}
-              who owns this skull.{" "}
-              <span className="text-[#14F195] font-bold">(supply: 2231)</span>.
+              is <span className="italic">Type Gecko</span>. Animated GIF of
+              Degen Poet&apos;s forever Gecko #2242. Created with oil pastels &
+              Underwood Quiet Tab Typewriter.{" "}
+              <span className="text-[#14F195] font-bold">(supply: 2587)</span>.
             </div>
           </div>
           {wallet.publicKey && isFetched && (
