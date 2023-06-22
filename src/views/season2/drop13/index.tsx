@@ -85,7 +85,7 @@ export const Drop13S2: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop12: <span className="italic">unidentified alien</span> by{" "}
+            Drop13: <span className="italic">unidentified alien</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
