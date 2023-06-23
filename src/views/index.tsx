@@ -56,3 +56,4 @@ export {Drop2DAA} from "./daa/drop2";
 export {Drop3DAA} from "./daa/drop3";
 export {Drop4DAA} from "./daa/drop4";
 export {Drop5DAA} from "./daa/drop5";
+export {Drop6DAA} from "./daa/drop6";
