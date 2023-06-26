@@ -177,7 +177,7 @@ export const BorkHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://twitter.com/DegenApeAcademy"}
+              href={"https://twitter.com/borktheviking"}
             >
               Bork The Viking Pug
             </a>{" "}
