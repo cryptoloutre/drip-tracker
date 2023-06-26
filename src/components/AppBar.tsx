@@ -76,7 +76,7 @@ export const AppBar: React.FC = () => {
               navigationStarts={() => setIsNavOpen(false)}
             />
             <NavElement
-              label="Comics Reader"
+              label="Comic Reader"
               href="/reader"
               navigationStarts={() => setIsNavOpen(false)}
             />

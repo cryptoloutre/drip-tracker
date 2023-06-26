@@ -124,7 +124,7 @@ export const Reader: FC = ({}) => {
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex justify-center">
         <div className="">
-          <h1 className="font-bold text-4xl text-center">Comics Reader</h1>
+          <h1 className="font-bold text-4xl text-center">Comic Reader</h1>
           {!toDisplay && (
             <div className="text-center text-3xl font-bold">
               Read the comics you have collected
