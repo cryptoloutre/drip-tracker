@@ -36,12 +36,12 @@ export const AppBar: React.FC = () => {
               navigationStarts={() => setIsNavOpen(false)}
             />
             <NavElement
-              label="Season1"
+              label="S1"
               href="/season1/home"
               navigationStarts={() => setIsNavOpen(false)}
             />
             <NavElement
-              label="Season2"
+              label="S2"
               href="/season2/home"
               navigationStarts={() => setIsNavOpen(false)}
             />
@@ -50,9 +50,19 @@ export const AppBar: React.FC = () => {
               href="/degenpoet/home"
               navigationStarts={() => setIsNavOpen(false)}
             />
-                        <NavElement
+            <NavElement
               label="DAA"
               href="/daa/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Bork"
+              href="/bork/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Comics Reader"
+              href="/reader"
               navigationStarts={() => setIsNavOpen(false)}
             />
             <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6" />
