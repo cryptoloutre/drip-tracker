@@ -3,7 +3,6 @@ import { FC } from "react";
 import Link from "next/link";
 
 export const HomeView: FC = ({}) => {
-
   return (
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex justify-center">
@@ -17,7 +16,7 @@ export const HomeView: FC = ({}) => {
           </div>
 
           <div className="flex justify-center">
-          <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
+            <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
               <Link
                 href="/season1/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
@@ -55,7 +54,9 @@ export const HomeView: FC = ({}) => {
                     alt="Degen Poet preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Degen Poet</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Degen Poet
+                </div>
               </Link>
               <Link
                 href="/daa/home"
@@ -71,6 +72,34 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">DAA</div>
               </Link>
               <Link
+                href="/floor/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/VEiCkYUKTDruei_US1zclIesMNtsWScycObJ3YCvzMI?ext=png"
+                    alt="floor preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Floor</div>
+              </Link>
+              <Link
+                href="/vault/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/EfEugwCN7pHv0XJp9o1VTlcpTVkv18BUiMbR-nTtdEs?ext=jpg"
+                    alt="vault music preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Vault Music
+                </div>
+              </Link>
+              <Link
                 href="/bork/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -81,7 +110,24 @@ export const HomeView: FC = ({}) => {
                     alt="Daa preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Bork The Viking</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Bork The Viking
+                </div>
+              </Link>
+              <Link
+                href="/tiiiny/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/XrqAEZBX5ITZDuy_N2BBWc94Hfc2HUNElK5o3FeZVjg?ext=png"
+                    alt="Daa preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Tiiinydenise
+                </div>
               </Link>
             </div>
           </div>

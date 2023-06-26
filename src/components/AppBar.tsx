@@ -29,7 +29,7 @@ export const AppBar: React.FC = () => {
         {/* Nav Links */}
         {/* Wallet & Settings */}
         <div className="navbar-end">
-          <div className="hidden md:inline-flex align-items-center justify-items gap-2 lg:gap-6">
+          <div className="hidden md:inline-flex align-items-center justify-items gap-2 lg:gap-4">
             <NavElement
               label="Home"
               href="/"
@@ -53,6 +53,21 @@ export const AppBar: React.FC = () => {
             <NavElement
               label="DAA"
               href="/daa/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Vault"
+              href="/vault/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Floor"
+              href="/floor/home"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Tiiiny"
+              href="/tiiiny/home"
               navigationStarts={() => setIsNavOpen(false)}
             />
             <NavElement

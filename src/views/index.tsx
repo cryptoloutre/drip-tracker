@@ -60,3 +60,14 @@ export {Drop6DAA} from "./daa/drop6";
 export {BorkHome} from "./bork/home";
 export {Drop1Bork} from "./bork/drop1";
 export {Reader} from "./reader"
+export {FloorHome} from "./floor/home";
+export {Drop1Floor} from "./floor/drop1";
+export {Drop2Floor} from "./floor/drop2";
+export {Drop3Floor} from "./floor/drop3";
+export {TinyHome} from "./tinydenise/home";
+export {Drop1Tiny} from "./tinydenise/drop1";
+export {VaultHome} from "./vault/home";
+export {Drop1Vault} from "./vault/drop1";
+export {Drop2Vault} from "./vault/drop2";
+export {Drop3Vault} from "./vault/drop3";
+export {Drop4Vault} from "./vault/drop4";
