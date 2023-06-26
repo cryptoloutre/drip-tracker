@@ -14,7 +14,7 @@ import { DropInfo } from "./DropInfo";
 export const VaultHome: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
-    "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
+    "https://rpc.helius.xyz/?api-key=e2ff09e4-d800-4b10-bb34-40f6044c1191"
   );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
@@ -254,7 +254,7 @@ export const VaultHome: FC = ({}) => {
                   )}
                   {dropMissing.length != 0 && (
                     <div>
-                      Chapter missed:
+                      Drop missed:
                       <div className="flex ml-4">
                         →
                         {dropMissing.map((drop) => (
