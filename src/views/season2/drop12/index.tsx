@@ -11,7 +11,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 export const Drop12S2: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
-    "https://rpc.helius.xyz/?api-key=e2ff09e4-d800-4b10-bb34-40f6044c1191"
+    "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
   );
   const [userDripNFT, setUserDripNFT] = useState<any[]>();
   const [isFetched, setIsFetched] = useState<boolean>(false);
