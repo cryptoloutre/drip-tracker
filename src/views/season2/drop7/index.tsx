@@ -281,7 +281,7 @@ export const Drop7S2: FC = ({}) => {
               >
                 @LIGHTS_nft
               </a>{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 4792)</span>
+              <span className="text-[#E6C15A] font-bold">(supply: 5001)</span>
               .
               <br />• <span className="italic">Delicate</span> by{" "}
               <a
@@ -292,7 +292,7 @@ export const Drop7S2: FC = ({}) => {
               >
                 @huxsterized
               </a>{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 4791)</span>
+              <span className="text-[#E6C15A] font-bold">(supply: 5000)</span>
               .
               <br />• <span className="italic">Early Morning</span> by{" "}
               <a
@@ -303,7 +303,7 @@ export const Drop7S2: FC = ({}) => {
               >
                 @ItsKennyatta
               </a>{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 4791)</span>
+              <span className="text-[#E6C15A] font-bold">(supply: 5000)</span>
               .
               <br />• <span className="italic">Concrete Mirror</span>by{" "}
               <a
@@ -314,7 +314,7 @@ export const Drop7S2: FC = ({}) => {
               >
                 @artpardini
               </a>{" "}
-              <span className="text-[#14F195] font-bold">(supply: 1859)</span>.
+              <span className="text-[#14F195] font-bold">(supply: 2000)</span>.
               <br />• <span className="italic">Ice Drips</span>by{" "}
               <a
                 target="_blank"
@@ -324,7 +324,7 @@ export const Drop7S2: FC = ({}) => {
               >
                 @CryptoMagellan
               </a>{" "}
-              <span className="text-[#14F195] font-bold">(supply: 141)</span>.
+              <span className="text-[#14F195] font-bold">(supply: 2001)</span>.
             </div>
           </div>
           {wallet.publicKey && isFetched && (
