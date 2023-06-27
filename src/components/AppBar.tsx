@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import { useAutoConnect } from "../contexts/AutoConnectProvider";
 import NavElement from "./nav-element";
+import { ChannelDropdown } from "./ChannelDropdown";
 
 const WalletMultiButtonDynamic = dynamic(
   async () =>
@@ -35,46 +36,7 @@ export const AppBar: React.FC = () => {
               href="/"
               navigationStarts={() => setIsNavOpen(false)}
             />
-            <NavElement
-              label="S1"
-              href="/season1/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="S2"
-              href="/season2/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="Degen Poet"
-              href="/degenpoet/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="DAA"
-              href="/daa/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="Vault"
-              href="/vault/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="Floor"
-              href="/floor/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="Tiiiny"
-              href="/tiiiny/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="Bork"
-              href="/bork/home"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
+            <ChannelDropdown />
             <NavElement
               label="Comic Reader"
               href="/reader"
