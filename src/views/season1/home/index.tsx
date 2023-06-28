@@ -34,11 +34,17 @@ export const Season1Home: FC = ({}) => {
     nbTotalNFTsInDrop += drop.nbNFT;
   });
 
-  async function getUserNFT() {
-    if (!wallet.publicKey) {
-      return;
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
     }
-    const publickey = wallet.publicKey;
+  }, []);
+
+  async function getUserNFT() {
+
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
     // dropNFTs will store all the NFTs of the user (DRiP collection and misprint but not the "lights x solana spaces")
     const _dropNFTs = [];
@@ -337,10 +343,10 @@ export const Season1Home: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -350,13 +356,13 @@ export const Season1Home: FC = ({}) => {
           <div className="font-bold text-2xl text-center mt-2">
             Track the DRiP NFTs you are missing
           </div>
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl my-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
-          {wallet.publicKey && isFetched && (
-            <div className="text-center w-[70%] mx-auto font-bold text-xl my-6">
+          {(wallet.publicKey || isXNFT) && isFetched && (
+            <div className="text-center sm:w-[70%] mx-auto font-bold text-xl my-6">
               <div className="text-left">
                 You have:
                 <div className="">
@@ -414,7 +420,7 @@ export const Season1Home: FC = ({}) => {
               <div>Choose a drop to see which NFTs you miss.</div>
             </div>
           )}
-          {wallet.publicKey && !isFetched && <Loader />}
+          {(wallet.publicKey || isXNFT) && !isFetched && <Loader />}
           <div className="flex justify-center">
             <div className="w-[70%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 flex items-center">
               {/* <Link

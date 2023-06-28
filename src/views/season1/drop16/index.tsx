@@ -3,8 +3,7 @@ import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 // Wallet
-import { useWallet} from "@solana/wallet-adapter-react";
-
+import { useWallet } from "@solana/wallet-adapter-react";
 
 import { Metadata, Metaplex } from "@metaplex-foundation/js";
 import {
@@ -27,19 +26,26 @@ export const Drop16: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "16";
-  const nbTotalNFTsInDrop = DropInfo.find((drop) => drop.dropNb.toString() == dropNumber).nbNFT;
+  const nbTotalNFTsInDrop = DropInfo.find(
+    (drop) => drop.dropNb.toString() == dropNumber
+  ).nbNFT;
+
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
+    }
+  }, []);
 
   async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
-    }
-    const publickey = wallet.publicKey;
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
-    const userNFTs = await metaplex.nfts().findAllByOwner({ owner: publickey }, {commitment:"processed"});
-
+    const userNFTs = await metaplex
+      .nfts()
+      .findAllByOwner({ owner: publickey }, { commitment: "processed" });
 
     const dripCollectionNFTs = userNFTs.filter(
       (metadata) =>
@@ -74,10 +80,10 @@ export const Drop16: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -96,7 +102,7 @@ export const Drop16: FC = ({}) => {
               @itsdaramola
             </a>
           </h1>
-          <div className="mt-12 w-[70%] mx-auto">
+          <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
               On the creation of Metropolis.{" "}
@@ -164,24 +170,26 @@ export const Drop16: FC = ({}) => {
               . And soon, CRVTXRZ.
             </div>
           </div>
-          {wallet.publicKey && isFetched && (
-            <div className="mt-4 w-[70%] mx-auto">
+          {(wallet.publicKey || isXNFT) && isFetched && (
+            <div className="mt-4 sm:w-[70%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
-                You have               <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
-              out of{" "}
-              <span className="font-black text-[#14F195]">
-                {nbTotalNFTsInDrop}
-              </span>{" "} NFT(s) of this drop!
+                You have{" "}
+                <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
+                out of{" "}
+                <span className="font-black text-[#14F195]">
+                  {nbTotalNFTsInDrop}
+                </span>{" "}
+                NFT(s) of this drop!
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
-          <RarityLegend/>
+          <RarityLegend />
           <div className="md:hero-content flex justify-center mt-4">
             <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
               <img
@@ -189,7 +197,7 @@ export const Drop16: FC = ({}) => {
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/eaa68e59-b79c-46cb-b246-064d85cf3af7-Metropolis%20Cover.JPG"
               ></img>
               <h1 className="font-bold mt-2">Metropolis</h1>
-              {isFetched && wallet.publicKey && (
+              {isFetched && (wallet.publicKey || isXNFT) && (
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find((nft) => nft == "Metropolis") !=

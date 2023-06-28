@@ -22,12 +22,17 @@ export const Drop3Vault: FC = ({}) => {
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
-  async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
     }
-    const publickey = wallet.publicKey;
+  }, []);
+
+  async function getUserNFT() {
+
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
@@ -73,10 +78,10 @@ export const Drop3Vault: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -111,7 +116,7 @@ export const Drop3Vault: FC = ({}) => {
               .
             </div>
           </div>
-          {wallet.publicKey && isFetched && (
+          {(wallet.publicKey || isXNFT) && isFetched && (
             <div className="mt-4 w-[75%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
@@ -125,7 +130,7 @@ export const Drop3Vault: FC = ({}) => {
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
@@ -139,71 +144,7 @@ export const Drop3Vault: FC = ({}) => {
                     <div className="bg-[#000000] w-[50%] border border-4 border-[#a5a5a5]">
                       <img className="" src={currentNft.image}></img>
                       <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                      {isFetched && wallet.publicKey && (
-                        <div className="flex justify-center">
-                          {isFetched &&
-                          userDripNFT.find((nft) => nft == currentNft.uri) !=
-                            undefined ? (
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
-                            >
-                              Owned
-                            </a>
-                          ) : (
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
-                              href={currentNft.magicEdenLink}
-                            >
-                              Buy on Tensor
-                            </a>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  {currentNft.rarity == "rare" && (
-                    <div className="bg-[#000000] border border-4 border-[#E6C15A]">
-                      <div className="flex justify-center">
-                        <img className="" src={currentNft.image}></img>
-                      </div>
-                      <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                      {isFetched && wallet.publicKey && (
-                        <div className="flex justify-center">
-                          {isFetched &&
-                          userDripNFT.find((nft) => nft == currentNft.uri) !=
-                            undefined ? (
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
-                            >
-                              Owned
-                            </a>
-                          ) : (
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
-                              href={currentNft.magicEdenLink}
-                            >
-                              Buy on Tensor
-                            </a>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  {currentNft.rarity == "legendary" && (
-                    <div className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]">
-                      <div className="flex justify-center">
-                        <img className="" src={currentNft.image}></img>
-                      </div>
-                      <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                      {isFetched && wallet.publicKey && (
+                      {isFetched && (wallet.publicKey || isXNFT) && (
                         <div className="flex justify-center">
                           {isFetched &&
                           userDripNFT.find((nft) => nft == currentNft.uri) !=

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
@@ -14,6 +14,14 @@ const WalletMultiButtonDynamic = dynamic(
 
 export const AppBar: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
+    }
+  }, []);
+
   return (
     <div>
       {/* NavBar / Header */}
@@ -24,13 +32,15 @@ export const AppBar: React.FC = () => {
               <div className="lg:text-3xl text-xl font-black">DRiP TRACKER</div>
             </Link>
           </div>
-          <WalletMultiButtonDynamic className="btn-ghost btn-sm relative flex md:hidden text-lg " />
+          {!isXNFT && (
+            <WalletMultiButtonDynamic className="btn-ghost btn-sm relative flex md:hidden text-lg " />
+          )}
         </div>
 
         {/* Nav Links */}
         {/* Wallet & Settings */}
         <div className="navbar-end">
-          <div className="hidden md:inline-flex align-items-center justify-items gap-2 lg:gap-4">
+          <div className={`hidden md:inline-flex align-items-center justify-items gap-2 lg:gap-4 ${!isXNFT ? "" : "mr-20" }`}>
             <NavElement
               label="Home"
               href="/"
@@ -42,14 +52,16 @@ export const AppBar: React.FC = () => {
               href="/reader"
               navigationStarts={() => setIsNavOpen(false)}
             />
-            <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6" />
+            {!isXNFT && (
+              <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6" />
+            )}
           </div>
           <label
             htmlFor="my-drawer"
-            className="btn-gh items-center justify-between md:hidden mr-6"
+            className={`btn-gh items-center justify-between md:hidden ${!isXNFT ? "mr-6" : "mr-20" }`}
             onClick={() => setIsNavOpen(!isNavOpen)}
           >
-            <div className="HAMBURGER-ICON space-y-2.5 ml-5">
+            <div className={`HAMBURGER-ICON space-y-2.5 ${!isXNFT ? "ml-5" : "ml-8" }`}>
               <div
                 className={`h-0.5 w-8 bg-purple-600 ${
                   isNavOpen ? "hidden" : ""

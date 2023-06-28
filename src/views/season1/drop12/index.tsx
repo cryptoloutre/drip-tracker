@@ -3,8 +3,7 @@ import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 // Wallet
-import { useWallet} from "@solana/wallet-adapter-react";
-
+import { useWallet } from "@solana/wallet-adapter-react";
 
 import { Metadata, Metaplex } from "@metaplex-foundation/js";
 import {
@@ -27,18 +26,26 @@ export const Drop12: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "12";
-  const nbTotalNFTsInDrop = DropInfo.find((drop) => drop.dropNb.toString() == dropNumber).nbNFT;
+  const nbTotalNFTsInDrop = DropInfo.find(
+    (drop) => drop.dropNb.toString() == dropNumber
+  ).nbNFT;
+
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
+    }
+  }, []);
 
   async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
-    }
-    const publickey = wallet.publicKey;
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
-    const userNFTs = await metaplex.nfts().findAllByOwner({ owner: publickey }, {commitment:"processed"});
+    const userNFTs = await metaplex
+      .nfts()
+      .findAllByOwner({ owner: publickey }, { commitment: "processed" });
 
     const dripCollectionNFTs = userNFTs.filter(
       (metadata) =>
@@ -73,10 +80,10 @@ export const Drop12: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -96,7 +103,7 @@ export const Drop12: FC = ({}) => {
             </a>
             , &quot;The Tenant&quot; series.
           </h1>
-          <div className="mt-12 w-[70%] mx-auto">
+          <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
               On the inspiration behind Ode,{" "}
@@ -124,41 +131,46 @@ export const Drop12: FC = ({}) => {
               of Dreams&quot;, &quot;The Dreamers&quot;, and &quot;The
               Tenants&quot;, three unique 1/1 series that emphasize being in
               touch with your inner being and achieving your youthful dreams.
-              <br/>
-              <br/>
-              <span className="font-bold underline">Note:</span> A misprint was sent by mistake. It is not part of the collection.
+              <br />
+              <br />
+              <span className="font-bold underline">Note:</span> A misprint was
+              sent by mistake. It is not part of the collection.
             </div>
           </div>
-          {wallet.publicKey && isFetched && (
-            <div className="mt-4 w-[70%] mx-auto">
+          {(wallet.publicKey || isXNFT) && isFetched && (
+            <div className="mt-4 sm:w-[70%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
-                You have               <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
-              out of{" "}
-              <span className="font-black text-[#14F195]">
-                {nbTotalNFTsInDrop}
-              </span>{" "} NFT(s) of this drop!
+                You have{" "}
+                <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
+                out of{" "}
+                <span className="font-black text-[#14F195]">
+                  {nbTotalNFTsInDrop}
+                </span>{" "}
+                NFT(s) of this drop!
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
-          <RarityLegend/>
+          <RarityLegend />
           <div className="md:hero-content flex justify-center mt-4">
-          <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#a5a5a5]">
+            <div className="bg-[#000000] w-[150px] sm:w-[300px] border border-4 border-[#a5a5a5]">
               <img
                 className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Ode%20to%20those%20still%20here.jpg"
               ></img>
               <h1 className="font-bold mt-2">Ode to those still here</h1>
-              {isFetched && wallet.publicKey && (
+              {isFetched && (wallet.publicKey || isXNFT) && (
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft == "https://nftstorage.link/ipfs/bafkreici36utvlcdollileegzfecz42wmv4fyuqthzusxmctwplxghr7vq"
+                    (nft) =>
+                      nft ==
+                      "https://nftstorage.link/ipfs/bafkreici36utvlcdollileegzfecz42wmv4fyuqthzusxmctwplxghr7vq"
                   ) != undefined ? (
                     <a
                       target="_blank"
@@ -182,17 +194,22 @@ export const Drop12: FC = ({}) => {
                 </div>
               )}
             </div>
-          <div className="bg-[#000000] w-[150px] sm:w-[300px]">
+            <div className="bg-[#000000] w-[150px] sm:w-[300px]">
               <img
                 className="h-[150px] w-[150px] sm:h-[300px] sm:w-[300px]"
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Ode%20to%20those%20still%20here%20Making%20Of_1.jpg"
               ></img>
-              <h1 className="font-bold mt-2">Ode to those still here <span className="text-sm">(misprint)</span></h1>
-              {isFetched && wallet.publicKey && (
+              <h1 className="font-bold mt-2">
+                Ode to those still here{" "}
+                <span className="text-sm">(misprint)</span>
+              </h1>
+              {isFetched && (wallet.publicKey || isXNFT) && (
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find(
-                    (nft) => nft == "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq"
+                    (nft) =>
+                      nft ==
+                      "https://nftstorage.link/ipfs/bafkreibxuxr4njvum4hnpvmnrwysvpwuxwgaekny3mssbuqzcfntfl3zsq"
                   ) != undefined ? (
                     <a
                       target="_blank"

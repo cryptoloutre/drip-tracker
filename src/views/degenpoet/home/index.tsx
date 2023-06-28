@@ -28,11 +28,17 @@ export const DegenHome: FC = ({}) => {
     nbTotalNFTsInDrop += drop.nbNFT;
   });
 
-  async function getUserNFT() {
-    if (!wallet.publicKey) {
-      return;
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
     }
-    const publickey = wallet.publicKey;
+  }, []);
+
+  async function getUserNFT() {
+
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
     setIsFetched(false);
 
@@ -130,10 +136,10 @@ export const DegenHome: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -143,7 +149,7 @@ export const DegenHome: FC = ({}) => {
           <div className="text-center text-3xl font-bold">
             Track the Degen Poet DRiP NFTs you are missing
           </div>
-          <div className="mt-8 w-[70%] mx-auto">
+          <div className="mt-8 sm:w-[70%] mx-auto">
             <a
               target="_blank"
               rel="noreferrer"
@@ -157,7 +163,7 @@ export const DegenHome: FC = ({}) => {
             typewriter and then scanning them. <br />
             To enhance the typewriter work, Degen Poet uses a variety of
             techniques, including watercolor, pen, permanent marker, collage,
-            and animation. Sign up{" "}
+            and animation. <br/>Sign up{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -223,13 +229,13 @@ export const DegenHome: FC = ({}) => {
               </a>
             </div>
           </div>
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl my-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
-          {wallet.publicKey && isFetched && (
-            <div className="text-center w-[70%] mx-auto font-bold text-xl my-6">
+          {(wallet.publicKey || isXNFT) && isFetched && (
+            <div className="text-center sm:w-[70%] mx-auto font-bold text-xl my-6">
               <div className="text-left">
                 You have:
                 <div className="">
@@ -287,7 +293,7 @@ export const DegenHome: FC = ({}) => {
               <div>Choose a drop to see which NFTs you miss.</div>
             </div>
           )}
-          {wallet.publicKey && !isFetched && <Loader />}
+          {(wallet.publicKey || isXNFT) && !isFetched && <Loader />}
           <div className="flex justify-center">
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               <Link

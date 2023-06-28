@@ -26,11 +26,16 @@ export const Reader: FC = ({}) => {
     slides: any[];
   } | null>(null);
 
-  async function getUserNFT() {
-    if (!wallet.publicKey) {
-      return;
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
     }
-    const publickey = wallet.publicKey;
+  }, []);
+
+  async function getUserNFT() {
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
     setIsFetched(false);
 
@@ -52,7 +57,6 @@ export const Reader: FC = ({}) => {
 
     await Promise.all(
       borkNFT.map(async (asset) => {
-
         let attributes: any;
         if (asset.content.metadata.attributes) {
           attributes = asset.content.metadata.attributes;
@@ -95,7 +99,7 @@ export const Reader: FC = ({}) => {
       );
     });
 
-    userBork.sort(function (a:any, b:any) {
+    userBork.sort(function (a: any, b: any) {
       if (a < b) {
         return -1;
       }
@@ -115,10 +119,10 @@ export const Reader: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -147,12 +151,12 @@ export const Reader: FC = ({}) => {
               ← Back
             </button>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl my-6">
               Please, connect your wallet to see your comics!
             </div>
           )}
-          {wallet.publicKey && !isFetched && !toDisplay && (
+          {(wallet.publicKey || isXNFT) && !isFetched && !toDisplay && (
             <div className="mt-[50%]">
               <Loader />
             </div>
@@ -163,45 +167,24 @@ export const Reader: FC = ({}) => {
                 {isFetched &&
                   userComics.map((currentNft) => (
                     <div key={currentNft.name}>
-                      {currentNft.rarity == "Common" && (
-                        <button
-                          onClick={() => {
-                            setToDisplay(currentNft);
-                          }}
-                          className="bg-[#000000] border border-4 border-[#a5a5a5] hover:border-[#14F195]"
-                        >
-                          <div className="flex justify-center">
-                            <img className="" src={currentNft.image}></img>
-                          </div>
-                          <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                        </button>
-                      )}
-                      {currentNft.rarity == "Legendary" && (
-                        <button
-                          onClick={() => {
-                            setToDisplay(currentNft);
-                          }}
-                          className="bg-[#000000] border border-4 border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF] hover:border-[#14F195]"
-                        >
-                          <div className="flex justify-center">
-                            <img className="" src={currentNft.image}></img>
-                          </div>
-                          <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                        </button>
-                      )}
-                      {currentNft.rarity == "Rare" && (
-                        <button
-                          onClick={() => {
-                            setToDisplay(currentNft);
-                          }}
-                          className="bg-[#000000] border border-4 border-[#E6C15A] hover:border-[#14F195]"
-                        >
-                          <div className="flex justify-center">
-                            <img className="" src={currentNft.image}></img>
-                          </div>
-                          <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                        </button>
-                      )}
+                      <button
+                        onClick={() => {
+                          setToDisplay(currentNft);
+                        }}
+                        className={`bg-[#000000] border border-4 hover:border-[#14F195] ${
+                          currentNft.rarity == "Common" && "border-[#a5a5a5]"
+                        } ${
+                          currentNft.rarity == "Rare" && "border-[#E6C15A]"
+                        } ${
+                          currentNft.rarity == "Legendary" &&
+                          "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
+                        }`}
+                      >
+                        <div className="flex justify-center">
+                          <img className="" src={currentNft.image}></img>
+                        </div>
+                        <h1 className="font-bold mt-2">{currentNft.name}</h1>
+                      </button>
                     </div>
                   ))}
               </div>
@@ -236,20 +219,18 @@ type Props = {
 };
 
 const DisplayComics: FC<Props> = ({ toDisplay }) => {
-
   const _slides = [];
   _slides.push(toDisplay.image);
 
-  const pages = []
+  const pages = [];
 
   toDisplay.slides.map((slide) => {
-    if (slide.uri != "")
-    {
-      pages.push(slide.uri)
+    if (slide.uri != "") {
+      pages.push(slide.uri);
     }
   });
 
-  pages.sort(function (a:any, b:any) {
+  pages.sort(function (a: any, b: any) {
     if (a.slice(-1) < b.slice(-1)) {
       return -1;
     }
@@ -259,9 +240,7 @@ const DisplayComics: FC<Props> = ({ toDisplay }) => {
     return 0;
   });
 
-
   const slides = _slides.concat(pages);
-
 
   return (
     <div>

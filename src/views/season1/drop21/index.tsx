@@ -3,8 +3,7 @@ import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 // Wallet
-import { useWallet} from "@solana/wallet-adapter-react";
-
+import { useWallet } from "@solana/wallet-adapter-react";
 
 import { Metadata, Metaplex } from "@metaplex-foundation/js";
 import {
@@ -27,14 +26,20 @@ export const Drop21: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "21";
-  const nbTotalNFTsInDrop = DropInfo.find((drop) => drop.dropNb.toString() == dropNumber).nbNFT;
+  const nbTotalNFTsInDrop = DropInfo.find(
+    (drop) => drop.dropNb.toString() == dropNumber
+  ).nbNFT;
+
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
+    }
+  }, []);
 
   async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
-    }
-    const publickey = wallet.publicKey;
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
@@ -75,10 +80,10 @@ export const Drop21: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -87,7 +92,8 @@ export const Drop21: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop21: <span className="italic">The Laurence Antony Anthology</span> by{" "}
+            Drop21:{" "}
+            <span className="italic">The Laurence Antony Anthology</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -97,7 +103,7 @@ export const Drop21: FC = ({}) => {
               @laurence_antony
             </a>
           </h1>
-          <div className="mt-12 w-[70%] mx-auto">
+          <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
               &quot;The Laurence Antony Anthology&quot; is composed of two art
@@ -158,37 +164,38 @@ export const Drop21: FC = ({}) => {
               </a>
             </div>
           </div>
-          {wallet.publicKey && isFetched && (
-            <div className="mt-4 w-[70%] mx-auto">
+          {(wallet.publicKey || isXNFT) && isFetched && (
+            <div className="mt-4 sm:w-[70%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
-                You have               <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
-              out of{" "}
-              <span className="font-black text-[#14F195]">
-                {nbTotalNFTsInDrop}
-              </span>{" "} NFT(s) of this drop!
+                You have{" "}
+                <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
+                out of{" "}
+                <span className="font-black text-[#14F195]">
+                  {nbTotalNFTsInDrop}
+                </span>{" "}
+                NFT(s) of this drop!
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
-          <RarityLegend/>
+          <RarityLegend />
           <div className="flex justify-center">
-            <div className="w-[70%] grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
+            <div className="sm:w-[70%] grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
               <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
                 <img
                   className=""
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Chimera.jpg"
                 ></img>
                 <h1 className="font-bold mt-2">Chimera</h1>
-                {isFetched && wallet.publicKey && (
+                {isFetched && (wallet.publicKey || isXNFT) && (
                   <div className="flex justify-center">
                     {isFetched &&
-                    userDripNFT.find((nft) => nft == "Chimera") !=
-                      undefined ? (
+                    userDripNFT.find((nft) => nft == "Chimera") != undefined ? (
                       <a
                         target="_blank"
                         rel="noreferrer"
@@ -217,12 +224,11 @@ export const Drop21: FC = ({}) => {
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Non%20fungible%20Portrait.jpg"
                 ></img>
                 <h1 className="font-bold mt-2">Non-fungible Portrait</h1>
-                {isFetched && wallet.publicKey && (
+                {isFetched && (wallet.publicKey || isXNFT) && (
                   <div className="flex justify-center">
                     {isFetched &&
-                    userDripNFT.find(
-                      (nft) => nft == "Non-fungible Portrait"
-                    ) != undefined ? (
+                    userDripNFT.find((nft) => nft == "Non-fungible Portrait") !=
+                      undefined ? (
                       <a
                         target="_blank"
                         rel="noreferrer"
@@ -251,7 +257,7 @@ export const Drop21: FC = ({}) => {
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/Corrupted%20Mask.png"
                 ></img>
                 <h1 className="font-bold mt-2">Corrupted Mask</h1>
-                {isFetched && wallet.publicKey && (
+                {isFetched && (wallet.publicKey || isXNFT) && (
                   <div className="flex justify-center">
                     {isFetched &&
                     userDripNFT.find((nft) => nft == "Corrupted Mask") !=

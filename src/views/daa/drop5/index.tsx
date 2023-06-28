@@ -22,12 +22,17 @@ export const Drop5DAA: FC = ({}) => {
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
-  async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
     }
-    const publickey = wallet.publicKey;
+  }, []);
+
+  async function getUserNFT() {
+    
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
@@ -73,10 +78,10 @@ export const Drop5DAA: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -85,7 +90,8 @@ export const Drop5DAA: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop5: <span className="italic">What the Hell Is Even That?</span> by{" "}
+            Drop5: <span className="italic">What the Hell Is Even That?</span>{" "}
+            by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -97,11 +103,9 @@ export const Drop5DAA: FC = ({}) => {
           </h1>
           <div className="mt-12 w-[100%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
-            <div>
-            Daddy chill
-            </div>
+            <div>Daddy chill</div>
           </div>
-          {wallet.publicKey && isFetched && (
+          {(wallet.publicKey || isXNFT) && isFetched && (
             <div className="mt-4 w-[100%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
@@ -115,23 +119,30 @@ export const Drop5DAA: FC = ({}) => {
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
           <RarityLegend />
           <div className="flex justify-center mt-4">
-            {NFTsInThisDrop.map((currentNft) => (
-              <div key={currentNft.name}>
-                {currentNft.rarity == "Common" && (
-                  <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
+            <div className="grid sm:w-[70%] grid grid-cols-2 flex items-center md:grid-cols-3 gap-4 mt-4">
+              {NFTsInThisDrop.map((currentNft) => (
+                <div key={currentNft.name}>
+                  <div
+                    className={`bg-[#000000] border border-4 ${
+                      currentNft.rarity == "Common" && "border-[#a5a5a5]"
+                    } ${currentNft.rarity == "Rare" && "border-[#E6C15A]"} ${
+                      currentNft.rarity == "Legendary" &&
+                      "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
+                    }`}
+                  >
                     <img
                       className="h-[300px] w-[300px]"
                       src={currentNft.image}
                     ></img>
                     <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                    {isFetched && wallet.publicKey && (
+                    {isFetched && (wallet.publicKey || isXNFT) && (
                       <div className="flex justify-center">
                         {isFetched &&
                         userDripNFT.find((nft) => nft == currentNft.name) !=
@@ -156,9 +167,9 @@ export const Drop5DAA: FC = ({}) => {
                       </div>
                     )}
                   </div>
-                )}
-              </div>
-            ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -32,11 +32,17 @@ export const Season2Home: FC = ({}) => {
     nbTotalNFTsInDrop += drop.nbNFT;
   });
 
-  async function getUserNFT() {
-    if (!wallet.publicKey) {
-      return;
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
     }
-    const publickey = wallet.publicKey;
+  }, []);
+
+  async function getUserNFT() {
+
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
     setIsFetched(false)
 
@@ -135,10 +141,10 @@ export const Season2Home: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -148,12 +154,12 @@ export const Season2Home: FC = ({}) => {
           <div className="font-bold text-2xl text-center mt-2">
             Track the DRiP NFTs you are missing
           </div>
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl my-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
-          {wallet.publicKey && isFetched && (
+          {(wallet.publicKey || isXNFT) && isFetched && (
             <div className="text-center w-[70%] mx-auto font-bold text-xl my-6">
               <div className="text-left">
                 You have:
@@ -212,7 +218,7 @@ export const Season2Home: FC = ({}) => {
               <div>Choose a drop to see which NFTs you miss.</div>
             </div>
           )}
-          {wallet.publicKey && !isFetched && <Loader />}
+          {(wallet.publicKey || isXNFT) && !isFetched && <Loader />}
           <div className="flex justify-center">
           <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
               <Link

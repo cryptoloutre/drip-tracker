@@ -26,14 +26,20 @@ export const Drop11: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "11";
-  const nbTotalNFTsInDrop = DropInfo.find((drop) => drop.dropNb.toString() == dropNumber).nbNFT;
+  const nbTotalNFTsInDrop = DropInfo.find(
+    (drop) => drop.dropNb.toString() == dropNumber
+  ).nbNFT;
+
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
+    }
+  }, []);
 
   async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
-    }
-    const publickey = wallet.publicKey;
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
@@ -74,10 +80,10 @@ export const Drop11: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -96,7 +102,7 @@ export const Drop11: FC = ({}) => {
               @notbunjil
             </a>
           </h1>
-          <div className="mt-12 w-[70%] mx-auto">
+          <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
               The founder behind{" "}
@@ -189,8 +195,8 @@ export const Drop11: FC = ({}) => {
               .
             </div>
           </div>
-          {wallet.publicKey && isFetched && (
-            <div className="mt-4 w-[70%] mx-auto">
+          {(wallet.publicKey || isXNFT) && isFetched && (
+            <div className="mt-4 sm:w-[70%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
                 You have{" "}
@@ -203,21 +209,21 @@ export const Drop11: FC = ({}) => {
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
           )}
           <RarityLegend />
           <div className="flex justify-center">
-            <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
+            <div className="sm:w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
               <div className="bg-[#000000] border border-4 border-[#a5a5a5]">
                 <img
                   className=""
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/SolanaSpaceman.png"
                 ></img>
                 <h1 className="font-bold mt-2">Solana Spaceman</h1>
-                {isFetched && wallet.publicKey && (
+                {isFetched && (wallet.publicKey || isXNFT) && (
                   <div className="flex justify-center">
                     {isFetched &&
                     userDripNFT.find((nft) => nft == "Solana Spaceman") !=
@@ -250,12 +256,11 @@ export const Drop11: FC = ({}) => {
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/SolanaSpaceman2.png"
                 ></img>
                 <h1 className="font-bold mt-2">Solana Space Knight</h1>
-                {isFetched && wallet.publicKey && (
+                {isFetched && (wallet.publicKey || isXNFT) && (
                   <div className="flex justify-center">
                     {isFetched &&
-                    userDripNFT.find(
-                      (nft) => nft == "Solana Space Knight"
-                    ) != undefined ? (
+                    userDripNFT.find((nft) => nft == "Solana Space Knight") !=
+                      undefined ? (
                       <a
                         target="_blank"
                         rel="noreferrer"
@@ -284,7 +289,7 @@ export const Drop11: FC = ({}) => {
                   src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/SolanaSpaceman4.png"
                 ></img>
                 <h1 className="font-bold mt-2">Legendary Solana Spaceman</h1>
-                {isFetched && wallet.publicKey && (
+                {isFetched && (wallet.publicKey || isXNFT) && (
                   <div className="flex justify-center">
                     {isFetched &&
                     userDripNFT.find(

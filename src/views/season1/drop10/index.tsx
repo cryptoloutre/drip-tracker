@@ -3,8 +3,7 @@ import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 // Wallet
-import { useWallet} from "@solana/wallet-adapter-react";
-
+import { useWallet } from "@solana/wallet-adapter-react";
 
 import { Metadata, Metaplex } from "@metaplex-foundation/js";
 import {
@@ -27,18 +26,26 @@ export const Drop10: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNumber = "10";
-  const nbTotalNFTsInDrop = DropInfo.find((drop) => drop.dropNb.toString() == dropNumber).nbNFT;
+  const nbTotalNFTsInDrop = DropInfo.find(
+    (drop) => drop.dropNb.toString() == dropNumber
+  ).nbNFT;
+
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
+    }
+  }, []);
 
   async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
-    }
-    const publickey = wallet.publicKey;
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
-    const userNFTs = await metaplex.nfts().findAllByOwner({ owner: publickey }, {commitment:"processed"});
+    const userNFTs = await metaplex
+      .nfts()
+      .findAllByOwner({ owner: publickey }, { commitment: "processed" });
 
     const dripCollectionNFTs = userNFTs.filter(
       (metadata) =>
@@ -73,10 +80,10 @@ export const Drop10: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -95,7 +102,7 @@ export const Drop10: FC = ({}) => {
               @0xBanana
             </a>
           </h1>
-          <div className="mt-12 w-[70%] mx-auto">
+          <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
               <a
@@ -111,7 +118,7 @@ export const Drop10: FC = ({}) => {
               and personal emotions through art.
               <br />
               He is one of the top selling AI artists by all-time sales volume
-              on {" "}
+              on{" "}
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -119,7 +126,8 @@ export const Drop10: FC = ({}) => {
                 href={"https://twitter.com/exchgART"}
               >
                 @exchgART
-              </a>.
+              </a>
+              .
               <br />
               Since launching on{" "}
               <a
@@ -154,19 +162,21 @@ export const Drop10: FC = ({}) => {
               possible in the world of digital art.
             </div>
           </div>
-          {wallet.publicKey && isFetched && (
-            <div className="mt-4 w-[70%] mx-auto">
+          {(wallet.publicKey || isXNFT) && isFetched && (
+            <div className="mt-4 sm:w-[70%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
-                You have               <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
-              out of{" "}
-              <span className="font-black text-[#14F195]">
-                {nbTotalNFTsInDrop}
-              </span>{" "} NFT(s) of this drop!
+                You have{" "}
+                <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
+                out of{" "}
+                <span className="font-black text-[#14F195]">
+                  {nbTotalNFTsInDrop}
+                </span>{" "}
+                NFT(s) of this drop!
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
@@ -179,7 +189,7 @@ export const Drop10: FC = ({}) => {
                 src="https://shdw-drive.genesysgo.net/52zh6ZjiUQ5UKCwLBwob2k1BC3KF2qhvsE7V4e8g2pmD/00002.png"
               ></img>
               <h1 className="font-bold mt-2">Technicolor Reef</h1>
-              {isFetched && wallet.publicKey && (
+              {isFetched && (wallet.publicKey || isXNFT) && (
                 <div className="flex justify-center">
                   {isFetched &&
                   userDripNFT.find((nft) => nft == "Technicolor Reef") !=

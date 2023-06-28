@@ -22,12 +22,17 @@ export const Drop1DAA: FC = ({}) => {
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
-  async function getUserNFT() {
-    if (!wallet.publicKey) {
-      setUserDripNFT([]);
-      return;
+  const [isXNFT, setIsXNFT] = useState(false);
+
+  useEffect(() => {
+    if (window.xnft.solana.isXnft) {
+      setIsXNFT(true);
     }
-    const publickey = wallet.publicKey;
+  }, []);
+
+  async function getUserNFT() {
+
+    const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);
 
@@ -73,10 +78,10 @@ export const Drop1DAA: FC = ({}) => {
   }
 
   useEffect(() => {
-    if (wallet.publicKey) {
+    if (wallet.publicKey || isXNFT) {
       getUserNFT();
     }
-  }, [wallet.publicKey]);
+  }, [wallet.publicKey, isXNFT]);
 
   return (
     <div className="md:hero mx-auto p-4">
@@ -110,7 +115,7 @@ export const Drop1DAA: FC = ({}) => {
               , CEO of The Degenerate Ape Academy.
             </div>
           </div>
-          {wallet.publicKey && isFetched && (
+          {(wallet.publicKey || isXNFT) && isFetched && (
             <div className="mt-4 w-[100%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
@@ -124,7 +129,7 @@ export const Drop1DAA: FC = ({}) => {
               </div>
             </div>
           )}
-          {!wallet.publicKey && (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl mt-6">
               Please, connect your wallet to see your progression!
             </div>
@@ -140,7 +145,7 @@ export const Drop1DAA: FC = ({}) => {
                       src={currentNft.image}
                     ></img>
                     <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                    {isFetched && wallet.publicKey && (
+                    {isFetched && (wallet.publicKey || isXNFT) && (
                       <div className="flex justify-center">
                         {isFetched &&
                         userDripNFT.find((nft) => nft == currentNft.name) !=
