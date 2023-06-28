@@ -17,6 +17,7 @@ export const AppBar: React.FC = () => {
   const [isXNFT, setIsXNFT] = useState(false);
 
   useEffect(() => {
+    // @ts-ignore
     if (window.xnft.solana.isXnft) {
       setIsXNFT(true);
     }

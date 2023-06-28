@@ -37,6 +37,7 @@ export const Season1Home: FC = ({}) => {
   const [isXNFT, setIsXNFT] = useState(false);
 
   useEffect(() => {
+    // @ts-ignore
     if (window.xnft.solana.isXnft) {
       setIsXNFT(true);
     }
@@ -44,6 +45,7 @@ export const Season1Home: FC = ({}) => {
 
   async function getUserNFT() {
 
+    // @ts-ignore
     const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
     // dropNFTs will store all the NFTs of the user (DRiP collection and misprint but not the "lights x solana spaces")

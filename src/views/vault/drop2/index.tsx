@@ -25,6 +25,7 @@ export const Drop2Vault: FC = ({}) => {
   const [isXNFT, setIsXNFT] = useState(false);
 
   useEffect(() => {
+    // @ts-ignore
     if (window.xnft.solana.isXnft) {
       setIsXNFT(true);
     }
@@ -32,6 +33,7 @@ export const Drop2Vault: FC = ({}) => {
 
   async function getUserNFT() {
 
+    // @ts-ignore
     const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
     setIsFetched(false);

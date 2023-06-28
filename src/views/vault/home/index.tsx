@@ -31,6 +31,7 @@ export const VaultHome: FC = ({}) => {
   const [isXNFT, setIsXNFT] = useState(false);
 
   useEffect(() => {
+    // @ts-ignore
     if (window.xnft.solana.isXnft) {
       setIsXNFT(true);
     }
@@ -38,6 +39,7 @@ export const VaultHome: FC = ({}) => {
 
   async function getUserNFT() {
 
+    // @ts-ignore
     const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
     setIsFetched(false);
