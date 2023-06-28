@@ -1,0 +1,46 @@
+export const NFTsinDrop = [
+  {
+    name: "Powell: Crypto has Staying Power",
+    rarity: "common",
+    image: "https://arweave.net/rraQ1YV-V6OVzoyiQJy9W1CJ3_lzoQ9n-g1QIPpDcgQ?ext=png",
+    uri: "https://arweave.net/D3fN3vEybIMu_lDrOxsHMWXU5m20V5rh78RYtoyp4MI",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_floor",
+    news: [
+      { value: "$10M", trait_type: "Solana NFT Sales Volume" },
+      { value: "318k", trait_type: "Solana NFT # of Sales" },
+      { value: "48k", trait_type: "Solana NFT # of Buyers" },
+      { value: "$16.49", trait_type: "Price of SOL" },
+      {
+        value: "Jerome Powell States That Crypto Has Staying Power as an Asset Class",
+        trait_type: "Headline 1",
+      },
+      { value: "SEC Approves First Leveraged Bitcoin Futures ETF", trait_type: "Headline 2" },
+      { value: "Taiyo Announces Release Date", trait_type: "Headline 3" },
+      { value: "Zero Monke Biz", trait_type: "Highest Volume 1" },
+      { value: "Banx", trait_type: "Highest Volume 2" },
+      { value: "Mad Lads", trait_type: "Highest Volume 3" },
+    ],
+  },
+  {
+    name: "WE SAY: HERE TO STAY!",
+    rarity: "legendary",
+    image: "https://arweave.net/FGD45DZ2XMZZQTHHoll5JXAxmzzEyv8fu74W5_7o49o?ext=png",
+    uri: "https://arweave.net/5ilVTpkVv3pFh3oVv7AJxvSf_plJkpTFfHHzNkaj_fo",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_floor",
+    news: [
+      { value: "$10M", trait_type: "Solana NFT Sales Volume" },
+      { value: "318k", trait_type: "Solana NFT # of Sales" },
+      { value: "48k", trait_type: "Solana NFT # of Buyers" },
+      { value: "$16.49", trait_type: "Price of SOL" },
+      {
+        value: "Jerome Powell States That Crypto Has Staying Power as an Asset Class",
+        trait_type: "Headline 1",
+      },
+      { value: "SEC Approves First Leveraged Bitcoin Futures ETF", trait_type: "Headline 2" },
+      { value: "Taiyo Announces Release Date", trait_type: "Headline 3" },
+      { value: "Zero Monke Biz", trait_type: "Highest Volume 1" },
+      { value: "Banx", trait_type: "Highest Volume 2" },
+      { value: "Mad Lads", trait_type: "Highest Volume 3" },
+    ],
+  },
+];
