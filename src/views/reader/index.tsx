@@ -76,10 +76,24 @@ export const Reader: FC = ({}) => {
         const rarity = attributes.find(
           (nft) => nft.trait_type == "Rarity"
         ).value;
+
+        let image;
+        let slides;
         // @ts-ignore
-        const image = asset.content.files[0].uri;
-        // @ts-ignore
-        const slides = asset.content.files.slice(1);
+        const files = asset.content.files;
+
+        if (files.length != 0) {
+          image = files[0].uri;
+          slides = files.slice(1);
+        }
+        else {
+          const uri = asset.content.json_uri;
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          image = responseData.properties.files[0].uri;
+          slides = responseData.properties.files.slice(1);
+        }
+
         _userBork.push({
           name: name,
           image: image,
