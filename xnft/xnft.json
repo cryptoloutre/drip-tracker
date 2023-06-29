@@ -1,0 +1,26 @@
+{
+  "kind": "app",
+  "storage": "arweave",
+  "name": "DRiP Tracker",
+  "version": "0.0.1",
+  "description": "Track the DRiP NFTs you are missing",
+  "website": "https://drip-tracker.vercel.app/",
+  "price": 0,
+  "tag": "nfts",
+  "contact": "https://twitter.com/laloutre",
+  "entrypoints": {
+    "default": {
+      "web": "https://drip-tracker.vercel.app/"
+    }
+  },
+  "icon": {
+    "md": "./assets/icon.png"
+  },
+  "screenshots": [
+    "./assets/screenshot1.png",
+    "./assets/screenshot2.png",
+    "./assets/screenshot3.png",
+    "./assets/screenshot4.png",
+    "./assets/screenshot5.png"
+  ]
+}

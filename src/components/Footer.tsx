@@ -85,6 +85,15 @@ export const Footer: FC = () => {
                   >
                     GitHub
                   </Link>
+                  <Link
+                    href="https://www.xnft.gg/app/ALjikf5MY2muaJahDAjzjZTjwqcRfSQRDanP4VpJKeQE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    passHref
+                    className="text-secondary hover:text-white"
+                  >
+                    xNFT
+                  </Link>
                 </div>
               </div>
             </div>
