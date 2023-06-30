@@ -144,6 +144,21 @@ export const HomeView: FC = ({}) => {
                   Bangerz
                 </div>
               </Link>
+              <Link
+                href="/betdex/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/AjH_HqLjg9px7KsDGqCg_3zBuMf31MBJCqAccFFw6qI?ext=png"
+                    alt="betdex preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Betdex
+                </div>
+              </Link>
             </div>
           </div>
         </div>
