@@ -67,7 +67,7 @@ export const TinyHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        let drop = attributes.find((nft) => nft.trait_type == "drop");
+        let drop = attributes.find((nft) => nft.trait_type == "Drop");
         if (!drop) {
           drop = 1;
         }
@@ -291,6 +291,21 @@ export const TinyHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
                   Drop 1
+                </div>
+              </Link>
+              <Link
+                href="/tiiiny/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/gy7yeDKSqFhnZrKjTFqt9tDiQewBjJTxmpUbbXLKt1U?ext=png"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Drop 2
                 </div>
               </Link>
             </div>

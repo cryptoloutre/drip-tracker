@@ -70,6 +70,7 @@ export {Drop3Floor} from "./floor/drop3";
 export {Drop4Floor} from "./floor/drop4";
 export {TinyHome} from "./tinydenise/home";
 export {Drop1Tiny} from "./tinydenise/drop1";
+export {Drop2Tiny} from "./tinydenise/drop2";
 export {VaultHome} from "./vault/home";
 export {Drop1Vault} from "./vault/drop1";
 export {Drop2Vault} from "./vault/drop2";
