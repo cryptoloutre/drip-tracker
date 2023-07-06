@@ -82,5 +82,6 @@ export {Drop5Vault} from "./vault/drop5";
 export {Drop6Vault} from "./vault/drop6";
 export {BangerzHome} from "./bangerz/home";
 export {Drop1Bangerz} from "./bangerz/drop1";
+export {Drop2Bangerz} from "./bangerz/drop2";
 export {BetdexHome} from "./betdex/home";
 export {Drop1Betdex} from "./betdex/drop1";

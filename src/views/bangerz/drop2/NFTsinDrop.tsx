@@ -1,0 +1,73 @@
+export const NFTsinDrop = [
+  {
+    name: "ded lmao",
+    uri: "https://arweave.net/f40_zXa-44UtXQR_f2hPw1pkBOuc-JJ70iXKFCzDeW4",
+    rarity: "Common",
+    image: "https://arweave.net/hftvkBDUVDbm2bdYL6O9lvqvlUj4mGjJnP3s4T1raCs?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Mask On",
+    uri: "https://arweave.net/_QiTivmzhgCollFtbeCgaFILIOoWl8_LELPROD3vMuY",
+    rarity: "Common",
+    image: "https://arweave.net/sZnC1D_-ydsrxgnrAWaDenLqmSxWW0Sg63PIxh7R26A?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+
+  {
+    name: "Bonk Billionaire",
+    uri: "https://arweave.net/0lX2_evOk4xHKYiaTKN9mtT6fB2QyjoKDETVeDQ6sMg",
+    rarity: "Common",
+    image: "https://arweave.net/P29NQb_i1rqS7Q8n3rSY0RaW_kU7GCpf-Ick5zrLyKk?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Button Meme",
+    uri: "https://arweave.net/rRsFtTLhT37CJ20jw4LitSkfUQK73dlRFdP8cKnPZd4",
+    rarity: "Common",
+    image: "https://arweave.net/B4QtLjA_9XnIqpRCg5Twn_04bl8LlBLVHqlErxEVxwg?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Little Miss Gaslight",
+    uri: "https://arweave.net/DVVgczID3gXyYg5Xu0ewjAiM7F8YLLpheeGXb0lgq6Y",
+    rarity: "Rare",
+    image: "https://arweave.net/vQyG65i4m7jFm-KovGXiwAn6IUHLKTVgIpVR_dy3vc0?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Tea",
+    uri: "https://arweave.net/5Wb_w67SrlDW14tTO59XxCA9kapzsdZBVH78HFVELOw",
+    rarity: "Rare",
+    image: "https://arweave.net/c3OWvfNXsDghwtrR7C0XQyqKrJsKB0ZMbp-1p1gogg4?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Brah",
+    uri: "https://arweave.net/vlWYrhKBXaTPSGMZU1VikYUBeEfKoETmpNMzPc83ZJc",
+    rarity: "Rare",
+    image: "https://arweave.net/V_yGh1C25NULjxvVXnRAjThMG4jEYj0Z3WRXV_RbvZs?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Little Miss Meme-U-To-Death",
+    uri: "https://arweave.net/0ZEm5dNWg-_t6g54Z0cjJl9EKoe-2my4Qp8BNdgggCQ",
+    rarity: "Rare",
+    image: "https://arweave.net/CpsaA0pu6sZFPAY8K-l7bmHRUdCFj6tN-M1i-r-bA5Q?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Yikes",
+    uri: "https://arweave.net/em8Z2esovg4i6T94KEGB6gkbvHIBjGlpiEWDTMeaytA",
+    rarity: "Legendary",
+    image: "https://arweave.net/QtQnQeQS20NezCiC5YnlIqbmfGgESCUMK0Ky25gmaUA?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+  {
+    name: "Web3 Events",
+    uri: "https://arweave.net/SttEHecUnOMZ2AZNAyVEV3XgC25xd6Q_YK35hJv5Ar8",
+    rarity: "Legendary",
+    image: "https://arweave.net/df-xh70u-r8te902eh9HejjwTy842wRqSdCyiF958s4?ext=PNG",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_bangerz_origins",
+  },
+];
