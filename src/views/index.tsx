@@ -63,6 +63,7 @@ export {Drop6DAA} from "./daa/drop6";
 export {BorkHome} from "./bork/home";
 export {Drop1Bork} from "./bork/drop1";
 export {Drop2Bork} from "./bork/drop2";
+export {Drop3Bork} from "./bork/drop3";
 export {Reader} from "./reader"
 export {FloorHome} from "./floor/home";
 export {Drop1Floor} from "./floor/drop1";
