@@ -77,6 +77,36 @@ export const Reader: FC = ({}) => {
           (nft) => nft.trait_type == "Rarity"
         ).value;
 
+        let chapterIndex;
+
+        if (chapter.includes("One")) {
+          chapterIndex = 1;
+        };
+
+        if (chapter.includes("Two")) {
+          chapterIndex = 2;
+        };
+
+        if (chapter.includes("Three")) {
+          chapterIndex = 3;
+        };
+
+        if (chapter.includes("Four")) {
+          chapterIndex = 4;
+        };
+
+        let rarityIndex;
+
+        if (rarity == "Common") {
+          rarityIndex = 1;
+        }
+        else if (rarity == "Rare") {
+          rarityIndex = 2;
+        }
+        else {
+          rarityIndex = 3;
+        }
+
         let image;
         let slides;
         // @ts-ignore
@@ -100,6 +130,8 @@ export const Reader: FC = ({}) => {
           chapter: chapter,
           rarity: rarity,
           slides: slides,
+          chapterIndex: chapterIndex,
+          rarityIndex: rarityIndex
         });
       })
     );
@@ -116,10 +148,16 @@ export const Reader: FC = ({}) => {
     });
 
     userBork.sort(function (a: any, b: any) {
-      if (a < b) {
+      if (a.chapterIndex < b.chapterIndex) {
         return -1;
       }
-      if (a > b.slice) {
+      if (a.chapterIndex > b.chapterIndex) {
+        return 1;
+      }
+      if (a.chapterIndex == b.chapterIndex && a.rarityIndex < b.rarityIndex) {
+        return -1;
+      }
+      if (a.chapterIndex == b.chapterIndex && a.rarityIndex > b.rarityIndex) {
         return 1;
       }
       return 0;
