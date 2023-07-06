@@ -1,12 +1,8 @@
 // Next, React
 import { FC, useEffect, useState } from "react";
-import Link from "next/link";
 
 // Wallet
 import { useWallet } from "@solana/wallet-adapter-react";
-
-import { Metadata, Metaplex } from "@metaplex-foundation/js";
-import { Connection } from "@solana/web3.js";
 import { Loader } from "components/Loader";
 import { WrapperConnection } from "../../../ReadApi/WrapperConnection";
 
@@ -27,6 +23,20 @@ export const Reader: FC = ({}) => {
   } | null>(null);
 
   const [isXNFT, setIsXNFT] = useState(false);
+
+  const rarityIndexMatch = [
+    { rarity: "Common", index: 1 },
+    { rarity: "Rare", index: 2 },
+    { rarity: "Legendary", index: 3 },
+  ];
+
+  const ChapterIndexMatch = [
+    { chapter: "One", index: 1 },
+    { chapter: "Two", index: 2 },
+    { chapter: "Three", index: 3 },
+    { chapter: "Four", index: 4 },
+    { chapter: "Five", index: 5 },
+  ];
 
   useEffect(() => {
     // @ts-ignore
@@ -77,35 +87,9 @@ export const Reader: FC = ({}) => {
           (nft) => nft.trait_type == "Rarity"
         ).value;
 
-        let chapterIndex;
 
-        if (chapter.includes("One")) {
-          chapterIndex = 1;
-        };
-
-        if (chapter.includes("Two")) {
-          chapterIndex = 2;
-        };
-
-        if (chapter.includes("Three")) {
-          chapterIndex = 3;
-        };
-
-        if (chapter.includes("Four")) {
-          chapterIndex = 4;
-        };
-
-        let rarityIndex;
-
-        if (rarity == "Common") {
-          rarityIndex = 1;
-        }
-        else if (rarity == "Rare") {
-          rarityIndex = 2;
-        }
-        else {
-          rarityIndex = 3;
-        }
+        const rarityIndex = rarityIndexMatch.find((rarityPair) => rarityPair.rarity == rarity).index;
+        const chapterIndex = ChapterIndexMatch.find((chapterPair) => chapterPair.chapter == chapter).index;
 
         let image;
         let slides;
@@ -115,8 +99,7 @@ export const Reader: FC = ({}) => {
         if (files.length != 0) {
           image = files[0].uri;
           slides = files.slice(1);
-        }
-        else {
+        } else {
           const uri = asset.content.json_uri;
           const response = await fetch(uri);
           const responseData = await response.json();
@@ -131,7 +114,7 @@ export const Reader: FC = ({}) => {
           rarity: rarity,
           slides: slides,
           chapterIndex: chapterIndex,
-          rarityIndex: rarityIndex
+          rarityIndex: rarityIndex,
         });
       })
     );
