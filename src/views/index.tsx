@@ -88,3 +88,5 @@ export {Drop1Bangerz} from "./bangerz/drop1";
 export {Drop2Bangerz} from "./bangerz/drop2";
 export {BetdexHome} from "./betdex/home";
 export {Drop1Betdex} from "./betdex/drop1";
+export {MaquinHome} from "./maquin/home";
+export {Drop1Maquin} from "./maquin/drop1";
