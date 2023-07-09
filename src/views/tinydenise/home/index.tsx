@@ -38,7 +38,6 @@ export const TinyHome: FC = ({}) => {
   }, []);
 
   async function getUserNFT() {
-
     // @ts-ignore
     const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
@@ -70,9 +69,8 @@ export const TinyHome: FC = ({}) => {
         let drop = attributes.find((nft) => nft.trait_type == "Drop");
         if (!drop) {
           drop = 1;
-        }
-        else {
-          drop = drop.value
+        } else {
+          drop = drop.value;
         }
         return {
           uri,
@@ -289,9 +287,7 @@ export const TinyHome: FC = ({}) => {
                     alt="drop 1 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">
-                  Drop 1
-                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
               </Link>
               <Link
                 href="/tiiiny/drop2"
@@ -304,9 +300,20 @@ export const TinyHome: FC = ({}) => {
                     alt="drop 2 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">
-                  Drop 2
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
+              </Link>
+              <Link
+                href="/tiiiny/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/I9HvAxiDnNK8sY12mLe-LMrZS6_i89l0BH8dg0IZNyE?ext=png"
+                    alt="drop 3 preview"
+                  ></img>
                 </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
               </Link>
             </div>
           </div>
