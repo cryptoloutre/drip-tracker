@@ -169,17 +169,17 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Maquin</div>
               </Link>
               <Link
-                href="/geneftee/home"
+                href="/andrewmason/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
                   <img
                     className="md:w-[300px] px-2 py-2"
-                    src="https://arweave.net/FLtOiTgaU4W5mSBRtJXgEgixvmiGntTFdJn_2k3M-ZE?ext=jpg"
-                    alt="geneftee preview"
+                    src="https://arweave.net/yaXmwoRlmKRb12Fb8vjfpDhgo8qDYn87unpLqCclOvo?ext=jpeg"
+                    alt="andrew mason preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Geneftee</div>
+                <div className="text-center font-bold mt-1 pb-1">Andrew Mason</div>
               </Link>
             </div>
           </div>

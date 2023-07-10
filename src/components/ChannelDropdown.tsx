@@ -106,6 +106,9 @@ export const ChannelDropdown: FC = () => {
         <li className="wallet-adapter-dropdown-list-item" role="menuitem">
           <Link href="/geneftee/home">Geneftee</Link>
         </li>
+        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
+          <Link href="/andrewmason/home">Andrew Mason</Link>
+        </li>
       </ul>
     </div>
   );
