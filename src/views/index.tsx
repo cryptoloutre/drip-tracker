@@ -85,6 +85,7 @@ export {Drop3Vault} from "./vault/drop3";
 export {Drop4Vault} from "./vault/drop4";
 export {Drop5Vault} from "./vault/drop5";
 export {Drop6Vault} from "./vault/drop6";
+export {Drop7Vault} from "./vault/drop7";
 export {BangerzHome} from "./bangerz/home";
 export {Drop1Bangerz} from "./bangerz/drop1";
 export {Drop2Bangerz} from "./bangerz/drop2";
