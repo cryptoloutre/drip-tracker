@@ -19,4 +19,8 @@ export const DropInfo = [
     dropNb: "Week of 7.4.2023",
     nbNFT: 2,
   },
+  {
+    dropNb: "Week of 7.11.2023",
+    nbNFT: 2,
+  },
 ];

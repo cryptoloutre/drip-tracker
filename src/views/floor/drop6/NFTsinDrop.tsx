@@ -1,0 +1,41 @@
+export const NFTsinDrop = [
+  {
+    name: "Threads Edition",
+    rarity: "common",
+    image: "https://arweave.net/cKDc3or74nnh2iW2Vr-AzL-z4UaFio_bBqJNowMNYiU?ext=jpg",
+    uri: "https://arweave.net/6hLiIwlZfHoP9Tqd2zSAli3XZlw0_1hmCikl_JTNUK0",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_floor",
+    news: [
+      { value: "$9.8M", trait_type: "Solana NFT Sales Volume" },
+      { value: "150,000", trait_type: "Solana NFT # of Sales" },
+      { value: "15,600", trait_type: "Solana NFT # of Buyers" },
+      { value: "$21.93", trait_type: "Price of SOL" },
+      { value: "Is Threads the New Home for Crypto Twitter?", trait_type: "Headline 1" },
+      { value: "SMB Gen 3 Reveals!", trait_type: "Headline 2" },
+      { value: "Claynos Welcome Strategic Advisor to the Team", trait_type: "Headline 3" },
+      { value: "SMB Gen3", trait_type: "Highest Volume 1" },
+      { value: "SMB Barrel", trait_type: "Highest Volume 2" },
+      { value: "Mad Lads", trait_type: "Highest Volume 3" },
+    ],
+  },
+  {
+    name: "Special: Threads Edition",
+    rarity: "legendary",
+    image: "https://arweave.net/PFn5JPl6JqzK9KZ43OfKr7UjGi2brg_RAJhsburxPq4?ext=jpg",
+    uri: "https://arweave.net/pCXt__3t8nkOx-VW-sfmixp8Z00mh5X7uYc771uB6fA",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_floor",
+    news: [
+      { value: "$9.8M", trait_type: "Solana NFT Sales Volume" },
+      { value: "150,000", trait_type: "Solana NFT # of Sales" },
+      { value: "15,600", trait_type: "Solana NFT # of Buyers" },
+      { value: "$21.93", trait_type: "Price of SOL" },
+      { value: "Is Threads the New Home for Crypto Twitter?", trait_type: "Headline 1" },
+      { value: "SMB Gen 3 Reveals!", trait_type: "Headline 2" },
+      { value: "Claynos Welcome Strategic Advisor to the Team", trait_type: "Headline 3" },
+      { value: "SMB Gen3", trait_type: "Highest Volume 1" },
+      { value: "SMB Barrel", trait_type: "Highest Volume 2" },
+      { value: "Mad Lads", trait_type: "Highest Volume 3" },
+    ],
+  },
+];
+
