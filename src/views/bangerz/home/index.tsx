@@ -47,7 +47,7 @@ export const BangerzHome: FC = ({}) => {
       ownerAddress: publickey.toBase58(),
     });
 
-    const _userNFTs = allUserNFTs.items.filter(
+    const _userNFTsOrigins = allUserNFTs.items.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
@@ -55,8 +55,16 @@ export const BangerzHome: FC = ({}) => {
           "BNGZBH4iBZqL4op5ZoyYE11UuogYvvMtPVxgakZMBjxB"
     );
 
-    const _userNFTsURI = await Promise.all(
-      _userNFTs.map(async (asset) => {
+    const _userNFTs3Drip = allUserNFTs.items.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "BZ3DohF6BHGkAnZAe1g8ohWVuh95bXT4FhiGw1BXJWfF"
+    );
+
+    const _userNFTsUriOrigins = await Promise.all(
+      _userNFTsOrigins.map(async (asset) => {
         let attributes: any;
         const uri = asset.content.json_uri;
         if (asset.content.metadata.attributes) {
@@ -73,6 +81,28 @@ export const BangerzHome: FC = ({}) => {
         };
       })
     );
+
+    const _userNFTsUri3Drip = await Promise.all(
+      _userNFTs3Drip.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        const drop = (Number(_drop) + 2).toString();
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const _userNFTsURI = _userNFTsUriOrigins.concat(_userNFTsUri3Drip);
 
     // we filter to eliminate the doublons
     const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
@@ -289,6 +319,19 @@ export const BangerzHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
+              </Link>
+              <Link
+                href="/bangerz/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/Rpa9a23sQLDA85zkAOodF-Plo34ZM9tKEbKURAqcdqw?ext=gif"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
               </Link>
             </div>
           </div>
