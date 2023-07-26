@@ -101,3 +101,5 @@ export {GenefteeHome} from "./geneftee/home";
 export {Drop1Geneftee} from "./geneftee/drop1";
 export {MasonHome} from "./andrewmason/home";
 export {Drop1Mason} from "./andrewmason/drop1";
+export {Drop2Mason} from "./andrewmason/drop2";
+export {Drop3Mason} from "./andrewmason/drop3";
