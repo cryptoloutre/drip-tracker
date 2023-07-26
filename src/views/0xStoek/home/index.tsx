@@ -280,7 +280,7 @@ export const StoekHome: FC = ({}) => {
                 <div className="flex justify-center">
                   <img
                     className=""
-                    src="https://arweave.net/oGyjFN50oGjZwPW4ME6M9rMYfwlxQ8exKg7O3eKvyPc?ext=jpg"
+                    src="https://arweave.net/RSvTxlr3NUf0ddI4siP7jp2T2AStRo0kTSg2VDwtU08?ext=jpg"
                     alt="drop 1 preview"
                   ></img>
                 </div>
