@@ -126,3 +126,5 @@ export {PogHome} from "./pog/home";
 export {Drop1Pog} from "./pog/drop1";
 export {GrimeHome} from "./0xgrime/home";
 export {Drop1Grime} from "./0xgrime/drop1";
+export {StoekHome} from "./0xStoek/home";
+export {Drop1Stoek} from "./0xStoek/drop1";
