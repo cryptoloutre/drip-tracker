@@ -367,6 +367,32 @@ export const BorkHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Chapter Four</div>
               </Link>
+              <Link
+                href="/bork/drop5"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/c2THc4XX5zpbdUuErElGJ4rbPOKsdcHnkH5q_sZu8zs?ext=jpg"
+                    alt="chapter 5 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Chapter Five</div>
+              </Link>
+              <Link
+                href="/bork/drop6"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/c6mchuk2ARpJlqZMXAo1cXcPN5AtXvuHJDSinBUw-z8?ext=png"
+                    alt="chapter 6 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Chapter Six</div>
+              </Link>
             </div>
           </div>
         </div>
