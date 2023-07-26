@@ -124,3 +124,5 @@ export {Drop2Mason} from "./andrewmason/drop2";
 export {Drop3Mason} from "./andrewmason/drop3";
 export {PogHome} from "./pog/home";
 export {Drop1Pog} from "./pog/drop1";
+export {GrimeHome} from "./0xgrime/home";
+export {Drop1Grime} from "./0xgrime/drop1";
