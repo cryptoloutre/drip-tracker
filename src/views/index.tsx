@@ -96,6 +96,7 @@ export {Drop3Bangerz} from "./bangerz/drop3";
 export {Drop4Bangerz} from "./bangerz/drop4";
 export {BetdexHome} from "./betdex/home";
 export {Drop1Betdex} from "./betdex/drop1";
+export {Drop2Betdex} from "./betdex/drop2";
 export {MaquinHome} from "./maquin/home";
 export {Drop1Maquin} from "./maquin/drop1";
 export {GenefteeHome} from "./geneftee/home";
