@@ -107,6 +107,8 @@ export {Drop1Betdex} from "./betdex/drop1";
 export {Drop2Betdex} from "./betdex/drop2";
 export {MaquinHome} from "./maquin/home";
 export {Drop1Maquin} from "./maquin/drop1";
+export {Drop2Maquin} from "./maquin/drop2";
+export {Drop3Maquin} from "./maquin/drop3";
 export {GenefteeHome} from "./geneftee/home";
 export {Drop1Geneftee} from "./geneftee/drop1";
 export {Drop2Geneftee} from "./geneftee/drop2";
