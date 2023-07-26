@@ -18,6 +18,6 @@ export const NFTsinDrop = [
     uri: 'https://arweave.net/mC3xSXavQfeRaB-wFMwoCWmGcUdPgfe5-h2xvfGIQxw',
     rarity: 'Legendary',
     image: 'https://arweave.net/jIj890Hck1VpMzzvHcqcnkAPCl7Kx1tkzAtQ-rAXfL8?ext=png',
-    magicEdenLink: 'https://www.tensor.trade/trade/maquin_drip_season_1'
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_pog_stickers'
   },
 ];
