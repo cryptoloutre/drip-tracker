@@ -64,6 +64,8 @@ export {Drop4DAA} from "./daa/drop4";
 export {Drop5DAA} from "./daa/drop5";
 export {Drop6DAA} from "./daa/drop6";
 export {Drop7DAA} from "./daa/drop7";
+export {Drop8DAA} from "./daa/drop8";
+export {Drop9DAA} from "./daa/drop9";
 export {BorkHome} from "./bork/home";
 export {Drop1Bork} from "./bork/drop1";
 export {Drop2Bork} from "./bork/drop2";
