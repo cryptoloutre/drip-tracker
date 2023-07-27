@@ -34,7 +34,7 @@ export const Drop16: FC = ({}) => {
 
   useEffect(() => {
     // @ts-ignore
-    if (window.xnft.solana.isXnft) {
+    if (window.xnft?.solana.isXnft) {
       setIsXNFT(true);
     }
   }, []);

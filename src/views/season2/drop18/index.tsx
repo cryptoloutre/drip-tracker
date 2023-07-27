@@ -21,7 +21,7 @@ export const Drop18S2: FC = ({}) => {
 
   useEffect(() => {
     // @ts-ignore
-    if (window.xnft.solana.isXnft) {
+    if (window.xnft?.solana.isXnft) {
       setIsXNFT(true);
     }
   }, []);

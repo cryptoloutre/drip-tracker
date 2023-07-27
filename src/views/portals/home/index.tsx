@@ -32,7 +32,7 @@ export const PortalsHome: FC = ({}) => {
 
   useEffect(() => {
     // @ts-ignore
-    if (window.xnft.solana.isXnft) {
+    if (window.xnft?.solana.isXnft) {
       setIsXNFT(true);
     }
   }, []);

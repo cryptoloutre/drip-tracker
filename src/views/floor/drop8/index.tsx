@@ -26,7 +26,7 @@ export const Drop8Floor: FC = ({}) => {
 
   useEffect(() => {
     // @ts-ignore
-    if (window.xnft.solana.isXnft) {
+    if (window.xnft?.solana.isXnft) {
       setIsXNFT(true);
     }
   }, []);

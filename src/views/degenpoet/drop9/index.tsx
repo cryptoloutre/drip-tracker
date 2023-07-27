@@ -26,7 +26,7 @@ export const Drop9Degen: FC = ({}) => {
 
   useEffect(() => {
     // @ts-ignore
-    if (window.xnft.solana.isXnft) {
+    if (window.xnft?.solana.isXnft) {
       setIsXNFT(true);
     }
   }, []);
