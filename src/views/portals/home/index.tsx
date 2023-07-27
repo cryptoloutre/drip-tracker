@@ -11,7 +11,7 @@ import { Loader } from "components/Loader";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { DropInfo } from "./DropInfo";
 
-export const PogHome: FC = ({}) => {
+export const PortalsHome: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -52,7 +52,7 @@ export const PogHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "PoGvabB3UmqyRFzt7BvTJ5xnyi53PsiiMWuX4TravKd"
+          "PTLSuzbAewuTmQwpMqmZTmoJoPE7x1dDJccRu3s5WcT"
     );
 
     const _userNFTsURI = await Promise.all(
@@ -146,12 +146,14 @@ export const PogHome: FC = ({}) => {
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex justify-center">
         <div className="">
-          <h1 className="font-bold text-4xl text-center">POG® Drop</h1>
+          <h1 className="font-bold text-4xl text-center">Portals</h1>
           <div className="text-center text-3xl font-bold">
-            Track the POG® NFTs you are missing
+            Track the Portals NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-          Sign up to collect authentic POG Digital Stickers that can be used in the Pog Play For Keeps Game on Desktop and Solana Saga!
+            Portals is a 3D and Metaverse platform on Solana. A browser-based
+            multiplayer world-building platform that allows anyone to build,
+            share, and play in an open world that is built by your imagination.
             <br />
             <br />
             Sign up{" "}
@@ -159,7 +161,7 @@ export const PogHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://drip.haus/pog"}
+              href={"https://drip.haus/portals"}
             >
               here
             </a>{" "}
@@ -168,9 +170,9 @@ export const PogHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://twitter.com/pogdigital"}
+              href={"https://twitter.com/_portals_"}
             >
-              POG®
+              Portals
             </a>{" "}
             DRiP drop.
             <div className="mt-4 flex text-xl">
@@ -178,7 +180,7 @@ export const PogHome: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://www.pogdigital.com/"}
+                href={"https://theportal.to/"}
               >
                 Website
               </a>
@@ -186,7 +188,7 @@ export const PogHome: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://twitter.com/pogdigital"}
+                href={"https://twitter.com/_portals_"}
               >
                 Twitter
               </a>
@@ -194,7 +196,7 @@ export const PogHome: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://discord.com/invite/pogdigital"}
+                href={"https://discord.com/invite/portals"}
               >
                 Discord
               </a>
@@ -268,13 +270,13 @@ export const PogHome: FC = ({}) => {
           <div className="flex justify-center">
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               <Link
-                href="/pog/drop1"
+                href="/portals/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
                   <img
                     className=""
-                    src="https://arweave.net/jIj890Hck1VpMzzvHcqcnkAPCl7Kx1tkzAtQ-rAXfL8?ext=png"
+                    src="https://arweave.net/r5j32t9rUIejz2L4-U_kv8NhI_5afJ3S4FedErMFQnM?ext=jpg"
                     alt="drop 1 preview"
                   ></img>
                 </div>

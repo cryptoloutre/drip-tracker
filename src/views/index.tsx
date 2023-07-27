@@ -130,3 +130,5 @@ export {StoekHome} from "./0xStoek/home";
 export {Drop1Stoek} from "./0xStoek/drop1";
 export {JakeyHome} from "./jakey/home";
 export {Drop1Jakey} from "./jakey/drop1";
+export {PortalsHome} from "./portals/home";
+export {Drop1Portals} from "./portals/drop1";
