@@ -457,6 +457,19 @@ export const Season2Home: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">The Dashers</div>
               </Link>
+              <Link
+                href="/season2/drop19"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=" px-2 py-2"
+                    src="https://arweave.net/GbD_O-7P2ziqqGpTNmQQyoC44-jg2xcYKklz59sQjLM?ext=jpg"
+                    alt="drop 19 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 19</div>
+              </Link>
             </div>
           </div>
         </div>
