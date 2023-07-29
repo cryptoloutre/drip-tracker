@@ -132,6 +132,7 @@ export {GrimeHome} from "./0xgrime/home";
 export {Drop1Grime} from "./0xgrime/drop1";
 export {StoekHome} from "./0xStoek/home";
 export {Drop1Stoek} from "./0xStoek/drop1";
+export {Drop2Stoek} from "./0xStoek/drop2";
 export {JakeyHome} from "./jakey/home";
 export {Drop1Jakey} from "./jakey/drop1";
 export {PortalsHome} from "./portals/home";

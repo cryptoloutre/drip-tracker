@@ -286,6 +286,19 @@ export const StoekHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
               </Link>
+              <Link
+                href="/0xStoek/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/DO5Dt1_2kw-mITVQwcckvb0ucDtnyO3mUjM3wNB2EkU?ext=png"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
+              </Link>
             </div>
           </div>
         </div>
