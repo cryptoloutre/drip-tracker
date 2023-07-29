@@ -282,6 +282,19 @@ export const GrimeHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
               </Link>
+              <Link
+                href="/0xgrime/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/5maPc7mrxm9gtqZ8MYvNoNuXdM6Au9WoE3sdGH3Z8bU?ext=jpg"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
+              </Link>
             </div>
           </div>
         </div>
