@@ -43,6 +43,7 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
             <NavElement label="0xStoek" href="/0xStoek/home" />
             <NavElement label="Jakey" href="/jakey/home" />
             <NavElement label="Portals" href="/portals/home" />
+            <NavElement label="No Face-No Case" href="/nofacenocase/home" />
             <NavElement label="Bork" href="/bork/home" />
             <NavElement label="Comic Reader" href="/reader" />
           </li>
