@@ -88,6 +88,7 @@ export {Drop5Floor} from "./floor/drop5";
 export {Drop6Floor} from "./floor/drop6";
 export {Drop7Floor} from "./floor/drop7";
 export {Drop8Floor} from "./floor/drop8";
+export {Drop9Floor} from "./floor/drop9";
 export {TinyHome} from "./tinydenise/home";
 export {Drop1Tiny} from "./tinydenise/drop1";
 export {Drop2Tiny} from "./tinydenise/drop2";

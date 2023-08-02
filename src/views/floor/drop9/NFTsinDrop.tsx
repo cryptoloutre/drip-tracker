@@ -1,0 +1,41 @@
+export const NFTsinDrop = [
+  {
+    name: "Partners & Launches!",
+    rarity: "Common",
+    image: "https://arweave.net/JAtDQoDL4l9pMvAcuG_n4fAds23k0fUUXtlCK891XZ8?ext=jpg",
+    uri: "https://arweave.net/2zuitQIMx7_RJgmHp9UR9dXnUZLTMwXYequ8wHHuamE",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_floor",
+    news: [
+      { value: "$6.7M", trait_type: "Solana NFT Sales Volume" },
+      { value: "207K", trait_type: "Solana NFT # of Sales" },
+      { value: "57K", trait_type: "Solana NFT # of Buyers" },
+      { value: "$23.55", trait_type: "Price of SOL" },
+      { value: "DRiP HAUS and Stepn Announce Partnership", trait_type: "Headline 1" },
+      { value: "World of Women Launches Patio on Second Anniversary", trait_type: "Headline 2" },
+      { value: "RENGA Announces Collab with Haas F1 Team", trait_type: "Headline 3" },
+      { value: "The Heist", trait_type: "Highest Volume 1" },
+      { value: "Transdimensional Fox Federation", trait_type: "Highest Volume 2" },
+      { value: "Mad Lads", trait_type: "Highest Volume 3" },
+    ],
+  },
+  {
+    name: "Excl: Partners & Launches!",
+    rarity: "Legendary",
+    image: "https://arweave.net/iPu_gd5sLR62vNjebqHV6WBIjGuFEH8QUWS-iJIj7VI?ext=jpg",
+    uri: "https://arweave.net/EFoktUIvqN-oSTe9PddMRJCwYeKC8gmlk0yBalh7dSk",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_floor",
+    news: [
+      { value: "$6.7M", trait_type: "Solana NFT Sales Volume" },
+      { value: "207K", trait_type: "Solana NFT # of Sales" },
+      { value: "57K", trait_type: "Solana NFT # of Buyers" },
+      { value: "$23.55", trait_type: "Price of SOL" },
+      { value: "DRiP HAUS and Stepn Announce Partnership", trait_type: "Headline 1" },
+      { value: "World of Women Launches Patio on Second Anniversary", trait_type: "Headline 2" },
+      { value: "RENGA Announces Collab with Haas F1 Team", trait_type: "Headline 3" },
+      { value: "The Heist", trait_type: "Highest Volume 1" },
+      { value: "Transdimensional Fox Federation", trait_type: "Highest Volume 2" },
+      { value: "Mad Lads", trait_type: "Highest Volume 3" },
+    ],
+  },
+];
+
