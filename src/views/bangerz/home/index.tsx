@@ -94,7 +94,7 @@ export const BangerzHome: FC = ({}) => {
           attributes = responseData.attributes;
         }
         const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
-        const drop = (Number(_drop) + 2).toString();
+        const drop = ["1", "2", "3"].find((dropNumber) => dropNumber == _drop) ? (Number(_drop) + 2).toString() : _drop;
         return {
           uri,
           drop,
@@ -358,6 +358,19 @@ export const BangerzHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 5</div>
+              </Link>
+              <Link
+                href="/bangerz/drop6"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/TrRa6TDZIrOr3zMKv_Cx4DiybkBR-_vEsFId_kGG5VI?ext=gif"
+                    alt="drop 6 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 6</div>
               </Link>
             </div>
           </div>
