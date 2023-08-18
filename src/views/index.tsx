@@ -82,6 +82,8 @@ export {Drop3Bork} from "./bork/drop3";
 export {Drop4Bork} from "./bork/drop4";
 export {Drop5Bork} from "./bork/drop5";
 export {Drop6Bork} from "./bork/drop6";
+export {Drop7Bork} from "./bork/drop7";
+export {Drop8Bork} from "./bork/drop8";
 export {Reader} from "./reader"
 export {FloorHome} from "./floor/home";
 export {Drop1Floor} from "./floor/drop1";
@@ -113,6 +115,8 @@ export {Drop8Vault} from "./vault/drop8";
 export {Drop9Vault} from "./vault/drop9";
 export {Drop10Vault} from "./vault/drop10";
 export {Drop11Vault} from "./vault/drop11";
+export {Drop12Vault} from "./vault/drop12";
+export {Drop13Vault} from "./vault/drop13";
 export {BangerzHome} from "./bangerz/home";
 export {Drop1Bangerz} from "./bangerz/drop1";
 export {Drop2Bangerz} from "./bangerz/drop2";
