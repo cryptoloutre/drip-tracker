@@ -62,7 +62,9 @@ export const Drop18Degen: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "drop").value;
+        console.log(attributes)
+        const drop = attributes.find((nft) => nft.trait_type == "drop").value.trim();
+        console.log(drop)
         if (drop == dropNumber) {
           _dropNFT.push(asset.content.metadata.name);
         }
