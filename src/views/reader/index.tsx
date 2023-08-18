@@ -38,7 +38,7 @@ export const Reader: FC = ({}) => {
     { chapter: "Five", index: 5 },
     { chapter: "Six", index: 6 },
     { chapter: "Seven", index: 7 },
-    { chapter: "Eigth", index: 8 },
+    { chapter: "Eight", index: 8 },
     { chapter: "Nine", index: 9 },
     { chapter: "Ten", index: 10 },
   ];
