@@ -45,6 +45,8 @@ export { Drop17S2 } from "./season2/drop17";
 export { Drop18S2 } from "./season2/drop18";
 export { Drop19S2 } from "./season2/drop19";
 export { Drop20S2 } from "./season2/drop20";
+export { Drop21S2 } from "./season2/drop21";
+export { Drop22S2 } from "./season2/drop22";
 export {DegenHome} from "./degenpoet/home";
 export {Drop1Degen} from "./degenpoet/drop1";
 export {Drop2Degen} from "./degenpoet/drop2";

@@ -42,11 +42,10 @@ export const Season2Home: FC = ({}) => {
   }, []);
 
   async function getUserNFT() {
-
     // @ts-ignore
     const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
-    setIsFetched(false)
+    setIsFetched(false);
 
     const allUserNFTs = await connection.getAssetsByOwner({
       ownerAddress: publickey.toBase58(),
@@ -60,7 +59,6 @@ export const Season2Home: FC = ({}) => {
           "DRiP2Pn2K6fuMLKQmt5rZWyHiUZ6WK3GChEySUpHSS4x"
     );
 
-    
     const _userNFTsURI = await Promise.all(
       _userNFTs.map(async (asset) => {
         let attributes: any;
@@ -222,7 +220,7 @@ export const Season2Home: FC = ({}) => {
           )}
           {(wallet.publicKey || isXNFT) && !isFetched && <Loader />}
           <div className="flex justify-center">
-          <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
+            <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
               <Link
                 href="/season2/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
@@ -377,7 +375,9 @@ export const Season2Home: FC = ({}) => {
                     alt="drop 12 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">The Faceless</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  The Faceless
+                </div>
               </Link>
               <Link
                 href="/season2/drop13"
@@ -455,7 +455,9 @@ export const Season2Home: FC = ({}) => {
                     alt="drop 18 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">The Dashers</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  The Dashers
+                </div>
               </Link>
               <Link
                 href="/season2/drop19"
@@ -482,6 +484,34 @@ export const Season2Home: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 20</div>
+              </Link>
+              <Link
+                href="/season2/drop21"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=" px-2 py-2"
+                    src="https://arweave.net/kf2csb-D_Ccfs8jgHQSjLCyHU0TuyrFenMQXjz1YxFY?ext=jpg"
+                    alt="drop 21 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 21</div>
+              </Link>
+              <Link
+                href="/season2/drop22"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=" px-2 py-2"
+                    src="https://arweave.net/3Bx4_vkyXbiB4_homD5YxgQNOaimamlbwMt-A-6g0cg?ext=png"
+                    alt="drop 22 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Binary Force
+                </div>
               </Link>
             </div>
           </div>
