@@ -184,3 +184,6 @@ export {Drop4NFNC} from "./nofacenocase/drop4";
 export {MadhouseHome} from "./madhouse/home";
 export {Drop1Madhouse} from "./madhouse/drop1";
 export {Drop2Madhouse} from "./madhouse/drop2";
+export {FSHome} from "./fs/home";
+export {Drop1FS} from "./fs/drop1";
+export {Drop2FS} from "./fs/drop2";
