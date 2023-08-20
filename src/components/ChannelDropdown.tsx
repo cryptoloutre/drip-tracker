@@ -64,78 +64,80 @@ export const ChannelDropdown: FC = () => {
       </button>
       <ul
         aria-label="dropdown-list"
-        className={`wallet-adapter-dropdown-list ${
+        className={`wallet-adapter-dropdown-list  w-[400px] ${
           active && "wallet-adapter-dropdown-list-active bg-[#000000] mt-4 border"
         }`}
         ref={ref}
         role="menu"
       >
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/season1/home">Season 1</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/season2/home">Season 2</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/degenpoet/home">Degen Poet</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/daa/home">DAA</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/vault/home">Vault Music</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/floor/home">Floor</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/tiiiny/home">Tiiinydenise</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/bork/home">Bork The Viking Pug</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/bangerz/home">Bangerz Origins</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/betdex/home">Sports Moments by BetDEX</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/maquin/home">Maquin</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/geneftee/home">Geneftee</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/andrewmason/home">Andrew Mason</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/pog/home">POG® Digital</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
+        <div className="grid grid-cols-2">
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/0xgrime/home">0xGrime</Link>
         </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/0xStoek/home">0xStoek</Link>
         </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/jakey/home">Jakey</Link>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/andrewmason/home">Andrew Mason</Link>
         </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/portals/home">Portals</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/nofacenocase/home">No Face-No Case</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/madhouse/home">MADhouse</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
-          <Link href="/fs/home">Finding Satoshi</Link>
-        </li>
-        <li className="wallet-adapter-dropdown-list-item" role="menuitem">
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/bad/home">BAD* Environment Club</Link>
         </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/bangerz/home">Bangerz Origins</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/bork/home">Bork The Viking Pug</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/daa/home">DAA</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/degenpoet/home">Degen Poet</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/fs/home">Finding Satoshi</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/floor/home">Floor</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/geneftee/home">Geneftee</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/jakey/home">Jakey</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/madhouse/home">MADhouse</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/maquin/home">Maquin</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/nofacenocase/home">No Face-No Case</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/pog/home">POG® Digital</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/portals/home">Portals</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/season1/home">Season 1</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/season2/home">Season 2</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/betdex/home">Sports Moments by BetDEX</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/tiiiny/home">Tiiinydenise</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/vault/home">Vault Music</Link>
+        </li>
+        </div>
       </ul>
     </div>
   );

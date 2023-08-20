@@ -26,29 +26,29 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
           </li>
           <li>
             <NavElement label="Home" href="/" />
-            <NavElement label="Season 1" href="/season1/home" />
-            <NavElement label="Season 2" href="/season2/home" />
-            <NavElement label="Degen Poet" href="/degenpoet/home" />
-            <NavElement label="DAA" href="/daa/home" />
-            <NavElement label="Vault Music" href="/vault/home" />
-            <NavElement label="Floor" href="/floor/home" />
-            <NavElement label="Tiiiny" href="/tiiiny/home" />
-            <NavElement label="Bangerz" href="/bangerz/home" />
-            <NavElement label="Sports Moments by BetDEX" href="/betdex/home" />
-            <NavElement label="Maquin" href="/maquin/home" />
-            <NavElement label="Geneftee" href="/geneftee/home" />
-            <NavElement label="Andrew Mason" href="/andrewmason/home" />
-            <NavElement label="POG® Digital" href="/pog/home" />
             <NavElement label="0xGrime" href="/0xgrime/home" />
             <NavElement label="0xStoek" href="/0xStoek/home" />
-            <NavElement label="Jakey" href="/jakey/home" />
-            <NavElement label="Portals" href="/portals/home" />
-            <NavElement label="No Face-No Case" href="/nofacenocase/home" />
-            <NavElement label="MADhouse" href="/madhouse/home" />
-            <NavElement label="Finding Satoshi" href="/fs/home" />
+            <NavElement label="Andrew Mason" href="/andrewmason/home" />
             <NavElement label="BAD* Environment Club" href="/bad/home" />
+            <NavElement label="Bangerz" href="/bangerz/home" />
             <NavElement label="Bork" href="/bork/home" />
             <NavElement label="Comic Reader" href="/reader" />
+            <NavElement label="DAA" href="/daa/home" />
+            <NavElement label="Degen Poet" href="/degenpoet/home" />
+            <NavElement label="Finding Satoshi" href="/fs/home" />
+            <NavElement label="Floor" href="/floor/home" />
+            <NavElement label="Geneftee" href="/geneftee/home" />
+            <NavElement label="Jakey" href="/jakey/home" />
+            <NavElement label="MADhouse" href="/madhouse/home" />
+            <NavElement label="Maquin" href="/maquin/home" />
+            <NavElement label="No Face-No Case" href="/nofacenocase/home" />
+            <NavElement label="POG® Digital" href="/pog/home" />
+            <NavElement label="Portals" href="/portals/home" />
+            <NavElement label="Season 1" href="/season1/home" />
+            <NavElement label="Season 2" href="/season2/home" />
+            <NavElement label="Sports Moments by BetDEX" href="/betdex/home" />
+            <NavElement label="Tiiiny" href="/tiiiny/home" />
+            <NavElement label="Vault Music" href="/vault/home" />
           </li>
         </ul>
       </div>
