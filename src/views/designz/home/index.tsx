@@ -66,7 +66,7 @@ export const DesignzHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "drop").value;
+        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
         return {
           uri,
           drop,
