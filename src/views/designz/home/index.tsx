@@ -187,7 +187,7 @@ export const DesignzHome: FC = ({}) => {
             <a
                 target="_blank"
                 rel="noreferrer"
-                className="text-[#9945FF] underline font-bold"
+                className="text-[#9945FF] underline font-bold mr-4"
                 href={"https://linktr.ee/Designz"}
               >
                 Website
@@ -195,7 +195,7 @@ export const DesignzHome: FC = ({}) => {
             <a
                 target="_blank"
                 rel="noreferrer"
-                className="text-[#9945FF] underline font-bold"
+                className="text-[#9945FF] underline font-bold mr-4"
                 href={"https://twitter.com/Designzbychance"}
               >
                 Twitter
