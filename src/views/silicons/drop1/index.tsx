@@ -62,7 +62,7 @@ export const Drop1Silicons: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop");
+        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
         if (drop == dropNb) {
           _dropNFT.push(asset.content.json_uri);
         }
