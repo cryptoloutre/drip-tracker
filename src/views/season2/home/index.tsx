@@ -513,6 +513,21 @@ export const Season2Home: FC = ({}) => {
                   Binary Force
                 </div>
               </Link>
+              <Link
+                href="/season2/drop23"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=" px-2 py-2"
+                    src="https://arweave.net/i9Qged5hy1NibmVpt_tnt4I_jxf0gIzuA9uXKqWev4I?ext=jpg"
+                    alt="drop 22 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Drop 22
+                </div>
+              </Link>
             </div>
           </div>
         </div>
