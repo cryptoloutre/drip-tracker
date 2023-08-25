@@ -452,7 +452,7 @@ export const DAAHome: FC = ({}) => {
                     alt="drop 13 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">DROP 132</div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 13</div>
               </Link>
             </div>
           </div>
