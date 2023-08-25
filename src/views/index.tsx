@@ -206,4 +206,4 @@ export {SiliconsHome} from "./silicons/home";
 export {Drop1Silicons} from "./silicons/drop1";
 export {AwagHome} from "./awag/home";
 export {Drop1Awag} from "./awag/drop1";
-// export {OttrHome} from "./ottr/home";
+export {OttrHome} from "./ottr/home";

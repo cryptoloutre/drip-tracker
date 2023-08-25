@@ -167,6 +167,21 @@ export const HomeView: FC = ({}) => {
                 </div>
               </Link>
               <Link
+                href="/ottr/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/ecb-1.jpg"
+                    alt="Epic Crypto Battle preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Epic Crypto Battle
+                </div>
+              </Link>
+              <Link
                 href="/fs/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
