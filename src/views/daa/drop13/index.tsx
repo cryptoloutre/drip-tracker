@@ -128,7 +128,6 @@ export const Drop13DAA: FC = ({}) => {
           )}
           <RarityLegend />
           <div className="flex justify-center mt-4">
-            <div className="sm:w-[70%] flex items-center grid grid-cols-1 md:grid-cols-1 gap-2 mt-4">
               {NFTsInThisDrop.map((currentNft) => (
                 <div key={currentNft.uri}>
                   <div
@@ -170,7 +169,6 @@ export const Drop13DAA: FC = ({}) => {
               ))}
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
