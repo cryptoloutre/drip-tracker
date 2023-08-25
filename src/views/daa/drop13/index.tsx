@@ -9,7 +9,7 @@ import { RarityLegend } from "components/RarityLegend";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 
-export const Drop12DAA: FC = ({}) => {
+export const Drop13DAA: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -18,7 +18,7 @@ export const Drop12DAA: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "12";
+  const dropNumber = "13";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -91,7 +91,7 @@ export const Drop12DAA: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop12: <span className="italic">The Academy X 0N1 FORCE</span> by{" "}
+            Drop13: <span className="italic">Origin of The Guardian</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -104,16 +104,7 @@ export const Drop12DAA: FC = ({}) => {
           <div className="mt-12 w-[100%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              Collaborative drop with storytelling giants, ON1. Check them out{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-[#9945FF] font-bold"
-                href={"https://www.oniforce.com"}
-              >
-                here
-              </a>
-              !
+            Behind the scenes look at DAA&apos;s infamous Coinbase animation.
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
@@ -137,7 +128,7 @@ export const Drop12DAA: FC = ({}) => {
           )}
           <RarityLegend />
           <div className="flex justify-center mt-4">
-            <div className="sm:w-[70%] flex items-center grid grid-cols-2 md:grid-cols-2 gap-2 mt-4">
+            <div className="sm:w-[70%] flex items-center grid grid-cols-1 md:grid-cols-1 gap-2 mt-4">
               {NFTsInThisDrop.map((currentNft) => (
                 <div key={currentNft.uri}>
                   <div
@@ -148,7 +139,7 @@ export const Drop12DAA: FC = ({}) => {
                       "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
                     }`}
                   >
-                    <img className="" src={currentNft.image}></img>
+                    <img className="h-[300px] w-[300px]" src={currentNft.image}></img>
                     <h1 className="font-bold mt-2">{currentNft.name}</h1>
                     {isFetched && (wallet.publicKey || isXNFT) && (
                       <div className="flex justify-center">
