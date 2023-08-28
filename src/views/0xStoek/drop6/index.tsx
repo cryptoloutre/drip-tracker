@@ -130,7 +130,7 @@ export const Drop6Stoek: FC = ({}) => {
           )}
           <RarityLegend />
           <div className="flex justify-center mt-4">
-            <div className="sm:w-[30%] w-[70%] flex items-center grid grid-cols-2 md:grid-cols-3 gap-1 mt-4">
+            <div className="sm:w-[70%] w-[100%] flex items-center grid grid-cols-2 md:grid-cols-3 gap-1 mt-4">
               {NFTsInThisDrop.map((currentNft) => (
                 <div key={currentNft.uri}>
                   <div
