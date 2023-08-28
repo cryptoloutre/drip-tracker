@@ -193,6 +193,7 @@ export {Drop1NFNC} from "./nofacenocase/drop1";
 export {Drop2NFNC} from "./nofacenocase/drop2";
 export {Drop3NFNC} from "./nofacenocase/drop3";
 export {Drop4NFNC} from "./nofacenocase/drop4";
+export {Drop5NFNC} from "./nofacenocase/drop5";
 export {MadhouseHome} from "./madhouse/home";
 export {Drop1Madhouse} from "./madhouse/drop1";
 export {Drop2Madhouse} from "./madhouse/drop2";
