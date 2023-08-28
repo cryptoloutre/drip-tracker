@@ -145,6 +145,7 @@ export {Drop1Betdex} from "./betdex/drop1";
 export {Drop2Betdex} from "./betdex/drop2";
 export {Drop3Betdex} from "./betdex/drop3";
 export {Drop4Betdex} from "./betdex/drop4";
+export {Drop5Betdex} from "./betdex/drop5";
 export {MaquinHome} from "./maquin/home";
 export {Drop1Maquin} from "./maquin/drop1";
 export {Drop2Maquin} from "./maquin/drop2";
