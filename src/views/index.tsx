@@ -210,6 +210,7 @@ export {Drop1Bad} from "./bad/drop1";
 export {Drop2Bad} from "./bad/drop2";
 export {DesignzHome} from "./designz/home";
 export {Drop1Designz} from "./designz/drop1";
+export {Drop2Designz} from "./designz/drop2";
 export {SiliconsHome} from "./silicons/home";
 export {Drop1Silicons} from "./silicons/drop1";
 export {AwagHome} from "./awag/home";
