@@ -451,6 +451,19 @@ export const VaultHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 13</div>
               </Link>
+              <Link
+                href="/vault/drop14"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/W6WmstyuGMuo3OT1ptG1OqTQIlrNbN4Kywvzm5Sc_ME?ext=png"
+                    alt="drop 14 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
+              </Link>
             </div>
           </div>
         </div>
