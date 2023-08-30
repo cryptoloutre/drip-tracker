@@ -119,6 +119,7 @@ export {Drop6Tiny} from "./tinydenise/drop6";
 export {Drop7Tiny} from "./tinydenise/drop7";
 export {Drop8Tiny} from "./tinydenise/drop8";
 export {Drop9Tiny} from "./tinydenise/drop9";
+export {Drop10Tiny} from "./tinydenise/drop10";
 export {VaultHome} from "./vault/home";
 export {Drop1Vault} from "./vault/drop1";
 export {Drop2Vault} from "./vault/drop2";
