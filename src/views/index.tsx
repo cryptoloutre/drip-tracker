@@ -146,6 +146,7 @@ export {Drop6Bangerz} from "./bangerz/drop6";
 export {Drop7Bangerz} from "./bangerz/drop7";
 export {Drop8Bangerz} from "./bangerz/drop8";
 export {Drop9Bangerz} from "./bangerz/drop9";
+export {Drop10Bangerz} from "./bangerz/drop10";
 export {BetdexHome} from "./betdex/home";
 export {Drop1Betdex} from "./betdex/drop1";
 export {Drop2Betdex} from "./betdex/drop2";
