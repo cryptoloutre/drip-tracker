@@ -8,12 +8,28 @@ export const CardsAvailable = [
     Attributes: ["NFT", "Ethereum", "Gas3", "Damage6"],
   },
   {
+    name: "BAYC",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/bayc-1.json",
+    rarity: "Common",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/bayc-1.jpg",
+    Attributes: ["NFT", "Ethereum", "Gas4", "Damage6"],
+  },
+  {
     name: "Bitcoin Frogs",
     uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/bitcoinfrogs-1.json",
     rarity: "Common",
     image:
       "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/bitcoinfrogs-1.jpg",
     Attributes: ["NFT", "Bitcoin", "Gas3", "Damage3"],
+  },
+  {
+    name: "BNB",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/bnb-1.json",
+    rarity: "Rare",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/bnb-1.jpg",
+    Attributes: ["Token", "Neutral", "Gas1", "Damage1"],
   },
   {
     name: "BTC",
@@ -29,6 +45,14 @@ export const CardsAvailable = [
     image:
       "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/claynosaurz-1.jpg",
     Attributes: ["NFT", "Solana", "Gas4", "Damage6"],
+  },
+  {
+    name: "CryptoPunks",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/cryptopunks-1.json",
+    rarity: "Legendary",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/cryptopunks-1.jpg",
+    Attributes: ["NFT", "Ethereum", "Gas3", "Damage2"],
   },
   {
     name: "CZ",
@@ -99,6 +123,14 @@ export const CardsAvailable = [
     image:
       "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/jeremyallaire-1.jpg",
     Attributes: ["Hero", "Neutral", "Gas5", "Damage4"],
+  },
+  {
+    name: "Justin Sun",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/justinsun-1.json",
+    rarity: "Rare",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/justinsun-1.jpg",
+    Attributes: ["Hero", "Neutral", "Gas5", "Damage8"],
   },
   {
     name: "Matic",
@@ -185,4 +217,20 @@ export const CardsAvailable = [
       "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/vitalik-1.jpg",
     Attributes: ["Hero", "Ethereum", "Gas5", "Damage4"],
   },
+  {
+    name: "XRP",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/xrp-1.json",
+    rarity: "Common",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/xrp-1.jpg",
+    Attributes: ["Token", "Neutral", "Gas1", "Damage3"],
+  },
+  {
+    name: "y00ts",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/y00ts-1.json",
+    rarity: "Common",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/y00ts-1.jpg",
+    Attributes: ["NFT", "Polygon", "Gas2", "Damage2"],
+  }
 ];
