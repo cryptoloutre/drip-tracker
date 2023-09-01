@@ -66,7 +66,10 @@ export const AwagHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "DROP").value;
+        const drop =
+          attributes.find((nft) => nft.trait_type == "DROP") != undefined
+            ? attributes.find((nft) => nft.trait_type == "DROP").value
+            : attributes.find((nft) => nft.trait_type == "Drop").value;
         return {
           uri,
           drop,
@@ -151,7 +154,7 @@ export const AwagHome: FC = ({}) => {
             Track the AWAG NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-          “DIGITAL ART” FROM - AWAG / 2023
+            “DIGITAL ART” FROM - AWAG / 2023
             <br />
             <br />
             Sign up{" "}
@@ -279,6 +282,19 @@ export const AwagHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
+              </Link>
+              <Link
+                href="/awag/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/RBEM52BmB5vNd6-h24lC7XpI_DieA1cRQo15LCZdfdA?ext=jpg"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
             </div>
           </div>
