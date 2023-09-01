@@ -62,9 +62,10 @@ export const DropRedactedAwag: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find(
-          (nft) => nft.trait_type == "Drop"
-        ).value;
+        const drop =
+          attributes.find((nft) => nft.trait_type == "DROP") != undefined
+            ? attributes.find((nft) => nft.trait_type == "DROP").value
+            : attributes.find((nft) => nft.trait_type == "Drop").value;
         if (drop == dropNumber) {
           _dropNFT.push(asset.content.json_uri);
         }
