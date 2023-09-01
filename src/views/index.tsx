@@ -216,6 +216,7 @@ export {Drop3FS} from "./fs/drop3";
 export {BadHome} from "./bad/home";
 export {Drop1Bad} from "./bad/drop1";
 export {Drop2Bad} from "./bad/drop2";
+export {Drop3Bad} from "./bad/drop3";
 export {DesignzHome} from "./designz/home";
 export {Drop1Designz} from "./designz/drop1";
 export {Drop2Designz} from "./designz/drop2";
