@@ -233,3 +233,5 @@ export {DropRedactedAwag} from "./awag/dropRedacted";
 export {OttrHome} from "./ottr/home";
 export {RadiantHome} from "./radiant/home";
 export {Drop1Radiant} from "./radiant/drop1";
+export {GrimSyndicateHome} from "./grimsyndicate/home";
+export {Drop1GrimSyndicate} from "./grimsyndicate/drop1";
