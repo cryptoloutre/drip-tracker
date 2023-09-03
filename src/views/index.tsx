@@ -225,6 +225,7 @@ export {Drop1Designz} from "./designz/drop1";
 export {Drop2Designz} from "./designz/drop2";
 export {SiliconsHome} from "./silicons/home";
 export {Drop1Silicons} from "./silicons/drop1";
+export {Drop2Silicons} from "./silicons/drop2";
 export {AwagHome} from "./awag/home";
 export {Drop1Awag} from "./awag/drop1";
 export {Drop2Awag} from "./awag/drop2";
