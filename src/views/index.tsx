@@ -176,6 +176,7 @@ export {Drop5Mason} from "./andrewmason/drop5";
 export {Drop6Mason} from "./andrewmason/drop6";
 export {Drop7Mason} from "./andrewmason/drop7";
 export {Drop8Mason} from "./andrewmason/drop8";
+export {Drop9Mason} from "./andrewmason/drop9";
 export {PogHome} from "./pog/home";
 export {Drop1Pog} from "./pog/drop1";
 export {GrimeHome} from "./0xgrime/home";
