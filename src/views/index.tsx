@@ -226,6 +226,7 @@ export {Drop3Bad} from "./bad/drop3";
 export {DesignzHome} from "./designz/home";
 export {Drop1Designz} from "./designz/drop1";
 export {Drop2Designz} from "./designz/drop2";
+export {Drop3Designz} from "./designz/drop3";
 export {SiliconsHome} from "./silicons/home";
 export {Drop1Silicons} from "./silicons/drop1";
 export {Drop2Silicons} from "./silicons/drop2";
