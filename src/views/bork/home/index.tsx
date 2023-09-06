@@ -38,7 +38,6 @@ export const BorkHome: FC = ({}) => {
   }, []);
 
   async function getUserNFT() {
-
     // @ts-ignore
     const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
 
@@ -67,13 +66,32 @@ export const BorkHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const chapter = attributes.find((nft) => nft.trait_type == "Chapter").value;
+        const chapter = attributes.find(
+          (nft) => nft.trait_type == "Chapter"
+        ).value;
         return {
           uri,
           chapter,
         };
       })
     );
+
+    const _userBonusNFTs = allUserNFTs.items.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "BoRKiFyrcHwmuCdYFar5PH5L262R859nu3mttVg7TSW9"
+    );
+
+    _userBonusNFTs.map(async (asset) => {
+      const uri = asset.content.json_uri;
+      const chapter = "Bonus Borks 001";
+      _userNFTsURI.push({
+        uri,
+        chapter,
+      });
+    });
 
     // we filter to eliminate the doublons
     const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
@@ -216,7 +234,7 @@ export const BorkHome: FC = ({}) => {
                 Artist
               </a>
             </div>
-              <div className="flex justify-center">
+            <div className="flex justify-center">
               <a
                 href="https://drip.haus/bork"
                 target="_blank"
@@ -245,7 +263,14 @@ export const BorkHome: FC = ({}) => {
               </a>
             </div>
             <div className="text-lg mt-4">
-              Use our <Link className="font-extrabold underline text-[#14F195]" href="/reader">Reader</Link> to read your comics.
+              Use our{" "}
+              <Link
+                className="font-extrabold underline text-[#14F195]"
+                href="/reader"
+              >
+                Reader
+              </Link>{" "}
+              to read your comics.
             </div>
           </div>
           {!wallet.publicKey && !isXNFT && (
@@ -326,7 +351,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 1 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter One</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter One
+                </div>
               </Link>
               <Link
                 href="/bork/drop2"
@@ -339,7 +366,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 2 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Two</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Two
+                </div>
               </Link>
               <Link
                 href="/bork/drop3"
@@ -352,7 +381,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 3 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Three</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Three
+                </div>
               </Link>
               <Link
                 href="/bork/drop4"
@@ -365,7 +396,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 4 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Four</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Four
+                </div>
               </Link>
               <Link
                 href="/bork/drop5"
@@ -378,7 +411,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 5 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Five</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Five
+                </div>
               </Link>
               <Link
                 href="/bork/drop6"
@@ -391,7 +426,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 6 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Six</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Six
+                </div>
               </Link>
               <Link
                 href="/bork/drop7"
@@ -404,7 +441,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 7 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Seven</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Seven
+                </div>
               </Link>
               <Link
                 href="/bork/drop8"
@@ -417,7 +456,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 8 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Eight</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Eight
+                </div>
               </Link>
               <Link
                 href="/bork/drop9"
@@ -430,7 +471,9 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 9 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Nine</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Nine
+                </div>
               </Link>
               <Link
                 href="/bork/drop10"
@@ -443,7 +486,24 @@ export const BorkHome: FC = ({}) => {
                     alt="chapter 10 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Chapter Ten</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Ten
+                </div>
+              </Link>
+              <Link
+                href="/bork/dropbonus1"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/_gKQs5dznBp0TabzwYcPOcGpqI8WJXDnF_LM39GwefI?ext=jpg"
+                    alt="dropbonus1 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                Bonus Borks 001
+                </div>
               </Link>
             </div>
           </div>

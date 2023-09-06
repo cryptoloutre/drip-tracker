@@ -97,6 +97,7 @@ export {Drop7Bork} from "./bork/drop7";
 export {Drop8Bork} from "./bork/drop8";
 export {Drop9Bork} from "./bork/drop9";
 export {Drop10Bork} from "./bork/drop10";
+export {DropBonus1} from "./bork/dropbonus1";
 export {Reader} from "./reader"
 export {FloorHome} from "./floor/home";
 export {Drop1Floor} from "./floor/drop1";
