@@ -441,6 +441,19 @@ export const FloorHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Week of 8.29.2023</div>
               </Link>
+              <Link
+                href="/floor/drop14"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/XtX5WuvVJuZ8VbJrembhHcjFTjnN0_QZuT55A55j1UI?ext=jpg"
+                    alt="drop 14 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Week of 9.5.2023</div>
+              </Link>
             </div>
           </div>
         </div>
