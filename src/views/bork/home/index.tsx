@@ -106,7 +106,7 @@ export const BorkHome: FC = ({}) => {
 
     console.log("Got their DAA NFTs!", _userNFTs);
 
-    setNbUserNFTs(_userNFTs.length);
+    setNbUserNFTs(userNFTs.length);
 
     // store the drops and the number of NFTs of this drop owned by the user
     const userDropsAndCount = [];
