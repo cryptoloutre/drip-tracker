@@ -142,10 +142,10 @@ export const CardsAvailable = [
   },
   {
     name: "Mad Lads",
-    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/madlads-1.jpg",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/madlads-1.json",
     rarity: "Rare",
     image:
-      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/matic-1.jpg",
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/madlads-1.jpg",
     Attributes: ["NFT", "Solana", "Gas3", "Damage3"],
   },
   {
@@ -193,7 +193,7 @@ export const CardsAvailable = [
     uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/pudgypenguins-1.json",
     rarity: "Common",
     image:
-      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/omb-1.jpg",
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/pudgypenguins-1.jpg",
     Attributes: ["NFT", "Ethereum", "Gas3", "Damage3"],
   },
   {
