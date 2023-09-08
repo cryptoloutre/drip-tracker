@@ -78,6 +78,14 @@ export const CardsAvailable = [
     Attributes: ["Token", "Neutral", "Gas1", "Damage1"],
   },
   {
+    name: "Durov",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/durov-1.json",
+    rarity: "Legendary",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/durov-1.jpg",
+    Attributes: ["Hero", "Neutral", "Gas5", "Damage7"],
+  },
+  {
     name: "ETH",
     uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/eth-1.json",
     rarity: "Common",
@@ -133,6 +141,14 @@ export const CardsAvailable = [
     Attributes: ["Hero", "Neutral", "Gas5", "Damage8"],
   },
   {
+    name: "Mad Lads",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/madlads-1.jpg",
+    rarity: "Rare",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/matic-1.jpg",
+    Attributes: ["NFT", "Solana", "Gas3", "Damage3"],
+  },
+  {
     name: "Matic",
     uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/matic-1.json",
     rarity: "Common",
@@ -149,6 +165,14 @@ export const CardsAvailable = [
     Attributes: ["NFT", "Ethereum", "Gas3", "Damage5"],
   },
   {
+    name: "Nakamigos",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/nakamigos-1.json",
+    rarity: "Common",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/nouns-1.jpg",
+    Attributes: ["NFT", "Ethereum", "Gas3", "Damage3"],
+  },
+  {
     name: "Nouns",
     uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/nouns-1.json",
     rarity: "Rare",
@@ -163,6 +187,14 @@ export const CardsAvailable = [
     image:
       "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/omb-1.jpg",
     Attributes: ["NFT", "Bitcoin", "Gas3", "Damage2"],
+  },
+  {
+    name: "Pudgy Penguins",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/pudgypenguins-1.json",
+    rarity: "Common",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/omb-1.jpg",
+    Attributes: ["NFT", "Ethereum", "Gas3", "Damage3"],
   },
   {
     name: "SBF",
@@ -200,6 +232,14 @@ export const CardsAvailable = [
     image:
       "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/toly-1.jpg",
     Attributes: ["Hero", "Solana", "Gas6", "Damage5"],
+  },
+  {
+    name: "TON",
+    uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/ton-1.json",
+    rarity: "Legendary",
+    image:
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/ton-1.jpg",
+    Attributes: ["Token", "Solana", "Gas1", "Damage2"],
   },
   {
     name: "USDC",
