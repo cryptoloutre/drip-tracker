@@ -242,6 +242,7 @@ export {Drop2Silicons} from "./silicons/drop2";
 export {AwagHome} from "./awag/home";
 export {Drop1Awag} from "./awag/drop1";
 export {Drop2Awag} from "./awag/drop2";
+export {Drop3Awag} from "./awag/drop3";
 export {DropRedactedAwag} from "./awag/dropRedacted";
 export {OttrHome} from "./ottr/home";
 export {RadiantHome} from "./radiant/home";
