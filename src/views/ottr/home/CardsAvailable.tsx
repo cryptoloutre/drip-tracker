@@ -169,7 +169,7 @@ export const CardsAvailable = [
     uri: "https://epiccryptobattle.s3.us-west-2.amazonaws.com/json/nakamigos-1.json",
     rarity: "Common",
     image:
-      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/nouns-1.jpg",
+      "https://epiccryptobattle.s3.us-west-2.amazonaws.com/main/nakamigos-1.jpg",
     Attributes: ["NFT", "Ethereum", "Gas3", "Damage3"],
   },
   {
