@@ -193,6 +193,7 @@ export {Drop2Grime} from "./0xgrime/drop2";
 export {Drop3Grime} from "./0xgrime/drop3";
 export {Drop4Grime} from "./0xgrime/drop4";
 export {Drop5Grime} from "./0xgrime/drop5";
+export {Drop6Grime} from "./0xgrime/drop6";
 export {StoekHome} from "./0xStoek/home";
 export {Drop1Stoek} from "./0xStoek/drop1";
 export {Drop2Stoek} from "./0xStoek/drop2";
