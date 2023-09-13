@@ -143,6 +143,8 @@ export {Drop11Vault} from "./vault/drop11";
 export {Drop12Vault} from "./vault/drop12";
 export {Drop13Vault} from "./vault/drop13";
 export {Drop14Vault} from "./vault/drop14";
+export {Drop15Vault} from "./vault/drop15";
+export {Drop16Vault} from "./vault/drop16";
 export {BangerzHome} from "./bangerz/home";
 export {Drop1Bangerz} from "./bangerz/drop1";
 export {Drop2Bangerz} from "./bangerz/drop2";
