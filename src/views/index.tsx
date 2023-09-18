@@ -240,6 +240,7 @@ export {Drop2FS} from "./fs/drop2";
 export {Drop3FS} from "./fs/drop3";
 export {Drop4FS} from "./fs/drop4";
 export {Drop5FS} from "./fs/drop5";
+export {Drop6FS} from "./fs/drop6";
 export {BadHome} from "./bad/home";
 export {Drop1Bad} from "./bad/drop1";
 export {Drop2Bad} from "./bad/drop2";
