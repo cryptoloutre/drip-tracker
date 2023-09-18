@@ -47,7 +47,7 @@ export const BadHome: FC = ({}) => {
       ownerAddress: publickey.toBase58(),
     });
 
-    const _userNFTs = allUserNFTs.items.filter(
+    const _userTCNFTs = allUserNFTs.items.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
@@ -55,8 +55,8 @@ export const BadHome: FC = ({}) => {
           "BADh9ksnzUhYVjS7wUbsTWUexBEaLqTyfAap574BRkZJ"
     );
 
-    const _userNFTsURI = await Promise.all(
-      _userNFTs.map(async (asset) => {
+    const _userNFTsURITC = await Promise.all(
+      _userTCNFTs.map(async (asset) => {
         let attributes: any;
         const uri = asset.content.json_uri;
         if (asset.content.metadata.attributes) {
@@ -74,6 +74,36 @@ export const BadHome: FC = ({}) => {
       })
     );
 
+    const _userLegacyNFTs = allUserNFTs.items.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "BDRPieTmdVdWXf4BSfke5x4BnrnVPkmQv1tbbEP6L6no"
+    );
+
+    const _userNFTsURILegacy = await Promise.all(
+      _userLegacyNFTs.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        const drop = (Number(_drop) + 4).toString()
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const _userNFTsURI = _userNFTsURITC.concat(_userNFTsURILegacy);
+
     // we filter to eliminate the doublons
     const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
       const _value = JSON.stringify(value);
@@ -85,9 +115,9 @@ export const BadHome: FC = ({}) => {
       );
     });
 
-    console.log("Got their DAA NFTs!", _userNFTs);
+    console.log("Got their NFTs!", userNFTs);
 
-    setNbUserNFTs(_userNFTs.length);
+    setNbUserNFTs(userNFTs.length);
 
     // store the drops and the number of NFTs of this drop owned by the user
     const userDropsAndCount = [];
@@ -318,6 +348,19 @@ export const BadHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 4</div>
+              </Link>
+              <Link
+                href="/bad/drop5"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/Pqfm8Sukic6wjsnImVK0tWIVvvR1_oRJI2SyrrrX3Z0?ext=png"
+                    alt="drop 5 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 5</div>
               </Link>
             </div>
           </div>
