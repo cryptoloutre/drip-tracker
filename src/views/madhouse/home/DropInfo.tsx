@@ -19,4 +19,12 @@ export const DropInfo = [
     dropNb: "September 3 2023",
     nbNFT: 3,
   },
+  {
+    dropNb: "September 10 2023",
+    nbNFT: 3,
+  },
+  {
+    dropNb: "September 17 2023",
+    nbNFT: 3,
+  },
 ];
