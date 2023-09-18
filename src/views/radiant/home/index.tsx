@@ -47,7 +47,7 @@ export const RadiantHome: FC = ({}) => {
       ownerAddress: publickey.toBase58(),
     });
 
-    const _userNFTs = allUserNFTs.items.filter(
+    const _userNFTsGenesis = allUserNFTs.items.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
@@ -55,8 +55,8 @@ export const RadiantHome: FC = ({}) => {
           "RDNTmiKRLE2W4aRbd1Xw6sX9bZTgnPUhX3hH2Cov6sY"
     );
 
-    const _userNFTsURI = await Promise.all(
-      _userNFTs.map(async (asset) => {
+    const _userNFTsURIGenesis = await Promise.all(
+      _userNFTsGenesis.map(async (asset) => {
         let attributes: any;
         const uri = asset.content.json_uri;
         if (asset.content.metadata.attributes) {
@@ -74,6 +74,36 @@ export const RadiantHome: FC = ({}) => {
       })
     );
 
+     const _userNFTsCelestial = allUserNFTs.items.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "RTCSTqZ9FrnZ3wbwPRYzzHLwH8zukU4Dyq3HeAdqPWV"
+    );
+
+    const _userNFTsURICelestial = await Promise.all(
+      _userNFTsCelestial.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        const drop = (Number(_drop) + 1).toString()
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const _userNFTsURI = _userNFTsURIGenesis.concat(_userNFTsURICelestial);
+
     // we filter to eliminate the doublons
     const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
       const _value = JSON.stringify(value);
@@ -85,9 +115,9 @@ export const RadiantHome: FC = ({}) => {
       );
     });
 
-    console.log("Got their DAA NFTs!", _userNFTs);
+    console.log("Got their DAA NFTs!", userNFTs);
 
-    setNbUserNFTs(_userNFTs.length);
+    setNbUserNFTs(userNFTs.length);
 
     // store the drops and the number of NFTs of this drop owned by the user
     const userDropsAndCount = [];
@@ -271,6 +301,19 @@ export const RadiantHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop Genesis</div>
+              </Link>
+              <Link
+                href="/radiant/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/kpFEiGu59hyV1QqLGpyAIiVhVy8YR0b3l3HBP2cwL3Q?ext=png"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
             </div>
           </div>
