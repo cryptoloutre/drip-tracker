@@ -9,7 +9,7 @@ import { RarityLegend } from "components/RarityLegend";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 
-export const Drop23Degen: FC = ({}) => {
+export const Drop5Designz: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -18,7 +18,7 @@ export const Drop23Degen: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "23";
+  const dropNumber = "5";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -46,7 +46,7 @@ export const Drop23Degen: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "DGPTxgKaBPJv3Ng7dc9AFDpX6E7kgUMZEgyTm3VGWPW6"
+          "DSGZbfsrbnvarYiVC8Dhgn4Tb7WRpyHAdfem6PpPbnkB"
     );
 
     console.log(season2NFT);
@@ -64,11 +64,11 @@ export const Drop23Degen: FC = ({}) => {
         }
         console.log(attributes);
         const drop = attributes
-          .find((nft) => nft.trait_type == "drop")
+          .find((nft) => nft.trait_type == "Drop")
           .value.trim();
         console.log(drop);
         if (drop == dropNumber) {
-          _dropNFT.push(asset.content.metadata.name);
+          _dropNFT.push(asset.content.json_uri);
         }
       })
     );
@@ -95,15 +95,18 @@ export const Drop23Degen: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop23:{" "}
-            <span className="italic">{NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} & {NFTsInThisDrop[2].name}</span> by{" "}
+            Drop5:{" "}
+            <span className="italic">
+            {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} & {NFTsInThisDrop[2].name}
+            </span>{" "}
+            by{" "}
             <a
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://twitter.com/degenpoet"}
+              href={"https://twitter.com/designzbychance"}
             >
-              @degenpoet
+              Designz
             </a>
           </h1>
           <div className="mt-12 sm:w-[70%] mx-auto">
@@ -112,18 +115,19 @@ export const Drop23Degen: FC = ({}) => {
               This drop features 3 rarities:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[0].name}</span>. A portrait of Pink Skull Queen, one of the first artists on Solana. Someone who gave me a start along with hundreds of others. Gone too soon. Typewriter and pink marker.{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 339978)</span>
+              <span className="italic">{NFTsInThisDrop[0].name}</span>. 2 pieces blended together - hand painted with acrylic - using only a spoon, knife & fork.{" "}
+              <span className="text-[#a5a5a5] font-bold">(supply: 45896)</span>
               .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
               </span>{" "}
-              drop is <span className="italic">{NFTsInThisDrop[1].name}</span>. A first person view of playing ping pong. Created with a Royal Classic typewriter and markers. 8 frames of hand typed animation.{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 2000)</span>
+              drop is <span className="italic">{NFTsInThisDrop[1].name}</span>.
+              2 pieces blended together - hand painted with acrylic - using only a spoon, knife & fork.{" "}
+              <span className="text-[#E6C15A] font-bold">(supply: 750)</span>
               .<br />
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span> drop
-              is <span className="italic">{NFTsInThisDrop[2].name}</span>. A typewriter noot based on Degen Poet&apos;s forever Pesky Penguin #8535. Made with a Royal Classic typewriter and sharpies.{" "}
+              is <span className="italic">{NFTsInThisDrop[2].name}</span>. 2 pieces blended together - hand painted with acrylic - using only a spoon, knife & fork.{" "}
               <span className="text-[#14F195] font-bold">(supply: 100)</span>.
             </div>
           </div>
@@ -150,12 +154,12 @@ export const Drop23Degen: FC = ({}) => {
           <div className="flex justify-center mt-4">
             <div className="grid sm:w-[70%] grid grid-cols-2 flex items-center md:grid-cols-3 gap-4 mt-4">
               {NFTsInThisDrop.map((currentNft) => (
-                <div key={currentNft.name}>
+                <div key={currentNft.uri}>
                   <div
                     className={`bg-[#000000] border border-4 ${
-                      currentNft.rarity == "common" && "border-[#a5a5a5]"
-                    } ${currentNft.rarity == "rare" && "border-[#E6C15A]"} ${
-                      currentNft.rarity == "legendary" &&
+                      currentNft.rarity == "Common" && "border-[#a5a5a5]"
+                    } ${currentNft.rarity == "Rare" && "border-[#E6C15A]"} ${
+                      currentNft.rarity == "Legendary" &&
                       "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
                     }`}
                   >
@@ -164,7 +168,7 @@ export const Drop23Degen: FC = ({}) => {
                     {isFetched && (wallet.publicKey || isXNFT) && (
                       <div className="flex justify-center">
                         {isFetched &&
-                        userDripNFT.find((nft) => nft == currentNft.name) !=
+                        userDripNFT.find((nft) => nft == currentNft.uri) !=
                           undefined ? (
                           <a
                             target="_blank"
