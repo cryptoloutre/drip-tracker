@@ -289,3 +289,5 @@ export {Drop1Enigma} from "./enigma/drop1";
 export {DropNationHome} from "./dropnation/home";
 export {Drop1DropNation} from "./dropnation/drop1";
 export {Drop2DropNation} from "./dropnation/drop2";
+export {KevHome} from "./kevthecactus/home";
+export {Drop1Kev} from "./kevthecactus/drop1";
