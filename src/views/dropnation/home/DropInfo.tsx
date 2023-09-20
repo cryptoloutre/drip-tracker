@@ -1,10 +1,10 @@
 export const DropInfo = [
   {
-    dropNb: 1,
+    dropNb: "Vitamin THC",
     nbNFT: 3,
   },
   {
-    dropNb: 2,
+    dropNb: "QRTX",
     nbNFT: 3,
   },
 ];
