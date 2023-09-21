@@ -573,6 +573,21 @@ export const Season2Home: FC = ({}) => {
                 Moonshiners
                 </div>
               </Link>
+              <Link
+                href="/season2/drop27"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=" px-2 py-2"
+                    src="https://arweave.net/D-plUgDWlZvSHnfFdYR35YiH-D3heUmhc2v4dwWo600?ext=png"
+                    alt="drop 27 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                Drop 25
+                </div>
+              </Link>
             </div>
           </div>
         </div>
