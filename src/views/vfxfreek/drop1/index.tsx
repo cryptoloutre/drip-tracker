@@ -9,7 +9,7 @@ import { RarityLegend } from "components/RarityLegend";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 
-export const Drop27S2: FC = ({}) => {
+export const Drop1Vfxfreek: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -18,7 +18,7 @@ export const Drop27S2: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "25";
+  const dropNb = "1";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -32,6 +32,7 @@ export const Drop27S2: FC = ({}) => {
   }, []);
 
   async function getUserNFT() {
+
     // @ts-ignore
     const publickey = isXNFT ? window.xnft.solana.publicKey : wallet.publicKey;
     const _dropNFT = [];
@@ -46,7 +47,7 @@ export const Drop27S2: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "DRiP2Pn2K6fuMLKQmt5rZWyHiUZ6WK3GChEySUpHSS4x"
+          "VFXDkMfw2kXzyTgoLvzAJ3bB9Z96agas5nwF6ekyaN7"
     );
 
     console.log(season2NFT);
@@ -62,8 +63,8 @@ export const Drop27S2: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
-        if (drop == dropNumber) {
+        const drop = attributes.find((nft) => nft.trait_type == "Drop");
+        if (drop == dropNb) {
           _dropNFT.push(asset.content.json_uri);
         }
       })
@@ -87,59 +88,38 @@ export const Drop27S2: FC = ({}) => {
   return (
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex">
-        <div className="mt-6"></div>
-
-        <div>
+        <div className="">
           <h1 className="text-center text-3xl font-bold">
-            Drop25: <span className="italic">Swag</span> by{" "}
+            Drop1: <span className="italic">{NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} & {NFTsInThisDrop[2].name}</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://twitter.com/ScubaSteveArt"}
+              href={"https://twitter.com/vfxfreek"}
             >
-              @ScubaSteveArt
+              VFXFREEK
             </a>
           </h1>
-          <div className="mt-12 sm:w-[90%] mx-auto">
+          <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-[#9945FF] font-bold"
-                href={"https://twitter.com/ScubaSteveArt"}
-              >
-                Scuba
-              </a>{" "}
-              is an LA-based artist. Known for his humorous characters, Scuba
-              has created posters, merch, and videos for the likes of Travis
-              Barker, Cypress Hill, and Donavon Frankenreiter.
-              <br />
-              He is currently working on bringing The Nippies to life through
-              animation and storytelling.
-              <br />
-              <br />
-              This drop features three animations, each focused on a different
-              Nippie from the full scene. Adding to the depth of emotion for
-              these vignettes, Scuba mixed original music for every piece. These animations are
+            This drop features 3 different collectibles:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span>{" "}
               <span className="italic">{NFTsInThisDrop[0].name}</span>{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 551464)</span>
-              .
-              <br />• The <span className="text-[#E6C15A] font-bold">Rare</span>{" "}
+              <span className="text-[#a5a5a5] font-bold">(supply: 17768)</span>
+              <br />• The{" "}
+              <span className="text-[#E6C15A] font-bold">Rare</span>{" "}
               <span className="italic">{NFTsInThisDrop[1].name}</span>{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 28650)</span>
-              .
+              <span className="text-[#E6C15A] font-bold">(supply: 250)</span>
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span>{" "}
               <span className="italic">{NFTsInThisDrop[2].name}</span>{" "}
-              <span className="text-[#14F195] font-bold">(supply: 5730)</span>.
+              <span className="text-[#14F195] font-bold">(supply: 50)</span>
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
-            <div className="mt-4 sm:w-[90%] mx-auto">
+            <div className="mt-4 sm:w-[70%] mx-auto">
               <h2 className="underline text-2xl font-bold">Progress</h2>
               <div>
                 You have{" "}
@@ -159,9 +139,9 @@ export const Drop27S2: FC = ({}) => {
           )}
           <RarityLegend />
           <div className="flex justify-center">
-            <div className="sm:w-[85%] flex items-center grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
+            <div className="sm:w-[75%] flex items-center grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
               {NFTsInThisDrop.map((currentNft) => (
-                <div key={currentNft.uri}>
+                <div key={currentNft.uri} className="flex justify-center">
                   <div
                     className={`bg-[#000000] border border-4 ${
                       currentNft.rarity == "Common" && "border-[#a5a5a5]"
@@ -170,9 +150,7 @@ export const Drop27S2: FC = ({}) => {
                       "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
                     }`}
                   >
-                    <div className="flex justify-center">
-                      <img className="" src={currentNft.image}></img>
-                    </div>
+                    <img className="" src={currentNft.image}></img>
                     <h1 className="font-bold mt-2">{currentNft.name}</h1>
                     {isFetched && (wallet.publicKey || isXNFT) && (
                       <div className="flex justify-center">

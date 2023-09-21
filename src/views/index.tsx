@@ -294,3 +294,5 @@ export {Drop1DropNation} from "./dropnation/drop1";
 export {Drop2DropNation} from "./dropnation/drop2";
 export {KevHome} from "./kevthecactus/home";
 export {Drop1Kev} from "./kevthecactus/drop1";
+export {VfxfreekHome} from "./vfxfreek/home";
+export {Drop1Vfxfreek} from "./vfxfreek/drop1";
