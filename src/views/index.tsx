@@ -92,6 +92,7 @@ export {Drop12DAA} from "./daa/drop12";
 export {Drop13DAA} from "./daa/drop13";
 export {Drop14DAA} from "./daa/drop14";
 export {Drop15DAA} from "./daa/drop15";
+export {Drop16DAA} from "./daa/drop16";
 export {BorkHome} from "./bork/home";
 export {Drop1Bork} from "./bork/drop1";
 export {Drop2Bork} from "./bork/drop2";
