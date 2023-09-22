@@ -231,6 +231,7 @@ export {Drop4Jakey} from "./jakey/drop4";
 export {Drop5Jakey} from "./jakey/drop5";
 export {Drop6Jakey} from "./jakey/drop6";
 export {Drop7Jakey} from "./jakey/drop7";
+export {Drop8Jakey} from "./jakey/drop8";
 export {PortalsHome} from "./portals/home";
 export {Drop1Portals} from "./portals/drop1";
 export {NFNCHome} from "./nofacenocase/home";
