@@ -64,7 +64,7 @@ export const Drop9Stoek: FC = ({}) => {
         }
         const drop = attributes.find(
           (nft) => nft.trait_type == "Theme"
-        ).value;
+        )?.value;
         if (drop == dropNumber) {
           _dropNFT.push(asset.content.json_uri);
         }
