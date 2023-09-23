@@ -1,0 +1,58 @@
+export const NFTsinDrop = [
+  {
+    name: "Pepe",
+    uri: "https://arweave.net/OOXr8LNc-YpZeyjnopLpUWpexODDVLgGyUwlogZh1ac",
+    rarity: "Common",
+    image: "https://arweave.net/QQquFK0mx0MzWJp2G68kb1jEXZQJ09ex5FD3vCvUQpY?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+  {
+    name: "CEREAL Tee",
+    uri: "https://arweave.net/aiTMPT7Bue9r5RyfJpIUMOUzaUvSJay-Zyfj7tR3qhw",
+    rarity: "Rare",
+    image: "https://arweave.net/wKS8myExbWAZd6_lWnM3bQok8H2r41Kjw67nNycntdw?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+  {
+    name: "CRYSTAL BALL Tee",
+    uri: "https://arweave.net/kikt3FlBm92-KxojyxlQplNaKELhbE_s1nul02cSnpc",
+    rarity: "Rare",
+    image: "https://arweave.net/fxPza1-iisFS4MxcMwv-4llqKj1kqutjKxjO_-GCklI?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+  {
+    name: "FLOW Tee",
+    uri: "https://arweave.net/ZgZjpv6jxupq0doP-7E8OoYP6rmjN1ge6b3aBCOM5XA",
+    rarity: "Rare",
+    image: "https://arweave.net/U7JebXlkk4Dxu8JA16DYyLz0zN8H-BeQbBpyn2bU3_E?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+  {
+    name: "GM Tee",
+    uri: "https://arweave.net/QsMkHSiEZc8chKhwfrzppf_PXaQ9kCiRSQlOJuFWjGU",
+    rarity: "Rare",
+    image: "https://arweave.net/jxLV3_WhJ5qnH8CFsrSqOK6UuzFJWc8wIN8KIM-2n3Y?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+  {
+    name: "REFLECTION Tee",
+    uri: "https://arweave.net/i_G9EUxzOb_TZ5M78W8VN_ek3vbnywB75H6rytdm-sY",
+    rarity: "Rare",
+    image: "https://arweave.net/NWi74OXm_KbN0FHkxE8XTLGntiGkLiVR-ftYGn2-tQU?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+  {
+    name: "TOLY Tee",
+    uri: "https://arweave.net/3JynvmVh742IvVYDYMbaJ2f90bW_nRDPHlCGU-HutOU",
+    rarity: "Rare",
+    image: "https://arweave.net/GxZtywCei6nUX5WFmMrpqIbWDvUPgodgq21LwTUywsE?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+  {
+    name: "ESSENTIAL Tee",
+    uri: "https://arweave.net/00yihJZtPVvUrK8QHZ3drbYedFj7m0HptiUqiEl32GA",
+    rarity: "Legendary",
+    image: "https://arweave.net/779MIruPYX4g3WB88aWWScO1kQW1umLILT4tWHlPNPQ?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_silicons_season_1",
+  },
+];

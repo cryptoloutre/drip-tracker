@@ -66,7 +66,11 @@ export const SiliconsHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        const drop = attributes
+          .find((nft) => nft.trait_type == "Drop")
+          .value.includes("T-shirts")
+          ? "T-shirts"
+          : attributes.find((nft) => nft.trait_type == "Drop").value;
         return {
           uri,
           drop,
@@ -281,7 +285,9 @@ export const SiliconsHome: FC = ({}) => {
                     alt="drop 1 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Puffer #0000</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Puffer #0000
+                </div>
               </Link>
               <Link
                 href="/silicons/drop2"
@@ -294,7 +300,9 @@ export const SiliconsHome: FC = ({}) => {
                     alt="drop 2 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Sneaker #0001</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Sneaker #0001
+                </div>
               </Link>
               <Link
                 href="/silicons/drop3"
@@ -307,7 +315,22 @@ export const SiliconsHome: FC = ({}) => {
                     alt="drop 3 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Cargo Shorts #0002</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Cargo Shorts #0002
+                </div>
+              </Link>
+              <Link
+                href="/silicons/drop4"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/779MIruPYX4g3WB88aWWScO1kQW1umLILT4tWHlPNPQ?ext=png"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">T-shirts</div>
               </Link>
             </div>
           </div>
