@@ -66,7 +66,9 @@ export const StoekHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        const drop = attributes.find((nft) => nft.trait_type == "Drop")
+          ? attributes.find((nft) => nft.trait_type == "Drop").value
+          : attributes.find((nft) => nft.trait_type == "Theme").value;
         return {
           uri,
           drop,
@@ -152,11 +154,15 @@ export const StoekHome: FC = ({}) => {
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
             0xStoek is a graffiti writer turned illustrator that got her start
-            in abandoned buildings. <br/><br/>These modern ruins made underground museums
-            gave her a place to make art while raging against the machine. When
-            not in bandos, she was in trainyards painting on rolling canvases.<br/><br/>
-            0xStoek&apos;s work has traveled from Miami to Seattle. It&apos;s been
-            sandblasted, demolished, faded by the elements and now it lives
+            in abandoned buildings. <br />
+            <br />
+            These modern ruins made underground museums gave her a place to make
+            art while raging against the machine. When not in bandos, she was in
+            trainyards painting on rolling canvases.
+            <br />
+            <br />
+            0xStoek&apos;s work has traveled from Miami to Seattle. It&apos;s
+            been sandblasted, demolished, faded by the elements and now it lives
             forever on the blockchain.
             <br />
             <br />
@@ -376,6 +382,19 @@ export const StoekHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 8</div>
+              </Link>
+              <Link
+                href="/0xStoek/drop9"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/WXQWNh-lCCoVEtTx5ZgdrKB4queLhNWJ1ey2rBz8r9s?ext=png"
+                    alt="drop 9 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop gm</div>
               </Link>
             </div>
           </div>
