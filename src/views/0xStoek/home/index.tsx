@@ -55,6 +55,8 @@ export const StoekHome: FC = ({}) => {
           "STKM3PzeFc6kdJiMXyQ3pRDa3ERCEGgM9NbPPGb2Rft"
     );
 
+    console.log("Got their NFT before filtering", _userNFTs)
+
     const _userNFTsURI = await Promise.all(
       _userNFTs.map(async (asset) => {
         let attributes: any;
