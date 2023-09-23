@@ -294,6 +294,7 @@ export {GrimSyndicateHome} from "./grimsyndicate/home";
 export {Drop1GrimSyndicate} from "./grimsyndicate/drop1";
 export {Drop2GrimSyndicate} from "./grimsyndicate/drop2";
 export {Drop3GrimSyndicate} from "./grimsyndicate/drop3";
+export {Drop4GrimSyndicate} from "./grimsyndicate/drop4";
 export {EnigmaHome} from "./enigma/home";
 export {Drop1Enigma} from "./enigma/drop1";
 export {Drop2Enigma} from "./enigma/drop2";
