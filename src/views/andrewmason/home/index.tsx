@@ -44,7 +44,7 @@ export const MasonHome: FC = ({}) => {
 
     setIsFetched(false);
 
-    const allUserNFTs = await getUserNFTs(publickey.toBase58()°;
+    const allUserNFTs = await getUserNFTs(publickey.toBase58());
 
     const _userNFTs = allUserNFTs.filter(
       (asset) =>
