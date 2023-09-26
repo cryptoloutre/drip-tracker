@@ -314,3 +314,5 @@ export {KevHome} from "./kevthecactus/home";
 export {Drop1Kev} from "./kevthecactus/drop1";
 export {VfxfreekHome} from "./vfxfreek/home";
 export {Drop1Vfxfreek} from "./vfxfreek/drop1";
+export {BackpackHome} from "./backpack/home";
+export {Drop1Backpack} from "./backpack/drop1";
