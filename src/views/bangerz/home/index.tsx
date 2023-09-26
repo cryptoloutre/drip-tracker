@@ -10,6 +10,7 @@ import { Connection } from "@solana/web3.js";
 import { Loader } from "components/Loader";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { DropInfo } from "./DropInfo";
+import { getUserNFTs } from "utils/getUserNFTs";
 
 export const BangerzHome: FC = ({}) => {
   const wallet = useWallet();
@@ -43,11 +44,9 @@ export const BangerzHome: FC = ({}) => {
 
     setIsFetched(false);
 
-    const allUserNFTs = await connection.getAssetsByOwner({
-      ownerAddress: publickey.toBase58(),
-    });
+    const allUserNFTs = await getUserNFTs(publickey.toBase58());
 
-    const _userNFTsOrigins = allUserNFTs.items.filter(
+    const _userNFTsOrigins = allUserNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
@@ -55,7 +54,7 @@ export const BangerzHome: FC = ({}) => {
           "BNGZBH4iBZqL4op5ZoyYE11UuogYvvMtPVxgakZMBjxB"
     );
 
-    const _userNFTs3Drip = allUserNFTs.items.filter(
+    const _userNFTs3Drip = allUserNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&

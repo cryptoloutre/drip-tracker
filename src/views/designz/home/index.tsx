@@ -10,6 +10,7 @@ import { Connection } from "@solana/web3.js";
 import { Loader } from "components/Loader";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { DropInfo } from "./DropInfo";
+import { getUserNFTs } from "utils/getUserNFTs";
 
 export const DesignzHome: FC = ({}) => {
   const wallet = useWallet();
@@ -43,11 +44,9 @@ export const DesignzHome: FC = ({}) => {
 
     setIsFetched(false);
 
-    const allUserNFTs = await connection.getAssetsByOwner({
-      ownerAddress: publickey.toBase58(),
-    });
+    const allUserNFTs = await getUserNFTs(publickey.toBase58());
 
-    const _userNFTs = allUserNFTs.items.filter(
+    const _userNFTs = allUserNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&

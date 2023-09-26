@@ -5,6 +5,7 @@ import { FC, useEffect, useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { Loader } from "components/Loader";
 import { WrapperConnection } from "../../../ReadApi/WrapperConnection";
+import { getUserNFTs } from "utils/getUserNFTs";
 
 export const Reader: FC = ({}) => {
   const wallet = useWallet();
@@ -61,11 +62,9 @@ export const Reader: FC = ({}) => {
 
     setIsFetched(false);
 
-    const allUserNFTs = await connection.getAssetsByOwner({
-      ownerAddress: publickey.toBase58(),
-    });
+    const allUserNFTs = await getUserNFTs(publickey.toBase58())
 
-    const borkNFT = allUserNFTs.items.filter(
+    const borkNFT = allUserNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&

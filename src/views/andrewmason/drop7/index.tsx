@@ -8,6 +8,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { RarityLegend } from "components/RarityLegend";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
+import { getUserNFTs } from "utils/getUserNFTs";
 
 export const Drop7Mason: FC = ({}) => {
   const wallet = useWallet();
@@ -37,11 +38,9 @@ export const Drop7Mason: FC = ({}) => {
     const _dropNFT = [];
     setIsFetched(false);
 
-    const userNFTs = await connection.getAssetsByOwner({
-      ownerAddress: publickey.toBase58(),
-    });
+    const userNFTs = await getUserNFTs(publickey.toBase58())
 
-    const BorkNFT = userNFTs.items.filter(
+         const BorkNFT = userNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
