@@ -66,7 +66,14 @@ export const RadiantHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        const drop =
+          attributes.find((nft) => nft.trait_type == "Drop").value == "Genesis"
+            ? attributes.find((nft) => nft.trait_type == "Drop").value
+            : (
+                Number(
+                  attributes.find((nft) => nft.trait_type == "Drop").value
+                ) + 2
+              ).toString();
         return {
           uri,
           drop,
@@ -74,7 +81,7 @@ export const RadiantHome: FC = ({}) => {
       })
     );
 
-     const _userNFTsCelestial = allUserNFTs.items.filter(
+    const _userNFTsCelestial = allUserNFTs.items.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
@@ -94,7 +101,7 @@ export const RadiantHome: FC = ({}) => {
           attributes = responseData.attributes;
         }
         const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
-        const drop = (Number(_drop) + 1).toString()
+        const drop = (Number(_drop) + 1).toString();
         return {
           uri,
           drop,
@@ -181,7 +188,9 @@ export const RadiantHome: FC = ({}) => {
             Track the Radiant NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-          Rayaan is a landscape, astro and sport photographer. Rayaan is based in New Zealand, where he has the opportunity to capture unique photos.
+            Rayaan is a landscape, astro and sport photographer. Rayaan is based
+            in New Zealand, where he has the opportunity to capture unique
+            photos.
             <br />
             <br />
             Sign up{" "}
@@ -300,7 +309,9 @@ export const RadiantHome: FC = ({}) => {
                     alt="drop 1 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Drop Genesis</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Drop Genesis
+                </div>
               </Link>
               <Link
                 href="/radiant/drop2"
@@ -327,6 +338,19 @@ export const RadiantHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
+              </Link>
+              <Link
+                href="/radiant/drop4"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/6xsz1QN5UWmOtxfJIW2MUl87paf2KOW6Js4DkNjlh24?ext=png"
+                    alt="drop 4 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 4</div>
               </Link>
             </div>
           </div>
