@@ -35,7 +35,7 @@ export const Drop12S2: FC = ({}) => {
 
     const userNFTs = await getUserNFTs(publickey.toBase58())
 
-    const wombatNFT = userNFTs.items.filter(
+    const wombatNFT = userNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&

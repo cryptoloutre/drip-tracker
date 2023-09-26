@@ -35,7 +35,7 @@ export const Drop22S2: FC = ({}) => {
 
     const userNFTs = await getUserNFTs(publickey.toBase58())
 
-    const BinaryForceNFT = userNFTs.items.filter(
+    const BinaryForceNFT = userNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&

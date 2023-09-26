@@ -35,7 +35,7 @@ export const Drop18S2: FC = ({}) => {
 
     const userNFTs = await getUserNFTs(publickey.toBase58())
 
-    const DashersNFT = userNFTs.items.filter(
+    const DashersNFT = userNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
