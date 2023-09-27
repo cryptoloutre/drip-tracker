@@ -322,3 +322,5 @@ export {BackpackHome} from "./backpack/home";
 export {Drop1Backpack} from "./backpack/drop1";
 export {BlockframezHome} from "./blockframez/home";
 export {Drop1Blockframez} from "./blockframez/drop1";
+export {MovieSticksHome} from "./moviesticks/home";
+export {Drop1MovieSticks } from "./moviesticks/drop1";
