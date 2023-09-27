@@ -126,6 +126,7 @@ export {Drop13Floor} from "./floor/drop13";
 export {Drop14Floor} from "./floor/drop14";
 export {Drop15Floor} from "./floor/drop15";
 export {Drop16Floor} from "./floor/drop16";
+export {Drop17Floor} from "./floor/drop17";
 export {TinyHome} from "./tinydenise/home";
 export {Drop1Tiny} from "./tinydenise/drop1";
 export {Drop2Tiny} from "./tinydenise/drop2";
