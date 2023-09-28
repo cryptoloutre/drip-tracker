@@ -19,6 +19,13 @@ export const NFTsinDrop = [
     uri: 'https://arweave.net/JNMVPSahtlNuUBIdf5UtUZikeFCWl9NxXiRAzcsNfCE',
     image: 'https://arweave.net/D-plUgDWlZvSHnfFdYR35YiH-D3heUmhc2v4dwWo600?ext=png',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_season_2'
+  },
+  {
+    name: 'Welcome to Solana',
+    rarity: 'Legendary',
+    uri: 'https://arweave.net/e8CcYMW0jzaUyeUs09-9elrK6Ji8ZfQ4qByJan_Qqls',
+    image: 'https://arweave.net/FGStaPaP1yBS6PxvVzMS_nC5vBUGGgEztiICW-ZJ6o8?ext=png',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_season_2'
   }
 ];
 
