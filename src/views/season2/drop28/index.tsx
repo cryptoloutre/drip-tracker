@@ -134,7 +134,7 @@ export const Drop28S2: FC = ({}) => {
               <div>
                 You have{" "}
                 <span className="font-black text-[#14F195]">{nbUserNFTs}</span>{" "}
-                The Dashers!
+                MONMONMON!
               </div>
             </div>
           )}
