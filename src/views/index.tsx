@@ -326,3 +326,5 @@ export {BlockframezHome} from "./blockframez/home";
 export {Drop1Blockframez} from "./blockframez/drop1";
 export {MovieSticksHome} from "./moviesticks/home";
 export {Drop1MovieSticks } from "./moviesticks/drop1";
+export {SimplyEtoHome} from "./simplyeto/home";
+export {Drop1SimplyEto } from "./simplyeto/drop1";
