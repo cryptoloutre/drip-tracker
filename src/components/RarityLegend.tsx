@@ -12,6 +12,9 @@ export const RarityLegend: FC = () => {
       <div className="flex items-center mr-4">
         <span className="bg-gradient-to-bl from-[#14F195] to-[#9945FF] mr-2 h-[15px] w-[15px]"></span> Legendary
       </div>
+      <div className="flex items-center mr-4">
+        <span className="bg-[#F94887] mr-2 h-[15px] w-[15px]"></span> Ultimate
+      </div>
     </div>
   );
 };
