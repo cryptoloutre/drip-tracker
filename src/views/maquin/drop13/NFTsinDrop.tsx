@@ -22,7 +22,7 @@ export const NFTsinDrop = [
   },
   {
     name: 'Broken Cosmos',
-    uri: '',
+    uri: 'https://arweave.net/-SMV5v-5J411AYR9SnCSF2DA54eLcwiVX4vUiRDxlF4',
     rarity: 'Ultimate',
     image: 'https://arweave.net/iYhuEK_MbQAcRjYVMVPN6NYh8OJJ9MtR-w9oUcUOQo4?ext=jpg',
     magicEdenLink: 'https://www.tensor.trade/trade/maquin_drip_season_1'
