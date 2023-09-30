@@ -235,6 +235,7 @@ export {Drop6Stoek} from "./0xStoek/drop6";
 export {Drop7Stoek} from "./0xStoek/drop7";
 export {Drop8Stoek} from "./0xStoek/drop8";
 export {Drop9Stoek} from "./0xStoek/drop9";
+export {Drop10Stoek} from "./0xStoek/drop10";
 export {JakeyHome} from "./jakey/home";
 export {Drop1Jakey} from "./jakey/drop1";
 export {Drop2Jakey} from "./jakey/drop2";
