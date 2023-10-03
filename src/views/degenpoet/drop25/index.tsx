@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop24Degen: FC = ({}) => {
+export const Drop25Degen: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop24Degen: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "24";
+  const dropNumber = "25";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -94,7 +94,7 @@ export const Drop24Degen: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop24:{" "}
+            Drop25:{" "}
             <span className="italic">
               {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} &{" "}
               {NFTsInThisDrop[2].name}
@@ -112,40 +112,34 @@ export const Drop24Degen: FC = ({}) => {
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              This drop features 4 rarities:
+              This drop features 3 rarities:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[0].name}</span>. A still
-              life created using an Underwood Quiet Tab Typewriter, Photoshop,
-              and printed paper. Based on “Still Life with Bottles and Fruit” by
-              Alexej von Jawlensky, 1900.{" "}
+              <span className="italic">{NFTsInThisDrop[0].name}</span>. An
+              original portrait by Degen Poet, created with an Olympia Splendid
+              33 typewriter and watercolor pencils.{" "}
               <span className="text-[#a5a5a5] font-bold">(supply: 415232)</span>
               .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
               </span>{" "}
               drop is <span className="italic">{NFTsInThisDrop[1].name}</span>.
-              Degen Poet&apos;s wife snapping a photo of a couple near a Napa
-              vineyard. Created with a Photograph, Photoshop, and Royal Classic
-              Typewriter.{" "}
+              An original portrait by Degen Poet, created with an Olympia
+              Splendid 33 typewriter and watercolor pencils.{" "}
               <span className="text-[#E6C15A] font-bold">(supply: 2000)</span>
               .<br />
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span> drop
-              is <span className="italic">{NFTsInThisDrop[2].name}</span>. A
-              portrait of Heathcliff, Degen Poet&apos;s dog. A lab, husky,
-              setter, chow chow mutt. Goes by Beefcliff as well. Made with a
-              typewriter & watercolors, then shopped.{" "}
+              is <span className="italic">{NFTsInThisDrop[2].name}</span>. An
+              original portrait by Degen Poet, created with an Olympia Splendid
+              33 typewriter and watercolor pencils.{" "}
               <span className="text-[#14F195] font-bold">(supply: 100)</span>.
               <br />
               <br />• The{" "}
               <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[3].name}</span>. The
-              first Ultimate by Degen Poet. A portrait of Heathcliff, Degen
-              Poet’s dog and the inspiration for DP’s first ever NFT collection
-              on Digital Eyes in Sept. 2021. The collection was called
-              “Heathcliff Poems.” Seems lucky to begin a series of DRiP
-              Ultimates this way. Made with a typewriter & oil pastel, then PS.{" "}
+              <span className="italic">{NFTsInThisDrop[3].name}</span>. An
+              original portrait by Degen Poet, created with an Olympia Splendid
+              33 typewriter and watercolor pencils.{" "}
               <span className="text-[#14F195] font-bold">(supply: 1)</span>.
             </div>
           </div>

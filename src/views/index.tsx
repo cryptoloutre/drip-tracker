@@ -78,6 +78,7 @@ export {Drop21Degen} from "./degenpoet/drop21";
 export {Drop22Degen} from "./degenpoet/drop22";
 export {Drop23Degen} from "./degenpoet/drop23";
 export {Drop24Degen} from "./degenpoet/drop24";
+export {Drop25Degen} from "./degenpoet/drop25";
 export {DAAHome} from "./daa/home";
 export {Drop1DAA} from "./daa/drop1";
 export {Drop2DAA} from "./daa/drop2";

@@ -17,5 +17,11 @@ export const NFTsinDrop = [
     image: 'https://arweave.net/lKmhyMtZ5K75EJul23zlEZmeR6XsRaNT6RiRvHnglzM?ext=jpg',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_degen_poet'
   },
+  {
+    name: 'Midnight Moo',
+    rarity: 'Ultimate',
+    image: 'https://arweave.net/B2mLXKu5gUvc0e8GS3VoXFQRvrc2OdlgAwvghQOvSd0?ext=jpg',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_degen_poet'
+  },
 ];
 
