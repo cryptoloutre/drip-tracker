@@ -295,6 +295,7 @@ export {Drop3Designz} from "./designz/drop3";
 export {Drop4Designz} from "./designz/drop4";
 export {Drop5Designz} from "./designz/drop5";
 export {Drop6Designz} from "./designz/drop6";
+export {Drop7Designz} from "./designz/drop7";
 export {SiliconsHome} from "./silicons/home";
 export {Drop1Silicons} from "./silicons/drop1";
 export {Drop2Silicons} from "./silicons/drop2";

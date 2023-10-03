@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop6Designz: FC = ({}) => {
+export const Drop7Designz: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop6Designz: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "6";
+  const dropNumber = "7";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -94,7 +94,7 @@ export const Drop6Designz: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop6:{" "}
+            Drop7:{" "}
             <span className="italic">
               {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name},
               {NFTsInThisDrop[2].name} & {NFTsInThisDrop[3].name}
@@ -112,14 +112,14 @@ export const Drop6Designz: FC = ({}) => {
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              2 Physical Paintings blended together; Each painted with oil &
-              acrylic using a Steel Meat Cleaver, brushes & pencil.
+              Acrylic on paper • Painted with Halloween props; Including a
+              plastic bloody machete & knife
               <br />
               This drop features 4 rarities:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[0].name}</span>.{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 45896)</span>
+              <span className="text-[#a5a5a5] font-bold">(supply: 78032)</span>
               .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
@@ -134,9 +134,7 @@ export const Drop6Designz: FC = ({}) => {
               <br />
               <br />• The{" "}
               <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[3].name}</span>. This 1/1
-              was created by blending portions of the Common, the Rare & the
-              LEGENDARY paintings together.{" "}
+              <span className="italic">{NFTsInThisDrop[3].name}</span>.{" "}
               <span className="text-[#14F195] font-bold">(supply: 1)</span>.
             </div>
           </div>
@@ -170,10 +168,7 @@ export const Drop6Designz: FC = ({}) => {
                     } ${currentNft.rarity == "Rare" && "border-[#E6C15A]"} ${
                       currentNft.rarity == "Legendary" &&
                       "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
-                    }                    ${
-                      currentNft.rarity == "Ultimate" && "border-[#F94887]"
-                    }
-                    `}
+                    }`}
                   >
                     <img className="" src={currentNft.image}></img>
                     <h1 className="font-bold mt-2">{currentNft.name}</h1>

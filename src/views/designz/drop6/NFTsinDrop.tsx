@@ -20,5 +20,12 @@ export const NFTsinDrop = [
     image: 'https://arweave.net/z3jDlMR1WbYrbNasY11Yzb1e0Dg5KeShUxbrMrWW5QM?ext=JPG',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_designz_season_1'
   },
+  {
+    name: 'A Breath of New',
+    uri: "https://arweave.net/xJ-NLkf2XRdMDxlVYa5UyLbRRBX56qHDlKBd07czNB4",
+    rarity: 'Ultimate',
+    image: 'https://arweave.net/KVhMMowoNSQP_xh9ChpnMvRib5_HC_5i_FqcCuUU08A?ext=jpeg',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_designz_season_1'
+  },
 ];
 
