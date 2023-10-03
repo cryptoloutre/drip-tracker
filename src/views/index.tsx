@@ -333,6 +333,7 @@ export {VfxfreekHome} from "./vfxfreek/home";
 export {Drop1Vfxfreek} from "./vfxfreek/drop1";
 export {BackpackHome} from "./backpack/home";
 export {Drop1Backpack} from "./backpack/drop1";
+export {Drop2Backpack} from "./backpack/drop2";
 export {BlockframezHome} from "./blockframez/home";
 export {Drop1Blockframez} from "./blockframez/drop1";
 export {MovieSticksHome} from "./moviesticks/home";
