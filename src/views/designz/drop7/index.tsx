@@ -135,7 +135,7 @@ export const Drop7Designz: FC = ({}) => {
               <br />• The{" "}
               <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[3].name}</span>.{" "}
-              <span className="text-[#14F195] font-bold">(supply: 1)</span>.
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (

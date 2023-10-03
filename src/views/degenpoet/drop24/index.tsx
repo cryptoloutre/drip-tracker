@@ -146,7 +146,7 @@ export const Drop24Degen: FC = ({}) => {
               on Digital Eyes in Sept. 2021. The collection was called
               “Heathcliff Poems.” Seems lucky to begin a series of DRiP
               Ultimates this way. Made with a typewriter & oil pastel, then PS.{" "}
-              <span className="text-[#14F195] font-bold">(supply: 1)</span>.
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (

@@ -140,7 +140,7 @@ export const Drop25Degen: FC = ({}) => {
               <span className="italic">{NFTsInThisDrop[3].name}</span>. An
               original portrait by Degen Poet, created with an Olympia Splendid
               33 typewriter and watercolor pencils.{" "}
-              <span className="text-[#14F195] font-bold">(supply: 1)</span>.
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (

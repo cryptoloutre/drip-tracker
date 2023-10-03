@@ -137,7 +137,7 @@ export const Drop6Designz: FC = ({}) => {
               <span className="italic">{NFTsInThisDrop[3].name}</span>. This 1/1
               was created by blending portions of the Common, the Rare & the
               LEGENDARY paintings together.{" "}
-              <span className="text-[#14F195] font-bold">(supply: 1)</span>.
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
