@@ -164,6 +164,7 @@ export {Drop15Vault} from "./vault/drop15";
 export {Drop16Vault} from "./vault/drop16";
 export {Drop17Vault} from "./vault/drop17";
 export {Drop18Vault} from "./vault/drop18";
+export {Drop19Vault} from "./vault/drop19";
 export {BangerzHome} from "./bangerz/home";
 export {Drop1Bangerz} from "./bangerz/drop1";
 export {Drop2Bangerz} from "./bangerz/drop2";
