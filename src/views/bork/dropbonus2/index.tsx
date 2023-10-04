@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const DropBonus1: FC = ({}) => {
+export const DropBonus2: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const DropBonus1: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropName = "Bonus Borks 001";
+  const dropName = "Bonus Borks 002";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -53,7 +53,7 @@ export const DropBonus1: FC = ({}) => {
     await Promise.all(
       BorkNFT.map(async (asset) => {
         const name = asset.content.name;
-        if (name.include(dropName)) {
+        if (name == dropName) {
           _dropNFT.push(asset.content.json_uri);
         }
       })
@@ -81,7 +81,7 @@ export const DropBonus1: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            <span className="italic">Bonus Borks 001</span>{" "}
+            <span className="italic">Bonus Borks 002</span>{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -94,10 +94,8 @@ export const DropBonus1: FC = ({}) => {
           <div className="mt-12 w-[100%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              Each dawn brings with it new challenges, new opportunities and new
-              ways to grow. Every adventure brings you closer to your destiny.
-              Every friend is an adventure and every opponent is a potential new
-              friend. Onward, always!
+              DRiP is for Bork. DRiP is for DReader. DRiP is for Studio NX. DRiP
+              is for Storytellers. DRiP is for Comics.
             </div>
             <div className="text-lg mt-4">
               Use our{" "}

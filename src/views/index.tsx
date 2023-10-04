@@ -111,6 +111,7 @@ export {Drop11Bork} from "./bork/drop11";
 export {Drop12Bork} from "./bork/drop12";
 export {Drop13Bork} from "./bork/drop13";
 export {DropBonus1} from "./bork/dropbonus1";
+export {DropBonus2} from "./bork/dropbonus2";
 export {Reader} from "./reader"
 export {FloorHome} from "./floor/home";
 export {Drop1Floor} from "./floor/drop1";

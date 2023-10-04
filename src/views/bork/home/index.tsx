@@ -85,7 +85,13 @@ export const BorkHome: FC = ({}) => {
 
     _userBonusNFTs.map(async (asset) => {
       const uri = asset.content.json_uri;
-      const chapter = "Bonus Borks 001";
+      let chapter;
+      const name = asset.content.name;
+      if (name.include("Bonus Borks 001")) {
+        chapter = "Bonus Borks 001";
+      } else {
+        chapter = name;
+      }
       _userNFTsURI.push({
         uri,
         chapter,
@@ -546,7 +552,22 @@ export const BorkHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
-                Bonus Borks 001
+                  Bonus Borks 001
+                </div>
+              </Link>
+              <Link
+                href="/bork/dropbonus2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/mA6Y9O788aXcSQNr91v_1kJmU6lFnTpdh1mrEngEUSE?ext=jpg"
+                    alt="dropbonus2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Bonus Borks 002
                 </div>
               </Link>
             </div>
