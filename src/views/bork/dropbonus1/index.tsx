@@ -52,8 +52,8 @@ export const DropBonus1: FC = ({}) => {
 
     await Promise.all(
       BorkNFT.map(async (asset) => {
-        const name = asset.content.name;
-        if (name.include(dropName)) {
+        const name = asset.content.metadata.name;
+        if (name.includes(dropName)) {
           _dropNFT.push(asset.content.json_uri);
         }
       })

@@ -86,8 +86,8 @@ export const BorkHome: FC = ({}) => {
     _userBonusNFTs.map(async (asset) => {
       const uri = asset.content.json_uri;
       let chapter;
-      const name = asset.content.name;
-      if (name.include("Bonus Borks 001")) {
+      const name = asset.content.metadata.name;
+      if (name.includes("Bonus Borks 001")) {
         chapter = "Bonus Borks 001";
       } else {
         chapter = name;
