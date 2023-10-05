@@ -53,6 +53,7 @@ export { Drop25S2 } from "./season2/drop25";
 export { Drop26S2 } from "./season2/drop26";
 export { Drop27S2 } from "./season2/drop27";
 export { Drop28S2 } from "./season2/drop28";
+export { Drop29S2 } from "./season2/drop29";
 export {DegenHome} from "./degenpoet/home";
 export {Drop1Degen} from "./degenpoet/drop1";
 export {Drop2Degen} from "./degenpoet/drop2";

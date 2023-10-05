@@ -603,6 +603,21 @@ export const Season2Home: FC = ({}) => {
                 MONMONMON
                 </div>
               </Link>
+              <Link
+                href="/season2/drop29"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=" px-2 py-2"
+                    src="https://arweave.net/NMfdFs-GHmDFkK-4gjRdWzbyK4gYt-aiwRNDOkIpZmc?ext=png"
+                    alt="drop 26 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                Drop 26
+                </div>
+              </Link>
             </div>
           </div>
         </div>
