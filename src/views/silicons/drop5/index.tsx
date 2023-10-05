@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop4Silicons: FC = ({}) => {
+export const Drop5Silicons: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,8 +19,7 @@ export const Drop4Silicons: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNb = "T-shirts #0003";
-  const dropNb2 = "T-shirts #0004";
+  const dropNb = "Visor #0005";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -39,7 +38,7 @@ export const Drop4Silicons: FC = ({}) => {
     const _dropNFT = [];
     setIsFetched(false);
 
-    const userNFTs = await getUserNFTs(publickey.toBase58())
+    const userNFTs = await getUserNFTs(publickey.toBase58());
 
     const season2NFT = userNFTs.filter(
       (asset) =>
@@ -63,7 +62,7 @@ export const Drop4Silicons: FC = ({}) => {
           attributes = responseData.attributes;
         }
         const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
-        if (drop == dropNb || drop == dropNb2) {
+        if (drop == dropNb) {
           _dropNFT.push(asset.content.json_uri);
         }
       })
@@ -89,7 +88,7 @@ export const Drop4Silicons: FC = ({}) => {
       <div className="md:hero-content flex">
         <div className="">
           <h1 className="text-center text-3xl font-bold">
-            Drop4: <span className="italic">T-shirts #0003</span> by{" "}
+            Drop5: <span className="italic">Visor #0005</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -102,13 +101,11 @@ export const Drop4Silicons: FC = ({}) => {
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              This is the fourth SILICONS Drip Haus collectible drop. This week
-              we are showcasing some of the designs for our upcoming luxury
-              fashion brand ABSTRCT. The Silicons will be wearing ABSTRCT in the
-              main collection, there is a lot more to come! Hold 2 of each
-              week&apos;s collectibles and you will receive next week&apos;s drop. Make
-              sure you keep collecting 2 of each week&apos;s drops, and you will
-              receive really cool prizes before the SILICONS mint!
+              This is the fifth SILICONS Drip Haus collectible drop. Hold 2 of
+              each week&apos;s collectibles and you will receive next
+              week&apos;s drop. We are getting close to the final round of
+              Two:One. Make sure you keep collecting 2 of each week&apos;s
+              drops. The SILICONS mint is coming soon!
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
