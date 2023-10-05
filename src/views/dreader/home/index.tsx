@@ -12,7 +12,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const VfxfreekHome: FC = ({}) => {
+export const DreaderHome: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -51,7 +51,7 @@ export const VfxfreekHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "VFXDkMfw2kXzyTgoLvzAJ3bB9Z96agas5nwF6ekyaN7"
+          "DRDRb6qsokfYm6VDGRzqsiyLRFq1Ge2jMSN6BD8tu2Js"
     );
 
     const _userNFTsURI = await Promise.all(
@@ -145,14 +145,15 @@ export const VfxfreekHome: FC = ({}) => {
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex justify-center">
         <div className="">
-          <h1 className="font-bold text-4xl text-center">VFXFREEK Drop</h1>
+          <h1 className="font-bold text-4xl text-center">dReader Drop</h1>
           <div className="text-center text-3xl font-bold">
-            Track the VFXFREEK DRiP NFTs you are missing
+            Track the dReader DRiP NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-            VFXFREEK is a 3D artist who explores versatile worlds from the
-            natural to the futuristic, all the way into the mysterious realms of
-            surrealism.
+            dReader is a mobile first comic book & storytelling platform on
+            Solana for self-publishing & collecting comics. Subscribe now for
+            early access to rare collectibles from many of the top creators &
+            projects on Solana.
             <br />
             <br />
             Sign up{" "}
@@ -160,7 +161,7 @@ export const VfxfreekHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://drip.haus/vfxfreek"}
+              href={"https://drip.haus/dreader"}
             >
               here
             </a>{" "}
@@ -169,9 +170,9 @@ export const VfxfreekHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://twitter.com/vfxfreek"}
+              href={"https://twitter.com/dReaderapp"}
             >
-              VFXFREEK
+              dReader
             </a>{" "}
             DRiP drop.
             <div className="mt-4 flex text-xl">
@@ -179,7 +180,15 @@ export const VfxfreekHome: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://twitter.com/vfxfreek"}
+                href={"https://dreader.io/links"}
+              >
+                Linktree
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#9945FF] underline font-bold mr-4"
+                href={"https://twitter.com/dReaderapp"}
               >
                 Twitter
               </a>
@@ -187,9 +196,9 @@ export const VfxfreekHome: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://www.instagram.com/vfxfreek/"}
+                href={"https://discord.com/invite/rrZsRvC9mh"}
               >
-                Instagram
+                Discord
               </a>
             </div>
           </div>
@@ -261,13 +270,13 @@ export const VfxfreekHome: FC = ({}) => {
           <div className="flex justify-center">
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               <Link
-                href="/vfxfreek/drop1"
+                href="/dreader/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
                   <img
                     className=""
-                    src="https://arweave.net/chUeBkYQXEcV3BVFvIWj03iTgfpnBEmsBg97IapbLS4?ext=png"
+                    src="https://arweave.net/f-1qysypdn4itMpU2LzMdA8d4Gy826LzLAnJ_q4N3XU?ext=png"
                     alt="drop 1 preview"
                   ></img>
                 </div>
