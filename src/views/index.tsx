@@ -349,3 +349,4 @@ export {Drop1MovieSticks } from "./moviesticks/drop1";
 export {Drop2MovieSticks } from "./moviesticks/drop2";
 export {SimplyEtoHome} from "./simplyeto/home";
 export {Drop1SimplyEto } from "./simplyeto/drop1";
+export {Drop2SimplyEto } from "./simplyeto/drop2";
