@@ -443,7 +443,7 @@ export const MaquinHome: FC = ({}) => {
                   <img
                     className=""
                     src="https://arweave.net/uLbiVlq-0ee4cZgzAlghdwq6qRRV0NkfNViLkNL6Dd8?ext=jpg"
-                    alt="drop 13 preview"
+                    alt="drop 14 preview"
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
