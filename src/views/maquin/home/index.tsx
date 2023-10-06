@@ -435,6 +435,19 @@ export const MaquinHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 13</div>
               </Link>
+              <Link
+                href="/maquin/drop14"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/uLbiVlq-0ee4cZgzAlghdwq6qRRV0NkfNViLkNL6Dd8?ext=jpg"
+                    alt="drop 13 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
+              </Link>
             </div>
           </div>
         </div>
