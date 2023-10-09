@@ -20,4 +20,11 @@ export const NFTsinDrop = [
     image: "https://arweave.net/2rw-Wb-kH-mSjw0YP2VoKAKSjSuAnoF2u9-RfBROZzs?ext=png",
     magicEdenLink: "https://www.tensor.trade/trade/madhouse",
   },
+  {
+    name: "Piranha (Original Sketch)",
+    uri: 'https://arweave.net/lDf3wrTuFA6asABIfWg93JFgLF_6iFqQaJ8h0Iofn1g',
+    rarity: "Legendary",
+    image: "https://arweave.net/iEfTcJQ8p3ggfA7vFpYq8qmFkKto4jPDUPjueb3QAgg?ext=jpg",
+    magicEdenLink: "https://www.tensor.trade/trade/madhouse",
+  },
 ];
