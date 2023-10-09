@@ -65,7 +65,15 @@ export const DropNationHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Artist").value;
+        let drop = attributes.find((nft) => nft.trait_type == "Artist").value;
+        if (drop == "Vitamin THC") {
+          const NFTname = asset.content.metadata.name;
+          drop = ["IN YOUR EYES", "THE NIGHT", "SLiP AWAY"].find(
+            (name) => name == NFTname
+          )
+            ? "Drop 5"
+            : drop;
+        }
         return {
           uri,
           drop,
@@ -157,10 +165,11 @@ export const DropNationHome: FC = ({}) => {
             <br />
             Each week Drop Nation 💧 is dripping 3 different bangin’ songs that
             vary in rarity from amazing artists, DJ’s, producers, and record
-            label’s from all around the world! <br />Thankers have increased chances
-            to receive a rare or legendary each week! <br />If you wish to submit your
-            own original music for review please join our discord server and
-            follow the instructions! <br />
+            label’s from all around the world! <br />
+            Thankers have increased chances to receive a rare or legendary each
+            week! <br />
+            If you wish to submit your own original music for review please join
+            our discord server and follow the instructions! <br />
             Sign up{" "}
             <a
               target="_blank"
@@ -300,9 +309,7 @@ export const DropNationHome: FC = ({}) => {
                     alt="drop 2 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">
-                QRTX
-                </div>
+                <div className="text-center font-bold mt-1 pb-1">QRTX</div>
               </Link>
               <Link
                 href="/dropnation/drop3"
@@ -316,7 +323,7 @@ export const DropNationHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
-                Palm Tree Gang
+                  Palm Tree Gang
                 </div>
               </Link>
               <Link
@@ -331,8 +338,21 @@ export const DropNationHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
-                Mike Epsse
+                  Mike Epsse
                 </div>
+              </Link>
+              <Link
+                href="/dropnation/drop5"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/vjX3pqkXhxE0fUTfPUEuXVe3A-na11Bi50RrEy8xxmc?ext=jpg"
+                    alt="drop 5 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 5</div>
               </Link>
             </div>
           </div>
