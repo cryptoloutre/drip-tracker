@@ -71,7 +71,7 @@ export const DropNationHome: FC = ({}) => {
           drop = ["IN YOUR EYES", "THE NIGHT", "SLiP AWAY"].find(
             (name) => name == NFTname
           )
-            ? "Drop 5"
+            ? "5"
             : drop;
         }
         return {

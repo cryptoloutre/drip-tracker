@@ -92,8 +92,8 @@ export const Drop1Genopets: FC = ({}) => {
           <h1 className="text-center text-3xl font-bold">
             Drop1:{" "}
             <span className="italic">
-              {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name},
-              {NFTsInThisDrop[2].name} & {NFTsInThisDrop[3].name}
+              {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} &
+              {NFTsInThisDrop[2].name}
             </span>{" "}
             by{" "}
             <a
