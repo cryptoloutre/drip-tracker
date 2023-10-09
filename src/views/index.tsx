@@ -366,3 +366,5 @@ export {Drop1SimplyEto } from "./simplyeto/drop1";
 export {Drop2SimplyEto } from "./simplyeto/drop2";
 export {DreaderHome} from "./dreader/home";
 export {Drop1Dreader } from "./dreader/drop1";
+export {GenopetsHome} from "./genopets/home";
+export {Drop1Genopets } from "./genopets/drop1";
