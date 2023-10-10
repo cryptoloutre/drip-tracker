@@ -22,7 +22,7 @@ export const NFTsinDrop = [
   },
   {
     name: "King’s Journey",
-    uri: "",
+    uri: "https://arweave.net/zIgq79d_6jNUtwF88QR16SXYqMsskkiKn-J3HYkzpTA",
     rarity: 'Ultimate',
     image: 'https://arweave.net/3QsfhMMRJS3C9Zo5o781TwTS-Vf49k-3tzzbGJzq8RY?ext=JPG',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_designz_season_1'
