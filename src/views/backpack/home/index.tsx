@@ -295,6 +295,19 @@ export const BackpackHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
+              <Link
+                href="/backpack/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/whU8Fz4K2J_lodqUnFsu8D7-4IQaRUv9BSsq9VlJkYk?ext=gif"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
+              </Link>
             </div>
           </div>
         </div>
