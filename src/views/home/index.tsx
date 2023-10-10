@@ -17,7 +17,7 @@ export const HomeView: FC = ({}) => {
 
           <div className="flex justify-center">
             <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
-            <Link
+              <Link
                 href="/0xgrime/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -54,7 +54,9 @@ export const HomeView: FC = ({}) => {
                     alt="andrew mason preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Andrew Mason</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Andrew Mason
+                </div>
               </Link>
               <Link
                 href="/awag/home"
@@ -93,7 +95,9 @@ export const HomeView: FC = ({}) => {
                     alt="bad preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">BAD* Environment Club</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  BAD* Environment Club
+                </div>
               </Link>
               <Link
                 href="/bangerz/home"
@@ -132,7 +136,9 @@ export const HomeView: FC = ({}) => {
                     alt="blockframez preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Blockframez</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Blockframez
+                </div>
               </Link>
               <Link
                 href="/bork/home"
@@ -188,9 +194,7 @@ export const HomeView: FC = ({}) => {
                     alt="Designz preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">
-                  Designz
-                </div>
+                <div className="text-center font-bold mt-1 pb-1">Designz</div>
               </Link>
               <Link
                 href="/dreader/home"
@@ -203,9 +207,7 @@ export const HomeView: FC = ({}) => {
                     alt="Designz preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">
-                  dReader
-                </div>
+                <div className="text-center font-bold mt-1 pb-1">dReader</div>
               </Link>
               <Link
                 href="/dropnation/home"
@@ -233,9 +235,7 @@ export const HomeView: FC = ({}) => {
                     alt="ENiGMA preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">
-                  ENiGMA
-                </div>
+                <div className="text-center font-bold mt-1 pb-1">ENiGMA</div>
               </Link>
               <Link
                 href="/ottr/home"
@@ -263,7 +263,9 @@ export const HomeView: FC = ({}) => {
                     alt="fs preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Finding Satoshi</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Finding Satoshi
+                </div>
               </Link>
               <Link
                 href="/floor/home"
@@ -315,7 +317,9 @@ export const HomeView: FC = ({}) => {
                     alt="grimsyndicate preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Grim Syndicate</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Grim Syndicate
+                </div>
               </Link>
               <Link
                 href="/jakey/home"
@@ -341,7 +345,9 @@ export const HomeView: FC = ({}) => {
                     alt="kev the cactus preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Kev The Cactus</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Kev The Cactus
+                </div>
               </Link>
               <Link
                 href="/madhouse/home"
@@ -380,7 +386,9 @@ export const HomeView: FC = ({}) => {
                     alt="moviesticks preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">MovieSticks</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  MovieSticks
+                </div>
               </Link>
               <Link
                 href="/nofacenocase/home"
@@ -393,7 +401,9 @@ export const HomeView: FC = ({}) => {
                     alt="nfnc preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">No Face-No Case</div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  No Face-No Case
+                </div>
               </Link>
               <Link
                 href="/pog/home"
@@ -528,11 +538,21 @@ export const HomeView: FC = ({}) => {
                     alt="vfxfreek preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">
-                VFXFREEK
-                </div>
+                <div className="text-center font-bold mt-1 pb-1">VFXFREEK</div>
               </Link>
-
+              <Link
+                href="/wetiko/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/ee3RZiyUwYU4Y_frAmQQ3PEv1q5lisexuhE4NuD10qM?ext=png"
+                    alt="vfxfreek preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Wetiko</div>
+              </Link>
             </div>
           </div>
         </div>
