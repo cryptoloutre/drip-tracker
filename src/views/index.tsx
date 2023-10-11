@@ -151,6 +151,7 @@ export {Drop12Tiny} from "./tinydenise/drop12";
 export {Drop13Tiny} from "./tinydenise/drop13";
 export {Drop14Tiny} from "./tinydenise/drop14";
 export {Drop15Tiny} from "./tinydenise/drop15";
+export {Drop16Tiny} from "./tinydenise/drop16";
 export {VaultHome} from "./vault/home";
 export {Drop1Vault} from "./vault/drop1";
 export {Drop2Vault} from "./vault/drop2";
