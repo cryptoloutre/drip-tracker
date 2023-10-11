@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop2Blockframez: FC = ({}) => {
+export const Drop3Blockframez: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop2Blockframez: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNb = "2";
+  const dropNb = "3";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -90,7 +90,7 @@ export const Drop2Blockframez: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop2: <span className="italic">{NFTsInThisDrop[0].name}</span> by{" "}
+            Drop3: <span className="italic">{NFTsInThisDrop[0].name}</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -102,7 +102,7 @@ export const Drop2Blockframez: FC = ({}) => {
           </h1>
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
-            <div>The Glitch District after midnight is a strange place. A Blockframez series.</div>
+            <div>A continued exploration of District G. A Blockframez series.</div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
             <div className="mt-4 sm:w-[70%] mx-auto">
