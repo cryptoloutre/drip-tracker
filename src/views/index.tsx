@@ -368,6 +368,7 @@ export {Drop3Blockframez} from "./blockframez/drop3";
 export {MovieSticksHome} from "./moviesticks/home";
 export {Drop1MovieSticks } from "./moviesticks/drop1";
 export {Drop2MovieSticks } from "./moviesticks/drop2";
+export {Drop3MovieSticks } from "./moviesticks/drop3";
 export {SimplyEtoHome} from "./simplyeto/home";
 export {Drop1SimplyEto } from "./simplyeto/drop1";
 export {Drop2SimplyEto } from "./simplyeto/drop2";
