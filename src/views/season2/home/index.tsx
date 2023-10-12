@@ -618,6 +618,21 @@ export const Season2Home: FC = ({}) => {
                 Drop 26
                 </div>
               </Link>
+              <Link
+                href="/season2/drop30"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=" px-2 py-2"
+                    src="https://arweave.net/t7_ySIfQ5BYoybsliMYyyBnmOPH6_b73RRpt3m3PniI?ext=png"
+                    alt="drop Roundies Teens preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                Roundies Teens
+                </div>
+              </Link>
             </div>
           </div>
         </div>
