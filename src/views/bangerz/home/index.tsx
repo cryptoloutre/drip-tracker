@@ -62,6 +62,14 @@ export const BangerzHome: FC = ({}) => {
           "BZ3DohF6BHGkAnZAe1g8ohWVuh95bXT4FhiGw1BXJWfF"
     );
 
+    const _userNFTsAlienBabies = allUserNFTs.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "BiEZGGtnR4yGg8NdZB6Pjx6R9CRkVTWSTGnvUZhN3cNf"
+    );
+
     const _userNFTsUriOrigins = await Promise.all(
       _userNFTsOrigins.map(async (asset) => {
         let attributes: any;
@@ -101,14 +109,35 @@ export const BangerzHome: FC = ({}) => {
       })
     );
 
-    const _userNFTsURI = _userNFTsUriOrigins.concat(_userNFTsUri3Drip);
+    const _userNFTsUriAlienBabies = await Promise.all(
+      _userNFTsAlienBabies.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const _userNFTsURI1 = _userNFTsUriOrigins.concat(_userNFTsUri3Drip);
+    const _userNFTsURI2 = _userNFTsURI1.concat(_userNFTsUriAlienBabies);
+
 
     // we filter to eliminate the doublons
-    const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
+    const userNFTs = _userNFTsURI2.filter((value: any, index: any) => {
       const _value = JSON.stringify(value);
       return (
         index ===
-        _userNFTsURI.findIndex((obj: any) => {
+        _userNFTsURI2.findIndex((obj: any) => {
           return JSON.stringify(obj) === _value;
         })
       );
@@ -461,6 +490,19 @@ export const BangerzHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Pew Pews</div>
+              </Link>
+              <Link
+                href="/bangerz/drop14"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/ckz4hxKgJPCBK3_rnvOBERVrRBSDFZe3FOCRPSkr0kg?ext=png"
+                    alt="drop 13 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Spawn 1</div>
               </Link>
             </div>
           </div>
