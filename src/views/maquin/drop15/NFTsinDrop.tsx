@@ -22,7 +22,7 @@ export const NFTsinDrop = [
   },
   {
     name: 'Bloody Mesh',
-    uri: '',
+    uri: 'https://arweave.net/Xmjlz9ldLRVwOTp5PlEScY4FTx47ek4-qtdAYH2uzy8',
     rarity: 'Ultimate',
     image: 'https://arweave.net/q0kczEU8kyc7s6XiIHf4oUrBZFyNrEiCT1L_o6mfp0k?ext=jpg',
     magicEdenLink: 'https://www.tensor.trade/trade/maquin_drip_season_1'
