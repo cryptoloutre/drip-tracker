@@ -213,6 +213,7 @@ export {Drop11Maquin} from "./maquin/drop11";
 export {Drop12Maquin} from "./maquin/drop12";
 export {Drop13Maquin} from "./maquin/drop13";
 export {Drop14Maquin} from "./maquin/drop14";
+export {Drop15Maquin} from "./maquin/drop15";
 export {GenefteeHome} from "./geneftee/home";
 export {Drop1Geneftee} from "./geneftee/drop1";
 export {Drop2Geneftee} from "./geneftee/drop2";
