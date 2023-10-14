@@ -19,4 +19,8 @@ export const DropInfo = [
     dropNb: "Visor #0005",
     nbNFT: 6,
   },
+  {
+    dropNb: "Balaclava #0006",
+    nbNFT: 4,
+  },
 ];
