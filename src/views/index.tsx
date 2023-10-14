@@ -360,6 +360,7 @@ export {Drop2DropNation} from "./dropnation/drop2";
 export {Drop3DropNation} from "./dropnation/drop3";
 export {Drop4DropNation} from "./dropnation/drop4";
 export {Drop5DropNation} from "./dropnation/drop5";
+export {Drop6DropNation} from "./dropnation/drop6";
 export {KevHome} from "./kevthecactus/home";
 export {Drop1Kev} from "./kevthecactus/drop1";
 export {Drop2Kev} from "./kevthecactus/drop2";
