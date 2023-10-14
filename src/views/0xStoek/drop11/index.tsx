@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop9Stoek: FC = ({}) => {
+export const Drop11Stoek: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop9Stoek: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "gm | Sky High";
+  const dropNumber = "11";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -52,8 +52,19 @@ export const Drop9Stoek: FC = ({}) => {
 
     await Promise.all(
       BorkNFT.map(async (asset) => {
-        const name = asset.content.metadata.name;
-        if (name == dropNumber) {
+        let attributes: any;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const uri = asset.content.json_uri;
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const drop = attributes.find(
+          (nft) => nft.trait_type == "Drop"
+        )?.value;
+        if (drop == dropNumber) {
           _dropNFT.push(asset.content.json_uri);
         }
       })
@@ -81,7 +92,7 @@ export const Drop9Stoek: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop9: <span className="italic">{NFTsInThisDrop[0].name}</span> by {" "} 
+            Drop11: <span className="italic">{NFTsInThisDrop[0].name}</span> by {" "} 
             <a
               target="_blank"
               rel="noreferrer"
@@ -94,7 +105,7 @@ export const Drop9Stoek: FC = ({}) => {
           <div className="mt-12 w-[100%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-            gm balloons floating sky high among the clouds
+            gm zombie
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
