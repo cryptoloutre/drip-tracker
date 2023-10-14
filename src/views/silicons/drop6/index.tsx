@@ -101,11 +101,9 @@ export const Drop6Silicons: FC = ({}) => {
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              This is the fifth SILICONS Drip Haus collectible drop. Hold 2 of
-              each week&apos;s collectibles and you will receive next
-              week&apos;s drop. We are getting close to the final round of
-              Two:One. Make sure you keep collecting 2 of each week&apos;s
-              drops. The SILICONS mint is coming soon!
+              This is the second to last SILICONS Drip Haus collectible drop.
+              Make sure you collect 2 of each week&apos;s drop, and you will receive
+              a FREE SILICON at mint!
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
