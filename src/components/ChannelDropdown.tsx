@@ -153,6 +153,9 @@ export const ChannelDropdown: FC = () => {
           <Link href="/nofacenocase/home">No Face-No Case</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/picoplay/home">Picoplay</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/pog/home">POG® Digital</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
