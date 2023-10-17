@@ -231,6 +231,16 @@ export const StudioNXHome: FC = ({}) => {
                 Twitter
               </a>
             </div>
+            <div className="text-lg mt-4">
+              Use our{" "}
+              <Link
+                className="font-extrabold underline text-[#14F195]"
+                href="/reader"
+              >
+                Reader
+              </Link>{" "}
+              to read your comics!
+            </div>
           </div>
           {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl my-6">

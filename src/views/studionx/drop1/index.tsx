@@ -101,6 +101,16 @@ export const Drop1StudioNX: FC = ({}) => {
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>Issue001. The stupendous world of Apt323. The web3 series. OG collectors&apos; edition.</div>
+            <div className="text-lg mt-4">
+              Use our{" "}
+              <Link
+                className="font-extrabold underline text-[#14F195]"
+                href="/reader"
+              >
+                Reader
+              </Link>{" "}
+              to read your comics!
+            </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
             <div className="mt-4 sm:w-[70%] mx-auto">

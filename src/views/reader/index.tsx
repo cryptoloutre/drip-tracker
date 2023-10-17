@@ -157,9 +157,106 @@ export const Reader: FC = ({}) => {
 
     console.log("Fetch user comics", userBork);
 
-    setNbUserNFTs(userBork.length);
+    
+    const studioNXNFT = allUserNFTs.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "STCo3cwNqZEfH7ayBcv71yr2xAAvMpzq6WEuwcd2mZs"
+    );
 
-    setUserComics(userBork);
+    console.log(studioNXNFT);
+
+    const _userStudioNX = [];
+
+
+    await Promise.all(
+      studioNXNFT.map(async (asset) => {
+        let attributes: any;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const uri = asset.content.json_uri;
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+
+        const name = asset.content.metadata.name;
+        const chapter = attributes.find(
+          (nft) => nft.trait_type == "Drop"
+        ).value;
+        const rarity = attributes.find(
+          (nft) => nft.trait_type == "Rarity"
+        ).value;
+
+
+        const rarityIndex = rarityIndexMatch.find((rarityPair) => rarityPair.rarity == rarity).index;
+
+        let image;
+        let slides;
+        // @ts-ignore
+        const files = asset.content.files;
+
+        if (files.length != 0) {
+          image = files[0].uri;
+          slides = files.slice(1);
+        } else {
+          const uri = asset.content.json_uri;
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          image = responseData.properties.files[0].uri;
+          slides = responseData.properties.files.slice(1);
+        }
+
+        _userStudioNX.push({
+          name: name,
+          image: image,
+          chapter: chapter,
+          rarity: rarity,
+          slides: slides,
+          chapterIndex: chapter,
+          rarityIndex: rarityIndex,
+        });
+      })
+    );
+
+
+        // we filter to eliminate the doublons
+        const userStudioNX = _userStudioNX.filter((value: any, index: any) => {
+          const _value = JSON.stringify(value);
+          return (
+            index ===
+            _userStudioNX.findIndex((obj: any) => {
+              return JSON.stringify(obj) === _value;
+            })
+          );
+        });
+    
+        userStudioNX.sort(function (a: any, b: any) {
+          if (a.chapterIndex < b.chapterIndex) {
+            return -1;
+          }
+          if (a.chapterIndex > b.chapterIndex) {
+            return 1;
+          }
+          if (a.chapterIndex == b.chapterIndex && a.rarityIndex < b.rarityIndex) {
+            return -1;
+          }
+          if (a.chapterIndex == b.chapterIndex && a.rarityIndex > b.rarityIndex) {
+            return 1;
+          }
+          return 0;
+        });
+    
+        console.log("Fetch user comics", userStudioNX);
+
+        const comics = userStudioNX.concat(userBork)
+
+    setNbUserNFTs(comics.length);
+
+    setUserComics(comics);
 
     setIsFetched(true);
   }
