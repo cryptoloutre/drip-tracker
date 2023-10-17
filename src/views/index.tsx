@@ -404,3 +404,6 @@ export {WetikoHome} from "./wetiko/home";
 export {Drop1Wetiko } from "./wetiko/drop1";
 export {PicoplayHome} from "./picoplay/home";
 export {Drop1Picoplay } from "./picoplay/drop1";
+export {StudioNXHome} from "./studionx/home";
+export {Drop1StudioNX } from "./studionx/drop1";
+export {DropVirus1StudioNX } from "./studionx/dropvirus1";
