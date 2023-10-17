@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop25Degen: FC = ({}) => {
+export const Drop27Degen: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop25Degen: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "25";
+  const dropNumber = "27";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -94,9 +94,9 @@ export const Drop25Degen: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop25:{" "}
+            Drop27:{" "}
             <span className="italic">
-              {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name}, 
+              {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name},
               {NFTsInThisDrop[2].name} & {NFTsInThisDrop[3].name}
             </span>{" "}
             by{" "}
@@ -115,31 +115,31 @@ export const Drop25Degen: FC = ({}) => {
               This drop features 4 rarities:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[0].name}</span>. An
-              original portrait by Degen Poet, created with an Olympia Splendid
-              33 typewriter and watercolor pencils.{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 415232)</span>
+              <span className="italic">{NFTsInThisDrop[0].name}</span>. A knight
+              slashing a flaming sword. Watercolor pencil & typewriter. Tribute
+              to The Soulless collection by Wombat.{" "}
+              <span className="text-[#a5a5a5] font-bold">(supply: 528975)</span>
               .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
               </span>{" "}
               drop is <span className="italic">{NFTsInThisDrop[1].name}</span>.
-              An original portrait by Degen Poet, created with an Olympia
-              Splendid 33 typewriter and watercolor pencils.{" "}
+              A wizard possessed by the power of Solana. Watercolor pencil &
+              typewriter. Tribute to The Soulless collection by Wombat.{" "}
               <span className="text-[#E6C15A] font-bold">(supply: 2000)</span>
               .<br />
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span> drop
-              is <span className="italic">{NFTsInThisDrop[2].name}</span>. An
-              original portrait by Degen Poet, created with an Olympia Splendid
-              33 typewriter and watercolor pencils.{" "}
+              is <span className="italic">{NFTsInThisDrop[2].name}</span>. A
+              legendary knight of The Soulless roundtable. Watercolor pencil &
+              typewriter. Collaboration with Wombat.{" "}
               <span className="text-[#14F195] font-bold">(supply: 100)</span>.
               <br />
               <br />• The{" "}
               <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[3].name}</span>. An
-              original portrait by Degen Poet, created with an Olympia Splendid
-              33 typewriter and watercolor pencils.{" "}
+              <span className="italic">{NFTsInThisDrop[3].name}</span>. The
+              ultimate Soulless type knight. Watercolor pencil & typewriter.
+              Collaboration with Wombat.{" "}
               <span className="text-[#F94887] font-bold">(supply: 1)</span>.
             </div>
           </div>
