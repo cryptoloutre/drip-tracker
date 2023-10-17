@@ -380,6 +380,7 @@ export {BackpackHome} from "./backpack/home";
 export {Drop1Backpack} from "./backpack/drop1";
 export {Drop2Backpack} from "./backpack/drop2";
 export {Drop3Backpack} from "./backpack/drop3";
+export {Drop4Backpack} from "./backpack/drop4";
 export {BlockframezHome} from "./blockframez/home";
 export {Drop1Blockframez} from "./blockframez/drop1";
 export {Drop2Blockframez} from "./blockframez/drop2";
