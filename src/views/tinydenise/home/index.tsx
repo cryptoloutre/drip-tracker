@@ -484,6 +484,19 @@ export const TinyHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 16</div>
               </Link>
+              <Link
+                href="/tiiiny/drop17"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/1D9kR3-pIT3pN9aMAEfgV0g1ii368vVnuWOttj364lg?ext=png"
+                    alt="drop 17 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 17</div>
+              </Link>
             </div>
           </div>
         </div>
