@@ -512,6 +512,19 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">SimplyEto</div>
               </Link>
               <Link
+                href="/solcity/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/N7RdnIRCtbMpbGkMmu1lQrHdrSOROlW6ce9Ct_Vr9m8?ext=png"
+                    alt="SolCity preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">SolCity</div>
+              </Link>
+              <Link
                 href="/studionx/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >

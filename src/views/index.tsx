@@ -414,3 +414,5 @@ export {Drop1Picoplay } from "./picoplay/drop1";
 export {StudioNXHome} from "./studionx/home";
 export {Drop1StudioNX } from "./studionx/drop1";
 export {DropVirus1StudioNX } from "./studionx/dropvirus1";
+export {SolcityHome } from "./solcity/home";
+export {Drop1Solcity } from "./solcity/drop1";
