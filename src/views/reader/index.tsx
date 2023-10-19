@@ -472,10 +472,10 @@ const DisplayComics: FC<Props> = ({ toDisplay }) => {
   });
 
   pages.sort(function (a: any, b: any) {
-    if (a.slice(-1) < b.slice(-1)) {
+    if (a.slice(-2) < b.slice(-2)) {
       return -1;
     }
-    if (a.slice(-1) > b.slice(-1)) {
+    if (a.slice(-2) > b.slice(-2)) {
       return 1;
     }
     return 0;
