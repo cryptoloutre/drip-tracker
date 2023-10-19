@@ -280,10 +280,10 @@ export const Reader: FC = ({}) => {
             const name = asset.content.metadata.name;
             const chapter = attributes.find(
               (nft) => nft.trait_type == "Drop"
-            ).value;
+            )?.value;
             const rarity = attributes.find(
               (nft) => nft.trait_type == "Rarity"
-            ).value;
+            )?.value;
     
     
             const rarityIndex = rarityIndexMatch.find((rarityPair) => rarityPair.rarity == rarity).index;
