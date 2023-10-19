@@ -472,10 +472,14 @@ const DisplayComics: FC<Props> = ({ toDisplay }) => {
   });
 
   pages.sort(function (a: any, b: any) {
-    if (a.slice(-2) < b.slice(-2)) {
+
+    const aNumberPage = a.slice(-2).includes("_") ? Number(a.slice(-1)) : Number(a.slice(-2));
+    const bNumberPage = b.slice(-2).includes("_") ? Number(b.slice(-1)) : Number(b.slice(-2));
+
+    if (aNumberPage < bNumberPage) {
       return -1;
     }
-    if (a.slice(-2) > b.slice(-2)) {
+    if (aNumberPage > bNumberPage) {
       return 1;
     }
     return 0;
