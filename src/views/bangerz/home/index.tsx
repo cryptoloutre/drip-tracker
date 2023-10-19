@@ -499,10 +499,23 @@ export const BangerzHome: FC = ({}) => {
                   <img
                     className=""
                     src="https://arweave.net/ckz4hxKgJPCBK3_rnvOBERVrRBSDFZe3FOCRPSkr0kg?ext=png"
-                    alt="drop 13 preview"
+                    alt="drop 14 preview"
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Spawn 1</div>
+              </Link>
+              <Link
+                href="/bangerz/drop15"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/fAi3GE9U0IPFVI6GZkEK2kVYUJgQ1M5cbcolKOhYPac?ext=png"
+                    alt="drop 15 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Spawn 2</div>
               </Link>
             </div>
           </div>
