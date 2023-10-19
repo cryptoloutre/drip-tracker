@@ -286,7 +286,7 @@ export const Reader: FC = ({}) => {
             )?.value;
     
     
-            const rarityIndex = rarityIndexMatch.find((rarityPair) => rarityPair.rarity == rarity).index;
+            const rarityIndex = rarityIndexMatch.find((rarityPair) => rarityPair.rarity == rarity)?.index;
     
             if (chapter == "27") {
 
