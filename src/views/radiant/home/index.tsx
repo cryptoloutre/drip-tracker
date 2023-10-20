@@ -379,6 +379,19 @@ export const RadiantHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 6</div>
               </Link>
+              <Link
+                href="/radiant/drop7"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/MSOQ57uGcPTCLKAs6Yv7dQ6ExPtGt51kEBOJKpu2fOw?ext=png"
+                    alt="drop 7 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 7</div>
+              </Link>
             </div>
           </div>
         </div>
