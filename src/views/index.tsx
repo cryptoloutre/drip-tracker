@@ -314,6 +314,7 @@ export {Drop7FS} from "./fs/drop7";
 export {Drop8FS} from "./fs/drop8";
 export {Drop9FS} from "./fs/drop9";
 export {Drop10FS} from "./fs/drop10";
+export {Drop11FS} from "./fs/drop11";
 export {BadHome} from "./bad/home";
 export {Drop1Bad} from "./bad/drop1";
 export {Drop2Bad} from "./bad/drop2";

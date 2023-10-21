@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop10FS: FC = ({}) => {
+export const Drop11FS: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop10FS: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "10";
+  const dropNumber = "11";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -90,7 +90,7 @@ export const Drop10FS: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop10: <span className="italic">{NFTsInThisDrop[0].name}</span> by{" "}
+            Drop11: <span className="italic">{NFTsInThisDrop[0].name}</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -115,22 +115,23 @@ export const Drop10FS: FC = ({}) => {
               from Find Satoshi Lab, the creators of STEPN, MOOAR and Gas Hero.
               <br />
               <br />
-              GNT prompts by Madivaan: A young man playing an electric guitar
-              aggressively, spiked dyed hair, intense expression, ripped leather
-              jacket with band pins, chained wallet, standing on sidewalk,
-              realistic detailed portrait, city street background, nintencore,
-              hyper-realistic pop, dracopunk, ue5, lively and energetic GNT
-              prompts by Tatsiana: Full body view High Priestess heroine,
-              katana, samurai, head and shoulders portrait, intricately detailed
-              eyes, 8k resolution concept art portrait by greg rutkowski,
-              artgerm, wlop, alphonse mucha dynamic lighting hyper detailed
-              intricately detailed splash art trending on artstation unreal
-              engine 5 volumetric lighting GNT prompts by CioSilv: Arctic
-              Sheriff, embodies icy resilience. Her piercing arctic-blue eyes
-              are framed by a frosty crown of silver hair. Dressed in a
-              snow-white trench coat and wielding a healing staff, she exudes an
-              air of authority and compassion. Iclyn stands as a beacon of hope
-              amidst the frozen tundras, a protector of those in need.
+              GNT prompts by Madivaan: A cute Capybara wearing astronaut suit
+              and flying in the space, bright planet outline, galaxy
+              interstellar background, colorful planets in the distance, hyper
+              realistic, in the style of vibrant pop surrealism, 8k, uhd render,
+              highly detailed, interstellar style, deep space, anime-influenced
+              GNT prompts by Tatsiana: A cute smiling capybara sitting on the
+              snow, hyper detailed eyes, ultra detailed artistic ultra realistic
+              details, cinematic atmosphere, global illumination, shadows, 8k
+              glamor, glimmer, shadows, oil on canvas, brush strokes, smooth,
+              ultra high definition, 8k, unreal engine 5, ultra sharp focus,
+              landscape of winter mountains blurry background, cinematic, ultra
+              realistic, analog photo, photo from afar, snowfall GNT prompts by
+              CioSilv: Charming capybara, the largest rodent in the world,
+              strolling through the streets of Paris. This capybara is wearing a
+              stylish beret, a symbol of French fashion. With an air of
+              sophistication, the capybara pauses to sip espresso from a tiny
+              café cup, complete with a saucer
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
