@@ -341,6 +341,7 @@ export {Drop3Silicons} from "./silicons/drop3";
 export {Drop4Silicons} from "./silicons/drop4";
 export {Drop5Silicons} from "./silicons/drop5";
 export {Drop6Silicons} from "./silicons/drop6";
+export {Drop7Silicons} from "./silicons/drop7";
 export {AwagHome} from "./awag/home";
 export {Drop1Awag} from "./awag/drop1";
 export {Drop2Awag} from "./awag/drop2";

@@ -358,6 +358,19 @@ export const SiliconsHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Balaclava #0006</div>
               </Link>
+              <Link
+                href="/silicons/drop7"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/-y_UcafB56mSpTWrr0SsSLGJJSvp5lljjzWmqS_qZ7M?ext=jpg"
+                    alt="drop 7 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Trophy #0007</div>
+              </Link>
             </div>
           </div>
         </div>
