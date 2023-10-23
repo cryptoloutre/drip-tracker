@@ -464,6 +464,19 @@ export const MasonHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 15</div>
               </Link>
+              <Link
+                href="/andrewmason/drop16"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/-uwbHFu5ijgoyWtp_uG5ifwFJPxNzosCNCl01gwAqzU?ext=jpg"
+                    alt="drop 16 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 16</div>
+              </Link>
             </div>
           </div>
         </div>
