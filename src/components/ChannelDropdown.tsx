@@ -159,6 +159,9 @@ export const ChannelDropdown: FC = () => {
           <Link href="/picoplay/home">Picoplay</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/pixelart/home">PixelChecks</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/pog/home">POG® Digital</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
