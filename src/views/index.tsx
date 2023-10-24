@@ -397,6 +397,7 @@ export {Drop4Kev} from "./kevthecactus/drop4";
 export {VfxfreekHome} from "./vfxfreek/home";
 export {Drop1Vfxfreek} from "./vfxfreek/drop1";
 export {Drop2Vfxfreek} from "./vfxfreek/drop2";
+export {Drop3Vfxfreek} from "./vfxfreek/drop3";
 export {BackpackHome} from "./backpack/home";
 export {Drop1Backpack} from "./backpack/drop1";
 export {Drop2Backpack} from "./backpack/drop2";
