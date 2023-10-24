@@ -380,6 +380,7 @@ export {EnigmaHome} from "./enigma/home";
 export {Drop1Enigma} from "./enigma/drop1";
 export {Drop2Enigma} from "./enigma/drop2";
 export {Drop3Enigma} from "./enigma/drop3";
+export {Drop4Enigma} from "./enigma/drop4";
 export {DropNationHome} from "./dropnation/home";
 export {Drop1DropNation} from "./dropnation/drop1";
 export {Drop2DropNation} from "./dropnation/drop2";
