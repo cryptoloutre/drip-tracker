@@ -56,6 +56,10 @@ export const DropInfo = [
     nbNFT: 3,
   },
   {
+    dropNb: "Fifteen",
+    nbNFT: 3,
+  },
+  {
     dropNb: "Bonus Borks 001",
     nbNFT: 3,
   },

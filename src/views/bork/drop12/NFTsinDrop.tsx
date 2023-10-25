@@ -11,7 +11,7 @@ export const NFTsinDrop = [
     rarity: 'Rare',
     uri: 'https://arweave.net/RkXJrMEyLrUxwU6h8Cmn_qtKYn_i6cZK-EKjDpF69KY',
     image: 'https://arweave.net/oz_5P_2diF4MGZ3ASrnFo8HiAC7looylKd3wZ3lgOkg?ext=jpg',
-    magicEdenLink: 'https://www.tensor.trade/trade/bonus_borks_drip'
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_bork_rainbow'
   },
   {
     name: 'Chapter Twelve',
