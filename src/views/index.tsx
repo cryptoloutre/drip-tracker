@@ -449,3 +449,5 @@ export {DegenRoyaleHome } from "./degenroyale/home";
 export {Drop1DegenRoyale } from "./degenroyale/drop1";
 export {PixelartHome } from "./pixelart/home";
 export {Drop1Pixelart } from "./pixelart/drop1";
+export {WaveHome } from "./wave/home";
+export {Drop1Wave } from "./wave/drop1";
