@@ -443,6 +443,7 @@ export {Drop2StudioNX } from "./studionx/drop2";
 export {DropVirus1StudioNX } from "./studionx/dropvirus1";
 export {SolcityHome } from "./solcity/home";
 export {Drop1Solcity } from "./solcity/drop1";
+export {Drop2Solcity } from "./solcity/drop2";
 export {DegenRoyaleHome } from "./degenroyale/home";
 export {Drop1DegenRoyale } from "./degenroyale/drop1";
 export {PixelartHome } from "./pixelart/home";
