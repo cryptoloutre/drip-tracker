@@ -448,6 +448,7 @@ export {Drop1Solcity } from "./solcity/drop1";
 export {Drop2Solcity } from "./solcity/drop2";
 export {DegenRoyaleHome } from "./degenroyale/home";
 export {Drop1DegenRoyale } from "./degenroyale/drop1";
+export {Drop2DegenRoyale } from "./degenroyale/drop2";
 export {PixelartHome } from "./pixelart/home";
 export {Drop1Pixelart } from "./pixelart/drop1";
 export {WaveHome } from "./wave/home";
