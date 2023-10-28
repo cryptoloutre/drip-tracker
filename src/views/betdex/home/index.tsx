@@ -359,6 +359,19 @@ export const BetdexHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 7</div>
               </Link>
+              <Link
+                href="/betdex/drop8"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/OQwLZfm7s6lkjRyAxoLd_Mqjtom7McqIxHCE12J7F7M?ext=jpg"
+                    alt="drop 8 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 8</div>
+              </Link>
             </div>
           </div>
         </div>
