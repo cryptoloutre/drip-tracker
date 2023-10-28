@@ -156,6 +156,21 @@ export const HomeView: FC = ({}) => {
                 </div>
               </Link>
               <Link
+                href="/cog/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/XZ2KhwjTiz0IwqofF8atN9LCA2JdpAjXzGb9VUCBHkw?ext=jpg"
+                    alt="cog preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                City Of Girls
+                </div>
+              </Link>
+              <Link
                 href="/daa/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
