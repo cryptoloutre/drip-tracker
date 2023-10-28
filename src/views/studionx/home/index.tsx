@@ -336,6 +336,19 @@ export const StudioNXHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
               <Link
+                href="/studionx/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/PrUbYgvirWJqD2qSsABW9H4QjYvc0HgjWs7lrlgPukQ?ext=jpg"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
+              </Link>
+              <Link
                 href="/studionx/dropvirus1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
