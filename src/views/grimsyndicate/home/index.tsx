@@ -376,6 +376,19 @@ export const GrimSyndicateHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 8</div>
               </Link>
+              <Link
+                href="/grimsyndicate/drop9"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/ypBFu3FUAQBa6-okmFc1YN1ShkcYbyGkGzWQVEJ1PGA?ext=jpeg"
+                    alt="drop 9 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 9</div>
+              </Link>
             </div>
           </div>
         </div>
