@@ -269,7 +269,7 @@ export const CogHome: FC = ({}) => {
           <div className="flex justify-center">
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               <Link
-                href="/daa/drop1"
+                href="/cog/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">

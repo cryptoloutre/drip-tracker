@@ -274,69 +274,17 @@ export const SiriuscrocodileHome: FC = ({}) => {
           <div className="flex justify-center">
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               <Link
-                href="/simplyeto/drop1"
+                href="/siriuscrocodile/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
                   <img
                     className=""
-                    src="https://arweave.net/DXgyAHsE2TCg9qg8_u4TiFENCzn24wXr0JsHKewyNFA?ext=png"
+                    src="https://arweave.net/OnjvK2zt2-fR9JfOj9uoYNJV307Fgr-Yv3rvCpN-S8Y?ext=gif"
                     alt="drop 1 preview"
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
-              </Link>
-              <Link
-                href="/simplyeto/drop2"
-                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
-              >
-                <div className="flex justify-center">
-                  <img
-                    className=""
-                    src="https://arweave.net/ltT0GliZCZ79DE8sVO3QLirl-_6mQ3JgQquhPh26cfM?ext=png"
-                    alt="drop 2 preview"
-                  ></img>
-                </div>
-                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
-              </Link>
-              <Link
-                href="/simplyeto/drop3"
-                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
-              >
-                <div className="flex justify-center">
-                  <img
-                    className=""
-                    src="https://arweave.net/MXT_vy6iFKGjoUX5cIJRUUSaiyGZI7JY3bslaFjQ-jQ?ext=png"
-                    alt="drop 3 preview"
-                  ></img>
-                </div>
-                <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
-              </Link>
-              <Link
-                href="/simplyeto/drop4"
-                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
-              >
-                <div className="flex justify-center">
-                  <img
-                    className=""
-                    src="https://arweave.net/-b2En42vpZtFkmeyzuOTBhcZi81z_Tac5eZPfvoz54s?ext=png"
-                    alt="drop 4 preview"
-                  ></img>
-                </div>
-                <div className="text-center font-bold mt-1 pb-1">Drop 4</div>
-              </Link>
-              <Link
-                href="/simplyeto/drop5"
-                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
-              >
-                <div className="flex justify-center">
-                  <img
-                    className=""
-                    src="https://arweave.net/Di-3lW72_FCdT8F5SpatgTp9aYIi5GuGg3fvl9T2nHo?ext=png"
-                    alt="drop 5 preview"
-                  ></img>
-                </div>
-                <div className="text-center font-bold mt-1 pb-1">Drop 5</div>
               </Link>
             </div>
           </div>
