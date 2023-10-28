@@ -176,7 +176,7 @@ export const DAAHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://drip.haus/degenpoet"}
+              href={"https://drip.haus/daa"}
             >
               here
             </a>{" "}
