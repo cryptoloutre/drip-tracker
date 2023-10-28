@@ -464,3 +464,5 @@ export {OnedopekidsHome } from "./onedopekids/home";
 export {Drop1Onedopekids } from "./onedopekids/drop1";
 export {CogHome } from "./cog/home";
 export {Drop1Cog } from "./cog/drop1";
+export {SiriuscrocodileHome } from "./siriuscrocodile/home";
+export {Drop1Siriuscrocodile } from "./siriuscrocodile/drop1";
