@@ -448,6 +448,7 @@ export {Drop1Wetiko } from "./wetiko/drop1";
 export {PicoplayHome} from "./picoplay/home";
 export {Drop1Picoplay } from "./picoplay/drop1";
 export {Drop2Picoplay } from "./picoplay/drop2";
+export {Drop3Picoplay } from "./picoplay/drop3";
 export {StudioNXHome} from "./studionx/home";
 export {Drop1StudioNX } from "./studionx/drop1";
 export {Drop2StudioNX } from "./studionx/drop2";
