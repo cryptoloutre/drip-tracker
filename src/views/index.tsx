@@ -463,6 +463,7 @@ export {Drop1DegenRoyale } from "./degenroyale/drop1";
 export {Drop2DegenRoyale } from "./degenroyale/drop2";
 export {PixelartHome } from "./pixelart/home";
 export {Drop1Pixelart } from "./pixelart/drop1";
+export {Drop2Pixelart } from "./pixelart/drop2";
 export {WaveHome } from "./wave/home";
 export {Drop1Wave } from "./wave/drop1";
 export {OnedopekidsHome } from "./onedopekids/home";
