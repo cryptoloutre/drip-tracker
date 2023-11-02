@@ -481,3 +481,5 @@ export {CogHome } from "./cog/home";
 export {Drop1Cog } from "./cog/drop1";
 export {SiriuscrocodileHome } from "./siriuscrocodile/home";
 export {Drop1Siriuscrocodile } from "./siriuscrocodile/drop1";
+export {EarlyHome } from "./early/home";
+export {Drop1Early } from "./early/drop1";
