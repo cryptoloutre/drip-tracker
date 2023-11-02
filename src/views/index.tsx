@@ -445,6 +445,7 @@ export {Drop1Dreader } from "./dreader/drop1";
 export {Drop2Dreader } from "./dreader/drop2";
 export {Drop3Dreader } from "./dreader/drop3";
 export {Drop4Dreader } from "./dreader/drop4";
+export {Drop5Dreader } from "./dreader/drop5";
 export {GenopetsHome} from "./genopets/home";
 export {Drop1Genopets } from "./genopets/drop1";
 export {WetikoHome} from "./wetiko/home";
