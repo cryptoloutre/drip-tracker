@@ -70,7 +70,7 @@ export const ChannelDropdown: FC = () => {
         ref={ref}
         role="menu"
       >
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-3">
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/0xgrime/home">0xGrime</Link>
         </li>
