@@ -453,6 +453,19 @@ export const NFNCHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
               </Link>
+              <Link
+                href="/nofacenocase/drop15"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/RsIuaW4tBWBCvXnbHv72GIw1abLhvMROrZt6ck8njxU?ext=jpeg"
+                    alt="drop 15 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 15</div>
+              </Link>
             </div>
           </div>
         </div>
