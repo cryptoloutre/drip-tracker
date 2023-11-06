@@ -22,5 +22,13 @@ export const NFTsinDrop = [
     image: 'https://arweave.net/jConZ-zPmRWj0MeVn0UJWhMAXi-ANFGr5BsfaLnf83M?ext=jpg',
     description: 'An aerial photograph over a day club along the Amalfi Coast, Italy.',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_andrewmason_season_1'
+  },
+  {
+    name: 'Fire Beach',
+    uri: 'https://arweave.net/LS_hNWc_fqOjJjXmwnTuiXh-6SVZQWMZeTddHTyphIY',
+    rarity: 'Ultimate',
+    image: 'https://arweave.net/HTN3UxpQkGkPsWc7b8vM8qFRzRiJNXcWKL24tmJi_xI?ext=jpg',
+    description: 'An aerial video over a day club along the Amalfi Coast, Italy.',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_andrewmason_season_1'
   }
 ];
