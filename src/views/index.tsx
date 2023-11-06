@@ -415,6 +415,7 @@ export {Drop5DropNation} from "./dropnation/drop5";
 export {Drop6DropNation} from "./dropnation/drop6";
 export {Drop7DropNation} from "./dropnation/drop7";
 export {Drop8DropNation} from "./dropnation/drop8";
+export {Drop9DropNation} from "./dropnation/drop9";
 export {KevHome} from "./kevthecactus/home";
 export {Drop1Kev} from "./kevthecactus/drop1";
 export {Drop2Kev} from "./kevthecactus/drop2";
