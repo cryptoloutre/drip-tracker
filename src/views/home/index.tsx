@@ -534,7 +534,7 @@ export const HomeView: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Radiant</div>
               </Link>
-              <Link
+              {/* <Link
                 href="/saturdaymorning/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -546,7 +546,7 @@ export const HomeView: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">SATURDAY MORNING</div>
-              </Link>
+              </Link> */}
               <Link
                 href="/season1/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
