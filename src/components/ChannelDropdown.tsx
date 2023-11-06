@@ -64,7 +64,7 @@ export const ChannelDropdown: FC = () => {
       </button>
       <ul
         aria-label="dropdown-list"
-        className={`wallet-adapter-dropdown-list  w-[400px] ${
+        className={`wallet-adapter-dropdown-list  w-[600px] ${
           active && "wallet-adapter-dropdown-list-active bg-[#000000] mt-4 border"
         }`}
         ref={ref}
