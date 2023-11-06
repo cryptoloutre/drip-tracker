@@ -535,6 +535,19 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Radiant</div>
               </Link>
               <Link
+                href="/saturdaymorning/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/pfmj9p9-hbMKFfy1Z3UvcKrr8QtsPTjIKiXVAqlTxRI?ext=png"
+                    alt="SATURDAY MORNING preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">SATURDAY MORNING</div>
+              </Link>
+              <Link
                 href="/season1/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -545,7 +558,7 @@ export const HomeView: FC = ({}) => {
                     alt="season 1 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Saison 1</div>
+                <div className="text-center font-bold mt-1 pb-1">Season 1</div>
               </Link>
               <Link
                 href="/season2/home"
@@ -558,7 +571,7 @@ export const HomeView: FC = ({}) => {
                     alt="season 2 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Saison 2</div>
+                <div className="text-center font-bold mt-1 pb-1">Season 2</div>
               </Link>
               <Link
                 href="/season3/home"
@@ -571,7 +584,7 @@ export const HomeView: FC = ({}) => {
                     alt="season 3 preview"
                   ></img>
                 </div>
-                <div className="text-center font-bold mt-1 pb-1">Saison 3</div>
+                <div className="text-center font-bold mt-1 pb-1">Season 3</div>
               </Link>
               <Link
                 href="/silicons/home"
