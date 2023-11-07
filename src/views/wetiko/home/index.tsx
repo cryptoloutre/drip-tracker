@@ -282,6 +282,19 @@ export const WetikoHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
               </Link>
+              <Link
+                href="/wetiko/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/DMGgfNt822AWPrn-qgHBXVRBZOaUVus3_cDB_2YFlM0?ext=png"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
+              </Link>
             </div>
           </div>
         </div>
