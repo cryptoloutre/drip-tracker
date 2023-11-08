@@ -152,6 +152,7 @@ export {Drop17Floor} from "./floor/drop17";
 export {Drop18Floor} from "./floor/drop18";
 export {Drop19Floor} from "./floor/drop19";
 export {Drop20Floor} from "./floor/drop20";
+export {Drop21Floor} from "./floor/drop21";
 export {TinyHome} from "./tinydenise/home";
 export {Drop1Tiny} from "./tinydenise/drop1";
 export {Drop2Tiny} from "./tinydenise/drop2";
