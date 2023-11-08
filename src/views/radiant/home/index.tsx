@@ -100,10 +100,17 @@ export const RadiantHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
+        let drop: string;
         const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
-        const drop = ["1", "2"].find((dropNumber) => dropNumber == _drop)
-          ? (Number(_drop) + 1).toString()
-          : (Number(_drop) + 2).toString();
+        if (["1", "2"].find((dropNumber) => dropNumber == _drop)) {
+          drop = (Number(_drop) + 1).toString()
+        }
+        else if (["3", "4", "5"].find((dropNumber) => dropNumber == _drop)) {
+          (Number(_drop) + 2).toString()
+        }
+        else {
+          (Number(_drop) + 3).toString()
+        }
         return {
           uri,
           drop,
@@ -405,6 +412,19 @@ export const RadiantHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 8</div>
+              </Link>
+              <Link
+                href="/radiant/drop9"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/yH1-ch-L_wMhRdCZHC96hGLEo4e06EWxbaMJf_lCv0s?ext=png"
+                    alt="drop 9 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 9</div>
               </Link>
             </div>
           </div>
