@@ -47,6 +47,11 @@ export const Reader: FC = ({}) => {
     { chapter: "Thirteen", index: 13 },
     { chapter: "Fourteen", index: 14 },
     { chapter: "Fifteen", index: 15 },
+    { chapter: "Sixteen", index: 16 },
+    { chapter: "Seventeen", index: 17 },
+    { chapter: "Eighteen", index: 18 },
+    { chapter: "Nineteen", index: 19 },
+    { chapter: "Twenty", index: 20 },
   ];
 
   useEffect(() => {
