@@ -350,6 +350,19 @@ export const SimplyEtoHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 6</div>
               </Link>
+              <Link
+                href="/simplyeto/drop7"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/73C-Np9oYounl2q4IejQBk6khtmIgdz66CCwFdY7QFU?ext=png"
+                    alt="drop 7 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 7</div>
+              </Link>
             </div>
           </div>
         </div>
