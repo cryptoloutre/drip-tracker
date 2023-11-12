@@ -351,6 +351,7 @@ export {Drop9FS} from "./fs/drop9";
 export {Drop10FS} from "./fs/drop10";
 export {Drop11FS} from "./fs/drop11";
 export {Drop12FS} from "./fs/drop12";
+export {Drop13FS} from "./fs/drop13";
 export {BadHome} from "./bad/home";
 export {Drop1Bad} from "./bad/drop1";
 export {Drop2Bad} from "./bad/drop2";
