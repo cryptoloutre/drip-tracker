@@ -129,7 +129,7 @@ export const Drop10DropNation: FC = ({}) => {
               .<br />
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span> drop
-              is <span className="italic">{NFTsInThisDrop[3].name}</span>. {NFTsInThisDrop[2].description}{" "}
+              is <span className="italic">{NFTsInThisDrop[3].name}</span>. {NFTsInThisDrop[3].description}{" "}
               <span className="text-[#14F195] font-bold">(supply: 300)</span>.
             </div>
           </div>
