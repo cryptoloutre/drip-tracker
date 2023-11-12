@@ -412,6 +412,19 @@ export const JakeyHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 11</div>
               </Link>
+              <Link
+                href="/jakey/drop12"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/_w2QTgea7UNcdj24bA351x0c3M0zMpxiISKQwJy8sac?ext=jpeg"
+                    alt="drop 12 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 12</div>
+              </Link>
             </div>
           </div>
         </div>
