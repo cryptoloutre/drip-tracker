@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop8Bad: FC = ({}) => {
+export const Drop9Bad: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop8Bad: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNb = "4";
+  const dropNb = "5";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -90,7 +90,7 @@ export const Drop8Bad: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop8: <span className="italic">{NFTsInThisDrop[0].name}</span> by{" "}
+            Drop9: <span className="italic">{NFTsInThisDrop[0].name}</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
@@ -103,7 +103,7 @@ export const Drop8Bad: FC = ({}) => {
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-              Looks like you’ve been invited to something. Maybe hold on to it…
+              {NFTsInThisDrop[0].description}
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (

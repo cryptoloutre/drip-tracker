@@ -362,6 +362,7 @@ export {Drop5Bad} from "./bad/drop5";
 export {Drop6Bad} from "./bad/drop6";
 export {Drop7Bad} from "./bad/drop7";
 export {Drop8Bad} from "./bad/drop8";
+export {Drop9Bad} from "./bad/drop9";
 export {DesignzHome} from "./designz/home";
 export {Drop1Designz} from "./designz/drop1";
 export {Drop2Designz} from "./designz/drop2";
