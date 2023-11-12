@@ -518,6 +518,7 @@ export {Drop1Wave } from "./wave/drop1";
 export {OnedopekidsHome } from "./onedopekids/home";
 export {Drop1Onedopekids } from "./onedopekids/drop1";
 export {Drop2Onedopekids } from "./onedopekids/drop2";
+export {Drop3Onedopekids } from "./onedopekids/drop3";
 export {CogHome } from "./cog/home";
 export {Drop1Cog } from "./cog/drop1";
 export {Drop2Cog } from "./cog/drop2";
