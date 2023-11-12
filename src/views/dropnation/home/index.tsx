@@ -406,6 +406,19 @@ export const DropNationHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 9</div>
               </Link>
+              <Link
+                href="/dropnation/drop10"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/SK25IdZTkop6RdKUgr9BcPUwdnb73XbT5OvlxIJxgFE?ext=jpg"
+                    alt="drop 10 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 10</div>
+              </Link>
             </div>
           </div>
         </div>
