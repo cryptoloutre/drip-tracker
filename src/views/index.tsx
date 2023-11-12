@@ -521,6 +521,7 @@ export {Drop1Cog } from "./cog/drop1";
 export {Drop2Cog } from "./cog/drop2";
 export {SiriuscrocodileHome } from "./siriuscrocodile/home";
 export {Drop1Siriuscrocodile } from "./siriuscrocodile/drop1";
+export {Drop2Siriuscrocodile } from "./siriuscrocodile/drop2";
 export {EarlyHome } from "./early/home";
 export {Drop1Early } from "./early/drop1";
 export {SaturdaymorningHome } from "./saturdaymorning/home";

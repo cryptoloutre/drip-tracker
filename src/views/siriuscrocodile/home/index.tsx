@@ -67,7 +67,7 @@ export const SiriuscrocodileHome: FC = ({}) => {
         }
         const name = asset.content.metadata.name;
         const drop1Name = ["Bicycle Wheel", "Ball", "Rope"];
-        const drop = drop1Name.includes(name) ? "1" : "2";
+        const drop = drop1Name.includes(name) ? "1" : attributes.find((nft) => nft.trait_type == "Drop").value;
         return {
           uri,
           drop,
@@ -285,6 +285,19 @@ export const SiriuscrocodileHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
+              </Link>
+              <Link
+                href="/siriuscrocodile/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/L61sPwR6E1TXlcMGKca9H-5W5BTB0VgPB83_c1YAZhQ?ext=gif"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
             </div>
           </div>
