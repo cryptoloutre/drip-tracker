@@ -687,6 +687,19 @@ export const DegenHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 30</div>
               </Link>
+              <Link
+                href="/degenpoet/drop31"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/cAWBypvjfJ8hKdsecl_1j5oi_6XXb9IASYunT3AC2IM?ext=gif"
+                    alt="drop 31 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 31</div>
+              </Link>
             </div>
           </div>
         </div>
