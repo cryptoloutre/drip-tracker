@@ -517,6 +517,7 @@ export {PixelartHome } from "./pixelart/home";
 export {Drop1Pixelart } from "./pixelart/drop1";
 export {Drop2Pixelart } from "./pixelart/drop2";
 export {Drop3Pixelart } from "./pixelart/drop3";
+export {Drop4Pixelart } from "./pixelart/drop4";
 export {WaveHome } from "./wave/home";
 export {Drop1Wave } from "./wave/drop1";
 export {OnedopekidsHome } from "./onedopekids/home";
