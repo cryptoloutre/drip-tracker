@@ -490,6 +490,7 @@ export {Drop1Genopets } from "./genopets/drop1";
 export {WetikoHome} from "./wetiko/home";
 export {Drop1Wetiko } from "./wetiko/drop1";
 export {Drop2Wetiko } from "./wetiko/drop2";
+export {Drop3Wetiko } from "./wetiko/drop3";
 export {PicoplayHome} from "./picoplay/home";
 export {Drop1Picoplay } from "./picoplay/drop1";
 export {Drop2Picoplay } from "./picoplay/drop2";
