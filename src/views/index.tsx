@@ -464,6 +464,7 @@ export {Drop4Blockframez} from "./blockframez/drop4";
 export {Drop5Blockframez} from "./blockframez/drop5";
 export {Drop6Blockframez} from "./blockframez/drop6";
 export {Drop7Blockframez} from "./blockframez/drop7";
+export {Drop8Blockframez} from "./blockframez/drop8";
 export {MovieSticksHome} from "./moviesticks/home";
 export {Drop1MovieSticks } from "./moviesticks/drop1";
 export {Drop2MovieSticks } from "./moviesticks/drop2";
