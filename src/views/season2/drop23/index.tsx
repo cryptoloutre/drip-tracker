@@ -40,6 +40,12 @@ export const Drop23S2: FC = ({}) => {
 
     const userNFTs = await getUserNFTs(publickey.toBase58())
 
+    userNFTs.map((asset) => {
+      if (asset.content?.metadata.name == "The Queen's Three Dragons" ) {
+        _dropNFT.push(asset.content.metadata.name);
+      }
+    })
+
     const season2NFT = userNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
@@ -67,6 +73,8 @@ export const Drop23S2: FC = ({}) => {
         }
       })
     );
+
+
 
     const dropNFTs = _dropNFT.filter((x, i) => _dropNFT.indexOf(x) === i);
     setNbUserNFTs(dropNFTs.length);

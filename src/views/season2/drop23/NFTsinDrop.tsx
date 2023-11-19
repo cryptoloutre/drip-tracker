@@ -16,6 +16,12 @@ export const NFTsinDrop = [
     rarity: 'Legendary',
     image: 'https://arweave.net/i9Qged5hy1NibmVpt_tnt4I_jxf0gIzuA9uXKqWev4I?ext=jpg',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_season_2'
+  },
+  {
+    name: "The Queen's Three Dragons",
+    rarity: 'Legendary',
+    image: 'https://arweave.net/SSGF4GxyIqUP5rcyHvJ9NUgzM7Lwnj2jLrmt-M2FzZY?ext=jpg',
+    magicEdenLink: 'https://magiceden.io/marketplace/AzBvWHaRhxz7pdmvgtm6pFoZTrYyrg1b63NdGqRSi9H2'
   }
 ];
 
