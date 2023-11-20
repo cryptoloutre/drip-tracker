@@ -59,6 +59,21 @@ export const HomeView: FC = ({}) => {
                 </div>
               </Link>
               <Link
+                href="/amet/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/TRp45R1aTJTX1hMZmAq3zLRVFWmbvTTYTXFlDeb-E2Y?ext=jpg"
+                    alt="amet preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  AMET
+                </div>
+              </Link>
+              <Link
                 href="/awag/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >

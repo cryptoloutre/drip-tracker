@@ -568,3 +568,5 @@ export {JuntdoeHome } from "./juntdoe/home";
 export {Drop1Juntdoe } from "./juntdoe/drop1";
 export {ThefewHome } from "./thefew/home";
 export {Drop1Thefew } from "./thefew/drop1";
+export {AmetHome } from "./amet/home";
+export {Drop1Amet } from "./amet/drop1";
