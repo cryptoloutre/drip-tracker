@@ -570,3 +570,5 @@ export {ThefewHome } from "./thefew/home";
 export {Drop1Thefew } from "./thefew/drop1";
 export {AmetHome } from "./amet/home";
 export {Drop1Amet } from "./amet/drop1";
+export {GlowburgerHome } from "./glowburger/home";
+export {Drop1Glowburger } from "./glowburger/drop1";
