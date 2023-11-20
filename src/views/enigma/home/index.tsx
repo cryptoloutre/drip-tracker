@@ -322,6 +322,19 @@ export const EnigmaHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 4</div>
               </Link>
+              <Link
+                href="/enigma/drop5"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/yp-LFw2RYy_Bk8R-ZwdElxctB2De-JH7XULUb_1h0Q4?ext=png"
+                    alt="drop 5 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 5</div>
+              </Link>
             </div>
           </div>
         </div>
