@@ -495,6 +495,7 @@ export {Drop4SimplyEto } from "./simplyeto/drop4";
 export {Drop5SimplyEto } from "./simplyeto/drop5";
 export {Drop6SimplyEto } from "./simplyeto/drop6";
 export {Drop7SimplyEto } from "./simplyeto/drop7";
+export {Drop8SimplyEto } from "./simplyeto/drop8";
 export {DreaderHome} from "./dreader/home";
 export {Drop1Dreader } from "./dreader/drop1";
 export {Drop2Dreader } from "./dreader/drop2";
