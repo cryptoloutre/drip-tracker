@@ -294,6 +294,19 @@ export const CogHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 2</div>
               </Link>
+              <Link
+                href="/cog/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/-YNvl0K-fCVGJOyNa7-nPNSkvJ2dfS2kzaYZjP_qJ78?ext=jpg"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 3</div>
+              </Link>
             </div>
           </div>
         </div>
