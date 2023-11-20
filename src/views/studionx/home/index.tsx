@@ -92,8 +92,7 @@ export const StudioNXHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
-        const drop = "VIRUS Rare edition " + _drop;
+        const drop = attributes.find((nft) => nft.trait_type == "Drop").value == "1" ? "VIRUS Rare edition 1" : attributes.find((nft) => nft.trait_type == "Drop").value;
         return {
           uri,
           drop,
@@ -373,6 +372,19 @@ export const StudioNXHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 5</div>
+              </Link>
+              <Link
+                href="/studionx/drop6"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/Mv6BUUz8solJLJCWxxkuxXm7duXUjQsogz796YwCAD8?ext=jpg"
+                    alt="drop 6 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 6</div>
               </Link>
               <Link
                 href="/studionx/dropvirus1"
