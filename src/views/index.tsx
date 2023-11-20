@@ -200,6 +200,7 @@ export {Drop19Vault} from "./vault/drop19";
 export {Drop20Vault} from "./vault/drop20";
 export {Drop21Vault} from "./vault/drop21";
 export {Drop22Vault} from "./vault/drop22";
+export {Drop23Vault} from "./vault/drop23";
 export {BangerzHome} from "./bangerz/home";
 export {Drop1Bangerz} from "./bangerz/drop1";
 export {Drop2Bangerz} from "./bangerz/drop2";
