@@ -1,11 +1,11 @@
 export const DropInfo = [
   {
     dropNb: 1,
-    nbNFT: 15,
+    nbNFT: 12,
   },
   {
     dropNb: 2,
-    nbNFT: 8,
+    nbNFT: 10,
   },
   {
     dropNb: 3,
@@ -41,7 +41,7 @@ export const DropInfo = [
   },
   {
     dropNb: 11,
-    nbNFT: 3,
+    nbNFT: 5,
   },
   {
     dropNb: 13,
@@ -65,7 +65,7 @@ export const DropInfo = [
   },
   {
     dropNb: 19,
-    nbNFT: 3,
+    nbNFT: 5,
   },
   {
     dropNb: 20,
