@@ -186,7 +186,9 @@ export const Drop19S2: FC = ({}) => {
                     <div className="flex justify-center">
                       <img className="" src={currentNft.image}></img>
                     </div>
-                    <h1 className="font-bold mt-2">{currentNft.name}</h1>
+                    <h1 className="font-bold mt-2">{currentNft.name}{" "}{currentNft.name == "Vendetta" || currentNft.name == "Hunted" && (
+                          <span className="font-bold text-sm italic">(Season Reward)</span>
+                        )}</h1>
                     {isFetched && (wallet.publicKey || isXNFT) && (
                       <div className="flex justify-center">
                         {isFetched &&
