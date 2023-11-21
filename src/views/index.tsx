@@ -532,6 +532,7 @@ export {Drop1Solcity } from "./solcity/drop1";
 export {Drop2Solcity } from "./solcity/drop2";
 export {Drop3Solcity } from "./solcity/drop3";
 export {Drop4Solcity } from "./solcity/drop4";
+export {Drop5Solcity } from "./solcity/drop5";
 export {DegenRoyaleHome } from "./degenroyale/home";
 export {Drop1DegenRoyale } from "./degenroyale/drop1";
 export {Drop2DegenRoyale } from "./degenroyale/drop2";
