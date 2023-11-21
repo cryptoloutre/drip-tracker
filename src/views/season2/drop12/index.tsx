@@ -184,10 +184,12 @@ export const Drop12S2: FC = ({}) => {
                           src={currentNft.image}
                         ></img>
                       </div>
-                      <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                      {currentNft.isUpgrade == true && (
-                        <h1 className="font-bold mt-2">Season Reward</h1>
-                      )}
+                      <h1 className="font-bold mt-2">
+                        {currentNft.name}{" "}
+                        {currentNft.isUpgrade == true && (
+                          <span className="font-bold text-sm italic">(Season Reward)</span>
+                        )}
+                      </h1>
                     </div>
                   </div>
                 ))}
