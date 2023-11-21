@@ -154,9 +154,9 @@ export const Drop1Juntdoe: FC = ({}) => {
                 <div key={currentNft.uri}>
                   <div
                     className={`bg-[#000000] border border-4 ${
-                      currentNft.rarity == "common" && "border-[#a5a5a5]"
-                    } ${currentNft.rarity == "rare" && "border-[#E6C15A]"} ${
-                      currentNft.rarity == "legendary" &&
+                      currentNft.rarity == "Common" && "border-[#a5a5a5]"
+                    } ${currentNft.rarity == "Rare" && "border-[#E6C15A]"} ${
+                      currentNft.rarity == "Legendary" &&
                       "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
                     }`}
                   >
