@@ -580,3 +580,5 @@ export {AmetHome } from "./amet/home";
 export {Drop1Amet } from "./amet/drop1";
 export {GlowburgerHome } from "./glowburger/home";
 export {Drop1Glowburger } from "./glowburger/drop1";
+export {LcillustratesHome } from "./lcillustrates/home";
+export {Drop1Lcillustrates } from "./lcillustrates/drop1";
