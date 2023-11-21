@@ -70,6 +70,13 @@ export const NFTsinDrop = [
     magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
   },
   {
+    name: "Puff Silver",
+    rarity: "rare",
+    image:
+      "https://arweave.net/RGUCa1CSidmMMCvCuQajqXzHdV-3OXl_hlamaUIaoNQ?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
+  },
+  {
     name: "Burn",
     rarity: "legendary",
     image:
@@ -102,6 +109,13 @@ export const NFTsinDrop = [
     rarity: "legendary",
     image:
       "https://arweave.net/qaC3IHD_vlQyvWkXc3pUTzDIzKfszXiAYkaeAZJb5QU?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
+  },
+  {
+    name: "Puff Gold",
+    rarity: "legendary",
+    image:
+      "https://arweave.net/H9ZVymOwU72TE4gWSsPEK3-47snp1Ls9CzXvhe4nhag?ext=png",
     magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
   },
 ];
