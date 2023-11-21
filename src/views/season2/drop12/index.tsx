@@ -50,12 +50,13 @@ export const Drop12S2: FC = ({}) => {
     await Promise.all(
       wombatNFT.map(async (asset) => {
         let attributes: any;
+        let responseData: any;
         if (asset.content.metadata.attributes) {
           attributes = asset.content.metadata.attributes;
         } else {
           const uri = asset.content.json_uri;
           const response = await fetch(uri);
-          const responseData = await response.json();
+          responseData = await response.json();
           attributes = responseData.attributes;
         }
 
@@ -64,7 +65,7 @@ export const Drop12S2: FC = ({}) => {
           (nft) => nft.trait_type == "Rarity"
         ).value;
         // @ts-ignore
-        const image = asset.content.files[0].uri;
+        const image = responseData.image;
         userWombat.push({
           name: name,
           image: image,
