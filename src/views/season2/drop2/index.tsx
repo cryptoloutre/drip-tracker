@@ -224,7 +224,7 @@ export const Drop2S2: FC = ({}) => {
                     }`}
                   >
                     <img className="" src={currentNft.image}></img>
-                    <h1 className="font-bold mt-2">{currentNft.name}{" "}{currentNft.name == "DJ XRAY" || currentNft.name == "Mesh Mogul" && (
+                    <h1 className="font-bold mt-2">{currentNft.name}{" "}{(currentNft.name == "DJ XRAY" || currentNft.name == "Mesh Mogul") && (
                           <span className="font-bold text-sm italic">(Season Reward)</span>
                         )}</h1>
                     {isFetched && (wallet.publicKey || isXNFT) && (
