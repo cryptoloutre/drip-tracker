@@ -33,7 +33,7 @@ export const Drop12S2: FC = ({}) => {
     const _dropNFT = [];
     setIsFetched(false);
 
-    const userNFTs = await getUserNFTs(publickey.toBase58())
+    const userNFTs = await getUserNFTs(publickey.toBase58());
 
     const wombatNFT = userNFTs.filter(
       (asset) =>
@@ -51,25 +51,30 @@ export const Drop12S2: FC = ({}) => {
       wombatNFT.map(async (asset) => {
         let attributes: any;
         let responseData: any;
+        const uri = asset.content.json_uri;
+        const response = await fetch(uri);
+        responseData = await response.json();
         if (asset.content.metadata.attributes) {
           attributes = asset.content.metadata.attributes;
         } else {
-          const uri = asset.content.json_uri;
-          const response = await fetch(uri);
-          responseData = await response.json();
           attributes = responseData.attributes;
         }
-
         const name = asset.content.metadata.name;
         const rarity = attributes.find(
           (nft) => nft.trait_type == "Rarity"
         ).value;
         // @ts-ignore
         const image = responseData.image;
+        const isUpgrade =
+          attributes.find((nft) => nft.trait_type == "Upgrade") != undefined
+            ? true
+            : false;
+
         userWombat.push({
           name: name,
           image: image,
           rarity: rarity,
+          isUpgrade: isUpgrade,
         });
       })
     );
@@ -180,6 +185,9 @@ export const Drop12S2: FC = ({}) => {
                         ></img>
                       </div>
                       <h1 className="font-bold mt-2">{currentNft.name}</h1>
+                      {currentNft.isUpgrade == true && (
+                        <h1 className="font-bold mt-2">Season Reward</h1>
+                      )}
                     </div>
                   </div>
                 ))}
