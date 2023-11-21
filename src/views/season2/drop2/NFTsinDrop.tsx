@@ -41,7 +41,6 @@ export const NFTsinDrop = [
       "https://arweave.net/x4w9W9_iNBBMmQH4Ve0v6n75Gbx-ShRjUFcbxZagqa0?ext=png",
     magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
   },
-
   {
     name: "Prototype",
     rarity: "Rare",
@@ -50,10 +49,24 @@ export const NFTsinDrop = [
     magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
   },
   {
+    name: "DJ XRAY",
+    rarity: "Rare",
+    image:
+      "https://arweave.net/dR-eQFcVHaWzMOIx3XO5nweo1kxEB4WyvXkR5baZHy4?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
+  },
+  {
     name: "ERROR",
     rarity: "Legendary",
     image:
       "https://arweave.net/oIc8PZRD76R19TfPpGAwnjFUxozbaLDHQ5rOXiLQxD4?ext=png",
+    magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
+  },
+  {
+    name: "Mesh Mogul",
+    rarity: "Legendary",
+    image:
+      "https://arweave.net/zJUeB96d8MfZB92PtX7_S6kBRVm1ZVujC7reL9Rp5hY?ext=png",
     magicEdenLink: "https://www.tensor.trade/trade/drip_season_2",
   },
 ];
