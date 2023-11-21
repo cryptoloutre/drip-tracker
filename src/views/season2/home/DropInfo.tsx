@@ -1,7 +1,7 @@
 export const DropInfo = [
   {
     dropNb: 1,
-    nbNFT: 12,
+    nbNFT: 17,
   },
   {
     dropNb: 2,
