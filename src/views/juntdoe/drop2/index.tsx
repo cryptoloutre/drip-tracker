@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop1Juntdoe: FC = ({}) => {
+export const Drop2Juntdoe: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop1Juntdoe: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "SCREAM";
+  const dropNumber = "HANGING";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -90,7 +90,7 @@ export const Drop1Juntdoe: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop1:{" "}
+            Drop2:{" "}
             <span className="italic">
               {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} &{" "}
               {NFTsInThisDrop[2].name}
@@ -114,7 +114,7 @@ export const Drop1Juntdoe: FC = ({}) => {
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[0].name}</span>{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 17894)</span>
+              <span className="text-[#a5a5a5] font-bold">(supply: 39045)</span>
               .
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
