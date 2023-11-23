@@ -47,7 +47,7 @@ export const TinyHome: FC = ({}) => {
     const allUserNFTs = await getUserNFTs(
       publickey.toBase58());
 
-    const _userNFTs = allUserNFTs.filter(
+    const _userNFTsS1 = allUserNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
@@ -55,8 +55,8 @@ export const TinyHome: FC = ({}) => {
           "tinyVrmxcEUyVufgmFzGYe7C4mrGXDC21uLJAGVKXkg"
     );
 
-    const _userNFTsURI = await Promise.all(
-      _userNFTs.map(async (asset) => {
+    const _userNFTsURIS1 = await Promise.all(
+      _userNFTsS1.map(async (asset) => {
         let attributes: any;
         const uri = asset.content.json_uri;
         if (asset.content.metadata.attributes) {
@@ -79,12 +79,41 @@ export const TinyHome: FC = ({}) => {
       })
     );
 
+    const _userNFTsS2 = allUserNFTs.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "GooDeBHLq7TnLmMRevoKV2zTXi4DkDuD2jwPpDESwkSP"
+    );
+
+    const _userNFTsURIS2 = await Promise.all(
+      _userNFTsS2.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const drop = attributes.find((nft) => nft.trait_type == "Drop").value + "S2";
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const userNFTsURI = _userNFTsURIS1.concat(_userNFTsURIS2);
+
     // we filter to eliminate the doublons
-    const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
+    const userNFTs = userNFTsURI.filter((value: any, index: any) => {
       const _value = JSON.stringify(value);
       return (
         index ===
-        _userNFTsURI.findIndex((obj: any) => {
+        userNFTsURI.findIndex((obj: any) => {
           return JSON.stringify(obj) === _value;
         })
       );
@@ -535,6 +564,19 @@ export const TinyHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 20</div>
+              </Link>
+              <Link
+                href="/tiiiny/drop1S2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/Xh-JCzxtuUpvwm69knJUk4ATnQHvCm0w-fpyRUkOA2Y?ext=png"
+                    alt="drop 1S2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 1S2</div>
               </Link>
             </div>
           </div>
