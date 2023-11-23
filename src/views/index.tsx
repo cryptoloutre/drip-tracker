@@ -585,6 +585,7 @@ export {Drop1Juntdoe } from "./juntdoe/drop1";
 export {Drop2Juntdoe } from "./juntdoe/drop2";
 export {ThefewHome } from "./thefew/home";
 export {Drop1Thefew } from "./thefew/drop1";
+export {Drop2Thefew } from "./thefew/drop2";
 export {AmetHome } from "./amet/home";
 export {Drop1Amet } from "./amet/drop1";
 export {GlowburgerHome } from "./glowburger/home";
