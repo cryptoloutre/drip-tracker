@@ -601,3 +601,5 @@ export {Drop1Glowburger } from "./glowburger/drop1";
 export {Drop2Glowburger } from "./glowburger/drop2";
 export {LcillustratesHome } from "./lcillustrates/home";
 export {Drop1Lcillustrates } from "./lcillustrates/drop1";
+export {DuckzyyHome } from "./duckzzy/home";
+export {Drop1Duckzyy } from "./duckzzy/drop1";
