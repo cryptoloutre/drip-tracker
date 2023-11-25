@@ -601,6 +601,21 @@ export const BorkHome: FC = ({}) => {
                 </div>
               </Link>
               <Link
+                href="/bork/drop18"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/0RFXV65IVacIoCuvyimQWTdwvbFRu87bpjBULmH6t4c?ext=jpg"
+                    alt="chapter 18 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Chapter Eighteen
+                </div>
+              </Link>
+              <Link
                 href="/bork/dropbonus1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -658,6 +673,21 @@ export const BorkHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
                   Bonus Borks 004
+                </div>
+              </Link>
+              <Link
+                href="/bork/dropbonus5"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/0RFXV65IVacIoCuvyimQWTdwvbFRu87bpjBULmH6t4c?ext=jpg"
+                    alt="dropbonus5 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                Holo Banned Cover
                 </div>
               </Link>
             </div>

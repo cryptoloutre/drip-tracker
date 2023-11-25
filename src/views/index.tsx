@@ -133,10 +133,12 @@ export {Drop14Bork} from "./bork/drop14";
 export {Drop15Bork} from "./bork/drop15";
 export {Drop16Bork} from "./bork/drop16";
 export {Drop17Bork} from "./bork/drop17";
+export {Drop18Bork} from "./bork/drop18";
 export {DropBonus1} from "./bork/dropbonus1";
 export {DropBonus2} from "./bork/dropbonus2";
 export {DropBonus3} from "./bork/dropbonus3";
 export {DropBonus4} from "./bork/dropbonus4";
+export {DropBonus5} from "./bork/dropbonus5";
 export {Reader} from "./reader"
 export {FloorHome} from "./floor/home";
 export {Drop1Floor} from "./floor/drop1";
