@@ -409,6 +409,7 @@ export {Drop11Designz} from "./designz/drop11";
 export {Drop12Designz} from "./designz/drop12";
 export {Drop13Designz} from "./designz/drop13";
 export {Drop14Designz} from "./designz/drop14";
+export {Drop15Designz} from "./designz/drop15";
 export {SiliconsHome} from "./silicons/home";
 export {Drop1Silicons} from "./silicons/drop1";
 export {Drop2Silicons} from "./silicons/drop2";
