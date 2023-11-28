@@ -373,6 +373,19 @@ export const MovieSticksHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 9</div>
               </Link>
+              <Link
+                href="/moviesticks/drop10"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/ejbXc5s0DiFBhEp5Vg2AJS0OOeESOSOYRkIIn7N4MPU?ext=png"
+                    alt="drop preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 10</div>
+              </Link>
             </div>
           </div>
         </div>
