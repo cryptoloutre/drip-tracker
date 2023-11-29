@@ -626,3 +626,5 @@ export {LcillustratesHome } from "./lcillustrates/home";
 export {Drop1Lcillustrates } from "./lcillustrates/drop1";
 export {DuckzyyHome } from "./duckzzy/home";
 export {Drop1Duckzyy } from "./duckzzy/drop1";
+export {MoldyHome } from "./moldy/home";
+export {Drop1Moldy } from "./moldy/drop1";
