@@ -285,6 +285,19 @@ export const DuckzyyHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
               </Link>
+              <Link
+                href="/duckzyy/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/esz_tJpYcFh8oWwCApXpQ-7s9pFz0OKebzK70mnDgS8?ext=jpg"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
+              </Link>
             </div>
           </div>
         </div>
