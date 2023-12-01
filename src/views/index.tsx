@@ -597,6 +597,7 @@ export {Drop1Onedopekids } from "./onedopekids/drop1";
 export {Drop2Onedopekids } from "./onedopekids/drop2";
 export {Drop3Onedopekids } from "./onedopekids/drop3";
 export {Drop4Onedopekids } from "./onedopekids/drop4";
+export {Drop5Onedopekids } from "./onedopekids/drop5";
 export {CogHome } from "./cog/home";
 export {Drop1Cog } from "./cog/drop1";
 export {Drop2Cog } from "./cog/drop2";
