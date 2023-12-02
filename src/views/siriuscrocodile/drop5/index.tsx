@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop4Siriuscrocodile: FC = ({}) => {
+export const Drop5Siriuscrocodile: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -20,7 +20,7 @@ export const Drop4Siriuscrocodile: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const NFTsInThisDrop = NFTsinDrop;
-  const dropNumber = "4"
+  const dropNumber = "5"
   const nbTotalNFTsInDrop = NFTsinDrop.length;
 
   const [isXNFT, setIsXNFT] = useState(false);
@@ -111,7 +111,7 @@ export const Drop4Siriuscrocodile: FC = ({}) => {
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[0].name}</span>.{" "}
               {NFTsInThisDrop[0].description}{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 51285)</span>
+              <span className="text-[#a5a5a5] font-bold">(supply: 56667)</span>
               .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
