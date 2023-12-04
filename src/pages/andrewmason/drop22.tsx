@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Drop8DegenRoyale } from "../../views";
+import { Drop22Mason } from "../../views";
 
 const Home: NextPage = (props) => {
   return (
@@ -12,7 +12,7 @@ const Home: NextPage = (props) => {
           content="DRiP tracker allows you to visualize which DRiP NFTs you miss. It also provides information about the artist and the drop in particular."
         />
       </Head>
-      <Drop8DegenRoyale />
+      <Drop22Mason />
     </div>
   );
 };
