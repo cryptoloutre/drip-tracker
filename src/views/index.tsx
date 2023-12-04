@@ -654,3 +654,5 @@ export {MoldyHome } from "./moldy/home";
 export {Drop1Moldy } from "./moldy/drop1";
 export {RezHome } from "./rez/home";
 export {Drop1Rez } from "./rez/drop1";
+export {WiwitaekHome } from "./wiwitaek/home";
+export {Drop1Wiwitaek } from "./wiwitaek/drop1";
