@@ -652,3 +652,5 @@ export {Drop2Duckzyy } from "./duckzzy/drop2";
 export {Drop3Duckzyy } from "./duckzzy/drop3";
 export {MoldyHome } from "./moldy/home";
 export {Drop1Moldy } from "./moldy/drop1";
+export {RezHome } from "./rez/home";
+export {Drop1Rez } from "./rez/drop1";
