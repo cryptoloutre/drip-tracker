@@ -603,6 +603,7 @@ export {Drop3Pixelart } from "./pixelart/drop3";
 export {Drop4Pixelart } from "./pixelart/drop4";
 export {Drop5Pixelart } from "./pixelart/drop5";
 export {Drop6Pixelart } from "./pixelart/drop6";
+export {Drop7Pixelart } from "./pixelart/drop7";
 export {WaveHome } from "./wave/home";
 export {Drop1Wave } from "./wave/drop1";
 export {Drop2Wave } from "./wave/drop2";
