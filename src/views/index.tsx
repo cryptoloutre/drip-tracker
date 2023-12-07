@@ -558,6 +558,7 @@ export {Drop6Dreader } from "./dreader/drop6";
 export {Drop7Dreader } from "./dreader/drop7";
 export {Drop8Dreader } from "./dreader/drop8";
 export {Drop9Dreader } from "./dreader/drop9";
+export {Drop10Dreader } from "./dreader/drop10";
 export {GenopetsHome} from "./genopets/home";
 export {Drop1Genopets } from "./genopets/drop1";
 export {WetikoHome} from "./wetiko/home";
