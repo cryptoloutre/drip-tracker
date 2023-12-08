@@ -661,6 +661,7 @@ export {AmetHome } from "./amet/home";
 export {Drop1Amet } from "./amet/drop1";
 export {Drop2Amet } from "./amet/drop2";
 export {Drop3Amet } from "./amet/drop3";
+export {Drop4Amet } from "./amet/drop4";
 export {GlowburgerHome } from "./glowburger/home";
 export {Drop1Glowburger } from "./glowburger/drop1";
 export {Drop2Glowburger } from "./glowburger/drop2";

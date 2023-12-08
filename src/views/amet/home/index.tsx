@@ -308,6 +308,19 @@ export const AmetHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
               </Link>
+              <Link
+                href="/amet/drop4"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/zTTqQJcLcqu_DOe9lv46XydgcxuT6yr_hWvX2GVHwHg?ext=png"
+                    alt="drop 4 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 4</div>
+              </Link>
             </div>
           </div>
         </div>
