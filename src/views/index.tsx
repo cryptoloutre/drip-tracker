@@ -649,6 +649,7 @@ export {SaturdaymorningHome } from "./saturdaymorning/home";
 export {Drop1Saturdaymorning } from "./saturdaymorning/drop1";
 export {WilsenwayHome } from "./wilsenway/home";
 export {Drop1Wilsenway } from "./wilsenway/drop1";
+export {Drop2Wilsenway } from "./wilsenway/drop2";
 export {JuntdoeHome } from "./juntdoe/home";
 export {Drop1Juntdoe } from "./juntdoe/drop1";
 export {Drop2Juntdoe } from "./juntdoe/drop2";
