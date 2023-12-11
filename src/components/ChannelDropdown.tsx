@@ -228,6 +228,9 @@ export const ChannelDropdown: FC = () => {
           <Link href="/betdex/home">Sports Moments by BetDEX</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/tflo/home">Tflo</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/thefew/home">The Few</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
