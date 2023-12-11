@@ -331,6 +331,7 @@ export {Drop12Stoek} from "./0xStoek/drop12";
 export {Drop13Stoek} from "./0xStoek/drop13";
 export {Drop14Stoek} from "./0xStoek/drop14";
 export {Drop15Stoek} from "./0xStoek/drop15";
+export {Drop16Stoek} from "./0xStoek/drop16";
 export {JakeyHome} from "./jakey/home";
 export {Drop1Jakey} from "./jakey/drop1";
 export {Drop2Jakey} from "./jakey/drop2";
