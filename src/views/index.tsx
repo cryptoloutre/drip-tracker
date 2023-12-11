@@ -140,6 +140,7 @@ export {Drop16Bork} from "./bork/drop16";
 export {Drop17Bork} from "./bork/drop17";
 export {Drop18Bork} from "./bork/drop18";
 export {Drop19Bork} from "./bork/drop19";
+export {Drop20Bork} from "./bork/drop20";
 export {DropBonus1} from "./bork/dropbonus1";
 export {DropBonus2} from "./bork/dropbonus2";
 export {DropBonus3} from "./bork/dropbonus3";
