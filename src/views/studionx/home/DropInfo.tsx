@@ -32,6 +32,10 @@ export const DropInfo = [
     nbNFT: 3,
   },
   {
+    dropNb: "9",
+    nbNFT: 4,
+  },
+  {
     dropNb: "VIRUS Rare edition 1",
     nbNFT: 1,
   },
