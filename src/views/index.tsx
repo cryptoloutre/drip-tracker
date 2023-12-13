@@ -712,3 +712,5 @@ export {TfloHome } from "./tflo/home";
 export {Drop1Tflo } from "./tflo/drop1";
 export {AssetdashHome } from "./assetdash/home";
 export {Drop1Assetdash } from "./assetdash/drop1";
+export {WabalabaHome } from "./wabalaba/home";
+export {Drop1Wabalaba } from "./wabalaba/drop1";
