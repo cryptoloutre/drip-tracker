@@ -638,6 +638,7 @@ export {Drop8Pixelart } from "./pixelart/drop8";
 export {WaveHome } from "./wave/home";
 export {Drop1Wave } from "./wave/drop1";
 export {Drop2Wave } from "./wave/drop2";
+export {Drop3Wave } from "./wave/drop3";
 export {OnedopekidsHome } from "./onedopekids/home";
 export {Drop1Onedopekids } from "./onedopekids/drop1";
 export {Drop2Onedopekids } from "./onedopekids/drop2";
