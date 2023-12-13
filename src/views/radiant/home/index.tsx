@@ -73,6 +73,8 @@ export const RadiantHome: FC = ({}) => {
           drop = "4";
         } else if (_drop == "3") {
           drop = "8";
+        } else if (_drop == "4") {
+          drop = "13";
         }
         return {
           uri,
@@ -103,13 +105,11 @@ export const RadiantHome: FC = ({}) => {
         let drop: string;
         const _drop = attributes.find((nft) => nft.trait_type == "Drop").value;
         if (["1", "2"].find((dropNumber) => dropNumber == _drop)) {
-          drop = (Number(_drop) + 1).toString()
-        }
-        else if (["3", "4", "5"].find((dropNumber) => dropNumber == _drop)) {
-          (Number(_drop) + 2).toString()
-        }
-        else {
-          (Number(_drop) + 3).toString()
+          drop = (Number(_drop) + 1).toString();
+        } else if (["3", "4", "5"].find((dropNumber) => dropNumber == _drop)) {
+          (Number(_drop) + 2).toString();
+        } else {
+          (Number(_drop) + 3).toString();
         }
         return {
           uri,
@@ -464,6 +464,19 @@ export const RadiantHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 12</div>
+              </Link>
+              <Link
+                href="/radiant/drop13"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/asQriRX4w5gLs3jiI5gyqOy6XHtsFmx2-dvhYxDwwjs?ext=png"
+                    alt="drop 13 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 13</div>
               </Link>
             </div>
           </div>
