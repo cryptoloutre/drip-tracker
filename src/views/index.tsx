@@ -700,6 +700,7 @@ export {Drop4Duckzyy } from "./duckzzy/drop4";
 export {MoldyHome } from "./moldy/home";
 export {Drop1Moldy } from "./moldy/drop1";
 export {Drop2Moldy } from "./moldy/drop2";
+export {Drop3Moldy } from "./moldy/drop3";
 export {RezHome } from "./rez/home";
 export {Drop1Rez } from "./rez/drop1";
 export {Drop2Rez } from "./rez/drop2";
