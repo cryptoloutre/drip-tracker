@@ -270,7 +270,7 @@ export const WabalabaHome: FC = ({}) => {
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               {DropInfo.map((drop) => {
                 const dropNb = drop.dropNb;
-                const href = "/tflo/drop" + dropNb;
+                const href = "/wabalaba/drop" + dropNb;
                 const src = drop.NFTs[drop.NFTs.length - 1].image;
                 return (
                   <Link

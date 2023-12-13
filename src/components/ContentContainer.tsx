@@ -83,11 +83,11 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
             <NavElement label="Sports Moments by BetDEX" href="/betdex/home" />
             <NavElement label="Tflo" href="/tflo/home" />
             <NavElement label="The Few" href="/thefew/home" />
-            <NavElement label="Walabala" href="/walabala/home" />
             <NavElement label="The Wave" href="/wave/home" />
             <NavElement label="Tiiiny" href="/tiiiny/home" />
             <NavElement label="Vault Music" href="/vault/home" />
             <NavElement label="VFXFREEK" href="/vfxfreek/home" />
+            <NavElement label="Wabalaba" href="/wabalaba/home" />
             <NavElement label="Wetiko" href="/wetiko/home" />
             <NavElement label="Wilsen Way" href="/wilsenway/home" />
             <NavElement label="Wiwitaek’s World" href="/wiwitaek/home" />
