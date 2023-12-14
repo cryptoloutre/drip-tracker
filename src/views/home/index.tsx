@@ -619,6 +619,19 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Portals</div>
               </Link>
               <Link
+                href="/quietmaybe/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/BD0slANK3inz6ku3-Edw9ldLaId_60Sq-M-5xKQNuzg?ext=png"
+                    alt="QuietMaybe preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">QuietMaybe</div>
+              </Link>
+              <Link
                 href="/radiant/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
