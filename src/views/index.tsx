@@ -656,6 +656,7 @@ export {Drop3Cog } from "./cog/drop3";
 export {Drop4Cog } from "./cog/drop4";
 export {Drop5Cog } from "./cog/drop5";
 export {Drop6Cog } from "./cog/drop6";
+export {Drop7Cog } from "./cog/drop7";
 export {SiriuscrocodileHome } from "./siriuscrocodile/home";
 export {Drop1Siriuscrocodile } from "./siriuscrocodile/drop1";
 export {Drop2Siriuscrocodile } from "./siriuscrocodile/drop2";
