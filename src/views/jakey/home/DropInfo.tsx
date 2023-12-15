@@ -71,4 +71,8 @@ export const DropInfo = [
     dropNb: 18,
     nbNFT: 1,
   },
+  {
+    dropNb: 19,
+    nbNFT: 1,
+  },
 ];
