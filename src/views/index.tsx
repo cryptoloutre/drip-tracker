@@ -727,3 +727,5 @@ export {WabalabaHome } from "./wabalaba/home";
 export {Drop1Wabalaba } from "./wabalaba/drop1";
 export {QuietMaybeHome } from "./quietmaybe/home";
 export {Drop1QuietMaybe } from "./quietmaybe/drop1";
+export {TarimosiHome } from "./tarimosi/home";
+export {Drop1Tarimosi } from "./tarimosi/drop1";
