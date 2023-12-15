@@ -705,6 +705,7 @@ export {Drop1Duckzyy } from "./duckzzy/drop1";
 export {Drop2Duckzyy } from "./duckzzy/drop2";
 export {Drop3Duckzyy } from "./duckzzy/drop3";
 export {Drop4Duckzyy } from "./duckzzy/drop4";
+export {Drop5Duckzyy } from "./duckzzy/drop5";
 export {MoldyHome } from "./moldy/home";
 export {Drop1Moldy } from "./moldy/drop1";
 export {Drop2Moldy } from "./moldy/drop2";
