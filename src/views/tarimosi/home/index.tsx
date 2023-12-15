@@ -273,7 +273,8 @@ export const TarimosiHome: FC = ({}) => {
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               {DropInfo.map((drop, index) => {
                 const dropNb = drop.dropNb;
-                const href = "/tarimosi/drop" + index;
+                const page = (index + 1).toString();
+                const href = "/tarimosi/drop" + page;
                 const src = drop.NFTs[drop.NFTs.length - 1].image;
                 return (
                   <Link
