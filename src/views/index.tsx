@@ -727,6 +727,7 @@ export {Drop1Wiwitaek } from "./wiwitaek/drop1";
 export {Drop2Wiwitaek } from "./wiwitaek/drop2";
 export {TfloHome } from "./tflo/home";
 export {Drop1Tflo } from "./tflo/drop1";
+export {Drop2Tflo } from "./tflo/drop2";
 export {AssetdashHome } from "./assetdash/home";
 export {Drop1Assetdash } from "./assetdash/drop1";
 export {WabalabaHome } from "./wabalaba/home";

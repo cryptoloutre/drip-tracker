@@ -12,4 +12,17 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'Anglio Raffle',
+        uri: 'https://arweave.net/sTZgyaQ5ymf0NWXdo7XV2CbJEtZuSayjp7tCi-n9B7w',
+        rarity: 'Common',
+        image: 'https://arweave.net/p1GdcMDyhSd7VLcSdvcgKJlum-JKbZTI9MF4oVkSRyc?ext=png',
+        description: 'Investigating Anglio’s SMB raffle accused of being botted.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tflo'
+      }
+    ],
+  },
 ];
