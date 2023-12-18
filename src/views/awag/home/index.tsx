@@ -477,6 +477,19 @@ export const AwagHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 15</div>
               </Link>
+              <Link
+                href="/awag/drop16"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/pBy0-6eFZB1n1a6u_D3dyEGQTKskh5vZN1GMuj8nqbs?ext=gif"
+                    alt="drop 16 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 16</div>
+              </Link>
             </div>
           </div>
         </div>
