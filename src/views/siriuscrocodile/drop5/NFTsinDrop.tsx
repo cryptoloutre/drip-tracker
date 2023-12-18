@@ -21,5 +21,13 @@ export const NFTsinDrop = [
     rarity: 'Legendary',
     image: 'https://arweave.net/wVvPA-UMZIb4mdIgtSwBw9UJIMfA5t8mIQQ2KcI4lW0?ext=gif',
     description: `A button is very important if you want to make something happen at a certain moment. Make sure you have a hand to push it though. Or you can use a ping-pong ball, that's definitely an option as well. This card can be used as a component in the "More Utility" series to commission custom animations. Commissions will be opened up regularly so stay tuned on X and Discord for announcements!`,    magicEdenLink: 'https://www.tensor.trade/trade/drip_crocoverse'
-  }
+  },
+  {
+    name: 'Dynamite',
+    uri: 'https://arweave.net/NnYKTvUDICFWJu0OH79kGFIjpL9gV1BezwU5Y7Qi248',
+    rarity: 'Ultimate',
+    image: 'https://arweave.net/MxhtsAPEgCgXzUKr508vUVBwHauM1eQnFWxuUIjEY8Q?ext=gif',
+    description: 'This super rare dynamite component can be used to break stuff or to build stuff. All depends on the context I guess. This card can be used as a component in the "More Utility" series to commission custom animations. Commissions will be opened up regularly so stay tuned on X and Discord for announcements!',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_crocoverse'
+  },
 ];

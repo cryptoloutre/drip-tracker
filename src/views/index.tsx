@@ -671,6 +671,7 @@ export {Drop2Siriuscrocodile } from "./siriuscrocodile/drop2";
 export {Drop3Siriuscrocodile } from "./siriuscrocodile/drop3";
 export {Drop4Siriuscrocodile } from "./siriuscrocodile/drop4";
 export {Drop5Siriuscrocodile } from "./siriuscrocodile/drop5";
+export {Drop6Siriuscrocodile } from "./siriuscrocodile/drop6";
 export {EarlyHome } from "./early/home";
 export {Drop1Early } from "./early/drop1";
 export {Drop2Early } from "./early/drop2";
