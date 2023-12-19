@@ -498,6 +498,19 @@ export const DesignzHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 17</div>
               </Link>
+              <Link
+                href="/designz/drop18"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/VtrWZfheLViWJYywlE65h6wCuv1PaHgze2tsI_UJ8tM?ext=jpeg"
+                    alt="drop preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 18</div>
+              </Link>
             </div>
           </div>
         </div>

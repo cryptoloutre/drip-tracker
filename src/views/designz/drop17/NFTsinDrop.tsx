@@ -22,6 +22,14 @@ export const NFTsinDrop = [
     image: 'https://arweave.net/Cu7GpF17ljuwGjL4GV-Ql7twmp-yhLOWzZUNmBfZd3k?ext=jpg',
     description: 'Physical Acrylic on Paper / Digital Painting Blend',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_designz_season_1'
+  },
+  {
+    name: 'The Answer Was Digital',
+    uri: 'https://arweave.net/Eqi7JrrJu52eh3O-WXPQpb14U18n0C2DR-8FC60BIPU',
+    rarity: 'Ultimate',
+    image: 'https://arweave.net/b64o16hUDV6jKFCJyOlVscfRsxxRDGbw_1-P0L84ewg?ext=jpg',
+    description: 'Physical Acrylic on Paper / Digital Painting Blend',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_designz_season_1'
   }
 ];
 
