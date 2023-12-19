@@ -719,6 +719,7 @@ export {Drop5Glowburger } from "./glowburger/drop5";
 export {LcillustratesHome } from "./lcillustrates/home";
 export {Drop1Lcillustrates } from "./lcillustrates/drop1";
 export {Drop2Lcillustrates } from "./lcillustrates/drop2";
+export {Drop3Lcillustrates } from "./lcillustrates/drop3";
 export {DuckzyyHome } from "./duckzzy/home";
 export {Drop1Duckzyy } from "./duckzzy/drop1";
 export {Drop2Duckzyy } from "./duckzzy/drop2";
