@@ -733,6 +733,7 @@ export {Drop3Rez } from "./rez/drop3";
 export {WiwitaekHome } from "./wiwitaek/home";
 export {Drop1Wiwitaek } from "./wiwitaek/drop1";
 export {Drop2Wiwitaek } from "./wiwitaek/drop2";
+export {Drop3Wiwitaek } from "./wiwitaek/drop3";
 export {TfloHome } from "./tflo/home";
 export {Drop1Tflo } from "./tflo/drop1";
 export {Drop2Tflo } from "./tflo/drop2";

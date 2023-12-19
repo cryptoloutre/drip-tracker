@@ -284,6 +284,19 @@ export const WiwitaekHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
+              <Link
+                href="/wiwitaek/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/p5eQjFWUVvf1JaPtvJxi6yPVgn8H5mtY85Ttm_Muy9w?ext=jpg"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
+              </Link>
             </div>
           </div>
         </div>
