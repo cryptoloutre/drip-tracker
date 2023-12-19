@@ -24,7 +24,7 @@ export const NFTsinDrop = [
     name: 'Ultimate Clayno',
     rarity: 'Ultimate',
     image: 'https://arweave.net/wVWlsLPN38G61UJrYhwnilYm54dZvOE45ppfShAK9iQ?ext=jpg',
-    description: '',
+    description: 'A 1/1 Type Clayno by Degen Poet. Made with an Olivetti typewriter, scanned & inverted.',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_degen_poet'
   }
 ];

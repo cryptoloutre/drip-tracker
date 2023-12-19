@@ -24,7 +24,7 @@ export const NFTsinDrop = [
     name: 'Ultimate Moon Overlord',
     rarity: 'Ultimate',
     image: 'https://arweave.net/61R3vG-mFsR1uP7SdTrW7dozqozpYCwbpsZGflnI5dg?ext=jpg',
-    description: '',
+    description: 'A 1/1 Santa Moon Overlord by Degen Poet. Made with an Olivetti Lettera 62 typewriter, scanned & inverted.',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_degen_poet'
   }
 ];

@@ -24,7 +24,7 @@ export const NFTsinDrop = [
     name: 'Ultimate Stoned Ape',
     rarity: 'Ultimate',
     image: 'https://arweave.net/FGwCaeiIeonZwD1L0amW-LnmCIdcyT-JxX8Gx9pL_cI?ext=jpg',
-    description: '',
+    description: 'A 1/1 Stoned Ape by Degen Poet. Made with an Olivetti typewriter, oil pastels, and Photoshop.',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_degen_poet'
   }
 ];
