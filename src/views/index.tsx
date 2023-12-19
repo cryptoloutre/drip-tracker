@@ -729,6 +729,7 @@ export {Drop3Moldy } from "./moldy/drop3";
 export {RezHome } from "./rez/home";
 export {Drop1Rez } from "./rez/drop1";
 export {Drop2Rez } from "./rez/drop2";
+export {Drop3Rez } from "./rez/drop3";
 export {WiwitaekHome } from "./wiwitaek/home";
 export {Drop1Wiwitaek } from "./wiwitaek/drop1";
 export {Drop2Wiwitaek } from "./wiwitaek/drop2";

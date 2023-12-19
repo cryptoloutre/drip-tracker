@@ -301,6 +301,19 @@ export const RezHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
+              <Link
+                href="/rez/drop3"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/6_3Dgo8eFOH_Y9L36GC0dOcHz72Evt7tqR8IjJNCPnA?ext=jpg"
+                    alt="drop 3 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
+              </Link>
             </div>
           </div>
         </div>
