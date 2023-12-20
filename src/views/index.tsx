@@ -573,6 +573,7 @@ export {Drop9MovieSticks } from "./moviesticks/drop9";
 export {Drop10MovieSticks } from "./moviesticks/drop10";
 export {Drop11MovieSticks } from "./moviesticks/drop11";
 export {Drop12MovieSticks } from "./moviesticks/drop12";
+export {Drop13MovieSticks } from "./moviesticks/drop13";
 export {SimplyEtoHome} from "./simplyeto/home";
 export {Drop1SimplyEto } from "./simplyeto/drop1";
 export {Drop2SimplyEto } from "./simplyeto/drop2";
