@@ -750,6 +750,7 @@ export {AssetdashHome } from "./assetdash/home";
 export {Drop1Assetdash } from "./assetdash/drop1";
 export {WabalabaHome } from "./wabalaba/home";
 export {Drop1Wabalaba } from "./wabalaba/drop1";
+export {Drop2Wabalaba } from "./wabalaba/drop2";
 export {QuietMaybeHome } from "./quietmaybe/home";
 export {Drop1QuietMaybe } from "./quietmaybe/drop1";
 export {TarimosiHome } from "./tarimosi/home";
