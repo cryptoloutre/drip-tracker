@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop23Floor: FC = ({}) => {
+export const Drop24Floor: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop23Floor: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropDate = "12/5/2023";
+  const dropDate = "12/19/2023";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -103,7 +103,7 @@ export const Drop23Floor: FC = ({}) => {
           <div className="mt-12 sm:w-[70%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-            Collect NFTs on Solana directly on Floor! • BONK Climbs to Record Highs • Jupiter Shares Airdrop Allocation
+            Solana Flips ETH in 7-Day NFT Sales Volume • BAYC Founder Gordon Goner Grabs First Solana NFT • The Dog Has a Hat
             </div>
 
             <h2 className="underline text-2xl font-bold mt-4">
