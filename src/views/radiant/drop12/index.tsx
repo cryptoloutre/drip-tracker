@@ -90,7 +90,7 @@ export const Drop12Radiant: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop11:{" "}
+            Drop12:{" "}
             <span className="italic">
               {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} &{" "}
               {NFTsInThisDrop[2].name}

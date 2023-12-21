@@ -108,8 +108,12 @@ export const RadiantHome: FC = ({}) => {
           drop = (Number(_drop) + 1).toString();
         } else if (["3", "4", "5"].find((dropNumber) => dropNumber == _drop)) {
           (Number(_drop) + 2).toString();
-        } else {
+        } else if (
+          ["6", "7", "8", "9"].find((dropNumber) => dropNumber == _drop)
+        ) {
           (Number(_drop) + 3).toString();
+        } else if (["10"].find((dropNumber) => dropNumber == _drop)) {
+          (Number(_drop) + 4).toString();
         }
         return {
           uri,
@@ -477,6 +481,19 @@ export const RadiantHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 13</div>
+              </Link>
+              <Link
+                href="/radiant/drop14"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/hjYnSW7d_iudgIgAyYK7k2298eScBflL8-Jk7L5p6mc?ext=png"
+                    alt="drop 14 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
               </Link>
             </div>
           </div>

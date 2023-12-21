@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop13Radiant: FC = ({}) => {
+export const Drop14Radiant: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop13Radiant: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "4";
+  const dropNumber = "10";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -38,14 +38,14 @@ export const Drop13Radiant: FC = ({}) => {
     const _dropNFT = [];
     setIsFetched(false);
 
-    const userNFTs = await getUserNFTs(publickey.toBase58())
+    const userNFTs = await getUserNFTs(publickey.toBase58());
 
     const BorkNFT = userNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "RDNTmiKRLE2W4aRbd1Xw6sX9bZTgnPUhX3hH2Cov6sY"
+          "RTCSTqZ9FrnZ3wbwPRYzzHLwH8zukU4Dyq3HeAdqPWV"
     );
 
     console.log(BorkNFT);
@@ -90,7 +90,7 @@ export const Drop13Radiant: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop13:{" "}
+            Drop14:{" "}
             <span className="italic">
               {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} &{" "}
               {NFTsInThisDrop[2].name}
@@ -111,19 +111,18 @@ export const Drop13Radiant: FC = ({}) => {
               This drop features 3 rarities:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[0].name}</span>. {NFTsInThisDrop[0].description}{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 17,7k)</span>
+              <span className="italic">{NFTsInThisDrop[0].name}</span>.{" "}
+              <span className="text-[#a5a5a5] font-bold">(supply: 17,1k)</span>
               .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
               </span>{" "}
-              drop is <span className="italic">{NFTsInThisDrop[1].name}</span>.
-              {NFTsInThisDrop[1].description}{" "}
+              drop is <span className="italic">{NFTsInThisDrop[1].name}</span>.{" "}
               <span className="text-[#E6C15A] font-bold">(supply: 1500)</span>
               .<br />
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span> drop
-              is <span className="italic">{NFTsInThisDrop[2].name}</span>. {NFTsInThisDrop[2].description}{" "}
+              is <span className="italic">{NFTsInThisDrop[2].name}</span>.{" "}
               <span className="text-[#14F195] font-bold">(supply: 100)</span>.
             </div>
           </div>

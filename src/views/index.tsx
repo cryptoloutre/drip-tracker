@@ -502,6 +502,7 @@ export {Drop10Radiant} from "./radiant/drop10";
 export {Drop11Radiant} from "./radiant/drop11";
 export {Drop12Radiant} from "./radiant/drop12";
 export {Drop13Radiant} from "./radiant/drop13";
+export {Drop14Radiant} from "./radiant/drop14";
 export {GrimSyndicateHome} from "./grimsyndicate/home";
 export {Drop1GrimSyndicate} from "./grimsyndicate/drop1";
 export {Drop2GrimSyndicate} from "./grimsyndicate/drop2";
