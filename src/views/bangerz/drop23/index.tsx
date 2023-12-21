@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop22Bangerz: FC = ({}) => {
+export const Drop23Bangerz: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop22Bangerz: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNb = "Spawn 9";
+  const dropNb = "Spawn 10";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -90,7 +90,7 @@ export const Drop22Bangerz: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop22: <span className="italic">ALIEN BABIEZ #9</span> by{" "}
+            Drop23: <span className="italic">ALIEN BABIEZ #10</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
