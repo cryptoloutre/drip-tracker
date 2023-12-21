@@ -28,4 +28,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+       {
+        name: 'qm_122023_common',
+        uri: 'https://arweave.net/S2XcevCnMi4NKpBIaDnxYaPplx3rHdSVzj9JSdFBILo',
+        rarity: 'Common',
+        image: 'https://arweave.net/jBmuezaTyAjrysgaDdfnj8VUw7CqMBHrCuPogBxH0Z8?ext=png',
+        description: 'Digital abstract by quietmaybe | 2023',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'qm_122023_rare',
+        uri: 'https://arweave.net/L2jcaTJ6hX1SCgTRxLQNV4JP0TJl6W7VwNLyrxo54JA',
+        rarity: 'Rare',
+        image: 'https://arweave.net/-eRFBUp0Bme0kLyFexEYs57pTYnEiEP7r5A4pIgENsE?ext=png',
+        description: 'Digital abstract by quietmaybe | 2023',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'qm_122023_legendary',
+        uri: 'https://arweave.net/iBHTPSSDCcEzLPo5ooRXE1KIoDWTCdpI-AXvNtBUEqA',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/URgXR2NDKgrRsUs7EKLOUK7_jfeYVc3ZRdlCPyB60PA?ext=png',
+        description: 'Digital abstract by quietmaybe | 2023',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      }
+    ],
+  },
 ];
