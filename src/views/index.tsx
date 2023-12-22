@@ -552,6 +552,7 @@ export {Drop3Vfxfreek} from "./vfxfreek/drop3";
 export {Drop4Vfxfreek} from "./vfxfreek/drop4";
 export {Drop5Vfxfreek} from "./vfxfreek/drop5";
 export {Drop6Vfxfreek} from "./vfxfreek/drop6";
+export {Drop7Vfxfreek} from "./vfxfreek/drop7";
 export {BackpackHome} from "./backpack/home";
 export {Drop1Backpack} from "./backpack/drop1";
 export {Drop2Backpack} from "./backpack/drop2";
