@@ -660,6 +660,7 @@ export {Drop6DegenRoyale } from "./degenroyale/drop6";
 export {Drop7DegenRoyale } from "./degenroyale/drop7";
 export {Drop8DegenRoyale } from "./degenroyale/drop8";
 export {Drop9DegenRoyale } from "./degenroyale/drop9";
+export {Drop10DegenRoyale } from "./degenroyale/drop10";
 export {PixelartHome } from "./pixelart/home";
 export {Drop1Pixelart } from "./pixelart/drop1";
 export {Drop2Pixelart } from "./pixelart/drop2";
