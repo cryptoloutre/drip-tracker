@@ -12,7 +12,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const TarimosiHome: FC = ({}) => {
+export const DrRevelHome: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -51,7 +51,7 @@ export const TarimosiHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "TAuAUS8neSS3KPSqLXQ7u1aWkKgnVPzqNizihDYuXvN"
+          "DRtHav8MkLD1wuXcFAftCM846DUy22eR112Rzt4HUYkW"
     );
 
     const _userNFTsURI = await Promise.all(
@@ -145,17 +145,17 @@ export const TarimosiHome: FC = ({}) => {
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex justify-center">
         <div className="">
-          <h1 className="font-bold text-4xl text-center">TARIMOSI Drop</h1>
+          <h1 className="font-bold text-4xl text-center">Dr. Revel Drop</h1>
           <div className="text-center text-3xl font-bold">
-            Track the TARIMOSI DRiP NFTs you are missing
+            Track the Dr. Revel DRiP NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-            TARIMOSI
-            <br />
-            Auditory Rescue Unit. <br />
-            Tarimosi is a post-hardcore & alternative rock band from Kuala
-            Lumpur, Malaysia, delivering doses of crunching riffs, and other
-            musical & visual experiments straight to your wallet.
+            Dr. Rebekka Revel is a multi-disciplinary fine artist who weaves
+            together a formal art education with academic expertise earned
+            through a PhD in art, Buddhism, and anthropology. Inspired largely
+            by Buddhist philosophy, her work delves into themes of impermanence,
+            suffering, and identity, exploring these concepts across various
+            mediums including traditional art, photography, and printmaking.
             <br />
             <br />
             Sign up{" "}
@@ -163,7 +163,7 @@ export const TarimosiHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://drip.haus/tarimosi"}
+              href={"https://drip.haus/drrevel"}
             >
               here
             </a>{" "}
@@ -172,9 +172,9 @@ export const TarimosiHome: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://twitter.com/tarimosi_"}
+              href={"https://twitter.com/DrRebekkaRevel"}
             >
-              TARIMOSI
+              Dr. Revel
             </a>{" "}
             DRiP drop.
             <div className="mt-4 flex text-xl">
@@ -182,15 +182,7 @@ export const TarimosiHome: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://www.tarimosi.com/"}
-              >
-                Website
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://twitter.com/tarimosi_"}
+                href={"https://twitter.com/DrRebekkaRevel"}
               >
                 Twitter
               </a>
@@ -198,7 +190,7 @@ export const TarimosiHome: FC = ({}) => {
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#9945FF] underline font-bold mr-4"
-                href={"https://www.instagram.com/tarimosi_"}
+                href={"https://www.instagram.com/dr_revel"}
               >
                 Instagram
               </a>
@@ -274,7 +266,7 @@ export const TarimosiHome: FC = ({}) => {
               {DropInfo.map((drop, index) => {
                 const dropNb = drop.dropNb;
                 const page = (index + 1).toString();
-                const href = "/tarimosi/drop" + page;
+                const href = "/drrevel/drop" + page;
                 const src = drop.NFTs[drop.NFTs.length - 1].image;
                 return (
                   <Link
