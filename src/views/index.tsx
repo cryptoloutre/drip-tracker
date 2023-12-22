@@ -486,6 +486,7 @@ export {Drop13Awag} from "./awag/drop13";
 export {Drop14Awag} from "./awag/drop14";
 export {Drop15Awag} from "./awag/drop15";
 export {Drop16Awag} from "./awag/drop16";
+export {Drop17Awag} from "./awag/drop17";
 export {DropRedactedAwag} from "./awag/dropRedacted";
 export {OttrHome} from "./ottr/home";
 export {RadiantHome} from "./radiant/home";
