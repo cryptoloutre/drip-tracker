@@ -778,3 +778,5 @@ export {Drop1Tarimosi } from "./tarimosi/drop1";
 export {Drop2Tarimosi } from "./tarimosi/drop2";
 export {DrRevelHome } from "./drrevel/home";
 export {Drop1DrRevel } from "./drrevel/drop1";
+export {MugenHachiHome } from "./mugenhachi/home";
+export {Drop1MugenHachi } from "./mugenhachi/drop1";

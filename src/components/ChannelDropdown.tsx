@@ -180,6 +180,9 @@ export const ChannelDropdown: FC = () => {
           <Link href="/moviesticks/home">MovieSticks</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/mugenhachi/home">Hachi Mugen</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/nofacenocase/home">No Face-No Case</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
