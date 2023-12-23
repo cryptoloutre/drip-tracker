@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop1Glowburger: FC = ({}) => {
+export const Drop6Glowburger: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop1Glowburger: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "1";
+  const dropNumber = "6";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -109,19 +109,19 @@ export const Drop1Glowburger: FC = ({}) => {
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[0].name}</span>. {NFTsInThisDrop[0].description}{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 37875)</span>
+              <span className="text-[#a5a5a5] font-bold">(supply: 27,7k)</span>
               .<br />
               <br />• The <span className="text-[#E6C15A] font-bold">
                 Rare
               </span>{" "}
               drop is <span className="italic">{NFTsInThisDrop[1].name}</span>.
               {NFTsInThisDrop[1].description}{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 1595)</span>
+              <span className="text-[#E6C15A] font-bold">(supply: 1,1k)</span>
               .<br />
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span> drop
               is <span className="italic">{NFTsInThisDrop[2].name}</span>. {NFTsInThisDrop[2].description}{" "}
-              <span className="text-[#14F195] font-bold">(supply: 399)</span>.
+              <span className="text-[#14F195] font-bold">(supply: 200)</span>.
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (

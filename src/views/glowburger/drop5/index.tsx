@@ -97,9 +97,9 @@ export const Drop5Glowburger: FC = ({}) => {
               target="_blank"
               rel="noreferrer"
               className="text-[#9945FF] font-bold"
-              href={"https://twitter.com/amir_hamz_"}
+              href={"https://twitter.com/glowburger"}
             >
-              AMET
+              glowburger 🍔
             </a>
           </h1>
           <div className="mt-12 w-[100%] mx-auto">
