@@ -769,6 +769,7 @@ export {Drop3Wiwitaek } from "./wiwitaek/drop3";
 export {TfloHome } from "./tflo/home";
 export {Drop1Tflo } from "./tflo/drop1";
 export {Drop2Tflo } from "./tflo/drop2";
+export {Drop3Tflo } from "./tflo/drop3";
 export {AssetdashHome } from "./assetdash/home";
 export {Drop1Assetdash } from "./assetdash/drop1";
 export {WabalabaHome } from "./wabalaba/home";

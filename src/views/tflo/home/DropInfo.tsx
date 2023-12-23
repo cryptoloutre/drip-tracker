@@ -25,4 +25,17 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'Investigating Bunjil',
+        uri: 'https://arweave.net/MwaXOnj57iEWhnVb9e4L7vauiz1tDdOhJ6Lc3OZSr3w',
+        rarity: 'Common',
+        image: 'https://arweave.net/T_mc-6JmdZhybyJOnNS-P63igLNR1sbIJRiO7wNdUVI?ext=png',
+        description: 'Investigating Bunjil and the scandal behind LilyNFT noses.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tflo'
+      }
+    ],
+  },
 ];
