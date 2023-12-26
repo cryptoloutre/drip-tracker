@@ -92,7 +92,12 @@ export const StudioNXHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value == "1" ? "VIRUS Rare edition 1" : attributes.find((nft) => nft.trait_type == "Drop").value;
+        let drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        if (drop == "1") {
+          drop = "VIRUS Rare edition 1";
+        } else if (drop == "2") {
+          drop = "XMAS Rare edition";
+        }
         return {
           uri,
           drop,
@@ -439,6 +444,19 @@ export const StudioNXHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 10</div>
               </Link>
               <Link
+                href="/studionx/drop11"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/Zw3oLepnfV2n75BOjDRnGJDy2nqyZNMqujv1wn8nnhQ?ext=jpg"
+                    alt="drop 11 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 11</div>
+              </Link>
+              <Link
                 href="/studionx/dropvirus1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -451,6 +469,21 @@ export const StudioNXHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
                   VIRUS Rare edition #1
+                </div>
+              </Link>
+              <Link
+                href="/studionx/dropxmas"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/Pw8UuAnQOU6PVICSNP27muZCGPup-nw7eTqA7gvvA9I?ext=png"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Xmas Rare edition
                 </div>
               </Link>
             </div>
