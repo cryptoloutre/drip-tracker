@@ -791,3 +791,5 @@ export {DrRevelHome } from "./drrevel/home";
 export {Drop1DrRevel } from "./drrevel/drop1";
 export {MugenHachiHome } from "./mugenhachi/home";
 export {Drop1MugenHachi } from "./mugenhachi/drop1";
+export {BullyzcrewHome } from "./bullyzcrew/home";
+export {Drop1Bullyzcrew } from "./bullyzcrew/drop1";
