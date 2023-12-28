@@ -310,6 +310,19 @@ export const LcillustratesHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 3</div>
               </Link>
+              <Link
+                href="/lcillustrates/drop4"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/UNNa_hPvxPoqL6CUGd0kbhOZh8i6QJqdFZUiw3hJ7QE?ext=jpg"
+                    alt="drop 4 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 4</div>
+              </Link>
             </div>
           </div>
         </div>
