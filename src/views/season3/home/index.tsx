@@ -320,6 +320,19 @@ export const Season3Home: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 08</div>
               </Link>
+              <Link
+                href="/season3/drop9"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/jOBTVTCk1wssL1gNON56azjEPa9a4B_M4iDCd_3cm3o?ext=png"
+                    alt="drop preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 09</div>
+              </Link>
             </div>
           </div>
         </div>
