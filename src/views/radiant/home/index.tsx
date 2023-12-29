@@ -76,6 +76,9 @@ export const RadiantHome: FC = ({}) => {
         } else if (_drop == "4") {
           drop = "13";
         }
+        else if (_drop == "5") {
+          drop = "15";
+        }
         return {
           uri,
           drop,
@@ -494,6 +497,19 @@ export const RadiantHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
+              </Link>
+              <Link
+                href="/radiant/drop15"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/qkQhuuGZwA0SlQ5EiXyFoMRvuz55m6bx9kVRbMtIHFc?ext=png"
+                    alt="drop 15 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 15</div>
               </Link>
             </div>
           </div>
