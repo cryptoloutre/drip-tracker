@@ -65,7 +65,13 @@ export const DuckzyyHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        let drop = attributes.find((nft) => nft.trait_type == "Drop");
+        if (drop) {
+          drop = drop.value;
+        }
+        else {
+          drop = asset.content.metadata.name;
+        }
         return {
           uri,
           drop,
@@ -349,6 +355,19 @@ export const DuckzyyHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 6</div>
+              </Link>
+              <Link
+                href="/duckzyy/drop7"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/6ulqeTP3C2jGH8xQdy5ECvtdM1BSSxpnW64KAMpBfqs?ext=jpg"
+                    alt="drop 7 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 7</div>
               </Link>
             </div>
           </div>
