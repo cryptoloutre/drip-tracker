@@ -38,4 +38,17 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "4",
+    NFTs: [
+      {
+        name: 'Investigating tflo',
+        uri: 'https://arweave.net/lpqABfVbEmCfQ2470CUNtwwSZEsoVxytTPp6kvPwlRw',
+        rarity: 'Common',
+        image: 'https://arweave.net/1_nAjcCjJ8jbRkVIkhDqKAK0uH74emDIwOK8Hb_Le_A?ext=png',
+        description: 'Investigating one of the most well-liked, handsome men on the internet: tflo',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tflo'
+      }
+    ],
+  },
 ];
