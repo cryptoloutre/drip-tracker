@@ -800,6 +800,7 @@ export {Drop2QuietMaybe } from "./quietmaybe/drop2";
 export {TarimosiHome } from "./tarimosi/home";
 export {Drop1Tarimosi } from "./tarimosi/drop1";
 export {Drop2Tarimosi } from "./tarimosi/drop2";
+export {Drop3Tarimosi } from "./tarimosi/drop3";
 export {DrRevelHome } from "./drrevel/home";
 export {Drop1DrRevel } from "./drrevel/drop1";
 export {MugenHachiHome } from "./mugenhachi/home";

@@ -81,4 +81,39 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "003",
+    NFTs: [
+      {
+        name: 'OSIRIS SURVEILLANCE SYSTEM',
+        uri: 'https://arweave.net/Rv1U31_Ech08NV0ql5ZPryysFQBIeOkKMLenndKphI8',
+        rarity: 'Common',
+        image: 'https://arweave.net/aYHZY1tyWar_rwhGMi5zWFxjnrfDPKmwmtTLRJ-O8wk?ext=png',
+        description: 'Osiris Surveillance System / Engineered by No-To-Scale* / Custom made for Tarimosi “Relapse”.\n' +
+          '\n' +
+          'During the planning of the "Relapse" music video, we faced the challenge of shooting our featured artist, Syarul Reza of Love Me Butch, who resides in Australia while we are in Malaysia. With only his phone as a camera, we brainstormed the concept of incorporating lo-fi CCTV effects. This presented a great opportunity for collaboration. We reached out to our friends at No-To-Scale, known for their architectural practices, to explore the possibility of a unique CCTV design that we can use in the graphic sequence. The result? Osiris Surveillance System.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      },
+      {
+        name: 'OSIRIS SURVEILLANCE SYSTEM',
+        uri: 'https://arweave.net/fUeo0KYnL-m-emjTCD1F0HXu-XCURYrIHHlfdZQ_ig4',
+        rarity: 'Rare',
+        image: 'https://arweave.net/mC2hhYJBBDqz5Zk6k3Ka4FcrgHWs6-Nck_nhx_r9gAY?ext=png',
+        description: 'Osiris Surveillance System / Engineered by No-To-Scale* / Custom made for Tarimosi “Relapse”.\n' +
+          '\n' +
+          'During the planning of the "Relapse" music video, we faced the challenge of shooting our featured artist, Syarul Reza of Love Me Butch, who resides in Australia while we are in Malaysia. With only his phone as a camera, we brainstormed the concept of incorporating lo-fi CCTV effects. This presented a great opportunity for collaboration. We reached out to our friends at No-To-Scale, known for their architectural practices, to explore the possibility of a unique CCTV design that we can use in the graphic sequence. The result? Osiris Surveillance System.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      },
+      {
+        name: 'OSIRIS SURVEILLANCE SYSTEM',
+        uri: 'https://arweave.net/Bb3qePR692GbKHjZNxWHx9BpGj9KdtNd18COUtulVb0',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/PMVwf4Lx1ctOipS30nFNSeSALSImvNi78slMJX08kwA?ext=jpg',
+        description: 'Osiris Surveillance System / Engineered by No-To-Scale* / Custom made for Tarimosi “Relapse”.\n' +
+          '\n' +
+          'During the planning of the "Relapse" music video, we faced the challenge of shooting our featured artist, Syarul Reza of Love Me Butch, who resides in Australia while we are in Malaysia. With only his phone as a camera, we brainstormed the concept of incorporating lo-fi CCTV effects. This presented a great opportunity for collaboration. We reached out to our friends at No-To-Scale, known for their architectural practices, to explore the possibility of a unique CCTV design that we can use in the graphic sequence. The result? Osiris Surveillance System.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      }
+    ],
+  },
 ];
