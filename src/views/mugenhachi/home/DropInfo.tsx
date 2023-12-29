@@ -73,4 +73,57 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'Hachi Mugen “R1S3”',
+        uri: 'https://arweave.net/zLC_qr3NApHJ0halsXyv4SA84wyeP6MuMa6em3j7M34',
+        rarity: 'Common',
+        image: 'https://arweave.net/L7qqwGJNl73NE5-ApSpN57Y7tddgQiqtk5pw3JZPnrs?ext=jpg',
+        description: 'Chapter 1 ‘Born To R1S3’.\n “R1S3” by Hachi Mugen',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “R1S3”',
+        uri: 'https://arweave.net/GgZkGp5sMy_eUaeq5MUCk0b7xP7X_N-NOHjy3YljqD4',
+        rarity: 'Rare',
+        image: 'https://arweave.net/m38NrFH-HQ4PjOYHgU4IKdJ2jH9D5CCNeKHGctWIxtM?ext=jpg',
+        description: 'Chapter 1 ‘Born To R1S3’.\n “R1S3” by Hachi Mugen',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “R1S3”',
+        uri: 'https://arweave.net/Su6p_NyAZV2fhpwRZiC5oiTlRKMgaPPZmL6-FlEgc68',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/fOIknYKPDkYhgr6RweCokRI758-sxEJQo3wYcQV_0JA?ext=jpg',
+        description: 'Chapter 1 ‘Born To R1S3’. \n “R1S3” by Hachi Mugen',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Domo Arigato”',
+        uri: 'https://arweave.net/0g-qd5UzU5IUwJvg80ws_AaFypMslF9f4rbgmiRscJM',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/z6bUgtTbXl52rb9sj-FWFGNuzXqR3J_kqSPPByOix2I?ext=jpg',
+        description: 'Top 3 Thankers 1/1’s. \nDomo Arigato to all Thankers!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Domo Arigato”',
+        uri: 'https://arweave.net/9NEjOh_SjBPgTN5M029g83LetAiIykue-PmDKhqxU8I',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/BMotFzxwm6BOAS5dJAccMRT8AS4xeYCtwLUnYccK1oE?ext=jpg',
+        description: 'Top 3 Thankers 1/1’s \nDomo Arigato to all Thankers!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Domo Arigato”',
+        uri: 'https://arweave.net/pWYqTTFokRF7b5abQCEXAedPcTlokRf0ulcu1Abb4oE',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/SVLdLkkjZbqvK5YTt38s3OH_p6Mg_9Oru42Uxk-MuX0?ext=jpg',
+        description: 'Top 3 Thankers 1/1’s \nDomo Arigato to all Thankers!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      }
+    ],
+  },
 ];
