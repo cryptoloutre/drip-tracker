@@ -812,3 +812,5 @@ export {Drop1MugenHachi } from "./mugenhachi/drop1";
 export {Drop2MugenHachi } from "./mugenhachi/drop2";
 export {BullyzcrewHome } from "./bullyzcrew/home";
 export {Drop1Bullyzcrew } from "./bullyzcrew/drop1";
+export {HuxsterizedHome } from "./huxsterized/home";
+export {Drop1Huxsterized } from "./huxsterized/drop1";
