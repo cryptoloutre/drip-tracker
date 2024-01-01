@@ -532,6 +532,19 @@ export const MadhouseHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 21</div>
               </Link>
+              <Link
+                href="/madhouse/drop22"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/HPqXCYlG988PXLRAHsi07_Xbu699GgV3x2an9a4TxWk?ext=png"
+                    alt="drop 22 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 22</div>
+              </Link>
             </div>
           </div>
         </div>
