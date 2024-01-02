@@ -821,3 +821,5 @@ export {Drop1Bullyzcrew } from "./bullyzcrew/drop1";
 export {Drop2Bullyzcrew } from "./bullyzcrew/drop2";
 export {HuxsterizedHome } from "./huxsterized/home";
 export {Drop1Huxsterized } from "./huxsterized/drop1";
+export {GraffitoHome } from "./0xgraffito/home";
+export {Drop1Graffito } from "./0xgraffito/drop1";

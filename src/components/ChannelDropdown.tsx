@@ -72,6 +72,9 @@ export const ChannelDropdown: FC = () => {
       >
         <div className="grid grid-cols-3">
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/0xgraffito/home">0xGraffito</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/0xgrime/home">0xGrime</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">

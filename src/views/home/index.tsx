@@ -18,6 +18,19 @@ export const HomeView: FC = ({}) => {
           <div className="flex justify-center">
             <div className="w-[70%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
               <Link
+                href="/0xgraffito/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/zFzwUszQAlXF-a39X4TV4U6KI0fIFBEUilRQDbS8TU4?ext=svg"
+                    alt="0xGRAFFITO preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">0xGRAFFITO</div>
+              </Link>
+              <Link
                 href="/0xgrime/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
