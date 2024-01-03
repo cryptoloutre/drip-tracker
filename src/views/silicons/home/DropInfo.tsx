@@ -39,4 +39,8 @@ export const DropInfo = [
     dropNb: "Animations",
     nbNFT: 3,
   },
+  {
+    dropNb: "Year of The Dragon",
+    nbNFT: 3,
+  },
 ];
