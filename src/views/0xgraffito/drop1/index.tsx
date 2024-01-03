@@ -20,7 +20,7 @@ export const Drop1Graffito: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNb = "Proof by Infinite Descent";
-  const NFTsinDrop = DropInfo[Number(dropNb)-1].NFTs;
+  const NFTsinDrop = DropInfo.find((drop) => drop.dropNb == dropNb).NFTs;
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
