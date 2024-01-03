@@ -835,3 +835,5 @@ export {BunjilHome } from "./bunjil/home";
 export {Drop1Bunjil } from "./bunjil/drop1";
 export {NaniekoHome } from "./nanieko/home";
 export {Drop1Nanieko } from "./nanieko/drop1";
+export {EarlySaintHome } from "./earlysaint/home";
+export {Drop1EarlySaint } from "./earlysaint/drop1";
