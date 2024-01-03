@@ -833,3 +833,5 @@ export {GraffitoHome } from "./0xgraffito/home";
 export {Drop1Graffito } from "./0xgraffito/drop1";
 export {BunjilHome } from "./bunjil/home";
 export {Drop1Bunjil } from "./bunjil/drop1";
+export {NaniekoHome } from "./nanieko/home";
+export {Drop1Nanieko } from "./nanieko/drop1";

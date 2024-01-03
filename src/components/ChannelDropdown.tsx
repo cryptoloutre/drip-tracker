@@ -195,6 +195,9 @@ export const ChannelDropdown: FC = () => {
           <Link href="/mugenhachi/home">Hachi Mugen</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/nanieko/home">Nanieko</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/nofacenocase/home">No Face-No Case</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
