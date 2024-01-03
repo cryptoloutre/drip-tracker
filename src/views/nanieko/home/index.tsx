@@ -183,7 +183,7 @@ export const NaniekoHome: FC = ({}) => {
                 className="text-[#9945FF] underline font-bold mr-4"
                 href={"https://lynkfire.com/nanieko"}
               >
-                Twitter
+                Website
               </a>
               <a
                 target="_blank"
