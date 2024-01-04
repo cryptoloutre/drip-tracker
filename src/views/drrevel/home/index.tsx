@@ -12,7 +12,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const DrRevelHome: FC = ({}) => {
+export const DrRevelHome: FC = ({ }) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -51,7 +51,7 @@ export const DrRevelHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "DRtHav8MkLD1wuXcFAftCM846DUy22eR112Rzt4HUYkW"
+        "DRtHav8MkLD1wuXcFAftCM846DUy22eR112Rzt4HUYkW"
     );
 
     const _userNFTsURI = await Promise.all(
@@ -65,7 +65,16 @@ export const DrRevelHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        let drop = attributes.find((nft) => nft.trait_type == "Drop");
+        if (drop) {
+          drop = drop.value;
+        }
+        else {
+          const wisdom = attributes.find((nft) => nft.trait_type == "Wisdom").value;
+          if (["Dhamma", "Sārīra", "Paritta"].includes(wisdom)) {
+            drop = "2";
+          }
+        }
         return {
           uri,
           drop,
