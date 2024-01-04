@@ -828,6 +828,19 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Season 3</div>
               </Link>
               <Link
+                href="/shack/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/jXVIroQgldgL9acjI4YVTQW1Duk5YsgdO8e-3MKFTPc?ext=gif"
+                    alt="shack preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Shack!</div>
+              </Link>
+              <Link
                 href="/silicons/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
