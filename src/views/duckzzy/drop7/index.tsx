@@ -87,7 +87,7 @@ export const Drop7Duckzyy: FC = ({}) => {
       <div className="md:hero-content flex">
         <div className="">
           <h1 className="text-center text-3xl font-bold">
-            Drop{dropNb}: <span className="italic">{NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} & {NFTsInThisDrop[2].name}</span> by{" "}
+            Drop{dropNb}: <span className="italic">{NFTsInThisDrop[0].name}</span> by{" "}
             <a
               target="_blank"
               rel="noreferrer"
