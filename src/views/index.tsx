@@ -816,6 +816,7 @@ export {Drop2Wabalaba } from "./wabalaba/drop2";
 export {QuietMaybeHome } from "./quietmaybe/home";
 export {Drop1QuietMaybe } from "./quietmaybe/drop1";
 export {Drop2QuietMaybe } from "./quietmaybe/drop2";
+export {Drop3QuietMaybe } from "./quietmaybe/drop3";
 export {TarimosiHome } from "./tarimosi/home";
 export {Drop1Tarimosi } from "./tarimosi/drop1";
 export {Drop2Tarimosi } from "./tarimosi/drop2";

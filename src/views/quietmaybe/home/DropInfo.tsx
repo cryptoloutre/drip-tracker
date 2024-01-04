@@ -57,4 +57,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'gm 2024',
+        uri: 'https://arweave.net/T7sMm5Mk7KdqTr5PBx83qSzQgAx1qubN-rjyBFTvoR4',
+        rarity: 'Common',
+        image: 'https://arweave.net/zx86go1zGKJm20QUEymKxLmN1dVuJ41UjF9wHTLly_U?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'cheers',
+        uri: 'https://arweave.net/4LXKOMGyDRFAqGrRLNdmRbhp9zZxZtxG9jvC2QexmtE',
+        rarity: 'Rare',
+        image: 'https://arweave.net/jpUFn8UKwchrEV59y9oemZtuVkgvV99roy6H8SfktFI?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'fresh start',
+        uri: 'https://arweave.net/8DBjO31gCmW72VcnplrMLSXqM6vwxmJUxwaowqzj31E',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/16rduHNvAho_k-9zJ74FK8OuYYajefvPFGvGZyB9WrI?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      }
+    ],
+  },
 ];
