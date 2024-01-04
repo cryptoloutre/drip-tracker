@@ -27,4 +27,8 @@ export const DropInfo = [
     dropNb: "Merry DRiPMAS!",
     nbNFT: 1,
   },
+  {
+    dropNb: "7",
+    nbNFT: 4,
+  },
   ];
