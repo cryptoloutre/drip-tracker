@@ -104,24 +104,7 @@ export const Drop7Duckzyy: FC = ({}) => {
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[0].name}</span>. {NFTsInThisDrop[0].description}{" "}
-              <span className="text-[#a5a5a5] font-bold">(supply: 33,4k)</span>
-              .<br />
-              <br />• The <span className="text-[#E6C15A] font-bold">
-                Rare
-              </span>{" "}
-              drop is <span className="italic">{NFTsInThisDrop[1].name}</span>.
-              {NFTsInThisDrop[1].description}{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 2000)</span>
-              .<br />
-              <br />• The{" "}
-              <span className="text-[#14F195] font-bold">Legendary</span> drop
-              is <span className="italic">{NFTsInThisDrop[2].name}</span>. {NFTsInThisDrop[2].description}{" "}
-              <span className="text-[#14F195] font-bold">(supply: 100)</span>.
-              <br/>
-              <br />• The{" "}
-              <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[3].name}</span>. {NFTsInThisDrop[3].description}{" "}
-              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
+              <span className="text-[#a5a5a5] font-bold">(supply: 42,1k)</span>
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
