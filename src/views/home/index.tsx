@@ -834,7 +834,7 @@ export const HomeView: FC = ({}) => {
                 <div className="flex justify-center">
                   <img
                     className="md:w-[300px] px-2 py-2"
-                    src="https://arweave.net/jXVIroQgldgL9acjI4YVTQW1Duk5YsgdO8e-3MKFTPc?ext=gif"
+                    src="https://arweave.net/z4MLm1FirnzunupI2KBlIuOoeeV5RCyU1iHEGfIxiRo?ext=jpg"
                     alt="shack preview"
                   ></img>
                 </div>
