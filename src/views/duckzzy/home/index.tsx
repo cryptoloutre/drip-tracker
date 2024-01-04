@@ -279,7 +279,7 @@ export const DuckzyyHome: FC = ({}) => {
           <div className="flex justify-center">
             <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               <Link
-                href="/duckzyy/drop1"
+                href="/duckzzy/drop1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
@@ -292,7 +292,7 @@ export const DuckzyyHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 1</div>
               </Link>
               <Link
-                href="/duckzyy/drop2"
+                href="/duckzzy/drop2"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
@@ -305,7 +305,7 @@ export const DuckzyyHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 2</div>
               </Link>
               <Link
-                href="/duckzyy/drop3"
+                href="/duckzzy/drop3"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
@@ -318,7 +318,7 @@ export const DuckzyyHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 3</div>
               </Link>
               <Link
-                href="/duckzyy/drop4"
+                href="/duckzzy/drop4"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
@@ -331,7 +331,7 @@ export const DuckzyyHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 4</div>
               </Link>
               <Link
-                href="/duckzyy/drop5"
+                href="/duckzzy/drop5"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
@@ -344,7 +344,7 @@ export const DuckzyyHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 5</div>
               </Link>
               <Link
-                href="/duckzyy/drop6"
+                href="/duckzzy/drop6"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
@@ -357,7 +357,7 @@ export const DuckzyyHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop 6</div>
               </Link>
               <Link
-                href="/duckzyy/drop7"
+                href="/duckzzy/drop7"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
@@ -370,7 +370,7 @@ export const DuckzyyHome: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Drop DRiPMAS</div>
               </Link>
               <Link
-                href="/duckzyy/drop8"
+                href="/duckzzy/drop8"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
                 <div className="flex justify-center">
