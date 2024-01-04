@@ -91,7 +91,7 @@ export const Drop2DrRevel: FC = ({}) => {
       <div className="md:hero-content flex">
         <div className="">
           <h1 className="text-center text-3xl font-bold">
-            Drop1:{" "}
+            Drop2:{" "}
             <span className="italic">
               {NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} &{" "}
               {NFTsInThisDrop[2].name}
