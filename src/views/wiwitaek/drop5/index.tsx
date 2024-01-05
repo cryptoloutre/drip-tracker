@@ -19,7 +19,7 @@ export const Drop5Wiwitaek: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNb = "Iv";
+  const dropNb = "IV";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
