@@ -11,8 +11,10 @@ import { Loader } from "components/Loader";
 import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
+import { DropCards } from "components/DropCards";
+import { Completion } from "components/Completion";
 
-export const WabalabaHome: FC = ({}) => {
+export const WabalabaHome: FC = ({ }) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -51,7 +53,7 @@ export const WabalabaHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "WABARDMXZdyTjieTGB5szaGx9cSshEKPCb9MpEgv8FQ"
+        "WABARDMXZdyTjieTGB5szaGx9cSshEKPCb9MpEgv8FQ"
     );
 
     const _userNFTsURI = await Promise.all(
@@ -207,89 +209,10 @@ export const WabalabaHome: FC = ({}) => {
             </div>
           )}
           {(wallet.publicKey || isXNFT) && isFetched && (
-            <div className="text-center sm:w-[70%] mx-auto font-bold text-xl my-6">
-              <div className="text-left">
-                You have:
-                <div className="">
-                  <div>
-                    • completed{" "}
-                    <span className="font-black text-[#14F195]">
-                      {nbDropComplete}
-                    </span>
-                    /
-                    <span className="font-black text-[#14F195]">
-                      {nbTotalDrop}
-                    </span>{" "}
-                    drops!
-                  </div>
-                  <div>
-                    •{" "}
-                    <span className="font-black text-[#14F195]">
-                      {nbUserNFTs}
-                    </span>
-                    /
-                    <span className="font-black text-[#14F195]">
-                      {nbTotalNFTsInDrop}
-                    </span>{" "}
-                    NFTs!
-                  </div>
-                  {dropIncomplete.length != 0 && (
-                    <div>
-                      Drops incomplete:
-                      <div className="flex ml-4">
-                        →
-                        {dropIncomplete.map((drop) => (
-                          <div key={drop} className="mx-1 text-[#ff0000]">
-                            {drop}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  {dropMissing.length != 0 && (
-                    <div>
-                      Drop missed:
-                      <div className="flex ml-4">
-                        →
-                        {dropMissing.map((drop) => (
-                          <div key={drop} className="mx-1 text-[#ff0000] ">
-                            {drop}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <br />
-              <div>Choose a drop to see which NFTs you miss.</div>
-            </div>
+            <Completion nbDropComplete={nbDropComplete} nbTotalDrop={nbTotalDrop} nbTotalNFTsInDrop={nbTotalNFTsInDrop} nbUserNFTs={nbUserNFTs} dropIncomplete={dropIncomplete} dropMissing={dropMissing} />
           )}
           {(wallet.publicKey || isXNFT) && !isFetched && <Loader />}
-          <div className="flex justify-center">
-            <div className="w-[70%] md:w-[50%] flex items-center grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
-            {DropInfo.map((drop, index) => {
-                const dropNb = drop.dropNb;
-                const page = (index + 1).toString();
-                const href = "/wabalaba/drop" + page;
-                const src = drop.NFTs[drop.NFTs.length - 1].image;
-                return (
-                  <Link
-                    key={dropNb}
-                    href={href}
-                    className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
-                  >
-                    <div className="flex justify-center">
-                      <img className="" src={src} alt="drop preview"></img>
-                    </div>
-                    <div className="text-center font-bold mt-1 pb-1">
-                      Drop {dropNb}
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
+          <DropCards artist="wabalaba" dropInfo={DropInfo} />
         </div>
       </div>
     </div>
