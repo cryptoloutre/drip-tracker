@@ -675,6 +675,7 @@ export {Drop8StudioNX } from "./studionx/drop8";
 export {Drop9StudioNX } from "./studionx/drop9";
 export {Drop10StudioNX } from "./studionx/drop10";
 export {Drop11StudioNX } from "./studionx/drop11";
+export {Drop12StudioNX } from "./studionx/drop12";
 export {DropVirus1StudioNX } from "./studionx/dropvirus1";
 export {DropXmasStudioNX } from "./studionx/dropxmas";
 export {SolcityHome } from "./solcity/home";
