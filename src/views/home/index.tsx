@@ -580,6 +580,19 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">MADhouse</div>
               </Link>
               <Link
+                href="/mapez/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/FfzYxIm4aPqRp6yWE-ctwDyRzNl5ZM604P_C6XW2Aak?ext=jpg"
+                    alt="Mapez preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Mapez</div>
+              </Link>
+              <Link
                 href="/maquin/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
