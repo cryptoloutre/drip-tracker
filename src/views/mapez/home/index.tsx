@@ -269,7 +269,7 @@ export const MapezHome: FC = ({ }) => {
               {DropInfo.map((drop, index) => {
                 const dropNb = drop.dropNb;
                 const page = (index + 1).toString();
-                const href = "/shack/drop" + page;
+                const href = "/mapez/drop" + page;
                 const src = drop.NFTs[drop.NFTs.length - 1].image;
                 return (
                   <Link
