@@ -116,4 +116,48 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "004",
+    NFTs: [
+      {
+        name: 'RELAPSE MV (LYRICS)',
+        uri: 'https://arweave.net/6UMufscNkYW77R_NGuOBmriCChaplSWkIK65f_E_p1Y',
+        rarity: 'Common',
+        image: 'https://arweave.net/BDpKBzMlenL90LhLot-ZCkj2-dAnevfV8ioSq-hu-jg?ext=jpg',
+        description: 'TARIMOSI - RELAPSE (feat. Syarul Reza of Love Me Butch) Lyric Video.\n' +
+          '\n' +
+          '“RELAPSE” is the first single from TARIMOSI upcoming album.\n' +
+          '\n' +
+          'All Rights Reserved.\n' +
+          'TARIMOSI RECORDS (2024)',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      },
+      {
+        name: 'RELAPSE MV (LYRICS)',
+        uri: 'https://arweave.net/FVMwr_xEtFhYNJEbZ2ftvuREXVVh0xb53TwyHuM1dt8',
+        rarity: 'Rare',
+        image: 'https://arweave.net/DXHZgx4xWQozVB12-YFAJUfMVbvAy9z20gx4qqoL9ho?ext=jpg',
+        description: 'TARIMOSI - RELAPSE (feat. Syarul Reza of Love Me Butch) Lyric Video.\n' +
+          '\n' +
+          '“RELAPSE” is the first single from TARIMOSI upcoming album.\n' +
+          '\n' +
+          'All Rights Reserved.\n' +
+          'TARIMOSI RECORDS (2024)',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      },
+      {
+        name: 'RELAPSE MV (LYRICS)',
+        uri: 'https://arweave.net/b9NuTNkp0kBXRgduiX76Tl5C2mFi8DPCiN_VySPR0a8',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/7-iK9lUyjwTU1RlIzcpBrqciYOS2Q6XessQDGOcSzVs?ext=jpg',
+        description: 'TARIMOSI - RELAPSE (feat. Syarul Reza of Love Me Butch) Lyric Video.\n' +
+          '\n' +
+          '“RELAPSE” is the first single from TARIMOSI upcoming album.\n' +
+          '\n' +
+          'All Rights Reserved.\n' +
+          'TARIMOSI RECORDS (2024)',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      }
+    ],
+  },
 ];
