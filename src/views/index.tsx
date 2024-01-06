@@ -787,6 +787,7 @@ export {Drop3Glowburger } from "./glowburger/drop3";
 export {Drop4Glowburger } from "./glowburger/drop4";
 export {Drop5Glowburger } from "./glowburger/drop5";
 export {Drop6Glowburger } from "./glowburger/drop6";
+export {Drop7Glowburger } from "./glowburger/drop7";
 export {LcillustratesHome } from "./lcillustrates/home";
 export {Drop1Lcillustrates } from "./lcillustrates/drop1";
 export {Drop2Lcillustrates } from "./lcillustrates/drop2";
