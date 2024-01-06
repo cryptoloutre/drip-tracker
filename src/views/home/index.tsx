@@ -298,6 +298,19 @@ export const HomeView: FC = ({}) => {
                 <div className="text-center font-bold mt-1 pb-1">Designz</div>
               </Link>
               <Link
+                href="/doodledevils/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/Iax4t7sIOZTOMCADLpP2eJBKTjmm_cHYgu062hx-nN4?ext=jpg"
+                    alt="Doodle Devils preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Doodle Devils</div>
+              </Link>
+              <Link
                 href="/dreader/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
