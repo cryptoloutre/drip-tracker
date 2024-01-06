@@ -51,4 +51,17 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "5",
+    NFTs: [
+      {
+        name: 'Investigating Greed',
+        uri: 'https://arweave.net/POqdMrvA5QKXeAhx9Tsh6GeyrhiGJWDHvFIMIVWTKCo',
+        rarity: 'Common',
+        image: 'https://arweave.net/JXwr74ghxVRVKl0fuKyNpM42_LTapl_87fiZwBr6N1I?ext=png',
+        description: 'A deeper look into $greed and the person behind it.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tflo'
+      }
+    ],
+  },
 ];
