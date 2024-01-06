@@ -32,4 +32,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'Color Me Happy',
+        uri: 'https://arweave.net/1_ZF3kCIBGNTMHMsLS8DUiCf3G0FS1fjpQy20IiiwEM',
+        rarity: 'Common',
+        image: 'https://arweave.net/hjrmFFo0zlD7hFGfI2wtdC_jLP2EcPedizxbuz_Tccg?ext=jpg',
+        description: 'Adding a dose of color to your world.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      },
+      {
+        name: 'Color Poetry',
+        uri: 'https://arweave.net/fd1M5wxdtMFgOKH0o104y2C74I54H89z8EPX2eUDxB0',
+        rarity: 'Rare',
+        image: 'https://arweave.net/P2t0RLj5dnIlKv48-2PmaadxyaZLhX4f-BKsJC19rJo?ext=jpg',
+        description: 'Colors are the poetry of the eyes.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      },
+      {
+        name: 'Pop of Color',
+        uri: 'https://arweave.net/BcGGBbX-yulM_fiasqHd7aTO_NNoiSIWSMF5XjXKOso',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/Iy2vHkgUt259AnTCkBlqQWRhW7fZnbANWcqRPwwz16A?ext=jpg',
+        description: 'Vibrant hues, vibrant moods.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      }
+    ],
+  },
 ];
