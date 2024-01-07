@@ -857,6 +857,7 @@ export {Drop1Huxsterized } from "./huxsterized/drop1";
 export {Drop2Huxsterized } from "./huxsterized/drop2";
 export {GraffitoHome } from "./0xgraffito/home";
 export {Drop1Graffito } from "./0xgraffito/drop1";
+export {Drop2Graffito } from "./0xgraffito/drop2";
 export {BunjilHome } from "./bunjil/home";
 export {Drop1Bunjil } from "./bunjil/drop1";
 export {NaniekoHome } from "./nanieko/home";

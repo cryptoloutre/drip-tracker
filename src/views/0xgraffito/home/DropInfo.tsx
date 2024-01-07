@@ -28,4 +28,36 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "Spending Time/Time Waster",
+    NFTs: [
+      {
+        name: 'Spending Time/Time Waster',
+        uri: 'https://arweave.net/yjuoO0f4b6YtPzcL0QQU0Cbgh5YJnYJxSTyIG-i77f4',
+        rarity: 'Common',
+        image: 'https://arweave.net/oPK_RG_qL_lLnwZN2NKsAll4i_cZHdPjNzRXr8Ie938?ext=png',
+        description: 'Did you spend your time well, or waste it, anon? Perhaps a little of both? \n' +
+          'Animated short and music by GRAFFITO. MP4. 1076x1600px',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_0xgraffito'
+      },
+      {
+        name: 'Spending Time/Time Waster',
+        uri: 'https://arweave.net/4diKVD70Uzbbm2BCZu_URZfoEPGDwcJsCi9pENOsXhU',
+        rarity: 'Rare',
+        image: 'https://arweave.net/-FZce87sjWR0dvkc5cFdmglMcsDvmOQDEkQlkrD6e-Y?ext=png',
+        description: 'Did you spend your time well, or waste it, anon? Perhaps a little of both? \n' +
+          'Animated short and music by GRAFFITO. MP4. 2160x3200px',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_0xgraffito'
+      },
+      {
+        name: 'Spending Time/Time Waster',
+        uri: 'https://arweave.net/KActlaQoiAici0RiMQ5k6hbYg1xNH4wrcDqeF7iQwE0',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/DGoEHm4u6GSaGVxQuyrpD8WtdSrzVTbzCSPKyjqWx-I?ext=png',
+        description: 'Did you spend your time well, or waste it, anon? Perhaps a little of both? \n' +
+          'Animated short and music by GRAFFITO. MP4. 2154x2160px.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_0xgraffito'
+      }
+    ],
+  },
 ];
