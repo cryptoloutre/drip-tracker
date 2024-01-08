@@ -657,6 +657,7 @@ export {Drop2Wetiko } from "./wetiko/drop2";
 export {Drop3Wetiko } from "./wetiko/drop3";
 export {Drop4Wetiko } from "./wetiko/drop4";
 export {Drop5Wetiko } from "./wetiko/drop5";
+export {Drop6Wetiko } from "./wetiko/drop6";
 export {PicoplayHome} from "./picoplay/home";
 export {Drop1Picoplay } from "./picoplay/drop1";
 export {Drop2Picoplay } from "./picoplay/drop2";
