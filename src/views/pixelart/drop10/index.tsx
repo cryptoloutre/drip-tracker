@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop9Pixelart: FC = ({}) => {
+export const Drop10Pixelart: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop9Pixelart: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "9";
+  const dropNumber = "10";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -103,7 +103,7 @@ export const Drop9Pixelart: FC = ({}) => {
           <div className="mt-12 w-[100%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-            This drop features 9 different collectibles:
+            This drop features 13 different collectibles:
               <br />• The{" "}
               <span className="text-[#a5a5a5] font-bold">Common</span>{" "}
               <span className="italic">{NFTsInThisDrop[0].name}</span>: {NFTsInThisDrop[0].description}{" "}
@@ -113,21 +113,21 @@ export const Drop9Pixelart: FC = ({}) => {
               <span className="italic">{NFTsInThisDrop[1].name}</span>: {NFTsInThisDrop[1].description}{" "}
               <span className="text-[#E6C15A] font-bold">(supply: 333)</span>
               <br />• The{" "}
-              <span className="text-[#14F195] font-bold">Legendary</span>{" "}
+              <span className="text-[#E6C15A] font-bold">Rare</span>{" "}
               <span className="italic">{NFTsInThisDrop[2].name}</span>: {NFTsInThisDrop[2].description}{" "}
-              <span className="text-[#E6C15A] font-bold">(supply: 100)</span>
+              <span className="text-[#E6C15A] font-bold">(supply: 333)</span>
+              <br />• The{" "}
+              <span className="text-[#E6C15A] font-bold">Rare</span>{" "}
+              <span className="italic">{NFTsInThisDrop[3].name}</span>: {NFTsInThisDrop[3].description}{" "}
+              <span className="text-[#E6C15A] font-bold">(supply: 333)</span>
+              <br />• The{" "}
+              <span className="text-[#E6C15A] font-bold">Rare</span>{" "}
+              <span className="italic">{NFTsInThisDrop[4].name}</span>: {NFTsInThisDrop[4].description}{" "}
+              <span className="text-[#E6C15A] font-bold">(supply: 333)</span>
               <br />• The{" "}
               <span className="text-[#14F195] font-bold">Legendary</span>{" "}
-              <span className="italic">{NFTsInThisDrop[3].name}</span>: {NFTsInThisDrop[3].description}{" "}
-              <span className="text-[#14F195] font-bold">(supply: 10)</span>
-              <br />• The{" "}
-              <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[4].name}</span>. {NFTsInThisDrop[4].description}{" "}
-              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
-              <br />• The{" "}
-              <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
-              <span className="italic">{NFTsInThisDrop[5].name}</span>. {NFTsInThisDrop[5].description}{" "}
-              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
+              <span className="italic">{NFTsInThisDrop[5].name}</span>: {NFTsInThisDrop[5].description}{" "}
+              <span className="text-[#E6C15A] font-bold">(supply: 100)</span>
               <br />• The{" "}
               <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[6].name}</span>. {NFTsInThisDrop[6].description}{" "}
@@ -139,6 +139,22 @@ export const Drop9Pixelart: FC = ({}) => {
               <br />• The{" "}
               <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
               <span className="italic">{NFTsInThisDrop[8].name}</span>. {NFTsInThisDrop[8].description}{" "}
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
+              <br />• The{" "}
+              <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
+              <span className="italic">{NFTsInThisDrop[9].name}</span>. {NFTsInThisDrop[9].description}{" "}
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
+              <br />• The{" "}
+              <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
+              <span className="italic">{NFTsInThisDrop[10].name}</span>. {NFTsInThisDrop[10].description}{" "}
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
+              <br />• The{" "}
+              <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
+              <span className="italic">{NFTsInThisDrop[11].name}</span>. {NFTsInThisDrop[11].description}{" "}
+              <span className="text-[#F94887] font-bold">(supply: 1)</span>.
+              <br />• The{" "}
+              <span className="text-[#F94887] font-bold">Ultimate</span> drop is{" "}
+              <span className="italic">{NFTsInThisDrop[12].name}</span>. {NFTsInThisDrop[12].description}{" "}
               <span className="text-[#F94887] font-bold">(supply: 1)</span>.
             </div>
           </div>

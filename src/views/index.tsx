@@ -720,6 +720,7 @@ export {Drop6Pixelart } from "./pixelart/drop6";
 export {Drop7Pixelart } from "./pixelart/drop7";
 export {Drop8Pixelart } from "./pixelart/drop8";
 export {Drop9Pixelart } from "./pixelart/drop9";
+export {Drop10Pixelart } from "./pixelart/drop10";
 export {WaveHome } from "./wave/home";
 export {Drop1Wave } from "./wave/drop1";
 export {Drop2Wave } from "./wave/drop2";
