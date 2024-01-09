@@ -656,6 +656,7 @@ export {Drop12Dreader } from "./dreader/drop12";
 export {Drop13Dreader } from "./dreader/drop13";
 export {GenopetsHome} from "./genopets/home";
 export {Drop1Genopets } from "./genopets/drop1";
+export {Drop2Genopets } from "./genopets/drop2";
 export {WetikoHome} from "./wetiko/home";
 export {Drop1Wetiko } from "./wetiko/drop1";
 export {Drop2Wetiko } from "./wetiko/drop2";

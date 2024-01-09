@@ -66,7 +66,13 @@ export const GenopetsHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        let drop = attributes.find((nft) => nft.trait_type == "Drop");
+        if (drop) {
+          drop = drop.value;
+        }
+        else {
+          drop = attributes.find((nft) => nft.trait_type == "Season").value;
+        }
         return {
           uri,
           drop,
@@ -233,6 +239,19 @@ export const GenopetsHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 1</div>
+              </Link>
+              <Link
+                href="/genopets/drop2"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/Vp45hesde4dQf56Jxs36qi5Fl1jGBV8u5NoQ0HZb5iI?ext=png"
+                    alt="drop 2 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 2</div>
               </Link>
             </div>
           </div>
