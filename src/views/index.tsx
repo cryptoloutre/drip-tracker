@@ -884,3 +884,5 @@ export {MapezHome } from "./mapez/home";
 export {Drop1Mapez } from "./mapez/drop1";
 export {DoodledevilsHome } from "./doodledevils/home";
 export {Drop1Doodledevils } from "./doodledevils/drop1";
+export {CoolermintHome } from "./coolermint/home";
+export {Drop1Coolermint } from "./coolermint/drop1";
