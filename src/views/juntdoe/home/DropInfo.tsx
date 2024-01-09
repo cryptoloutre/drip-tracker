@@ -19,4 +19,8 @@ export const DropInfo = [
     dropNb: "MICROGLOOM x Maquin",
     nbNFT: 3,
   },
+  {
+    dropNb: "MORTAL VISAGES",
+    nbNFT: 6,
+  },
 ];

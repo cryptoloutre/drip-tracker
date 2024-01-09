@@ -779,6 +779,7 @@ export {Drop2Juntdoe } from "./juntdoe/drop2";
 export {Drop3Juntdoe } from "./juntdoe/drop3";
 export {Drop4Juntdoe } from "./juntdoe/drop4";
 export {Drop5Juntdoe } from "./juntdoe/drop5";
+export {Drop6Juntdoe } from "./juntdoe/drop6";
 export {ThefewHome } from "./thefew/home";
 export {Drop1Thefew } from "./thefew/drop1";
 export {Drop2Thefew } from "./thefew/drop2";
