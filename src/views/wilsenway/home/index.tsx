@@ -291,6 +291,19 @@ export const WilsenwayHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 6</div>
               </Link>
+              <Link
+                href="/wilsenway/drop7"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/IVq15-h4jj8gjzjCejMP0phEjk2a1QsmvD97vSPQMbg?ext=jpg"
+                    alt="drop 7 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 7</div>
+              </Link>
             </div>
           </div>
         </div>
