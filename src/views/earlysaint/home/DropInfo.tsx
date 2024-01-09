@@ -28,4 +28,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'As',
+        uri: 'https://arweave.net/sN1FN1deNebKH1Kz7kwoIeeSbIClcWlqou2XmnBVwSk',
+        rarity: 'Common',
+        image: 'https://arweave.net/Z707UM_c5nS9UgjqEF7ASzOenPuIvYGXA5CKKCIbh2o?ext=gif',
+        description: "y'all DRiP Civilians especially who sub EarlySaint have the right to have this highest card. Because real power is in the hands of Civilians not the rulers",
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'Jack',
+        uri: 'https://arweave.net/mLur32lQddEKf4Q4VFLvoSqPKySNtPISNhedKEJODYs',
+        rarity: 'Rare',
+        image: 'https://arweave.net/H1WU1B7e6IOKrHhMWn1N-UynqL76UKcWVSltQQsGK2I?ext=gif',
+        description: 'Most Powerful man in the Kingdom',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'Queen',
+        uri: 'https://arweave.net/7X9-OXatgxdaNMx4lAqdc_HPfQoRIshex9egikaB19A',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/-ut_yOynlxvf1afSUz72ufz8omtdFr3_c4S8xGgOyAU?ext=gif',
+        description: 'Most Prettiest woman in the Kingdom',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'King',
+        uri: 'https://arweave.net/qUXwBL0HC8MQ4GhF1iCcLv18rIgNAonVEAud2gVuMik',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/XLdMcKscJxrL4DtzuAkBCODy7ppETiRIpMYXk_PWQA8?ext=gif',
+        description: 'Most Wise man in the Kingdom',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      }
+    ],
+  },
 ];
