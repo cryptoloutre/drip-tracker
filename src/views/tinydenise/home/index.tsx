@@ -107,7 +107,38 @@ export const TinyHome: FC = ({}) => {
       })
     );
 
-    const userNFTsURI = _userNFTsURIS1.concat(_userNFTsURIS2);
+    const _userNFTsVibes = allUserNFTs.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "6B2EhUJ9VNQBbNrME35XkZXm7NRuq376VNiDoMtAA45G"
+    );
+
+    const _userNFTsURIVibes = await Promise.all(
+      _userNFTsVibes.map(async (asset) => {
+        const uri = asset.content.json_uri;
+        let name: any;
+        if (asset.content.metadata) {
+          name = asset.content.metadata.name;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          name = responseData.name;
+        }
+        let drop;
+        if (["Give Yourself Some Love", "UR A CUTIE", "Treat Yourself"].includes(name)) {
+          drop = "Vibes 1"
+        }
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const _userNFTsURI = _userNFTsURIS1.concat(_userNFTsURIS2);
+    const userNFTsURI = _userNFTsURI.concat(_userNFTsURIVibes);
 
     // we filter to eliminate the doublons
     const userNFTs = userNFTsURI.filter((value: any, index: any) => {
@@ -587,6 +618,19 @@ export const TinyHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 6 S2</div>
+              </Link>
+              <Link
+                href="/tiiiny/dropvibes1"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/R3HahfEW-CuofpUx4jxnBiMcnGB9IpTAbIQ09YKlYes?ext=png"
+                    alt="drop preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop Vibes 1</div>
               </Link>
             </div>
           </div>

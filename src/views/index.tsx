@@ -210,6 +210,7 @@ export {Drop3S2Tiny} from "./tinydenise/drop3S2";
 export {Drop4S2Tiny} from "./tinydenise/drop4S2";
 export {Drop5S2Tiny} from "./tinydenise/drop5S2";
 export {Drop6S2Tiny} from "./tinydenise/drop6S2";
+export {DropVibes1Tiny} from "./tinydenise/dropvibes1";
 export {VaultHome} from "./vault/home";
 export {Drop1Vault} from "./vault/drop1";
 export {Drop2Vault} from "./vault/drop2";
