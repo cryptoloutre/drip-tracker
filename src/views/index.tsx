@@ -891,3 +891,5 @@ export {DoodledevilsHome } from "./doodledevils/home";
 export {Drop1Doodledevils } from "./doodledevils/drop1";
 export {CoolermintHome } from "./coolermint/home";
 export {Drop1Coolermint } from "./coolermint/drop1";
+export {DrPeepeeHome} from "./drpeepee/home";
+export {Drop1DrPeepee } from "./drpeepee/drop1";
