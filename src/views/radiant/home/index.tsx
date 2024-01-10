@@ -13,7 +13,7 @@ import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
 import { Completion } from "components/Completion";
 
-export const RadiantHome: FC = ({}) => {
+export const RadiantHome: FC = ({ }) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -52,7 +52,7 @@ export const RadiantHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "RDNTmiKRLE2W4aRbd1Xw6sX9bZTgnPUhX3hH2Cov6sY"
+        "RDNTmiKRLE2W4aRbd1Xw6sX9bZTgnPUhX3hH2Cov6sY"
     );
 
     const _userNFTsURIGenesis = await Promise.all(
@@ -92,7 +92,7 @@ export const RadiantHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "RTCSTqZ9FrnZ3wbwPRYzzHLwH8zukU4Dyq3HeAdqPWV"
+        "RTCSTqZ9FrnZ3wbwPRYzzHLwH8zukU4Dyq3HeAdqPWV"
     );
 
     const _userNFTsURICelestial = await Promise.all(
@@ -111,13 +111,16 @@ export const RadiantHome: FC = ({}) => {
         if (["1", "2"].find((dropNumber) => dropNumber == _drop)) {
           drop = (Number(_drop) + 1).toString();
         } else if (["3", "4", "5"].find((dropNumber) => dropNumber == _drop)) {
-          (Number(_drop) + 2).toString();
+          drop = (Number(_drop) + 2).toString();
         } else if (
           ["6", "7", "8", "9"].find((dropNumber) => dropNumber == _drop)
         ) {
-          (Number(_drop) + 3).toString();
+          drop = (Number(_drop) + 3).toString();
         } else if (["10"].find((dropNumber) => dropNumber == _drop)) {
-          (Number(_drop) + 4).toString();
+          drop = (Number(_drop) + 4).toString();
+        }
+        else {
+          drop = _drop;
         }
         return {
           uri,
@@ -455,6 +458,19 @@ export const RadiantHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 15</div>
+              </Link>
+              <Link
+                href="/radiant/drop16"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/87LkXB7zNkIV9mQw9fiYVGf9ZC6-HNigLRPyR7VC654?ext=png"
+                    alt="drop 16 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 16</div>
               </Link>
             </div>
           </div>
