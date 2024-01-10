@@ -61,7 +61,13 @@ export const Drop1Blockframez: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        let drop = attributes.find((nft) => nft.trait_type == "Drop");
+        if (drop) {
+          drop = drop.value;
+        }
+        else {
+          drop = attributes.find((nft) => nft.trait_type == "Chapter").value;
+        }
         if (drop == dropNb) {
           _dropNFT.push(asset.content.json_uri);
         }
