@@ -383,6 +383,19 @@ export const DreaderHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 13</div>
               </Link>
+              <Link
+                href="/dreader/drop14"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/vptahBWjrwQWabzyR5u9oaQP8nO4okHWQ2lv_63TlZg?ext=jpg"
+                    alt="drop 14 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
+              </Link>
             </div>
           </div>
         </div>
