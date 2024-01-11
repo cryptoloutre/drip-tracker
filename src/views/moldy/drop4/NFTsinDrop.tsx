@@ -25,5 +25,13 @@ export const NFTsinDrop = [
     description: '“Afloat” is a 1/1 textile piece created out of a variety of upcycled garments cut and sewn on to a 6 x 6 inch raw canvas base. \n' +
       "The physical art work is available via Mallow as this drop's Ultimate release!",
     magicEdenLink: 'https://www.tensor.trade/trade/drip_moldy'
+  },
+  {
+    name: 'Afloat',
+    uri: 'https://arweave.net/maH3A_49ChXY5gkf9SGVLKS_FRFihbH-Uxq-O4uyOGw',
+    rarity: 'Ultimate',
+    image: 'https://arweave.net/Io1QOB7lQ7-JFZo75QxCbrR42vsDkx1Od13Pamvrya4?ext=png',
+    description: '“Afloat” is a 1/1 textile piece created out of a variety of upcycled garments cut and sewn on to a 6 x 6 inch raw canvas base.',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_moldy'
   }
 ];
