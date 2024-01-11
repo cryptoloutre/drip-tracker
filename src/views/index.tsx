@@ -820,6 +820,7 @@ export {Drop2Lcillustrates } from "./lcillustrates/drop2";
 export {Drop3Lcillustrates } from "./lcillustrates/drop3";
 export {Drop4Lcillustrates } from "./lcillustrates/drop4";
 export {Drop5Lcillustrates } from "./lcillustrates/drop5";
+export {Drop6Lcillustrates } from "./lcillustrates/drop6";
 export {DuckzyyHome } from "./duckzzy/home";
 export {Drop1Duckzyy } from "./duckzzy/drop1";
 export {Drop2Duckzyy } from "./duckzzy/drop2";
