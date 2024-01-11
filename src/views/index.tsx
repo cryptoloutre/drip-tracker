@@ -628,6 +628,7 @@ export {Drop12MovieSticks } from "./moviesticks/drop12";
 export {Drop13MovieSticks } from "./moviesticks/drop13";
 export {Drop14MovieSticks } from "./moviesticks/drop14";
 export {Drop15MovieSticks } from "./moviesticks/drop15";
+export {Drop16MovieSticks } from "./moviesticks/drop16";
 export {SimplyEtoHome} from "./simplyeto/home";
 export {Drop1SimplyEto } from "./simplyeto/drop1";
 export {Drop2SimplyEto } from "./simplyeto/drop2";

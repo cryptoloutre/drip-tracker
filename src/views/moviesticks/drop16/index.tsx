@@ -10,7 +10,7 @@ import { WrapperConnection } from "../../../../ReadApi/WrapperConnection";
 import { NFTsinDrop } from "./NFTsinDrop";
 import { getUserNFTs } from "utils/getUserNFTs";
 
-export const Drop15MovieSticks: FC = ({}) => {
+export const Drop16MovieSticks: FC = ({}) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -19,7 +19,7 @@ export const Drop15MovieSticks: FC = ({}) => {
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
-  const dropNumber = "15";
+  const dropNumber = "16";
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
@@ -92,7 +92,7 @@ export const Drop15MovieSticks: FC = ({}) => {
 
         <div>
           <h1 className="text-center text-3xl font-bold">
-            Drop{dropNumber}: <span className="italic">{NFTsInThisDrop[0].name}</span> by {" "} 
+            Drop{dropNumber}: <span className="italic">{NFTsInThisDrop[0].name}, {NFTsInThisDrop[1].name} & {NFTsInThisDrop[2].name}</span> by {" "} 
             <a
               target="_blank"
               rel="noreferrer"
@@ -105,7 +105,7 @@ export const Drop15MovieSticks: FC = ({}) => {
           <div className="mt-12 w-[100%] mx-auto">
             <h2 className="underline text-2xl font-bold">Description</h2>
             <div>
-            1600 pixelated slices of Godzilla (1998).
+            1600 pixelated slices of Terminator (1984), Terminator 2: Judgment Day (1991) & Terminator 3: Rise of the Machines (2003).
             </div>
           </div>
           {(wallet.publicKey || isXNFT) && isFetched && (
