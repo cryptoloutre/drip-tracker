@@ -126,4 +126,78 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'Hachi Mugen “Kamon”',
+        uri: 'https://arweave.net/QOBmUs6pN9LDVwkokJvBdAKmbbXoeqpVi9AzKnFNxfA',
+        rarity: 'Common',
+        image: 'https://arweave.net/VanMQG31gnxFI7A1mu91fuZxUP74JOCn9T-8ZbzeK7g?ext=jpg',
+        description: `In honor of the (2+0+2+4) "8" year, I'm presenting you with the Hachi Mugen "Kamon" and an exclusive release of the "Mugen 2024" track, available solely here on DRiP. Enjoy this special gift!\n` +
+          '\n' +
+          'A “Kamon” is a crest used in Japan to indicate one’s origins; that is one’s family lineage, blood line, ancestry and status from ancient times. \n' +
+          '\n' +
+          'The Hachi Mugen "Kamon" is a symbolic representation of the number 8, or "Hachi" (八) vertically, and the symbol for infinity ♾️, or "Mugen" (無限) horizontally, cleverly intertwined. When brought together, these elements harmoniously shape the image of a blooming flower.\n' +
+          '\n' +
+          "Japanese flowers hold profound symbolic meanings rooted in Japan's rich Buddhist heritage, dating back centuries. Hanakotoba, the language of flowers, was crafted to convey emotions and communicate directly to recipients or viewers, transcending the need for words. \n" +
+          '\n' +
+          "The center of the Kamon features a symbolic circle, akin to the one gracing Japan’s flag 🇯🇵. This   circle embodies the essence of Hachi Mugen's endeavors, serving as a profound testament to his unwavering love and deep commitment to Japanese culture. \n" +
+          '\n' +
+          `In the current universal cycle, we find ourselves within an 8-year, regarded as a significant karmic number. The Hachi Mugen Kamon holds deep symbolism, seamlessly intertwining the concepts of "what goes around comes around" through the integration of both the numeral 8 and the infinity symbol ♾️, encapsulating the cyclic
+     nature of life's interconnectedness and the concept of reciprocity.\n` +
+          '\n' +
+          'In Japan, we say, "Nana Korobi Ya Oki," which embodies the spirit of resilience: falling seven times and standing up eight!\n' +
+          '\n' +
+          'Akemashite omedetōu gozaimasu!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Kamon”',
+        uri: 'https://arweave.net/iIVFrV7oGFHjYeJoofpP-GgGLIxDAfTW0P2NP3xVVz8',
+        rarity: 'Rare',
+        image: 'https://arweave.net/-jrP-MTRGlUuEZnr0YCwDjBtFF26MSfNHO1Q8onOLPo?ext=jpg',
+        description: `In honor of the (2+0+2+4) "8" year, I'm presenting you with the Hachi Mugen "Kamon" and an exclusive release of the "Mugen 2024" track, available solely here on DRiP. Enjoy this special gift!\n` +
+          '\n' +
+          'A “Kamon” is a crest used in Japan to indicate one’s origins; that is one’s family lineage, blood line, ancestry and status from ancient times. \n' +
+          '\n' +
+          'The Hachi Mugen "Kamon" is a symbolic representation of the number 8, or "Hachi" (八) vertically, and the symbol for infinity ♾️, or "Mugen" (無限) horizontally, cleverly intertwined. When brought together, these elements harmoniously shape the image of a blooming flower.\n' +
+          '\n' +
+          "Japanese flowers hold profound symbolic meanings rooted in Japan's rich Buddhist heritage, dating back centuries. Hanakotoba, the language of flowers, was crafted to convey emotions and communicate directly to recipients or viewers, transcending the need for words. \n" +
+          '\n' +
+          "The center of the Kamon features a symbolic circle, akin to the one gracing Japan’s flag 🇯🇵. This   circle embodies the essence of Hachi Mugen's endeavors, serving as a profound testament to his unwavering love and deep commitment to Japanese culture. \n" +
+          '\n' +
+          `In the current universal cycle, we find ourselves within an 8-year, regarded as a significant karmic number. The Hachi Mugen Kamon holds deep symbolism, seamlessly intertwining the concepts of "what goes around comes around" through the integration of both the numeral 8 and the infinity symbol ♾️, encapsulating the cyclic
+     nature of life's interconnectedness and the concept of reciprocity.\n` +
+          '\n' +
+          'In Japan, we say, "Nana Korobi Ya Oki," which embodies the spirit of resilience: falling seven times and standing up eight!\n' +
+          '\n' +
+          'Akemashite omedetōu gozaimasu!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Kamon”',
+        uri: 'https://arweave.net/0I1NSphR6qe6Hs_vc-SdiD5djzK8ZIl078Yk2zEp3zE',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/dtH6EapVf1B8hGpWdw2zzYMLYZDWGBpo6zXaJIDcDhc?ext=jpg',
+        description: `In honor of the (2+0+2+4) "8" year, I'm presenting you with the Hachi Mugen "Kamon" and an exclusive release of the "Mugen 2024" track, available solely here on DRiP. Enjoy this special gift!\n` +
+          '\n' +
+          'A “Kamon” is a crest used in Japan to indicate one’s origins; that is one’s family lineage, blood line, ancestry and status from ancient times. \n' +
+          '\n' +
+          'The Hachi Mugen "Kamon" is a symbolic representation of the number 8, or "Hachi" (八) vertically, and the symbol for infinity ♾️, or "Mugen" (無限) horizontally, cleverly intertwined. When brought together, these elements harmoniously shape the image of a blooming flower.\n' +
+          '\n' +
+          "Japanese flowers hold profound symbolic meanings rooted in Japan's rich Buddhist heritage, dating back centuries. Hanakotoba, the language of flowers, was crafted to convey emotions and communicate directly to recipients or viewers, transcending the need for words. \n" +
+          '\n' +
+          "The center of the Kamon features a symbolic circle, akin to the one gracing Japan’s flag 🇯🇵. This   circle embodies the essence of Hachi Mugen's endeavors, serving as a profound testament to his unwavering love and deep commitment to Japanese culture. \n" +
+          '\n' +
+          `In the current universal cycle, we find ourselves within an 8-year, regarded as a significant karmic number. The Hachi Mugen Kamon holds deep symbolism, seamlessly intertwining the concepts of "what goes around comes around" through the integration of both the numeral 8 and the infinity symbol ♾️, encapsulating the cyclic
+     nature of life's interconnectedness and the concept of reciprocity.\n` +
+          '\n' +
+          'In Japan, we say, "Nana Korobi Ya Oki," which embodies the spirit of resilience: falling seven times and standing up eight!\n' +
+          '\n' +
+          'Akemashite omedetōu gozaimasu!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      }
+    ],
+  },
 ];

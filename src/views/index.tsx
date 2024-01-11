@@ -877,6 +877,7 @@ export {Drop2DrRevel } from "./drrevel/drop2";
 export {MugenHachiHome } from "./mugenhachi/home";
 export {Drop1MugenHachi } from "./mugenhachi/drop1";
 export {Drop2MugenHachi } from "./mugenhachi/drop2";
+export {Drop3MugenHachi } from "./mugenhachi/drop3";
 export {BullyzcrewHome } from "./bullyzcrew/home";
 export {Drop1Bullyzcrew } from "./bullyzcrew/drop1";
 export {Drop2Bullyzcrew } from "./bullyzcrew/drop2";
