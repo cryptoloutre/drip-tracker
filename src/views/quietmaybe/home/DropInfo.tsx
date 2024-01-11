@@ -86,4 +86,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "4",
+    NFTs: [
+      {
+        name: 'windy',
+        uri: 'https://arweave.net/l425a5HOZiyc059vdoqtB3C3I4M6So4GGyppbqMiYus',
+        rarity: 'Common',
+        image: 'https://arweave.net/cV14SJ5rcc2oHSDzU5HIFfyWcz53AT_ZYFkyuOnCRYE?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'patchwork',
+        uri: 'https://arweave.net/pGc55b_3jsJy1jQtha4eR8ro7DHzvDmXEuaJsFu88VA',
+        rarity: 'Rare',
+        image: 'https://arweave.net/SBfOxz8t_jsSTkbYYsLhCC16N8aazTRCBZh3DGbv_Rw?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'sunset',
+        uri: 'https://arweave.net/Rv6-dUimvQ8qwOwasgQVJAF5nOe0TVgBl9qjEI5iovY',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/tm-hR9mSgQZpqqz_Cdzhm-ii-vL3B9-kxpLPJqpesIY?ext=png',
+        description: 'Collage from scanned paintings and digital art by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      }
+    ],
+  },
 ];
