@@ -678,6 +678,7 @@ export {Drop7Picoplay } from "./picoplay/drop7";
 export {Drop8Picoplay } from "./picoplay/drop8";
 export {Drop9Picoplay } from "./picoplay/drop9";
 export {Drop10Picoplay } from "./picoplay/drop10";
+export {Drop11Picoplay } from "./picoplay/drop11";
 export {StudioNXHome} from "./studionx/home";
 export {Drop1StudioNX } from "./studionx/drop1";
 export {Drop2StudioNX } from "./studionx/drop2";
