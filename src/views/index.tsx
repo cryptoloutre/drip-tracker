@@ -911,3 +911,5 @@ export {CoolermintHome } from "./coolermint/home";
 export {Drop1Coolermint } from "./coolermint/drop1";
 export {DrPeepeeHome} from "./drpeepee/home";
 export {Drop1DrPeepee } from "./drpeepee/drop1";
+export {KirkHome} from "./kirk/home";
+export {Drop1Kirk } from "./kirk/drop1";

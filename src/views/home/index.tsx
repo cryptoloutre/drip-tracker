@@ -595,6 +595,21 @@ export const HomeView: FC = ({}) => {
                 </div>
               </Link>
               <Link
+                href="/kirk/home"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className="md:w-[300px] px-2 py-2"
+                    src="https://arweave.net/U9Z4Oc_vVmphVPaEv64amBt7354Oy60a0Tb8cydVqn0?ext=png"
+                    alt="Kirk Englehardt preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                Kirk Englehardt
+                </div>
+              </Link>
+              <Link
                 href="/lcillustrates/home"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
