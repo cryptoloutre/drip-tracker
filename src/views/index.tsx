@@ -807,6 +807,7 @@ export {Drop5Amet } from "./amet/drop5";
 export {Drop6Amet } from "./amet/drop6";
 export {Drop7Amet } from "./amet/drop7";
 export {Drop8Amet } from "./amet/drop8";
+export {Drop9Amet } from "./amet/drop9";
 export {GlowburgerHome } from "./glowburger/home";
 export {Drop1Glowburger } from "./glowburger/drop1";
 export {Drop2Glowburger } from "./glowburger/drop2";
