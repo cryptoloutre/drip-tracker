@@ -160,4 +160,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "005",
+    NFTs: [
+      {
+        name: 'RELAPSE OSIRIS GRAPHIC',
+        uri: 'https://arweave.net/rHGkbuJy3hHhqR-ZxbEznY6fsov2rdIxFwv1JvRT2mU',
+        rarity: 'Common',
+        image: 'https://arweave.net/2QQnvBrFZYt9fco1BIl15UrLUyG7IVk5NQFeO0fa_7k?ext=jpg',
+        description: 'Our 5th drop consists of a series of designs based on the OSIRIS Surveillance System 3D object created by No-To-Scale. These designs were used for the RELAPSE merch drop on our webstore. Top 3 thankers receive a 1/1 custom-made Tarimosi ID card.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      },
+      {
+        name: 'RELAPSE OSIRIS GRAPHIC',
+        uri: 'https://arweave.net/-Udrv2ZtBaN9Hqd8NSsWLi4iTTusirMinuXE8NYsAWk',
+        rarity: 'Rare',
+        image: 'https://arweave.net/r6tMiGlFDQBl7UxKE-gqyYZUXKryCS3bqUnboBOYJA8?ext=jpg',
+        description: 'Our 5th drop consists of a series of designs based on the OSIRIS Surveillance System 3D object created by No-To-Scale. These designs were used for the RELAPSE merch drop on our webstore. Top 3 thankers receive a 1/1 custom-made Tarimosi ID card.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      },
+      {
+        name: 'OSIRIS MANUAL',
+        uri: 'https://arweave.net/2TcF6PInE4BSm0a9wf5j1Ra5A2c7BCt2Zeuzf6OoHgs',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/5KXwDfH-v4pm72MCEzVT6VeOhiBSQIgpFHl7gwyj7W8?ext=jpg',
+        description: 'Our 5th drop consists of a series of designs based on the OSIRIS Surveillance System 3D object created by No-To-Scale. These designs were used for the RELAPSE merch drop on our webstore. Top 3 thankers receive a 1/1 custom-made Tarimosi ID card.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      }
+    ],
+  },
 ];
