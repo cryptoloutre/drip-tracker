@@ -665,6 +665,21 @@ export const BorkHome: FC = ({}) => {
                 Holo Banned Cover
                 </div>
               </Link>
+              <Link
+                href="/bork/dropbonus6"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/B7j_1aOParCKQLD__8S7w-lnffnUQbrCy_Jdh8iUBv8?ext=jpg"
+                    alt="dropbonus6 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                Out Of The Shadows
+                </div>
+              </Link>
             </div>
           </div>
         </div>

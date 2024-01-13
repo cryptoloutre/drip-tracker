@@ -157,6 +157,7 @@ export {DropBonus2} from "./bork/dropbonus2";
 export {DropBonus3} from "./bork/dropbonus3";
 export {DropBonus4} from "./bork/dropbonus4";
 export {DropBonus5} from "./bork/dropbonus5";
+export {DropBonus6} from "./bork/dropbonus6";
 export {Reader} from "./reader"
 export {FloorHome} from "./floor/home";
 export {Drop1Floor} from "./floor/drop1";

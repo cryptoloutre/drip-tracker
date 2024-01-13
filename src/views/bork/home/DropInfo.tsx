@@ -99,4 +99,8 @@ export const DropInfo = [
     dropNb: "Holo Banned Cover",
     nbNFT: 1,
   },
+  {
+    dropNb: "Out Of The Shadows",
+    nbNFT: 3,
+  },
 ];
