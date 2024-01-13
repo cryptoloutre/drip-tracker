@@ -64,4 +64,17 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "6",
+    NFTs: [
+      {
+        name: 'Investigating Bitboy',
+        uri: 'https://arweave.net/x5JiG1PwIG_sbaDEWhwpwbw1IIXkEWLoP0Y1goNIu4c',
+        rarity: 'Common',
+        image: 'https://arweave.net/w58ClVRaeD_kKSOi99gRZtzxZONn0MMdd0go0v0_6Pk?ext=png',
+        description: 'The shocking TRUTH about Ben Armstrong!',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tflo'
+      }
+    ],
+  },
 ];
