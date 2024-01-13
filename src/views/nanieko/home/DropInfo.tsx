@@ -28,4 +28,33 @@ export const DropInfo = [
       },
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'RAINBOW PUKE-OYENJI B&W',
+        uri: 'https://arweave.net/bsAknwQROXD_CeWE3U5-QgS3tCRxFPb3WFKhlamzcZU',
+        rarity: 'Common',
+        image: 'https://arweave.net/UYwcrNq8QSe0EaZjOZad8CLflqkX7byFm9ruKzHoxrU?ext=gif',
+        description: 'OYENJI PUKING RAINBOW IN BLACK AND WHITE.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_nanieko'
+      },
+      {
+        name: 'RAINBOW PUKE-OYENJI ORANGE',
+        uri: 'https://arweave.net/ntFt8cUCM914mBoy7fO0YtXh5_dZ8MaQiQO3Y0yoKMo',
+        rarity: 'Rare',
+        image: 'https://arweave.net/x_ulFYOljSmm8qCvddKKt3stiehzEWCZrEx8ydKCEIc?ext=gif',
+        description: 'OYENJI PUKING RAINBOW IN COLOUR.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_nanieko'
+      },
+      {
+        name: 'RAINBOW PUKE-OYENJI FULL COLOUR',
+        uri: 'https://arweave.net/9Jckbwa6IJ_kpQqyMaFfw8UmJ_W0xv-ZlBdK0oO0px0',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/7V3a-ySxhqYsDItriWfoJlv2nJ3DqnGtZW4nev1BVI8?ext=gif',
+        description: 'OYENJI PUKING RAINBOW IN FULL COLOUR.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_nanieko'
+      }
+    ],
+  },
 ];
