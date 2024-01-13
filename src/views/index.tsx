@@ -898,6 +898,7 @@ export {Drop2Bullyzcrew } from "./bullyzcrew/drop2";
 export {HuxsterizedHome } from "./huxsterized/home";
 export {Drop1Huxsterized } from "./huxsterized/drop1";
 export {Drop2Huxsterized } from "./huxsterized/drop2";
+export {Drop3Huxsterized } from "./huxsterized/drop3";
 export {GraffitoHome } from "./0xgraffito/home";
 export {Drop1Graffito } from "./0xgraffito/drop1";
 export {Drop2Graffito } from "./0xgraffito/drop2";

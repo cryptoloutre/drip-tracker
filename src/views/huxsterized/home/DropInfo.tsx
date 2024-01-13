@@ -61,4 +61,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'Turn Up Your Color',
+        uri: 'https://arweave.net/TIvGrYnbcU-ejAAQwbpTH0gj5_yE3zVQPvNdxoHPXns',
+        rarity: 'Common',
+        image: 'https://arweave.net/RDwV8HF6IhaWOhLI0T4oqlKQAC8QF-lBmDayG0OPPgg?ext=jpg',
+        description: 'Color creates, enhances, changes, and reveals.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      },
+      {
+        name: 'Live In Color',
+        uri: 'https://arweave.net/JftacIpoZjAvTNtGieqI7-eoq6bwLUtlBVw9DjOT9A0',
+        rarity: 'Rare',
+        image: 'https://arweave.net/95KiSHln63JGp6BF03s3GtdSaazjDrizO9rt0ccHdF8?ext=jpg',
+        description: 'When everything around you is grey, find inspiration in color.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      },
+      {
+        name: 'Catch The Rainbow',
+        uri: 'https://arweave.net/34LhlHgFWEU4gEsdTjOuAYmqOqVrsc37lW6VPqaCaac',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/k-mCzLEhCDKEx5a8LlLQ-tfVOKHwnT5nHAbpi444zTE?ext=jpg',
+        description: 'Happiness is…. seeing a rainbow.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      }
+    ],
+  },
 ];
