@@ -909,6 +909,7 @@ export {ShackHome } from "./shack/home";
 export {Drop1Shack } from "./shack/drop1";
 export {MapezHome } from "./mapez/home";
 export {Drop1Mapez } from "./mapez/drop1";
+export {Drop2Mapez } from "./mapez/drop2";
 export {DoodledevilsHome } from "./doodledevils/home";
 export {Drop1Doodledevils } from "./doodledevils/drop1";
 export {CoolermintHome } from "./coolermint/home";

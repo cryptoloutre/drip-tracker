@@ -49,4 +49,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'Ukazo Kid #U# GLB',
+        uri: 'https://arweave.net/0r1slg3C3M-8nDE2Irti_1YTALV0S7y1OuW5pCIJJEw',
+        rarity: 'Common',
+        image: 'https://arweave.net/mqZeQFkCGbiQfyjvczCBpFvwwys6zc99_cA5BE_XR64?ext=jpg',
+        description: 'Ukazo Kid is a unique digital creation designed to bring a special style and charm to any collection.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mapez'
+      },
+      {
+        name: 'Ukazo Kid #KA# GLB',
+        uri: 'https://arweave.net/KH8z5QbWA5TTDOCWdck9HIULCRydeTPjS4bWu8g-fHc',
+        rarity: 'Rare',
+        image: 'https://arweave.net/Ir5Fi6tGfCjgk1UnXB8_lJgx5mVmI9kJAyQ_e5HO3-8?ext=jpg',
+        description: 'Ukazo Kid is a unique digital creation designed to bring a special style and charm to any collection.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mapez'
+      },
+      {
+        name: 'Ukazo Kid #ZO# GLB',
+        uri: 'https://arweave.net/RiK8c9n7FObthAYtW-aUqVjCf9yahpoD4ZjOQEfe3gk',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/c0CV2ukUJa5Nbswg6DhaLAI55CzdNVKJNxs3Gohj8B4?ext=jpg',
+        description: 'Ukazo Kid is a unique digital creation designed to bring a special style and charm to any collection.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mapez'
+      }
+    ],
+  },
 ];
