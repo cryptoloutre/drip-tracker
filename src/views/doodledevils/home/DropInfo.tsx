@@ -36,4 +36,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'Graffiti Devil DRiP',
+        uri: 'https://arweave.net/7b3-gS_OygDwuQgA3je9LCQPRqdRse6o0JBQOxQnR4o',
+        rarity: 'Common',
+        image: 'https://arweave.net/N5EKAaaQou-FgD-jTs-Xi2mLBc_iaxty14bLxrg3l1U?ext=png',
+        description: 'Graffiti style art in the form of a Doodle Devil, devilish traits for a devilish community.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      },
+      {
+        name: 'Graffiti Devil DRiP',
+        uri: 'https://arweave.net/WdFo_z0ALngqTFQ1OsOwWp86_QksS0iyp9uozJE2nzA',
+        rarity: 'Rare',
+        image: 'https://arweave.net/pACcWr5wjik31m1f2pR9-jzvLZOAlyhL54FHLCtzIII?ext=png',
+        description: 'Graffiti style art in the form of a Doodle Devil, devilish traits for a devilish community.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      },
+      {
+        name: 'Graffiti Devil DRiP',
+        uri: 'https://arweave.net/m78ZBUP_c1-dbQRBMYwwgVBdi2FNNBsre-HnxyomrCc',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/Lqx9PwyhmMgaMTf32F45Q1vo-58UdC81Ea1ED10ewbs?ext=jpg',
+        description: 'Graffiti style art in the form of a Doodle Devil, devilish traits for a devilish community.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      },
+      {
+        name: 'Graffiti Devil DRiP',
+        uri: 'https://arweave.net/J6T9Js6d8VO2r1vJ7TTid_hbxbwr0HLUpQ7D7mraTyI',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/odlvrHutcoXh22Xi9m9Jw-GmpTwIQKN170QM_PTwSGg?ext=png',
+        description: 'Graffiti style art in the form of a Doodle Devil, devilish traits for a devilish community.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      }
+    ],
+  },
 ];
