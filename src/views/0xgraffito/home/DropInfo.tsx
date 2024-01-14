@@ -60,4 +60,81 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "There's No Turning Back",
+    NFTs: [
+      {
+        name: "There's No Turning Back",
+        uri: 'https://arweave.net/esjxJPY6NC0jHv_1MrhuTt504HONy73SFXwRhcJqtmU',
+        rarity: 'Common',
+        image: 'https://arweave.net/KoNYyJVGwONzdJopwQLuN0zModr2J9h6Tjzoq2GpaNE?ext=png',
+        description: 'In the shadow of a silicon dawn,\n' +
+          'The past fades, a ghost withdrawn.\n' +
+          "Hard logic reigns, in circuits' black,\n" +
+          `"There's No Turning Back," echoes the track.\n` +
+          '\n' +
+          'Through a labyrinth of unfeeling code,\n' +
+          "We've sown the seeds that we've now sowed.\n" +
+          'In the relentless march of a binary pact,\n' +
+          "Inevitable, stark, there's no turning back.\n" +
+          '\n' +
+          'Animation and music by GRAFFITO. MP4. 2160x2160.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_0xgraffito'
+      },
+      {
+        name: "There's No Turning Back",
+        uri: 'https://arweave.net/7oUp9F_2SjT8mhHDTDo4XR5JmwEfDsSrU3-DlkM063s',
+        rarity: 'Rare',
+        image: 'https://arweave.net/2RGSqG5eOWK6tG8-eKZ5aPzNwj-dEEW2G6de9Z4SU5Y?ext=png',
+        description: 'In the shadow of a silicon dawn,\n' +
+          'The past fades, a ghost withdrawn.\n' +
+          "Hard logic reigns, in circuits' black,\n" +
+          `"There's No Turning Back," echoes the track.\n` +
+          '\n' +
+          'Through a labyrinth of unfeeling code,\n' +
+          "We've sown the seeds that we've now sowed.\n" +
+          'In the relentless march of a binary pact,\n' +
+          "Inevitable, stark, there's no turning back.\n" +
+          '\n' +
+          'Animation and music by GRAFFITO. MP4. 2160x2160.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_0xgraffito'
+      },
+      {
+        name: "There's No Turning Back",
+        uri: 'https://arweave.net/zx8wnH9MydHBHlnV5FwFYoYgC4tO_nORCYy2IIJUvSk',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/_cTh7QwMccHZR7N5ZYBqtcEgijG6aRTilgP90qsO1PY?ext=png',
+        description: 'In the shadow of a silicon dawn,\n' +
+          'The past fades, a ghost withdrawn.\n' +
+          "Hard logic reigns, in circuits' black,\n" +
+          `"There's No Turning Back," echoes the track.\n` +
+          '\n' +
+          'Through a labyrinth of unfeeling code,\n' +
+          "We've sown the seeds that we've now sowed.\n" +
+          'In the relentless march of a binary pact,\n' +
+          "Inevitable, stark, there's no turning back.\n" +
+          '\n' +
+          'Animation and music by GRAFFITO. MP4. 2160x2160.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_0xgraffito'
+      },
+      {
+        name: "There's No Turning Back",
+        uri: 'https://arweave.net/DsRVXsiNVXCw3qN8TbiiCPBxzFReHozBtk3sAYnszho',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/agSN7vXo2DUfE7nfqwcHG88F-TbLth3iog-IJj5Envg?ext=png',
+        description: 'In the shadow of a silicon dawn,\n' +
+          'The past fades, a ghost withdrawn.\n' +
+          "Hard logic reigns, in circuits' black,\n" +
+          `"There's No Turning Back," echoes the track.\n` +
+          '\n' +
+          'Through a labyrinth of unfeeling code,\n' +
+          "We've sown the seeds that we've now sowed.\n" +
+          'In the relentless march of a binary pact,\n' +
+          "Inevitable, stark, there's no turning back.\n" +
+          '\n' +
+          'Animation and music by GRAFFITO. MP4. 2160x2160.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_0xgraffito'
+      }
+    ],
+  },
 ];
