@@ -338,6 +338,7 @@ export {Drop22Mason} from "./andrewmason/drop22";
 export {Drop23Mason} from "./andrewmason/drop23";
 export {Drop24Mason} from "./andrewmason/drop24";
 export {Drop25Mason} from "./andrewmason/drop25";
+export {Drop26Mason} from "./andrewmason/drop26";
 export {PogHome} from "./pog/home";
 export {Drop1Pog} from "./pog/drop1";
 export {GrimeHome} from "./0xgrime/home";
