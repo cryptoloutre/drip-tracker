@@ -1,122 +1,126 @@
 export const DropInfo = [
   {
-    dropNb: 1,
+    dropNb: "1",
     nbNFT: 1,
   },
   {
-    dropNb: 2,
+    dropNb: "2",
     nbNFT: 1,
   },
   {
-    dropNb: 3,
+    dropNb: "3",
     nbNFT: 1,
   },
   {
-    dropNb: 4,
+    dropNb: "4",
     nbNFT: 1,
   },
   {
-    dropNb: 5,
+    dropNb: "5",
     nbNFT: 3,
   },
   {
-    dropNb: 6,
+    dropNb: "6",
     nbNFT: 3,
   },
   {
-    dropNb: 7,
+    dropNb: "7",
     nbNFT: 3,
   },
   {
-    dropNb: 8,
+    dropNb: "8",
     nbNFT: 3,
   },
   {
-    dropNb: 9,
+    dropNb: "9",
     nbNFT: 1,
   },
   {
-    dropNb: 10,
+    dropNb: "10",
     nbNFT: 3,
   },
   {
-    dropNb: 11,
+    dropNb: "11",
     nbNFT: 3,
   },
   {
-    dropNb: 12,
+    dropNb: "12",
     nbNFT: 3,
   },
   {
-    dropNb: 13,
+    dropNb: "13",
     nbNFT: 3,
   },
   {
-    dropNb: 14,
+    dropNb: "14",
     nbNFT: 1,
   },
   {
-    dropNb: 15,
+    dropNb: "15",
     nbNFT: 1,
   },
   {
-    dropNb: 16,
+    dropNb: "16",
     nbNFT: 3,
   },
   {
-    dropNb: 17,
+    dropNb: "17",
     nbNFT: 3,
   },
   {
-    dropNb: 18,
+    dropNb: "18",
     nbNFT: 3,
   },
   {
-    dropNb: 19,
+    dropNb: "19",
     nbNFT: 3,
   },
   {
-    dropNb: 20,
+    dropNb: "20",
     nbNFT: 3,
   },
   {
-    dropNb: 21,
+    dropNb: "21",
     nbNFT: 3,
   },
   {
-    dropNb: 22,
+    dropNb: "22",
     nbNFT: 1,
   },
   {
-    dropNb: 23,
+    dropNb: "23",
     nbNFT: 3,
   },
   {
-    dropNb: 24,
+    dropNb: "24",
     nbNFT: 3,
   },
   {
-    dropNb: 25,
+    dropNb: "25",
     nbNFT: 1,
   },
   {
-    dropNb: 26,
+    dropNb: "26",
     nbNFT: 3,
   },
   {
-    dropNb: 27,
+    dropNb: "27",
     nbNFT: 3,
   },
   {
-    dropNb: 28,
+    dropNb: "28",
     nbNFT: 3,
   },
   {
-    dropNb: 29,
+    dropNb: "29",
     nbNFT: 3,
   },
   {
-    dropNb: 30,
+    dropNb: "30",
+    nbNFT: 3,
+  },
+  {
+    dropNb: "31",
     nbNFT: 3,
   },
 ];

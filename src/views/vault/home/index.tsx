@@ -13,7 +13,7 @@ import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
 import { Completion } from "components/Completion";
 
-export const VaultHome: FC = ({}) => {
+export const VaultHome: FC = ({ }) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://rpc.helius.xyz/?api-key=e2ff09e4-d800-4b10-bb34-40f6044c1191"
@@ -53,7 +53,7 @@ export const VaultHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "VLT1ERWF2SQ51ybTGAuSBDWFZCxYth8ox6faJG9WrmG"
+        "VLT1ERWF2SQ51ybTGAuSBDWFZCxYth8ox6faJG9WrmG"
     );
 
     const _userNFTsURI = await Promise.all(
@@ -73,9 +73,22 @@ export const VaultHome: FC = ({}) => {
           drop = drop.value;
         }
         else {
-          drop = 2
+          let name: any;
+          if (asset.content.metadata) {
+            name = asset.content.metadata.name;
+          } else {
+            const uri = asset.content.json_uri;
+            const response = await fetch(uri);
+            const responseData = await response.json();
+            name = responseData.name;
+          }
+          if (name == "Barcelona") {
+            drop = "31"
+          }
+          else {
+            drop = "2"
+          }
         }
-
         return {
           uri,
           drop,
@@ -615,6 +628,19 @@ export const VaultHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 30</div>
+              </Link>
+              <Link
+                href="/vault/drop31"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/5e4ILr1Dt-xFVDKsmMb-rR4o1UrJXMtr-D92luXXGL8?ext=png"
+                    alt="drop 31 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 31</div>
               </Link>
             </div>
           </div>
