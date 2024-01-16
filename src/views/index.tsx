@@ -876,6 +876,7 @@ export {Drop3Wiwitaek } from "./wiwitaek/drop3";
 export {Drop4Wiwitaek } from "./wiwitaek/drop4";
 export {Drop5Wiwitaek } from "./wiwitaek/drop5";
 export {Drop6Wiwitaek } from "./wiwitaek/drop6";
+export {Drop7Wiwitaek } from "./wiwitaek/drop7";
 export {TfloHome } from "./tflo/home";
 export {Drop1Tflo } from "./tflo/drop1";
 export {Drop2Tflo } from "./tflo/drop2";
