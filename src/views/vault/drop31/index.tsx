@@ -122,36 +122,41 @@ export const Drop31Vault: FC = ({}) => {
             <div className="sm:w-[75%] flex items-center grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
               {NFTsInThisDrop.map((currentNft) => (
                 <div key={currentNft.uri} className="flex justify-center">
-                  {currentNft.rarity == "common" && (
-                    <div className="bg-[#000000] w-[50%] border border-4 border-[#a5a5a5]">
-                      <img className="" src={currentNft.image}></img>
-                      <h1 className="font-bold mt-2">{currentNft.name}</h1>
-                      {isFetched && (wallet.publicKey || isXNFT) && (
-                        <div className="flex justify-center">
-                          {isFetched &&
-                          userDripNFT.find((nft) => nft == currentNft.uri) !=
-                            undefined ? (
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
-                            >
-                              Owned
-                            </a>
-                          ) : (
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
-                              href={currentNft.magicEdenLink}
-                            >
-                              Buy on Tensor
-                            </a>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
+                  <div
+                    className={`bg-[#000000] border border-4 ${
+                      currentNft.rarity == "common" && "border-[#a5a5a5]"
+                    } ${currentNft.rarity == "rare" && "border-[#E6C15A]"} ${
+                      currentNft.rarity == "legendary" &&
+                      "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
+                    }`}
+                  >
+                    <img className="" src={currentNft.image}></img>
+                    <h1 className="font-bold mt-2">{currentNft.name}</h1>
+                    {isFetched && (wallet.publicKey || isXNFT) && (
+                      <div className="flex justify-center">
+                        {isFetched &&
+                        userDripNFT.find((nft) => nft == currentNft.uri) !=
+                          undefined ? (
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#14F195] uppercase sm:ml-1 mb-2 sm:mb-4"
+                          >
+                            Owned
+                          </a>
+                        ) : (
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            className="mt-4 py-2 px-2 font-bold rounded-xl text-xs bg-[#E42575] hover:bg-[#BA2163] uppercase sm:ml-1 mb-2 sm:mb-4"
+                            href={currentNft.magicEdenLink}
+                          >
+                            Buy on Tensor
+                          </a>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
