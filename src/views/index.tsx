@@ -925,6 +925,7 @@ export {Drop2Nanieko } from "./nanieko/drop2";
 export {EarlySaintHome } from "./earlysaint/home";
 export {Drop1EarlySaint } from "./earlysaint/drop1";
 export {Drop2EarlySaint } from "./earlysaint/drop2";
+export {Drop3EarlySaint } from "./earlysaint/drop3";
 export {ShackHome } from "./shack/home";
 export {Drop1Shack } from "./shack/drop1";
 export {MapezHome } from "./mapez/home";

@@ -65,4 +65,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: '69',
+        uri: 'https://arweave.net/PJuWTqutKBfzyJ3AyY5h3Q6OiL_FX2YWW5wPaERrrGQ',
+        rarity: 'Common',
+        image: 'https://arweave.net/yAbS3QfD0Qr46gwUOK4pydTFJJKs_AfWhijuHCM0u2M?ext=gif',
+        description: 'SixtyNine is a culture',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'Circle Of Time',
+        uri: 'https://arweave.net/fw4-lhQxbocPEQ8ShrQm-KQWon_F-lndSofir1uuOlE',
+        rarity: 'Rare',
+        image: 'https://arweave.net/ZoIMoi8aqCUIoeak4Jg28Z46g0k4V7r7TNLQSRFAOvI?ext=gif',
+        description: 'Circle that has continuous rotation',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'Circle Of Life',
+        uri: 'https://arweave.net/530oaLR0s30crhWvhIsS9LT-PizknzOoBqTLlbYAwUU',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/v4h_beAaX0SpL93Uej5xlDxG6JoWL3TTP5WUP603zp4?ext=gif',
+        description: 'Time is killing everything, including life',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      }
+    ],
+  },
 ];
