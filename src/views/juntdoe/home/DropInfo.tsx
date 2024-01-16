@@ -23,4 +23,8 @@ export const DropInfo = [
     dropNb: "MORTAL VISAGES",
     nbNFT: 6,
   },
+  {
+    dropNb: "EDIT THE SAD PARTS",
+    nbNFT: 3,
+  },
 ];
