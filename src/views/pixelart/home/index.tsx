@@ -332,6 +332,19 @@ export const PixelartHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 10</div>
               </Link>
+              <Link
+                href="/pixelart/drop11"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/cB81xl-m-hNvX3WQY_QRRd_0s86C89bEHmoT2mRdpCc?ext=jpg"
+                    alt="drop 11 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 11</div>
+              </Link>
             </div>
           </div>
         </div>
