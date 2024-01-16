@@ -930,6 +930,7 @@ export {Drop1Doodledevils } from "./doodledevils/drop1";
 export {Drop2Doodledevils } from "./doodledevils/drop2";
 export {CoolermintHome } from "./coolermint/home";
 export {Drop1Coolermint } from "./coolermint/drop1";
+export {Drop2Coolermint } from "./coolermint/drop2";
 export {DrPeepeeHome} from "./drpeepee/home";
 export {Drop1DrPeepee } from "./drpeepee/drop1";
 export {KirkHome} from "./kirk/home";
