@@ -862,6 +862,7 @@ export {Drop3Moldy } from "./moldy/drop3";
 export {Drop4Moldy } from "./moldy/drop4";
 export {Drop5Moldy } from "./moldy/drop5";
 export {Drop6Moldy } from "./moldy/drop6";
+export {Drop7Moldy } from "./moldy/drop7";
 export {RezHome } from "./rez/home";
 export {Drop1Rez } from "./rez/drop1";
 export {Drop2Rez } from "./rez/drop2";
