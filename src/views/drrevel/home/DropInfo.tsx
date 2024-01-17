@@ -64,4 +64,51 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'Upādāna I',
+        uri: 'https://arweave.net/gDQu_gR3bAzrFOJtIo2tNGCWb8SxiaJbQGMEG_1HP_Q',
+        rarity: 'Common',
+        image: 'https://arweave.net/H13Ls3eFV6U7uiEk6qYp342-qEBYEjzYJFRCJNrqM9U?ext=jpg',
+        description: "The Buddhist concept of “Upādāna” refers to the clinging or grasping onto various aspects of our lives. It's the tendency to become deeply attached to our experiences, relationships, or even our own sense of self. This attachment can bring both joy and suffering and when things change or don't meet our expectations, it can lead to emotional turbulence.\n" +
+          '\n' +
+          "In Buddhism, the idea is to recognize and understand these attachments. It's not about avoiding joy or experiences but realizing that everything is impermanent. By cultivating a mindset that is more attuned to the nature of reality, we can navigate the changes in our lives more gracefully and find a more balanced and content way of living.\n" +
+          '\n' +
+          "This three-piece artwork joins to create a larger whole to represent the interconnectedness of life's experiences as a parallel to the concept of Upādāna. Recognizing the potential to cling to these moments serves as a reminder of the transient nature of life's components and the wisdom in appreciating these experiences without excessive attachment.\n" +
+          '\n' +
+          'Each single artwork is 3:1 standard banner ratio, and the complete image is a 1:1 ratio.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_contemplations'
+      },
+      {
+        name: 'Upādāna II',
+        uri: 'https://arweave.net/2ZgnGiI-YrF_Uq6Ox7y_6N8lO3rFFO0VD5oMLInUwF4',
+        rarity: 'Rare',
+        image: 'https://arweave.net/ZLZl1do9wBIrBT_loAX8HXpGSmiafbOTymwj8GRoxDY?ext=jpg',
+        description: "The Buddhist concept of “Upādāna” refers to the clinging or grasping onto various aspects of our lives. It's the tendency to become deeply attached to our experiences, relationships, or even our own sense of self. This attachment can bring both joy and suffering and when things change or don't meet our expectations, it can lead to emotional turbulence.\n" +
+          '\n' +
+          "In Buddhism, the idea is to recognize and understand these attachments. It's not about avoiding joy or experiences but realizing that everything is impermanent. By cultivating a mindset that is more attuned to the nature of reality, we can navigate the changes in our lives more gracefully and find a more balanced and content way of living.\n" +
+          '\n' +
+          "This three-piece artwork joins to create a larger whole to represent the interconnectedness of life's experiences as a parallel to the concept of Upādāna. Recognizing the potential to cling to these moments serves as a reminder of the transient nature of life's components and the wisdom in appreciating these experiences without excessive attachment.\n" +
+          '\n' +
+          'Each single artwork is 3:1 standard banner ratio, and the complete image is a 1:1 ratio.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_contemplations'
+      },
+      {
+        name: 'Upādāna III',
+        uri: 'https://arweave.net/t_R_LhmUaTA9aUhl6gRwJ-9Yj1ZHe0O3Kw9-vzv4cUA',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/1w3n0K2wqKT9MPnmuLcFqug86vCTT2rcRB_D7giKVrg?ext=jpg',
+        description: "The Buddhist concept of “Upādāna” refers to the clinging or grasping onto various aspects of our lives. It's the tendency to become deeply attached to our experiences, relationships, or even our own sense of self. This attachment can bring both joy and suffering and when things change or don't meet our expectations, it can lead to emotional turbulence.\n" +
+          '\n' +
+          "In Buddhism, the idea is to recognize and understand these attachments. It's not about avoiding joy or experiences but realizing that everything is impermanent. By cultivating a mindset that is more attuned to the nature of reality, we can navigate the changes in our lives more gracefully and find a more balanced and content way of living.\n" +
+          '\n' +
+          "This three-piece artwork joins to create a larger whole to represent the interconnectedness of life's experiences as a parallel to the concept of Upādāna. Recognizing the potential to cling to these moments serves as a reminder of the transient nature of life's components and the wisdom in appreciating these experiences without excessive attachment.\n" +
+          '\n' +
+          'Each single artwork is 3:1 standard banner ratio, and the complete image is a 1:1 ratio.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_contemplations'
+      }
+    ],
+  },
 ];

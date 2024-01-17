@@ -905,6 +905,7 @@ export {Drop5Tarimosi } from "./tarimosi/drop5";
 export {DrRevelHome } from "./drrevel/home";
 export {Drop1DrRevel } from "./drrevel/drop1";
 export {Drop2DrRevel } from "./drrevel/drop2";
+export {Drop3DrRevel } from "./drrevel/drop3";
 export {MugenHachiHome } from "./mugenhachi/home";
 export {Drop1MugenHachi } from "./mugenhachi/drop1";
 export {Drop2MugenHachi } from "./mugenhachi/drop2";

@@ -76,6 +76,9 @@ export const DrRevelHome: FC = ({ }) => {
           if (["Dhamma", "Sārīra", "Paritta"].includes(wisdom)) {
             drop = "2";
           }
+          else if (["Upādāna, Anicca"].includes(wisdom)) {
+            drop = "3";
+          }
         }
         return {
           uri,
