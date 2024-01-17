@@ -820,6 +820,7 @@ export {Drop7Juntdoe } from "./juntdoe/drop7";
 export {ThefewHome } from "./thefew/home";
 export {Drop1Thefew } from "./thefew/drop1";
 export {Drop2Thefew } from "./thefew/drop2";
+export {Drop3Thefew } from "./thefew/drop3";
 export {AmetHome } from "./amet/home";
 export {Drop1Amet } from "./amet/drop1";
 export {Drop2Amet } from "./amet/drop2";
