@@ -626,6 +626,7 @@ export {Drop10Blockframez} from "./blockframez/drop10";
 export {Drop11Blockframez} from "./blockframez/drop11";
 export {Drop12Blockframez} from "./blockframez/drop12";
 export {Drop13Blockframez} from "./blockframez/drop13";
+export {Drop14Blockframez} from "./blockframez/drop14";
 export {MovieSticksHome} from "./moviesticks/home";
 export {Drop1MovieSticks } from "./moviesticks/drop1";
 export {Drop2MovieSticks } from "./moviesticks/drop2";
