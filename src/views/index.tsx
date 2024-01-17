@@ -897,6 +897,7 @@ export {Drop1QuietMaybe } from "./quietmaybe/drop1";
 export {Drop2QuietMaybe } from "./quietmaybe/drop2";
 export {Drop3QuietMaybe } from "./quietmaybe/drop3";
 export {Drop4QuietMaybe } from "./quietmaybe/drop4";
+export {Drop5QuietMaybe } from "./quietmaybe/drop5";
 export {TarimosiHome } from "./tarimosi/home";
 export {Drop1Tarimosi } from "./tarimosi/drop1";
 export {Drop2Tarimosi } from "./tarimosi/drop2";

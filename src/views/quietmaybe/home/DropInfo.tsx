@@ -115,4 +115,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "5",
+    NFTs: [
+      {
+        name: 'way too cold',
+        uri: 'https://arweave.net/6e1jqXwpyG2GwsQWN2DwWR5Om3BNRm0woSsOkgRfmWE',
+        rarity: 'Common',
+        image: 'https://arweave.net/SGieA4X8oyUoAqy2_Jmwu0hIbubuzOo1HSi7HluuGeM?ext=jpg',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'whimsy',
+        uri: 'https://arweave.net/14DnAmyzSJsjQu_RdGoIa7gvKadaaoIf-71JrKS8D7E',
+        rarity: 'Rare',
+        image: 'https://arweave.net/AdjXoMK6hXHLxRPAek6SA6ZRAPZETzgITqv4VnXN_ek?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'writing on the wall',
+        uri: 'https://arweave.net/s2sUrL8SIOEi4rXl30S28RElopaT_ONkkiTFc0-Q0P4',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/x4DEphteWMa_D1nqu3xVmsd4Moz67hLSWKHlGVRwGfM?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      }
+    ],
+  },
 ];
