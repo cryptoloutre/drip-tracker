@@ -152,7 +152,7 @@ export const DegenghostyHome: FC = ({ }) => {
             Track the Degen Ghosty DRiP NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-          Immerse yourself in Degen Ghosty's world: exclusive comic scripts, melodies, and emotional art for mental health. Join the journey, awaken inspiration.
+          Immerse yourself in Degen Ghosty&apos;s world: exclusive comic scripts, melodies, and emotional art for mental health. Join the journey, awaken inspiration.
             <br />
             <br />
             Sign up{" "}
