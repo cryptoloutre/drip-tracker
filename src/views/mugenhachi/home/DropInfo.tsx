@@ -200,4 +200,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "4",
+    NFTs: [
+      {
+        name: 'Hachi Mugen “Meccha Samui”',
+        uri: 'https://arweave.net/1hVTDKHi9bnMJP3_I1TFOFKh4hndDOZ3pfPWdyKPBQw',
+        rarity: 'Common',
+        image: 'https://arweave.net/xNnaNM7rCf3ncpn2PbneH9shmH1_rSbcsptWX1SeDtE?ext=jpg',
+        description: "In the Enclave, beneath the veil of a rainy and cold night post-The Shift, Hachi found inspiration in the resonance of his girlfriend's voice over the phone, harmonizing seamlessly with the melancholy symphony in his mind. The sultry piano melody gently unfolded as she described the frigid atmosphere (Meccha Samui), yet within the chill, the anticipation of their meeting the next day kindled an enduring warmth in her heart…",
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Meccha Samui”',
+        uri: 'https://arweave.net/JPi01u75F9EuyaZjUEflyTblO2HFcDa40QQfj3wZ7t8',
+        rarity: 'Rare',
+        image: 'https://arweave.net/7Jsshqx-5HF8PcjXqF8RnxXUUbyFtcgEYqdDHcj-nCc?ext=jpg',
+        description: "In the Enclave, beneath the veil of a rainy and cold night post-The Shift, Hachi found inspiration in the resonance of his girlfriend's voice over the phone, harmonizing seamlessly with the melancholy symphony in his mind. The sultry piano melody gently unfolded as she described the frigid atmosphere (Meccha Samui), yet within the chill, the anticipation of their meeting the next day kindled an enduring warmth in her heart…",
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Meccha Samui”',
+        uri: 'https://arweave.net/nC9sb1wF6iVKSIC3u3tq60UpwpGATzQfb6zbZV4zZvg',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/1jK2hEvJPur_NFXEdEtDmtLFlHAUz5Dp-GYdy0-3vYw?ext=jpg',
+        description: "In the Enclave, beneath the veil of a rainy and cold night post-The Shift, Hachi found inspiration in the resonance of his girlfriend's voice over the phone, harmonizing seamlessly with the melancholy symphony in his mind. The sultry piano melody gently unfolded as she described the frigid atmosphere (Meccha Samui), yet within the chill, the anticipation of their meeting the next day kindled an enduring warmth in her heart…",
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      }
+    ],
+  },
 ];
