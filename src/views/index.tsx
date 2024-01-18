@@ -951,3 +951,5 @@ export {CreatedbyimrieHome} from "./createdbyimrie/home";
 export {Drop1Createdbyimrie } from "./createdbyimrie/drop1";
 export {WillustratorHome} from "./willustrator/home";
 export {Drop1Willustrator } from "./willustrator/drop1";
+export {DegenghostyHome} from "./degenghosty/home";
+export {Drop1Degenghosty } from "./degenghosty/drop1";
