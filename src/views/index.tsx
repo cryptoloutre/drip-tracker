@@ -662,6 +662,7 @@ export {Drop12SimplyEto } from "./simplyeto/drop12";
 export {Drop13SimplyEto } from "./simplyeto/drop13";
 export {Drop14SimplyEto } from "./simplyeto/drop14";
 export {Drop15SimplyEto } from "./simplyeto/drop15";
+export {Drop16SimplyEto } from "./simplyeto/drop16";
 export {DreaderHome} from "./dreader/home";
 export {Drop1Dreader } from "./dreader/drop1";
 export {Drop2Dreader } from "./dreader/drop2";
