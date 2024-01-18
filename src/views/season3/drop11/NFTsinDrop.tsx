@@ -22,5 +22,13 @@ export const NFTsinDrop = [
     image: 'https://arweave.net/ty22wVbJhGrCoEpNHROc76SlIXmvSzQTir6nOwu4Xgg?ext=gif',
     description: 'There has always been a mystery about spheres, a cosmic dance of form and harmony flowing and colliding eternally, discovering without restraint.',
     magicEdenLink: 'https://www.tensor.trade/trade/drip_duos'
+  },
+  {
+    name: "genesis('X');",
+    uri: 'https://arweave.net/y4YJPbJRfEchnK12XkyeFqkPjhlqUNBKegYsuv38_yA',
+    rarity: 'Ultimate',
+    image: 'https://arweave.net/MK9RF6lNpWJA9IGrS8Dp8H2mIJsKGSwXws1SFNjvexQ?ext=gif',
+    description: 'A symbol of convergence, yet a variable with an impact on the outcome of becoming.',
+    magicEdenLink: 'https://www.tensor.trade/trade/drip_duos'
   }
 ];
