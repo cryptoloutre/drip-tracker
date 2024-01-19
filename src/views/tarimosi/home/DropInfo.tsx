@@ -189,4 +189,17 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "006",
+    NFTs: [
+      {
+        name: 'TARIVISION Ep.01',
+        uri: 'https://arweave.net/DGBySPsTDDIXRJTO8NiIv5PjvA1PeLvr-HkafDjlTVs',
+        rarity: 'Common',
+        image: 'https://arweave.net/p2CXdUILwC1I7De5iZjZ2Zb-zIpax3_xSZS8sqkp-d0?ext=jpg',
+        description: 'TARIVISION is our series of short video content. Episode.01 features footage from our inaugural live show as a band in February 2023. It also includes snippets of songs from our upcoming debut album.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      }
+    ],
+  },
 ];
