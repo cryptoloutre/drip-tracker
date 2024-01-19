@@ -121,4 +121,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'CHAD 01',
+        uri: 'https://arweave.net/0c---6HCuoP5zEAVKE8lrEuUP5kzRLTN2oa9mOMPAOE',
+        rarity: 'Common',
+        image: 'https://arweave.net/kTwmoZ6oszf1aPXurrf4YlfzA5f4bYqJYgSS-Eu67Kc?ext=jpg',
+        description: 'Chads seem to have entered the Wabalaba portal.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_wabalaba_land'
+      },
+      {
+        name: 'CHAD 02',
+        uri: 'https://arweave.net/dFyjulBLM9OYJJHobps-94w_wJm4v4u9SQ_dRdnCk7M',
+        rarity: 'Common',
+        image: 'https://arweave.net/a6Kvy-XFfFFJbsuN67C8OfmGqKhPmSZSHelORYkXC4Q?ext=jpg',
+        description: 'Chads seem to have entered the Wabalaba portal.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_wabalaba_land'
+      },
+      {
+        name: 'THE CHAD',
+        uri: 'https://arweave.net/0pE7XwiOf3XVmuuolJ4ykFNHnSjTEtz5Sjl00Buzn0c',
+        rarity: 'Rare',
+        image: 'https://arweave.net/iWBFt3kOtZR6weyWfMha2KrEb50HQFwm1rjh3lYk5KI?ext=jpg',
+        description: 'A tribute to the face of the CHAD community.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_wabalaba_land'
+      },
+      {
+        name: 'Mage CHAD',
+        uri: 'https://arweave.net/aiRAcqQKfim4Uo5hlICx2NZUdPbZqfKdH9CXI0jEbD4',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/_Hz1LVPqHZpCOs0bRGw4M5rjUDO6iV7bu7sKtH4ojp0?ext=jpg',
+        description: 'A tribute to the Chad community, the mage chad.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_wabalaba_land'
+      }
+    ],
+  },
 ];
