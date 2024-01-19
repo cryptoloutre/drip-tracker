@@ -971,3 +971,5 @@ export {WillustratorHome} from "./willustrator/home";
 export {Drop1Willustrator } from "./willustrator/drop1";
 export {DegenghostyHome} from "./degenghosty/home";
 export {Drop1Degenghosty } from "./degenghosty/drop1";
+export {DeiHome} from "./dei/home";
+export {Drop1Dei } from "./dei/drop1";

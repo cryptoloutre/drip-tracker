@@ -243,6 +243,9 @@ export const ChannelDropdown: FC = () => {
           <Link href="/portals/home">Portals</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
+          <Link href="/dei/home">Postmodern Ouroboros</Link>
+        </li>
+        <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
           <Link href="/quietmaybe/home">QuietMaybe</Link>
         </li>
         <li className="wallet-adapter-dropdown-list-item px-2" role="menuitem">
