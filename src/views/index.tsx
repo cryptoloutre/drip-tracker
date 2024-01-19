@@ -959,6 +959,7 @@ export {DrPeepeeHome} from "./drpeepee/home";
 export {Drop1DrPeepee } from "./drpeepee/drop1";
 export {KirkHome} from "./kirk/home";
 export {Drop1Kirk } from "./kirk/drop1";
+export {Drop2Kirk } from "./kirk/drop2";
 export {CreatedbyimrieHome} from "./createdbyimrie/home";
 export {Drop1Createdbyimrie } from "./createdbyimrie/drop1";
 export {WillustratorHome} from "./willustrator/home";
