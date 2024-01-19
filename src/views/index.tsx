@@ -745,6 +745,7 @@ export {Drop10DegenRoyale } from "./degenroyale/drop10";
 export {Drop11DegenRoyale } from "./degenroyale/drop11";
 export {Drop12DegenRoyale } from "./degenroyale/drop12";
 export {Drop13DegenRoyale } from "./degenroyale/drop13";
+export {Drop14DegenRoyale } from "./degenroyale/drop14";
 export {PixelartHome } from "./pixelart/home";
 export {Drop1Pixelart } from "./pixelart/drop1";
 export {Drop2Pixelart } from "./pixelart/drop2";
