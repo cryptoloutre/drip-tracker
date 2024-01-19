@@ -13,7 +13,7 @@ import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
 import { Completion } from "components/Completion";
 
-export const DAAHome: FC = ({}) => {
+export const DAAHome: FC = ({ }) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -48,16 +48,16 @@ export const DAAHome: FC = ({}) => {
 
     const allUserNFTs = await getUserNFTs(publickey.toBase58());
 
-    const _userNFTs = allUserNFTs.filter(
+    const _userNFTsS1 = allUserNFTs.filter(
       (asset) =>
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "DAA1jBEYj2w4DgMRDVaXg5CWfjmTry5t8VEvLJQ9R8PY"
+        "DAA1jBEYj2w4DgMRDVaXg5CWfjmTry5t8VEvLJQ9R8PY"
     );
 
-    const _userNFTsURI = await Promise.all(
-      _userNFTs.map(async (asset) => {
+    const _userNFTsURIS1 = await Promise.all(
+      _userNFTsS1.map(async (asset) => {
         let attributes: any;
         const uri = asset.content.json_uri;
         if (asset.content.metadata.attributes) {
@@ -75,12 +75,40 @@ export const DAAHome: FC = ({}) => {
       })
     );
 
+    const _userNFTsS2 = allUserNFTs.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+        "9fcbwc55Veu1NGB7KEcMaDsG5i4ReUdcRgWaySGLSs7f"
+    );
+
+    const _userNFTsURIS2 = await Promise.all(
+      _userNFTsS2.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const drop = attributes.find((nft) => nft.trait_type == "Drop").value;
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const userNFTsURI = _userNFTsURIS1.concat(_userNFTsURIS2)
     // we filter to eliminate the doublons
-    const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
+    const userNFTs = userNFTsURI.filter((value: any, index: any) => {
       const _value = JSON.stringify(value);
       return (
         index ===
-        _userNFTsURI.findIndex((obj: any) => {
+        userNFTsURI.findIndex((obj: any) => {
           return JSON.stringify(obj) === _value;
         })
       );
@@ -218,7 +246,7 @@ export const DAAHome: FC = ({}) => {
               </a>
             </div>
           </div>
-          {!wallet.publicKey && !isXNFT &&  (
+          {!wallet.publicKey && !isXNFT && (
             <div className="text-center font-bold text-xl my-6">
               Please, connect your wallet to see your progression!
             </div>
@@ -527,6 +555,19 @@ export const DAAHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 23</div>
+              </Link>
+              <Link
+                href="/daa/drop24"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/GZ6OY7QsTHyqOeFBYLBu2rhUbG1u8f8L5nslRUF8hZI?ext=jpg"
+                    alt="drop 24 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 24</div>
               </Link>
             </div>
           </div>
