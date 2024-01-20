@@ -77,4 +77,17 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "7",
+    NFTs: [
+      {
+        name: 'Investigating HotGirlDAO',
+        uri: 'https://arweave.net/pMsn3aodwd9RWnuZrpnptSmGvdgG04S7q9Af8t3HjCw',
+        rarity: 'Common',
+        image: 'https://arweave.net/5S0rgUhJoncZZ9LNzAyioue8sD4qqQWbOzMGK0QCXNo?ext=png',
+        description: 'Investigating the Solana Hot Girl DAO.',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tflo'
+      }
+    ],
+  },
 ];

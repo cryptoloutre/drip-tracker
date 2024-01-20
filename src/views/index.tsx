@@ -904,6 +904,7 @@ export {Drop3Tflo } from "./tflo/drop3";
 export {Drop4Tflo } from "./tflo/drop4";
 export {Drop5Tflo } from "./tflo/drop5";
 export {Drop6Tflo } from "./tflo/drop6";
+export {Drop7Tflo } from "./tflo/drop7";
 export {AssetdashHome } from "./assetdash/home";
 export {Drop1Assetdash } from "./assetdash/drop1";
 export {WabalabaHome } from "./wabalaba/home";
