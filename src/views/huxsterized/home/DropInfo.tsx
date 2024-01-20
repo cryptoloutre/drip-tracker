@@ -90,4 +90,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "4",
+    NFTs: [
+      {
+        name: 'Zest',
+        uri: 'https://arweave.net/5WTfhEZDZ7NqAGKNdOV04Sud62m56ee6d8lRocTN06Q',
+        rarity: 'Common',
+        image: 'https://arweave.net/AgHDvX15hRhmtB4qIp92SI9vi-6GRCNZnLtibO0CWc8?ext=jpg',
+        description: 'Squeeze the day!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      },
+      {
+        name: 'Stripes',
+        uri: 'https://arweave.net/AMLPWYl8aP7PQ9b3mX5fEz7JacVdj2-62fCx9o37YWE',
+        rarity: 'Rare',
+        image: 'https://arweave.net/glYpWbW9NLShKynvJMWkGh3MVQ8g0hGnw4KW-ycIhhk?ext=jpg',
+        description: 'Do you remember in full color or black and white?',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      },
+      {
+        name: 'Bright Side',
+        uri: 'https://arweave.net/byElsxOVRdP2QV8HgY0C1tmg6V8lE3K6wvfY0__4XjI',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/XM2F4gBPMifyAqmZe1BLDM5GQvs-sc6O8hoVLaI6MyQ?ext=jpg',
+        description: 'I have always wanted my colors to sing.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_huxsterized'
+      },
+    ],
+  },
 ];
