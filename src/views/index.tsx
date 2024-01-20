@@ -969,6 +969,7 @@ export {Drop1Coolermint } from "./coolermint/drop1";
 export {Drop2Coolermint } from "./coolermint/drop2";
 export {DrPeepeeHome} from "./drpeepee/home";
 export {Drop1DrPeepee } from "./drpeepee/drop1";
+export {Drop2DrPeepee } from "./drpeepee/drop2";
 export {KirkHome} from "./kirk/home";
 export {Drop1Kirk } from "./kirk/drop1";
 export {Drop2Kirk } from "./kirk/drop2";

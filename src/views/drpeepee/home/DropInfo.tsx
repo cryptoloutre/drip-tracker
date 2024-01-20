@@ -68,4 +68,41 @@ export const DropInfo = [
       },
     ],
   },
+  {
+    dropNb: "02",
+    NFTs: [
+      {
+        name: 'ai art 1/9',
+        uri: 'https://arweave.net/iZaUn6LMtT7C8lpzhgYgcy0EAaRM3VI1LdypJ1KhPcE',
+        rarity: 'Common',
+        image: 'https://arweave.net/EcKWAXR4Zxiwv71p4pv_nzY7HdVoi258htkxSkUQ8YA?ext=png',
+        description: 'ai art 1/9',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      },
+      {
+        name: 'ai art 1/9',
+        uri: 'https://arweave.net/vsCbZqD41YoPvZcoXPJT8p5IUbnwyW1bdeKw1Plk5TM',
+        rarity: 'Rare',
+        image: 'https://arweave.net/cmSsn_PnPgd7UUWQE4ToULS1N7i-9ngbH5h3kYVUvGU?ext=png',
+        description: 'ai art 1/9',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      },
+      {
+        name: 'ai art 1/9',
+        uri: 'https://arweave.net/_aeijwhMXVWDZkwN7sSyd3OEOaybmpF6dgZCqL3Qwn8',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/MDcgNBjNRdukesheCwRIKo3GAya4W8l4jduXzxO_JDY?ext=png',
+        description: 'ai art 1/9',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      },
+      {
+        name: 'ai art 1/9',
+        uri: 'https://arweave.net/K48GlPK0PnHP3KIBNqoqvcZ84hQ894NCIzSOFe8dxPU',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/qznSNwUur8cjVMTLDw7MIsYYva_bwbWTLQ6o4n-576k?ext=png',
+        description: 'ai art 1/9',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      }
+    ],
+  },
 ];
