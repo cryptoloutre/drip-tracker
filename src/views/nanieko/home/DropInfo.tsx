@@ -57,4 +57,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'SNOWY WITH TEIK B&W',
+        uri: 'https://arweave.net/CtFAjtJUDCPJWp19Gc8NznOEp85SbvvSwxEj8qegJRw',
+        rarity: 'Common',
+        image: 'https://arweave.net/qEsRqtVNp-xi6HDZFG8je2mfmYdQqwOevrMoUd0NraU?ext=jpg',
+        description: 'SNOWY POKING TEIK WITH A STICK.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_nanieko'
+      },
+      {
+        name: 'SNOWY WITH TEIK IN COLOUR',
+        uri: 'https://arweave.net/QUOEjJrdVxRzX8Xw9I1TVIV_ptKpeYzY3Quf2PTbQyY',
+        rarity: 'Rare',
+        image: 'https://arweave.net/6A2qg6SYyPcV8pYK3jAz3FZBbv-c1kmuNA3BitEXB_M?ext=jpg',
+        description: 'SNOWY POKING TEIK WITH A STICK IN COLOUR.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_nanieko'
+      },
+      {
+        name: 'SNOWY & OYENJI WITH TEIK',
+        uri: 'https://arweave.net/JvRXGkauiHIngtlAfExE4ht_HbRWIRQPfe-mXTfJHU8',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/R-gsdmR2PXCLE0Se5kNmNgd-GqdriHDtNwyjIwzkm5c?ext=jpg',
+        description: 'SNOWY POKING TEIK WITH A STICK IN COLOUR, MEANWHILE OYENJI HOLDING TAHI ON A STICK.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_nanieko'
+      }
+    ],
+  },
 ];
