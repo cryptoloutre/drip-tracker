@@ -310,6 +310,19 @@ export const GlowburgerHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 8</div>
               </Link>
+              <Link
+                href="/glowburger/drop9"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/PdOOyuqhCHuXYh_dPdJuvWRiV3-YLNdgd7HsNRASwEc?ext=gif"
+                    alt="drop 9 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 9</div>
+              </Link>
             </div>
           </div>
         </div>
