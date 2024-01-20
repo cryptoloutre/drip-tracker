@@ -475,6 +475,7 @@ export {Drop18FS} from "./fs/drop18";
 export {Drop19FS} from "./fs/drop19";
 export {Drop20FS} from "./fs/drop20";
 export {Drop21FS} from "./fs/drop21";
+export {Drop22FS} from "./fs/drop22";
 export {BadHome} from "./bad/home";
 export {Drop1Bad} from "./bad/drop1";
 export {Drop2Bad} from "./bad/drop2";
