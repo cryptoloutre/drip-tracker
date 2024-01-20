@@ -73,4 +73,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: '3DRiP Devils',
+        uri: 'https://arweave.net/sn1JYfqNkoszdmJohve7ZME5tvoHwWLI6sc0X2pMEho',
+        rarity: 'Common',
+        image: 'https://arweave.net/kcFoE5GeRnL1DEJ8DQKEsXnX3-UuxYagMVBvqcqZQrM?ext=gif',
+        description: '3D Doodle Devils',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      },
+      {
+        name: '3DRiP Devils',
+        uri: 'https://arweave.net/RZB95QeJdjn6OhNDr4erIjbOLs7NDxoqOPWrDbxKbW0',
+        rarity: 'Rare',
+        image: 'https://arweave.net/6Ku3PYATwTrcd2_2tgMQfICKml8WeKYnN6zYl62troU?ext=gif',
+        description: '3D Doodle Devils',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      },
+      {
+        name: '3DRiP Devils',
+        uri: 'https://arweave.net/hGOZc2A1I2QC-w_FXYrPKv_4xG8prm5t-UuTq2hrkIc',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/BpdpAXOVqcDD8BneD8bgd_ew_xSqm5onDridUHjaQ9g?ext=gif',
+        description: '3D Doodle Devils',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      },
+      {
+        name: '3DRiP Devils',
+        uri: 'https://arweave.net/qehLiVvqyvEwmgxoqr-dCC69Tt-EKze0enXsQvEcdyc',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/LMeftfucnsuvblRhz-hkL2e0gEuxp__yMXxA_dzQRNg?ext=gif',
+        description: '3D Doodle Devils',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_doodledevils'
+      },
+    ],
+  },
 ];

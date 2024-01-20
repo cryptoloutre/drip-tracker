@@ -962,6 +962,7 @@ export {Drop2Mapez } from "./mapez/drop2";
 export {DoodledevilsHome } from "./doodledevils/home";
 export {Drop1Doodledevils } from "./doodledevils/drop1";
 export {Drop2Doodledevils } from "./doodledevils/drop2";
+export {Drop3Doodledevils } from "./doodledevils/drop3";
 export {CoolermintHome } from "./coolermint/home";
 export {Drop1Coolermint } from "./coolermint/drop1";
 export {Drop2Coolermint } from "./coolermint/drop2";
