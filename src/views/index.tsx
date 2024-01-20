@@ -810,6 +810,7 @@ export {Drop4Early } from "./early/drop4";
 export {Drop5Early } from "./early/drop5";
 export {Drop6Early } from "./early/drop6";
 export {Drop7Early } from "./early/drop7";
+export {Drop8Early } from "./early/drop8";
 export {SaturdaymorningHome } from "./saturdaymorning/home";
 export {Drop1Saturdaymorning } from "./saturdaymorning/drop1";
 export {WilsenwayHome } from "./wilsenway/home";

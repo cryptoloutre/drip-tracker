@@ -305,6 +305,19 @@ export const EarlyHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 7</div>
               </Link>
+              <Link
+                href="/early/drop8"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/26ZTzHsPWKRgOU2BkKIzqkWw6CfooOtw-04uBZVQCqc?ext=png"
+                    alt="drop 8 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 8</div>
+              </Link>
             </div>
           </div>
         </div>
