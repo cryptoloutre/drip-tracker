@@ -73,6 +73,9 @@ export const GraffitoHome: FC = ({}) => {
         }
         else {
           drop = asset.content.metadata.name;
+          if (drop.includes("Ascendance")) {
+            drop = "Ascendance"
+          }
         }
         return {
           uri,
