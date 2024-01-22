@@ -13,7 +13,7 @@ import { DropInfo } from "./DropInfo";
 import { getUserNFTs } from "utils/getUserNFTs";
 import { Completion } from "components/Completion";
 
-export const BorkHome: FC = ({}) => {
+export const BorkHome: FC = ({ }) => {
   const wallet = useWallet();
   const connection = new WrapperConnection(
     "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
@@ -52,7 +52,7 @@ export const BorkHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "BoRKkxKPoAt7LcyVRPa9ZZT5MztkJuc4PiGrUXAgDHPH"
+        "BoRKkxKPoAt7LcyVRPa9ZZT5MztkJuc4PiGrUXAgDHPH"
     );
 
     const _userNFTsURI = await Promise.all(
@@ -66,9 +66,20 @@ export const BorkHome: FC = ({}) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const chapter = attributes.find(
+        let chapter = attributes.find(
           (nft) => nft.trait_type == "Chapter"
-        ).value;
+        );
+        if (chapter) {
+          chapter = chapter.value;
+        }
+        else {
+          const date = attributes.find(
+            (nft) => nft.trait_type == "Date"
+          );
+          if (date.value = "January 20th, 2024") {
+            chapter = "Legendary Adventure";
+          };
+        }
         return {
           uri,
           chapter,
@@ -81,7 +92,7 @@ export const BorkHome: FC = ({}) => {
         asset.compression.compressed &&
         asset.grouping[0] != undefined &&
         asset.grouping[0].group_value ==
-          "BoRKiFyrcHwmuCdYFar5PH5L262R859nu3mttVg7TSW9"
+        "BoRKiFyrcHwmuCdYFar5PH5L262R859nu3mttVg7TSW9"
     );
 
     _userBonusNFTs.map(async (asset) => {
@@ -591,6 +602,21 @@ export const BorkHome: FC = ({}) => {
                 </div>
               </Link>
               <Link
+                href="/bork/drop21"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/CQ27AAUXvZ1Qip-SfVMk4lcc5_jfrzPyaG2LzuSq3O4?ext=jpg"
+                    alt="chapter 21 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">
+                  Legendary Adventure
+                </div>
+              </Link>
+              <Link
                 href="/bork/dropbonus1"
                 className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
               >
@@ -662,7 +688,7 @@ export const BorkHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
-                Holo Banned Cover
+                  Holo Banned Cover
                 </div>
               </Link>
               <Link
@@ -677,7 +703,7 @@ export const BorkHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">
-                Out Of The Shadows
+                  Out Of The Shadows
                 </div>
               </Link>
             </div>

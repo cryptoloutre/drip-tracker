@@ -52,6 +52,7 @@ export const Reader: FC = ({}) => {
     { chapter: "Eighteen", index: 18 },
     { chapter: "Nineteen", index: 19 },
     { chapter: "Twenty", index: 20 },
+    { chapter: "Legendary Adventure", index: 21 },
   ];
 
   useEffect(() => {
@@ -94,9 +95,20 @@ export const Reader: FC = ({}) => {
         }
 
         const name = asset.content.metadata.name;
-        const chapter = attributes.find(
+        let chapter = attributes.find(
           (nft) => nft.trait_type == "Chapter"
-        ).value;
+        );
+        if (chapter) {
+          chapter = chapter.value;
+        }
+        else {
+          const date = attributes.find(
+            (nft) => nft.trait_type == "Date"
+          );
+          if (date.value = "January 20th, 2024") {
+            chapter = "Legendary Adventure";
+          };
+        }
         const rarity = attributes.find(
           (nft) => nft.trait_type == "Rarity"
         ).value;
