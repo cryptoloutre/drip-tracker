@@ -2,7 +2,7 @@ import { WrapperConnection } from "../../ReadApi/WrapperConnection";
 
 export const getUserNFTs = async (address: string) => {
   const connection = new WrapperConnection(
-    "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
+    "https://mainnet.helius-rpc.com/?api-key=634713f0-b4f2-41dc-af7f-ed7d60bd70e2"
   );
 
   /// store all the user NFTs
