@@ -453,6 +453,7 @@ export {Drop21Madhouse} from "./madhouse/drop21";
 export {Drop22Madhouse} from "./madhouse/drop22";
 export {Drop23Madhouse} from "./madhouse/drop23";
 export {Drop24Madhouse} from "./madhouse/drop24";
+export {Drop25Madhouse} from "./madhouse/drop25";
 export {FSHome} from "./fs/home";
 export {Drop1FS} from "./fs/drop1";
 export {Drop2FS} from "./fs/drop2";
