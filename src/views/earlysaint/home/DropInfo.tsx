@@ -94,4 +94,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "4",
+    NFTs: [
+      {
+        name: 'OKOKOK',
+        uri: 'https://arweave.net/wUU0oyBPTXKzWf09ijG-4MWKtBE5fwea1n1TCGKr4B4',
+        rarity: 'Common',
+        image: 'https://arweave.net/n_XgFf0TfzODJR_I49kwpO1ekm4-MPfSxkz32LZ6fiM?ext=gif',
+        description: 'JUST 3 SAINTS SAY OK AT THE SAME TIME',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'SKATE',
+        uri: 'https://arweave.net/VakrHtYkcU_agLZg8LXnGtDBT0NzB-tZDYgl1IQPAWA',
+        rarity: 'Rare',
+        image: 'https://arweave.net/s1Jke5y52g0qz_a0dAkFGxvXP1wq0NW93FzQ0o2SRVc?ext=gif',
+        description: 'Come skate with me!!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'PUMP IT KING',
+        uri: 'https://arweave.net/pQk8a9nsF01hIbUQTWH-Ul5pY2HHsGyM7JeuyhtCXTM',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/5g0NdZkHwvi7rYYG71QBcEtOi_Bvw-Fa76sFhdoo5jE?ext=gif',
+        description: 'Come on KING PUMP IT!!',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      },
+      {
+        name: 'MOTHER NATURE',
+        uri: 'https://arweave.net/PT0HjsUdToLpvkF30Vt07hAOF9EZgYrLAUwrpu0xP48',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/z3kgogNaeKh7XFJLaLmV8UHGTzdCsn21FNH7wsJ2eUQ?ext=gif',
+        description: 'it all starts from her',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_earlysaint'
+      }
+    ],
+  },
 ];
