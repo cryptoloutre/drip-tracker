@@ -154,7 +154,7 @@ export const ThewhalesHome: FC = ({}) => {
           <div className="mt-8 sm:w-[70%] mx-auto">
           A larger than life collectibles community, making an animated music group with Def Jam.
           Rip packs… own the characters.
-          Second single "Hunned Racks" ft. MadeinTYO and Tkay Maidza out soon!
+          Second single &quot;Hunned Racks&quot; ft. MadeinTYO and Tkay Maidza out soon!
             <br />
             <br />
             Sign up{" "}
