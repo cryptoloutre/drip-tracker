@@ -834,6 +834,7 @@ export {Drop5Wilsenway } from "./wilsenway/drop5";
 export {Drop6Wilsenway } from "./wilsenway/drop6";
 export {Drop7Wilsenway } from "./wilsenway/drop7";
 export {Drop8Wilsenway } from "./wilsenway/drop8";
+export {Drop9Wilsenway } from "./wilsenway/drop9";
 export {JuntdoeHome } from "./juntdoe/home";
 export {Drop1Juntdoe } from "./juntdoe/drop1";
 export {Drop2Juntdoe } from "./juntdoe/drop2";
