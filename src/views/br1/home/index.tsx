@@ -152,7 +152,7 @@ export const Br1Home: FC = ({ }) => {
             Track the BR1: INFINITE DRiP NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-            BR1:INFINITE, is the world's first risk-based shooter where gamers pay-to-spawn and kill-to-earn.
+            BR1:INFINITE, is the world&apos;s first risk-based shooter where gamers pay-to-spawn and kill-to-earn.
             Pay $1 to spawn and for every player you kill, earn $1, all paid & measured in USD.
             Risk modes range from $0.10-$10/per spawn/per kill.
             <br />
