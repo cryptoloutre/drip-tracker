@@ -307,6 +307,19 @@ export const JuntdoeHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 7</div>
               </Link>
+              <Link
+                href="/juntdoe/drop8"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/cbeZ7eu8ELd4Ww7QGIR-JpS1CaYGuB7A0DWIkjb3pcw?ext=jpg"
+                    alt="drop 8 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 8</div>
+              </Link>
             </div>
           </div>
         </div>
