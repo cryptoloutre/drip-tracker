@@ -1005,3 +1005,5 @@ export {Br1Home} from "./br1/home";
 export {Drop1Br1 } from "./br1/drop1";
 export {ThewhalesHome} from "./thewhales/home";
 export {Drop1Thewhales } from "./thewhales/drop1";
+export {NachopcorsHome} from "./nachopcors/home";
+export {Drop1Nachopcors } from "./nachopcors/drop1";
