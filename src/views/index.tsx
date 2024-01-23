@@ -1003,3 +1003,5 @@ export {PopmonkezHome} from "./popmonkez/home";
 export {Drop1Popmonkez } from "./popmonkez/drop1";
 export {Br1Home} from "./br1/home";
 export {Drop1Br1 } from "./br1/drop1";
+export {ThewhalesHome} from "./thewhales/home";
+export {Drop1Thewhales } from "./thewhales/drop1";
