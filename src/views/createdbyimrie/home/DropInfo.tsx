@@ -28,4 +28,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "2",
+    NFTs: [
+      {
+        name: 'Van-dalism',
+        uri: 'https://arweave.net/9d7yrR0moh5NlhWVqDuzWNJFlE1TA8oorj5LvUvAVj0',
+        rarity: 'Common',
+        image: 'https://arweave.net/7TrlpZD7cs3pRMkFvKp6vvE9iNnvPvUFW7o5YoFOCxM?ext=png',
+        description: 'Kit - “Now, if you fancy yourself a bit of an urban artist, look no further than the outskirts of New Pulse City – the laid-back haven where you can let your creativity run wild without worrying about the NPCS breathing down your circuits, old cars and vans, scattered relics from a bygone era, just begging for a splash of color. These ain’t just vehicles; they’re canvases waiting to be kissed by the spray paint gods. No rules, no security, just the sweet freedom to turn rust into art. It’s the best chill spot in town, where your imagination can run wild on the metal. The only rule is there are no rules. So, grab your cans, find a rusty beauty, and let the outskirts be your canvas – the artist’s sanctuary in the concrete jungle."',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_createdbyimrie'
+      },
+      {
+        name: 'Van-dalism',
+        uri: 'https://arweave.net/4686iGh-0B584TJOZhBo13ygCSDO5hRUKcG3Q2qK4c8',
+        rarity: 'Rare',
+        image: 'https://arweave.net/19gFF3NQBeYoVyfyjNZFrlza5gW3nbkIzP3_SzSU66U?ext=png',
+        description: 'Kit - “Now, if you fancy yourself a bit of an urban artist, look no further than the outskirts of New Pulse City – the laid-back haven where you can let your creativity run wild without worrying about the NPCS breathing down your circuits, old cars and vans, scattered relics from a bygone era, just begging for a splash of color. These ain’t just vehicles; they’re canvases waiting to be kissed by the spray paint gods. No rules, no security, just the sweet freedom to turn rust into art. It’s the best chill spot in town, where your imagination can run wild on the metal. The only rule is there are no rules. So, grab your cans, find a rusty beauty, and let the outskirts be your canvas – the artist’s sanctuary in the concrete jungle."',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_createdbyimrie'
+      },
+      {
+        name: 'Van-dalism',
+        uri: 'https://arweave.net/3aIRtfSz7NhMAbNVZi8Rzt-CaCJXW-T612HaNmxMTvw',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/R_9h6CZM3c7Y0Q0YC4YhcDUKtymsSXkCfhgNeJ9jnTc?ext=png',
+        description: 'Kit - “Now, if you fancy yourself a bit of an urban artist, look no further than the outskirts of New Pulse City – the laid-back haven where you can let your creativity run wild without worrying about the NPCS breathing down your circuits, old cars and vans, scattered relics from a bygone era, just begging for a splash of color. These ain’t just vehicles; they’re canvases waiting to be kissed by the spray paint gods. No rules, no security, just the sweet freedom to turn rust into art. It’s the best chill spot in town, where your imagination can run wild on the metal. The only rule is there are no rules. So, grab your cans, find a rusty beauty, and let the outskirts be your canvas – the artist’s sanctuary in the concrete jungle."',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_createdbyimrie'
+      }
+    ],
+  },
 ];

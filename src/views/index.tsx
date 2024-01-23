@@ -994,6 +994,7 @@ export {Drop1Kirk } from "./kirk/drop1";
 export {Drop2Kirk } from "./kirk/drop2";
 export {CreatedbyimrieHome} from "./createdbyimrie/home";
 export {Drop1Createdbyimrie } from "./createdbyimrie/drop1";
+export {Drop2Createdbyimrie } from "./createdbyimrie/drop2";
 export {WillustratorHome} from "./willustrator/home";
 export {Drop1Willustrator } from "./willustrator/drop1";
 export {DegenghostyHome} from "./degenghosty/home";
