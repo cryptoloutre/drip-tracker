@@ -627,6 +627,7 @@ export {Drop2Backpack} from "./backpack/drop2";
 export {Drop3Backpack} from "./backpack/drop3";
 export {Drop4Backpack} from "./backpack/drop4";
 export {Drop5Backpack} from "./backpack/drop5";
+export {Drop6Backpack} from "./backpack/drop6";
 export {BlockframezHome} from "./blockframez/home";
 export {Drop1Blockframez} from "./blockframez/drop1";
 export {Drop2Blockframez} from "./blockframez/drop2";
