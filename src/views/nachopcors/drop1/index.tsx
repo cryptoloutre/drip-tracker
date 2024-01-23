@@ -12,6 +12,9 @@ import { getUserNFTs } from "utils/getUserNFTs";
 
 export const Drop1Nachopcors: FC = ({}) => {
   const wallet = useWallet();
+  const connection = new WrapperConnection(
+    "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
+  );
   const [userDripNFT, setUserDripNFT] = useState<any[]>();
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();

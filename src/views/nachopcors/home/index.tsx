@@ -16,6 +16,9 @@ import { Completion } from "components/Completion";
 
 export const NachopcorsHome: FC = ({}) => {
   const wallet = useWallet();
+  const connection = new WrapperConnection(
+    "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889eff"
+  );
   const [isFetched, setIsFetched] = useState<boolean>(false);
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
   const [nbDropComplete, setNbDropComplete] = useState<number>();
