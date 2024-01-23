@@ -57,4 +57,33 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "DRoP #3",
+    NFTs: [
+      {
+        name: 'GMDP',
+        uri: 'https://arweave.net/-jbpLsVdxW33R3r3cR2QLey4VbA1ur6h1b1la-V25aA',
+        rarity: 'Common',
+        image: 'https://arweave.net/S6rcqlgepVt3MPfAm1z27ABIwT5SwY-yM-Iuf_mXsfI?ext=png',
+        description: 'GM message from DP in 2077',
+        magicEdenLink: 'https://drip.tensor.trade/trade/cybermint_by_coolermint'
+      },
+      {
+        name: 'DRiPLEDON',
+        uri: 'https://arweave.net/CN29VNft07hUcjzt5cau-W3-udAHqDAu7_BBNiGXcvo',
+        rarity: 'Rare',
+        image: 'https://arweave.net/LQAEjXBUrycKUuMajB6eUvB9R99i5QV7WhNXFvXhm2c?ext=png',
+        description: 'immerse yourself in this cybernetic sports spectacle, witnessing a fusion of athleticism and futuristic technology like never before',
+        magicEdenLink: 'https://drip.tensor.trade/trade/cybermint_by_coolermint'
+      },
+      {
+        name: 'Prophet DRiPomet',
+        uri: 'https://arweave.net/wXhXpCDNzpJDt_ZbjZnsLFZaJMbroGGh7hVvd9ec1R8',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/l9Mhje3qqP7o3a5T9XQJksf0iYaVLEHZyA_XHiYnjms?ext=png',
+        description: 'despite technological advancements and societal progress, these neighborhoods still grapple with poverty, crime, and lack of opportunities, portraying a concerning lack of improvement over the centuries; ghetto since 3077',
+        magicEdenLink: 'https://drip.tensor.trade/trade/cybermint_by_coolermint'
+      }
+    ],
+  },
 ];
