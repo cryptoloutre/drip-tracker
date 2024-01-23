@@ -136,7 +136,7 @@ export const Drop4DegenRoyale: FC = ({}) => {
                       "border-t-[#14F195] border-r-[#14F195] border-b-[#9945FF] border-l-[#9945FF]"
                     }`}
                   >
-                    <img className="" src={currentNft.image}></img>
+                    <img className="" src={currentNft.image} alt="image NFT"></img>
                     <h1 className="font-bold mt-2">{currentNft.name}</h1>
                     {isFetched && (wallet.publicKey || isXNFT) && (
                       <div className="flex justify-center">
