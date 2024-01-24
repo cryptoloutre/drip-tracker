@@ -402,6 +402,19 @@ export const BlockframezHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 14</div>
               </Link>
+              <Link
+                href="/blockframez/drop15"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/GoElfxc8a5cGi2TO-H6jFSo32xFY1HKPFYUk8DHRDfc?ext=png"
+                    alt="drop 15 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 15</div>
+              </Link>
             </div>
           </div>
         </div>
