@@ -1017,3 +1017,5 @@ export {NachopcorsHome} from "./nachopcors/home";
 export {Drop1Nachopcors } from "./nachopcors/drop1";
 export {BeccHome} from "./becc/home";
 export {Drop1Becc } from "./becc/drop1";
+export {SiloHome} from "./silo/home";
+export {Drop1Silo } from "./silo/drop1";
