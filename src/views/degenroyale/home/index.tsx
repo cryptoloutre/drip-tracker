@@ -393,6 +393,19 @@ export const DegenRoyaleHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 14</div>
               </Link>
+              <Link
+                href="/degenroyale/drop15"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/E-bFsiOMKb50EOEael_H4-Y5a55E6VzS8xc53tDO4O0?ext=gif"
+                    alt="drop 15 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 15</div>
+              </Link>
             </div>
           </div>
         </div>
