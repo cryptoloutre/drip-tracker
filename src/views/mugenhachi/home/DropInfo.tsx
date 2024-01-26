@@ -229,4 +229,48 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "5",
+    NFTs: [
+      {
+        name: 'Hachi Mugen “Hoody Weather”',
+        uri: 'https://arweave.net/cl1wjoDffm1ccoAah4TQVfn7b8D0vK21jBQ0oZg2N9Q',
+        rarity: 'Common',
+        image: 'https://arweave.net/PCPfq0UxMgBl9rO7xVWqUtxj4B4sjBMMxk4kxXtHfrQ?ext=jpg',
+        description: "In the chill's embrace, a sanctuary unfolds,\n" +
+          'The “Hoody”, a haven where comfort takes hold.\n' +
+          'A shield against the cold, a warmth profound, \n' +
+          'In its threads, protection and style are found.\n' +
+          '\n' +
+          'P.S. We don’t spell it hoodie because the word die is in there, so we renamed it “Hoody”',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Hoody Weather”',
+        uri: 'https://arweave.net/tEKQJxORdtMNvrU7b2PmXjl4RmZQnQ2E_yrBSF27Fac',
+        rarity: 'Rare',
+        image: 'https://arweave.net/pfllox7X6n8uZVi8mH3XOBQDJQB4z1OLQO9QQo9xqr8?ext=jpg',
+        description: "In the chill's embrace, a sanctuary unfolds,\n" +
+          'The “Hoody”, a haven where comfort takes hold.\n' +
+          'A shield against the cold, a warmth profound, \n' +
+          'In its threads, protection and style are found.\n' +
+          '\n' +
+          'P.S. We don’t spell it hoodie because the word die is in there, so we renamed it “Hoody”',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      },
+      {
+        name: 'Hachi Mugen “Hoody Weather”',
+        uri: 'https://arweave.net/ATue9uJeVAhXnCecDRlQTRdojmn8ydzA9CkmljuTuH8',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/9pzVQNUi9nmRAmhocIr3ZhIqeMxGEFu83v2_SqQfntE?ext=jpg',
+        description: "In the chill's embrace, a sanctuary unfolds,\n" +
+          'The “Hoody”, a haven where comfort takes hold.\n' +
+          'A shield against the cold, a warmth profound, \n' +
+          'In its threads, protection and style are found.\n' +
+          '\n' +
+          'P.S. We don’t spell it hoodie because the word die is in there, so we renamed it “Hoody”',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_mugenhachi'
+      }
+    ],
+  },
 ];
