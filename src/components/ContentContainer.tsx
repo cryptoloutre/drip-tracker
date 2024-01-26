@@ -91,6 +91,7 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
             <NavElement label="Postmodern Ouroboros" href="/dei/home" />
             <NavElement label="QuietMaybe" href="/quietmaybe/home" />
             <NavElement label="Radiant" href="/radiant/home" />
+            <NavElement label="Rafaqin" href="/rafaqin/home" />
             <NavElement label="Rez" href="/rez/home" />
             <NavElement label="SATURDAY MORNING" href="/saturdaymorning/home" />
             <NavElement label="Season 1" href="/season1/home" />

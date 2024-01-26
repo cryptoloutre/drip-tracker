@@ -1041,3 +1041,5 @@ export {BeccHome} from "./becc/home";
 export {Drop1Becc } from "./becc/drop1";
 export {SiloHome} from "./silo/home";
 export {Drop1Silo } from "./silo/drop1";
+export {RafaqinHome} from "./rafaqin/home";
+export {Drop1Rafaqin } from "./rafaqin/drop1";
