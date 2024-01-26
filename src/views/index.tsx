@@ -591,6 +591,7 @@ export {Drop4Enigma} from "./enigma/drop4";
 export {Drop5Enigma} from "./enigma/drop5";
 export {Drop6Enigma} from "./enigma/drop6";
 export {Drop7Enigma} from "./enigma/drop7";
+export {Drop8Enigma} from "./enigma/drop8";
 export {DropNationHome} from "./dropnation/home";
 export {Drop1DropNation} from "./dropnation/drop1";
 export {Drop2DropNation} from "./dropnation/drop2";
