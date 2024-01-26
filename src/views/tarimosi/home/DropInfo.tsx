@@ -202,4 +202,25 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "007",
+    NFTs: [
+      {
+        name: 'WIRES',
+        uri: 'https://arweave.net/UcJ785SsIVFkUqgjYvRBR3YCjTLnSPGn-UaB3kFy7_o',
+        rarity: 'Common',
+        image: 'https://arweave.net/Z5_nlrGSeNZUiGPOP5k--wGa1rvfG5npZSxZ7OS9PUs?ext=jpg',
+        description: "WIRES is the second single from TARIMOSI's upcoming debut album.",
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      },
+      {
+        name: 'WIRES',
+        uri: 'https://arweave.net/IDmqvuE9OsYX5x_NYO8iG4yRidbRVElodzkZ1LWxY-0',
+        rarity: 'Rare',
+        image: 'https://arweave.net/PsLE0-cNzCzoXfKsHqhaALB9zp4bHaXkDNErC2M8mkc?ext=jpg',
+        description: "WIRES is the second single from TARIMOSI's upcoming debut album.",
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_tarimosi'
+      }
+    ],
+  },
 ];

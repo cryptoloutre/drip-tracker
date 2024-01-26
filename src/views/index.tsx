@@ -960,6 +960,7 @@ export {Drop3Tarimosi } from "./tarimosi/drop3";
 export {Drop4Tarimosi } from "./tarimosi/drop4";
 export {Drop5Tarimosi } from "./tarimosi/drop5";
 export {Drop6Tarimosi } from "./tarimosi/drop6";
+export {Drop7Tarimosi } from "./tarimosi/drop7";
 export {DrRevelHome } from "./drrevel/home";
 export {Drop1DrRevel } from "./drrevel/drop1";
 export {Drop2DrRevel } from "./drrevel/drop2";
