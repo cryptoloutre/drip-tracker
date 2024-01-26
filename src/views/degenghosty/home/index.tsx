@@ -67,7 +67,24 @@ export const DegenghostyHome: FC = ({ }) => {
           const responseData = await response.json();
           attributes = responseData.attributes;
         }
-        const drop = attributes.find((nft) => nft.trait_type == "Entry").value;
+        let drop = attributes.find((nft) => nft.trait_type == "Entry");
+        if (drop) {
+          drop = drop.value;
+        }
+        else {
+          let name: any;
+          if (asset.content.metadata) {
+            name = asset.content.metadata.name;
+          } else {
+            const response = await fetch(uri);
+            const responseData = await response.json();
+            name = responseData.name;
+          }
+          if (["The Turning Point 1 of 3", "The Turning Point 2 of 3", "The Turning Point 3 of 3", "The Turning Point- Complete", "The Turning Point Audio", "Rise & Grind"].includes(name)) {
+            drop = "No. 2"
+          }
+
+        }
         return {
           uri,
           drop,
@@ -152,7 +169,7 @@ export const DegenghostyHome: FC = ({ }) => {
             Track the Degen Ghosty DRiP NFTs you are missing
           </div>
           <div className="mt-8 sm:w-[70%] mx-auto">
-          Immerse yourself in Degen Ghosty&apos;s world: exclusive comic scripts, melodies, and emotional art for mental health. Join the journey, awaken inspiration.
+            Immerse yourself in Degen Ghosty&apos;s world: exclusive comic scripts, melodies, and emotional art for mental health. Join the journey, awaken inspiration.
             <br />
             <br />
             Sign up{" "}
