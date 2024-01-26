@@ -105,4 +105,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "03",
+    NFTs: [
+      {
+        name: 'monkedao elections 1/12',
+        uri: 'https://arweave.net/ch9_QILLXbxg2J7w3h6XsHX3yCCX1WlRHEIMoyilse8',
+        rarity: 'Common',
+        image: 'https://arweave.net/6ll83Bt7HrRYpqLVBdmY1mAyxJsq6uA2Kytt2v_j0Fc?ext=png',
+        description: 'monkedao elections 1/12',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      },
+      {
+        name: 'monkedao elections 1/12',
+        uri: 'https://arweave.net/fEUhRFWKNivFo6YSjh4XHP6ah5qBIy3zaGStSKsyKdg',
+        rarity: 'Rare',
+        image: 'https://arweave.net/Jkpqjtl3m0Sih2R4PuvLUMFNfmCbqmAS79kc8b6HpnI?ext=png',
+        description: 'monkedao elections 1/12',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      },
+      {
+        name: 'monkedao elections 1/12',
+        uri: 'https://arweave.net/LNU-NeVCZAce5PBzP5uAmPjN7KXP7vd9F73R_brgmGY',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/ciA21SqdmJPuma2u8K7VCU81FdwBtIO9xKm4679F5V4?ext=png',
+        description: 'monkedao elections 1/12',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      },
+      {
+        name: 'monkedao elections 1/12',
+        uri: 'https://arweave.net/MxAEZEn3tUJ8pV7_wVGcYOnSoCNAHEM6bsiVKhtFcXo',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/HJUHsgse89fiQ1lRJ29bUDIdJo7CQbSWhgUFxkYlRsM?ext=png',
+        description: 'monkedao elections 1/12',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_drpeepee_s1'
+      }
+    ],
+  },
 ];
