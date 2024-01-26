@@ -1026,6 +1026,7 @@ export {Drop1Degenghosty } from "./degenghosty/drop1";
 export {Drop2Degenghosty } from "./degenghosty/drop2";
 export {DeiHome} from "./dei/home";
 export {Drop1Dei } from "./dei/drop1";
+export {Drop2Dei } from "./dei/drop2";
 export {PopmonkezHome} from "./popmonkez/home";
 export {Drop1Popmonkez } from "./popmonkez/drop1";
 export {Br1Home} from "./br1/home";

@@ -28,4 +28,34 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "Whereabouts",
+    NFTs: [
+      {
+        name: 'Whereabouts',
+        uri: 'https://arweave.net/KV_Mr-0Vxh3gql_12OfeUaKXTd8HdpG7XBdse6XR-2w',
+        rarity: 'Common',
+        image: 'https://arweave.net/c7rLtPmIXX8Lp1CfKU78isq3Kd3ffZPHbi6xzhxSPG4?ext=gif',
+        description: 'That night was different from the others, the children of the village were waiting for their fathers, with no trace or clue about them, after the long hours, call it curiosity or call it despair, they left their houses to search for them.',    magicEdenLink: 'https://drip.tensor.trade/trade/drip_tales'
+      },
+      {
+        name: 'Whereabouts',
+        uri: 'https://arweave.net/5PZh5uTsgkSJj1lrAky6EMSR6k1RWBp46-n2LuPJ7YI',
+        rarity: 'Rare',
+        image: 'https://arweave.net/8znujNWBB-_MwlHY2OMv8hWEIbHgAS6bFKlAnK_HVn4?ext=gif',
+        description: 'It was just matter of hours to realize that they were completely alone, and no light or signal about their imminent returning, at least not soon.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_tales'
+      },
+      {
+        name: 'Whereabouts',
+        uri: 'https://arweave.net/PBe10oQX0V6AN4q3v-gkX2epesWKnHh841gAFnoX-H8',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/-sR-BdsNmORPWn4H5puuOaMJuovJdka8sDv54ex3VlI?ext=gif',
+        description: `"They aren't coming back, don't they?"-a frail voice said, it was a girl, with their eyes overcrowded in tears.\n` +
+          '"They will, what kind of fathers leave all their children alone in an empty town?"-mumbled another one, not too far from the rest.\n' +
+          'Which kind of father would?',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_tales'
+      }
+    ],
+  },
 ];
