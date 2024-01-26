@@ -127,8 +127,11 @@ export const TinyHome: FC = ({}) => {
           name = responseData.name;
         }
         let drop;
-        if (["Give Yourself Some Love", "UR A CUTIE", "Treat Yourself"].includes(name)) {
+        if (["Give Yourself Some Love", "UR A CUTIE", "Treat Yourself", "UR GONNA B OK", "You Deserve the Love", "Breath. Wander. Let go.", "Do What Makes Your Heart Full"].includes(name)) {
           drop = "Vibes 1"
+        }
+        else if (["Rock ‘n’ SOL", "Sadness is a Balloon", "To Live is to Play", "Just Keep Floating", "You Are the Sun", "You’re a Dandelion", "Happiness in a Cup"].includes(name)){
+          drop = "Vibes 2"
         }
         return {
           uri,

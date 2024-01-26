@@ -20,7 +20,7 @@ export const DropVibes1Tiny: FC = ({}) => {
   const [nbUserNFTs, setNbUserNFTs] = useState<number>();
 
   const dropNb = "Vibes 1";
-  const names = ["Give Yourself Some Love", "UR A CUTIE", "Treat Yourself"]
+  const names = ["Give Yourself Some Love", "UR A CUTIE", "Treat Yourself", "UR GONNA B OK", "You Deserve the Love", "Breath. Wander. Let go.", "Do What Makes Your Heart Full"]
   const nbTotalNFTsInDrop = NFTsinDrop.length;
   const NFTsInThisDrop = NFTsinDrop;
 
