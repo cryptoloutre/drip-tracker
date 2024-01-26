@@ -907,6 +907,7 @@ export {Drop4Moldy } from "./moldy/drop4";
 export {Drop5Moldy } from "./moldy/drop5";
 export {Drop6Moldy } from "./moldy/drop6";
 export {Drop7Moldy } from "./moldy/drop7";
+export {Drop8Moldy } from "./moldy/drop8";
 export {RezHome } from "./rez/home";
 export {Drop1Rez } from "./rez/drop1";
 export {Drop2Rez } from "./rez/drop2";
