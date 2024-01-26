@@ -700,6 +700,7 @@ export {Drop12Dreader } from "./dreader/drop12";
 export {Drop13Dreader } from "./dreader/drop13";
 export {Drop14Dreader } from "./dreader/drop14";
 export {Drop15Dreader } from "./dreader/drop15";
+export {Drop16Dreader } from "./dreader/drop16";
 export {GenopetsHome} from "./genopets/home";
 export {Drop1Genopets } from "./genopets/drop1";
 export {Drop2Genopets } from "./genopets/drop2";
