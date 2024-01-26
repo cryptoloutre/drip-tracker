@@ -369,6 +369,19 @@ export const OnedopekidsHome: FC = ({}) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 12</div>
               </Link>
+              <Link
+                href="/onedopekids/drop13"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/M_CdScBBpaa2QwEdtq3Uu0R7XrVGJHskGdn-9bskN6o?ext=gif"
+                    alt="drop 13 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Drop 13</div>
+              </Link>
             </div>
           </div>
         </div>
