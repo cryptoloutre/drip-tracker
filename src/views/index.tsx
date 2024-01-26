@@ -973,6 +973,7 @@ export {BullyzcrewHome } from "./bullyzcrew/home";
 export {Drop1Bullyzcrew } from "./bullyzcrew/drop1";
 export {Drop2Bullyzcrew } from "./bullyzcrew/drop2";
 export {Drop3Bullyzcrew } from "./bullyzcrew/drop3";
+export {Drop4Bullyzcrew } from "./bullyzcrew/drop4";
 export {HuxsterizedHome } from "./huxsterized/home";
 export {Drop1Huxsterized } from "./huxsterized/drop1";
 export {Drop2Huxsterized } from "./huxsterized/drop2";

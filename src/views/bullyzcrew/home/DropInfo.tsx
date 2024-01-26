@@ -508,5 +508,175 @@ export const DropInfo = [
         magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
       },
     ],
-  }
+  },
+  {
+    dropNb: "4",
+    NFTs: [
+      {
+        name: 'Vol 1 - Full Strip - B&W',
+        uri: 'https://arweave.net/RyLqxrTa3zuZg40ahaQeOpAjSUzZojhbGtBMQI8pSQs',
+        rarity: 'Common',
+        image: 'https://arweave.net/I-Mo1bE-eH_A1QXsxO-CqSLCtxo9YJv_jwJqvzNmA14?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Black & White Original Full Strip.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - Full Strip - Colored',
+        uri: 'https://arweave.net/9eywE4-Rh6JUd8ZFzpfhBv5QW63gzm2D_g7mER6osU4',
+        rarity: 'Common',
+        image: 'https://arweave.net/pcbcVA5qPT2_MDKWI6H2jdD9vu0Ws7OG3pSZCgrepJI?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Colored Original Full Strip.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 1st Tile - B&W',
+        uri: 'https://arweave.net/hYheqDv4D9j1KzlA9d35t8b0lEGjc_6pyYsoQjBYXuI',
+        rarity: 'Rare',
+        image: 'https://arweave.net/3KKkuXq35PKt424psCXicpPZVoozqRLxgRjhECtaGiY?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 1 of 6 - Black & White original edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 1st Tile - Colored',
+        uri: 'https://arweave.net/iHLIsoFTZc0zlOkmMwzFbHPj6PvEgsGstaP4nIKD5lE',
+        rarity: 'Rare',
+        image: 'https://arweave.net/zLmhHx7vwXus_aP97MS-2jp6hXxrIzwRoastbykNV44?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 1 of 6 - Colored edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 2nd Tile - B&W',
+        uri: 'https://arweave.net/jgQ18kjGtLerMvlDaJ6MTvH_81p_1CuRuJdLQD4Rk3g',
+        rarity: 'Rare',
+        image: 'https://arweave.net/TBwFpSlLeqWF7rBkSoB6jbon2CTe_R1ttkut4VEURWA?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 2 of 6 - Black & White original edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 2nd Tile - Colored',
+        uri: 'https://arweave.net/9OJkxy1GQJQbtMzV1Fa7XzvMR_B2fx7qkBmllKYr2FU',
+        rarity: 'Rare',
+        image: 'https://arweave.net/dVsCPe-XeWzbQ2x4ZiiS2KcqysAqXgF_mEX1xtNT27M?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 2 of 6 - Colored edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 3rd Tile - B&W',
+        uri: 'https://arweave.net/OyVab7H62HTVMEpaPu1R0bVdI_83r2crK2If6FGS4OM',
+        rarity: 'Rare',
+        image: 'https://arweave.net/w_m6wAHtswWI_3cxZp8wyyagWkLNhJgaMTsCMOw5a2Y?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 3 of 6 - Black & White original edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 3rd Tile - Colored',
+        uri: 'https://arweave.net/ETDS8Yy8bY_FHXWD8ZEd6l7XcvYJyMxdj1GzxwETPQA',
+        rarity: 'Rare',
+        image: 'https://arweave.net/Ekan_KEt_V_9Kv0L8v-ItvOyX1irXSuo_0nXCz1Wew8?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 3 of 6 - Colored edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 4th Tile - B&W',
+        uri: 'https://arweave.net/IRvl8yi5gFKOjHvPReB1-kyZxwsnjCU9yAjcHbB04cM',
+        rarity: 'Rare',
+        image: 'https://arweave.net/j86BF9bHiMXGPxSFlmGRXW9dJDMXZapIBh-XVwltXcw?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 4 of 6 - Black & White original edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 4th Tile - Colored',
+        uri: 'https://arweave.net/vjRGcnQQFGEiIUMtcdetd-s9QpxOgdrzFIqff2Tf3MU',
+        rarity: 'Rare',
+        image: 'https://arweave.net/-wwudStuVkfy2GrP5EZWmbt0k6KQg3d6MTsZtvOHtdM?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 4 of 6 - Colored edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 5th Tile - B&W',
+        uri: 'https://arweave.net/4butfsD_coebahuv4e0rxRDmBVDhyZiWHXi9p_gMwXc',
+        rarity: 'Rare',
+        image: 'https://arweave.net/6jhvco6gGnSdxH7i_ViDR3Ksqp-gUR7_K5NtIU2o8xk?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 5 of 6 - Black & White original edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 5th Tile - Colored',
+        uri: 'https://arweave.net/RRXhxkzBDMIECip737y65x5nQVee5-hv7R7yRpA7GSg',
+        rarity: 'Rare',
+        image: 'https://arweave.net/9icNi7_hQ65TABFTVx59MBm91f2yW9kFhpTG51pDxcE?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 5 of 6 - Colored edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 6th Tile - B&W',
+        uri: 'https://arweave.net/BQDVkExp9FxPGrsppiV979mXnOkdCn25zT2rOwviEN4',
+        rarity: 'Rare',
+        image: 'https://arweave.net/FsIhiTDFSbQsnZtFSxYoVRGUVB-Ft8TPq8ETcfGE1jE?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 6 of 6 - Black & White edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - 6th Tile - Colored',
+        uri: 'https://arweave.net/g1tOarq-CnJB_DkkJCVScnw74h47fEOI-oOfnPmG4c8',
+        rarity: 'Rare',
+        image: 'https://arweave.net/fI33H7gXq5-a3zk1fVWffTpN1thzg-nSiRvBaXCUZg4?ext=png',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1, drop 4 - Tile 6 of 6 - Colored edition.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      },
+      {
+        name: 'Vol 1 - Original Edition Cover',
+        uri: 'https://arweave.net/jHyJqNcjIJ-Ca51GLbY7QLKjINZ0zWh5YaDRIIb9x9s',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/S_XrI4Y_6QMJVPMZK_0oi8iQEQds16N2y4lvzwjTfLM?ext=jpg',
+        description: 'Captainz Blunderbeard’s adventures.\n' +
+          'Volume 1 - Original Edition Cover.\n' +
+          '\n' +
+          'Exclusive comic strips and art featuring the Bullyz, a pirate crew of idiotic little goblins. By Léo Karsenty, illustrator and co-founder. An original Bullyz Crew™ x DRiP collaboration.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_bullyz_crew'
+      }
+    ],
+  },
 ];
