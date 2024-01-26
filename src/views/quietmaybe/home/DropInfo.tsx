@@ -144,4 +144,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "6",
+    NFTs: [
+      {
+        name: 'cool stuff',
+        uri: 'https://arweave.net/AW-0QdkvlCGeYW-GHQG62gv7UM5BcWtpOE0t54vA2uM',
+        rarity: 'Common',
+        image: 'https://arweave.net/bmSxy_GsrKvLtFM1ewAfoqnzHlKfv7tj-0n9HITtSmo?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'lost',
+        uri: 'https://arweave.net/fpy5WWlm3OdnXVfsX_egwiF6djsLvD1jTYpDbGkaXnU',
+        rarity: 'Rare',
+        image: 'https://arweave.net/wrU2qI_oNx0x1-XdtBJllFh8dRF8YoUrpTmXv6AUsoQ?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'just a dream',
+        uri: 'https://arweave.net/GpMqofMYUglaFpX4790ati0mr3pYphtOrxtSJzAoNSA',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/QY4G_Flqtg6OgHtSo4XuqOw7ELfRQsiRpErTHjsOnCo?ext=png',
+        description: 'Digital abstract by quietmaybe | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      },
+      {
+        name: 'the static in my mind',
+        uri: 'https://arweave.net/G5pb2GirzicCoDYvA1-Y3xZsdjQOPJEm-XfwhR6sTcw',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/MT-L_cNclnEB5v-h4mMuH7csde6-1LZtCjpIwrvBQCU?ext=png',
+        description: 'Scanned physical paintings that were then glitched and digitally painted on | 2024',
+        magicEdenLink: 'https://www.tensor.trade/trade/drip_quietmaybe'
+      }
+    ],
+  },
 ];
