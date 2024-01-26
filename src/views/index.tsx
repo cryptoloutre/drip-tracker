@@ -1010,6 +1010,7 @@ export {Drop2DrPeepee } from "./drpeepee/drop2";
 export {KirkHome} from "./kirk/home";
 export {Drop1Kirk } from "./kirk/drop1";
 export {Drop2Kirk } from "./kirk/drop2";
+export {Drop3Kirk } from "./kirk/drop3";
 export {CreatedbyimrieHome} from "./createdbyimrie/home";
 export {Drop1Createdbyimrie } from "./createdbyimrie/drop1";
 export {Drop2Createdbyimrie } from "./createdbyimrie/drop2";

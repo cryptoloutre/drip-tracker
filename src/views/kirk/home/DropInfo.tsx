@@ -73,4 +73,41 @@ export const DropInfo = [
       }
     ],
   },
+  {
+    dropNb: "3",
+    NFTs: [
+      {
+        name: 'Darkest Days',
+        uri: 'https://arweave.net/JWctrboxCShEf0IYRvnbr1qGKu5nEoV0xre0-aQIt48',
+        rarity: 'Common',
+        image: 'https://arweave.net/dVYnHhCKdt6rok0ZbuWmW43c8GPmIltD-5_mVD_AVkk?ext=png',
+        description: 'Within this unforgiving darkness, hope doesn’t flicker - it gasps for breath.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_fortress_of_regret'
+      },
+      {
+        name: 'Day 3 Diary Entry',
+        uri: 'https://arweave.net/QekpPGWMxOeL3MjSKh4pww93qr6HZWb6ssbFOnwvaKE',
+        rarity: 'Rare',
+        image: 'https://arweave.net/J90BvhFe-ERPt2g7SyHP_0IfoRKlXW1H2ul_Vxl0gzc?ext=png',
+        description: 'Day 3 diary entry, pondering my fate on the darkest of days in the Fortress of Despair.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_fortress_of_regret'
+      },
+      {
+        name: 'Rock Bottom',
+        uri: 'https://arweave.net/8cQhSHLCx7TD2jrFC_uuUtOBEqCDQ8Po5qZdPnrfzMQ',
+        rarity: 'Legendary',
+        image: 'https://arweave.net/KyvLU_KKvwefmXXoIYpvouuFggMLBlYgEm4eHzeuOz4?ext=png',
+        description: 'The thought of ending the story here whispers seductively, offering a release from the weight on my shoulders. Yet, I resist.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_fortress_of_regret'
+      },
+      {
+        name: 'Empty Table',
+        uri: 'https://arweave.net/EhM7aqOqNlvNHf2ozY2KufaXwxDVmfcxuPhtsDTUnKM',
+        rarity: 'Ultimate',
+        image: 'https://arweave.net/6AZ7p8jEC4OJKDLIlWi1f64hYrwjgTSn34hZKmQLBX0?ext=png',
+        description: 'I cling to the fragile hope that a glimmer of light, however faint, might still find its way through the cracks in my broken spirit.',
+        magicEdenLink: 'https://drip.tensor.trade/trade/drip_fortress_of_regret'
+      }
+    ],
+  },
 ];
