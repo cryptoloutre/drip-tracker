@@ -569,6 +569,19 @@ export const DAAHome: FC = ({ }) => {
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">DROP 24</div>
               </Link>
+              <Link
+                href="/daa/drop25"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/sgFwrLRRIcd1mEgtB8BH83UeC3-urUypWnzVYFjlzXc?ext=jpg"
+                    alt="drop 25 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">DROP 25</div>
+              </Link>
             </div>
           </div>
         </div>
