@@ -74,12 +74,42 @@ export const SimplyEtoHome: FC = ({}) => {
       })
     );
 
+
+    const _userNFTsJourney = allUserNFTs.filter(
+      (asset) =>
+        asset.compression.compressed &&
+        asset.grouping[0] != undefined &&
+        asset.grouping[0].group_value ==
+          "9aYhofozNtc8gdRxu8dZMNkFZPDZeyjpeu7AALaAnJKA"
+    );
+
+    const _userNFTsURIJourney = await Promise.all(
+      _userNFTsJourney.map(async (asset) => {
+        let attributes: any;
+        const uri = asset.content.json_uri;
+        if (asset.content.metadata.attributes) {
+          attributes = asset.content.metadata.attributes;
+        } else {
+          const response = await fetch(uri);
+          const responseData = await response.json();
+          attributes = responseData.attributes;
+        }
+        const drop = attributes.find((nft) => nft.trait_type == "Flowing").value;
+        return {
+          uri,
+          drop,
+        };
+      })
+    );
+
+    const userNFTsURI = _userNFTsURI.concat(_userNFTsURIJourney);
+
     // we filter to eliminate the doublons
-    const userNFTs = _userNFTsURI.filter((value: any, index: any) => {
+    const userNFTs = userNFTsURI.filter((value: any, index: any) => {
       const _value = JSON.stringify(value);
       return (
         index ===
-        _userNFTsURI.findIndex((obj: any) => {
+        userNFTsURI.findIndex((obj: any) => {
           return JSON.stringify(obj) === _value;
         })
       );
@@ -437,6 +467,19 @@ export const SimplyEtoHome: FC = ({}) => {
                   ></img>
                 </div>
                 <div className="text-center font-bold mt-1 pb-1">Drop 17</div>
+              </Link>
+              <Link
+                href="/simplyeto/drop18"
+                className="bg-[#000000] pt-1 rounded-xl border-2 border-[#FFFFFF] hover:border-[#14F195]"
+              >
+                <div className="flex justify-center">
+                  <img
+                    className=""
+                    src="https://arweave.net/dGC1v9p9GstnjRla9wPhEvNgXv7ey3Wektl5Z0uWmFM?ext=png"
+                    alt="drop volume 1 preview"
+                  ></img>
+                </div>
+                <div className="text-center font-bold mt-1 pb-1">Volume 1</div>
               </Link>
             </div>
           </div>
